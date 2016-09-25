@@ -1,0 +1,36 @@
+\documentclass[oneside,10pt]{book}
+
+\usepackage{sty/cdtBook}
+\usepackage{sty/usecases}
+\usepackage{sty/requerimientos}
+\usepackage{gensymb}
+
+\title{Titulo del proyecto}
+\subtitle{Subtitulo}
+\author{Equipo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+
+\tableofcontents
+
+
+
+%=========================================================
+\chapter{Introducción}
+
+
+%=========================================================
+\chapter{Análisis del problema}
+\pagebreak
+\cfinput{requerimientos/requerimientos}
+%=========================================================
+%\chapter{Propuesta de solución}
+
+	
+\end{document}
