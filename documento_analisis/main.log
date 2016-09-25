@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 SEP 2016 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 SEP 2016 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,13 +1037,13 @@ Overfull \hbox (9.40112pt too wide) in alignment at lines 48--48
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-[]|\OT1/cmbr/m/n/10 Bitacora de
+Underfull \hbox (badness 2626) in paragraph at lines 50--50
+[]|\OT1/cmbr/m/n/10 Consulta de me-
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 55--55
-[]|\OT1/cmbr/m/n/10 Consulta de me-
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]|\OT1/cmbr/m/n/10 Bitacora de
  []
 
 
@@ -1111,7 +1111,7 @@ Overfull \hbox (9.40112pt too wide) in alignment at lines 61--61
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\OT1/cmbr/m/n/10 Bitacora de
  []
 
