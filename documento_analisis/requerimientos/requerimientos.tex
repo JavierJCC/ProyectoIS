@@ -2,27 +2,57 @@
 
 \subsection{Requerimientos globales}
 \begin{FRequirements}
-\FRitem{RFG1}{Bitácora de transacciones}{El sistema mantendrá una bitácora de todas las transacciones de trámites finalizadas a lo largo de un semestre, así hayan sido aceptadas o rechazadas.
+
+\FRitem{RFG2}{Control de Acceso}{El sistema controlará el acceso a éste mediante un control de autentificación de usuario
+Actores: 
+\begin{itemize}
+	\item Jefa de Gestión Escolar
+	\item Autoridad Pertinente
+	\item Analista 
+	\item Alumno/Egresado
+	\item Departamentos escolares
+\end{itemize}
 }
-\FRitem{RFG2}{Importación y exportación de archivos}{El sistema permitirá exportar e importar datos que se encuentran en archivos de tipo .xsls.
+\FRitem{RFG4}{Registro de usuario}{El sistema permitirá el registro de usuarios.\newline
+Actores:
+\begin{itemize}
+	\item Jefa de Gestión Escolar
+	\item Autoridad Pertinente
+	\item Analista 
+	\item Departamentos escolares 
+\end{itemize}
+}
+
+\FRitem{RFG5}{Recuperación de contraseña}{
+El sistema permitirá la recuperación de contraseña olvidada.\newline
+\begin{itemize}
+	\item Jefa de Gestión Escolar
+	\item Autoridad Pertinente
+	\item Analista 
+	\item Departamentos escolares 
+\end{itemize}
 }
 \end{FRequirements}
 
 \subsection{Jefa de Gestión Escolar}
 \begin{FRequirements}
-\FRitem{RFJGE1}{Reporte global de transacciones}{El sistema permitirá la visualización de un reporte global de las transacciones de trámites hechas diariamente, mensualmente y semestralmente.
-}
 \FRitem{RFJGE2}{Control de permisos}{El sistema permitirá al jefe de gestión escolar delegar o autorizar permisos a un analista.
 }
-\FRitem{RFJGE3}{Trámites realizados}{El sistema permitirá la visualización gráfica de los trámites tanto rechazados,aceptados, recogidos, no recogidos así como por fecha y alumno.
+\FRitem{RFG1}{Importación y exportación de archivos}{El sistema permitirá exportar e importar datos que se encuentran en archivos de tipo .xsls. 
 }
+\FRitem{RFG6}{Reporte global de transacciones}{El sistema permitirá la visualización de un reporte global de las transacciones de trámites hechas diariamente, mensualmente y semestralmente.
+}
+\FRitem{RFG3}{Bitacora de transacciones}{El sistema permitirá la visualización gráfica de los trámites tanto rechazados,aceptados, recogidos, no recogidos así como por fecha y alumno.}
 \end{FRequirements}
 
 
 \subsection{Autoridad Pertinente}
 \begin{FRequirements}
-\FRitem{RFA1}{Reporte global de transacciones}{
-El sistema permitirá la visualización de un reporte global de las transacciones hechas diariamente, mensualmente y semestralmente.
+\FRitem{RFG1}{Importación y exportación de archivos}{El sistema permitirá exportar e importar datos que se encuentran en archivos de tipo .xsls. 
+}
+\FRitem{RFG3}{Bitacora de transacciones}{El sistema permitirá la visualización gráfica de los trámites tanto rechazados,aceptados, recogidos, no recogidos así como por fecha y alumno.
+}
+\FRitem{RFG6}{Reporte global de transacciones}{El sistema permitirá la visualización de un reporte global de las transacciones de trámites hechas diariamente, mensualmente y semestralmente.
 }
 \end{FRequirements}
 
@@ -34,9 +64,6 @@ El sistema permitirá al actor actualizar el estado en que se encuentra los trá
 }
 \FRitem{RFA2}{Control de trámites solicitados}{
 El sistema permitirá controlar el número de trámites solicitados mediante un mecanismo de aceptar o rechazar peticiones.
-}
-\FRitem{RFA3}{Recuperación de contraseña}{
-El sistema permitirá la recuperación de contraseña olvidada.
 }
 \FRitem{RFA4}{Autorización de trámite}{
 El sistema almacenará la solicitud de boleta o constancia hecha por el actor hasta ser aceptada.
@@ -58,9 +85,6 @@ El sistema permitirá consultar el estado en que se encuentra el trámite.
 \begin{FRequirements}
 \FRitem{RFDE1}{Solicitud de constancias}{
 El sistema permitirá al personal de otro departamento hacer solicitudes de constancias vía memorándum.
-}
-\FRitem{RFDE2}{Recuperación de contraseña}{
-El sistema permitirá la recuperación de contraseña olvidada.
 }
 \end{FRequirements}
 
