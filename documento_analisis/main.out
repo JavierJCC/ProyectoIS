@@ -1,10 +1,12 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
-\BOOKMARK [0][-]{chapter.2}{An\341lisis del problema}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Requerimientos Funcionales}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.1.1}{Requerimientos globales}{section.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.1.2}{Jefa de Gesti\363n Escolar}{section.2.1}% 5
-\BOOKMARK [2][-]{subsection.2.1.3}{Autoridad Pertinente}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.4}{Analista}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.5}{Alumno / Egresado}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.6}{Departamentos escolares}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{Requerimientos no funcionales}{chapter.2}% 10
+\BOOKMARK [1][-]{section.1.1}{Descripci\363n del proyecto}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{An\341lisis del problema}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Requerimientos Funcionales}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{Requerimientos globales}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{Jefa de Gesti\363n Escolar}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{Autoridad Pertinente}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.4}{Analista}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.5}{Alumno / Egresado}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.6}{Departamentos escolares}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Requerimientos no funcionales}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Digramas de casos de uso}{chapter.2}% 12
