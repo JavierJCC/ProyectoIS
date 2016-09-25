@@ -8,4 +8,4 @@
 \contentsline {subsection}{\numberline {2.1.4}Analista}{5}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}Alumno / Egresado}{5}{subsection.2.1.5}
 \contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{5}{subsection.2.1.6}
-\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{6}{section.2.2}
