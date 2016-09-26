@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 SEP 2016 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 SEP 2016 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,12 +1336,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<images/img_casos/Analista.jpg, id=118, 845.1575pt x 732.7375pt>
+<images/img_casos/Analista.jpg, id=118, 813.0375pt x 732.7375pt>
 File: images/img_casos/Analista.jpg Graphic file (type jpg)
 
 <use images/img_casos/Analista.jpg>
 Package pdftex.def Info: images/img_casos/Analista.jpg used on input line 4.
-(pdftex.def)             Requested size: 328.99857pt x 285.24098pt.
+(pdftex.def)             Requested size: 328.99857pt x 296.49991pt.
 
 <images/img_casos/AutoridadPerninente.jpg, id=119, 965.6075pt x 764.8575pt>
 File: images/img_casos/AutoridadPerninente.jpg Graphic file (type jpg)
@@ -1351,29 +1351,29 @@ Package pdftex.def Info: images/img_casos/AutoridadPerninente.jpg used on input
  line 10.
 (pdftex.def)             Requested size: 328.99857pt x 260.59663pt.
 
-<images/img_casos/departamento_escolar.jpg, id=120, 845.1575pt x 732.7375pt>
+<images/img_casos/departamento_escolar.jpg, id=120, 716.6775pt x 411.5375pt>
 File: images/img_casos/departamento_escolar.jpg Graphic file (type jpg)
 
 <use images/img_casos/departamento_escolar.jpg>
 Package pdftex.def Info: images/img_casos/departamento_escolar.jpg used on inpu
 t line 16.
-(pdftex.def)             Requested size: 328.99857pt x 285.24098pt.
+(pdftex.def)             Requested size: 328.99857pt x 188.92021pt.
 
-<images/img_casos/Estudiante.jpg, id=121, 796.9775pt x 387.4475pt>
+<images/img_casos/Estudiante.jpg, id=121, 813.0375pt x 387.4475pt>
 File: images/img_casos/Estudiante.jpg Graphic file (type jpg)
 
 <use images/img_casos/Estudiante.jpg>
 Package pdftex.def Info: images/img_casos/Estudiante.jpg used on input line 23.
 
-(pdftex.def)             Requested size: 328.99857pt x 159.94229pt.
+(pdftex.def)             Requested size: 328.99857pt x 156.7794pt.
 
-<images/img_casos/JefadeGestion.jpg, id=122, 893.3375pt x 805.0075pt>
+<images/img_casos/JefadeGestion.jpg, id=122, 893.3375pt x 772.8875pt>
 File: images/img_casos/JefadeGestion.jpg Graphic file (type jpg)
 
 <use images/img_casos/JefadeGestion.jpg>
 Package pdftex.def Info: images/img_casos/JefadeGestion.jpg used on input line 
 30.
-(pdftex.def)             Requested size: 328.99857pt x 296.47238pt.
+(pdftex.def)             Requested size: 328.99857pt x 284.64304pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
 File: images/headerInp.png Graphic file (type png)
@@ -1510,7 +1510,7 @@ local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb>
-Output written on main.pdf (11 pages, 461622 bytes).
+Output written on main.pdf (11 pages, 424868 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
