@@ -36,7 +36,7 @@
 \fancyhead[LO]{} 
 
 \addtolength{\headheight}{2\baselineskip} 
-\fancyfoot[CO,CE]{{\tiny\color{subTitleColor}\em Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F. {\color{sectionColor}\Telefon} 57296000 Ext. 52005 {\color{sectionColor}\Letter} ulises.velez@gmail.com}}
+\fancyfoot[CO,CE]{{\tiny\color{subTitleColor}\em Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F. {\color{sectionColor}} {\color{sectionColor}}}}
 \fancyfoot[RO,LE]{\footnotesize\thepage}
 
 
@@ -54,14 +54,25 @@
 	\\{\LARGE \color{subTitleColor}\varSubTitle}~{}\bigskip\\\color{authorColor}\rule{\textwidth}{1mm}}%
 }
 
-\newcommand{\varOrganization}{Escuela Superior de Cómputo, IPN}
-\newcommand{\organization}[1]{\renewcommand{\varOrganization}{#1}}
+\newcommand{\varOrganization}[5]{
+\\
+#1\\
+#2\\
+#3\\
+#4\\
+#5
+}
+%\newcommand{\organization}[3]%{\renewcommand{\varOrganization}{#1}
+%\newline
+%{#2}
+%}
+
 
 
 \newcommand{\varAuthor}[1]{}
 \let\varAuthor=\author
 \renewcommand{\author}[1]{%
-	\varAuthor{\color{authorColor}#1\\\color{subTitleColor}\varOrganization}%
+	\varAuthor{\color{authorColor}#1\\\varOrganization{Castro Flores Marcela}{Chavez Chavez Javier}{Guzmán Chávez Juan Antonio}{Maldonado Romo Alberto}{Murga Dionicio Rubén}}%
 }
 
 \renewcommand{\labelitemi}{\color{sectionColor}\textbullet}
