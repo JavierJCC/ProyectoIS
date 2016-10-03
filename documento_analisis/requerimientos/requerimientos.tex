@@ -3,7 +3,7 @@
 \subsection{Requerimientos globales}
 \begin{FRequirements}
 
-\FRitem{RFG1}{Control de Acceso}{El sistema controlará el acceso a éste mediante un control de autentificación de usuario
+\FRitem{RFG1}{Iniciar sesion}{El sistema controlará el acceso a éste mediante un control de autentificación de usuario
 Actores: 
 \begin{itemize}
 	\item Jefa de Gestión Escolar
@@ -13,16 +13,6 @@ Actores:
 	\item Departamentos escolares
 \end{itemize}
 }
-\FRitem{RFG2}{Registro de usuario}{El sistema permitirá el registro de usuarios.\newline
-Actores:
-\begin{itemize}
-	\item Jefa de Gestión Escolar
-	\item Autoridad Pertinente
-	\item Analista 
-	\item Departamentos escolares 
-\end{itemize}
-}
-
 \FRitem{RFG3}{Recuperación de contraseña}{
 El sistema permitirá la recuperación de contraseña olvidada.\newline
 \begin{itemize}
@@ -30,22 +20,14 @@ El sistema permitirá la recuperación de contraseña olvidada.\newline
 	\item Autoridad Pertinente
 	\item Analista 
 	\item Departamentos escolares 
-\end{itemize}
-}
-\FRitem{RFG4}{Actualización de datos personales}{El sistema permitirá al actor actualizar sus datos personales.\newline
-Actores:
-\begin{itemize}
-	\item Jefa de Gestión Escolar
-	\item Autoridad Pertinente
-	\item Analista 
-	\item Departamentos escolares 
+	\item Alumno/Egresado
 \end{itemize}
 }
 \end{FRequirements}
 \pagebreak
 \subsection{Jefa de Gestión Escolar}
 \begin{FRequirements}
-\FRitem{RFJGE1}{Control de permisos}{El sistema permitirá al jefe de gestión escolar delegar o autorizar permisos a un analista.
+\FRitem{RFJGE1}{Gestionar permisos}{El sistema permitirá al jefe de gestión escolar delegar o autorizar permisos a un analista.
 }
 \FRitem{RFJGE2}{Consulta de memorandum}{El sistema notificará al actor cuando tiene un memorandum sin haberlo leído.}
 \FRitem{RFG5}{Importación y exportación de archivos}{El sistema permitirá exportar e importar datos que se encuentran en archivos de tipo .xsls. 
@@ -53,15 +35,17 @@ Actores:
 \FRitem{RFG6}{Reporte global de transacciones}{El sistema permitirá la visualización de un reporte global de las transacciones de trámites hechas diariamente, mensualmente y semestralmente.
 }
 \FRitem{RFG7}{Bitacora de transacciones}{El sistema permitirá la visualización gráfica de los trámites tanto rechazados,aceptados, recogidos, no recogidos así como por fecha y alumno.}
+
+\FRitem{RFG8}{Registro de usuario}{El sistema permitirá el registro de usuarios pertenecientes al área de analistas y/o departamentos escolares.
+}
+\FRitem{RFG9}{Actualización de datos personales}{El sistema permitirá al actor actualizar sus datos personales.
+}
 \end{FRequirements}
 
 
 \subsection{Autoridad Pertinente}
 \begin{FRequirements}
-\FRitem{RFG5}{Importación y exportación de archivos}{El sistema permitirá exportar e importar datos que se encuentran en archivos de tipo .xsls. 
-}
-\FRitem{RFG6}{Reporte global de transacciones}{El sistema permitirá la visualización de un reporte global de las transacciones de trámites hechas diariamente, mensualmente y semestralmente.
-}
+
 \FRitem{RFG7}{Bitacora de transacciones}{El sistema permitirá la visualización gráfica de los trámites tanto rechazados,aceptados, recogidos, no recogidos así como por fecha y alumno.
 }
 \end{FRequirements}
@@ -72,7 +56,7 @@ Actores:
 \FRitem{RFA1}{Actualización del estado de trámite}{
 El sistema permitirá al actor actualizar el estado en que se encuentra los trámites manualmente.
 }
-\FRitem{RFA2}{Control de trámites solicitados}{
+\FRitem{RFA2}{Gestionar solicitudes}{
 El sistema permitirá controlar el número de trámites solicitados mediante un mecanismo de aceptar o rechazar peticiones.
 }
 \end{FRequirements}
