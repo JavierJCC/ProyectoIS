@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 OCT 2016 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 OCT 2016 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,13 +1359,13 @@ Package pdftex.def Info: images/img_casos/departamento_escolar.jpg used on inpu
 t line 16.
 (pdftex.def)             Requested size: 328.99857pt x 147.58194pt.
 
-<images/img_casos/Estudiante.jpg, id=121, 763.85374pt x 379.4175pt>
+<images/img_casos/Estudiante.jpg, id=121, 949.5475pt x 379.4175pt>
 File: images/img_casos/Estudiante.jpg Graphic file (type jpg)
 
 <use images/img_casos/Estudiante.jpg>
 Package pdftex.def Info: images/img_casos/Estudiante.jpg used on input line 23.
 
-(pdftex.def)             Requested size: 328.99857pt x 163.41844pt.
+(pdftex.def)             Requested size: 328.99857pt x 131.46074pt.
 
 <images/img_casos/JefadeGestion.jpg, id=122, 1239.63126pt x 811.03pt>
 File: images/img_casos/JefadeGestion.jpg Graphic file (type jpg)
@@ -1475,7 +1475,7 @@ local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb>
-Output written on main.pdf (10 pages, 471154 bytes).
+Output written on main.pdf (10 pages, 479633 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
