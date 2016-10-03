@@ -1,0 +1,2 @@
+hola jajaja
+<?=$data['parametro']?>
