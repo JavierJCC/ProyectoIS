@@ -562,7 +562,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "CUA03  Actualizar estado de trámite",
+											"text": "CUA02  Actualizar estado de trámite",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -2420,7 +2420,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "CUA04.1  Aceptar o rechazar solicitudes",
+											"text": "CUA03.1  Aceptar o rechazar solicitudes",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -2731,7 +2731,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "CUA02.1  Recuperar contraseña",
+											"text": "CUA01.1  Recuperar contraseña",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -2752,7 +2752,7 @@
 											"containerExtending": false,
 											"left": 48,
 											"top": 32,
-											"width": 80.9072265625,
+											"width": 81,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -3183,7 +3183,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "CUA04  Gestionar solicitudes",
+											"text": "CUA03  Gestionar solicitudes",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -3204,7 +3204,7 @@
 											"containerExtending": false,
 											"left": -144,
 											"top": -112,
-											"width": 80.9072265625,
+											"width": 81,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -3826,7 +3826,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFXXipY4EGSV2Q="
 					},
-					"name": "CUA03  Actualizar estado de trámite",
+					"name": "CUA02  Actualizar estado de trámite",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
@@ -4017,7 +4017,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFXXipY4EGSV2Q="
 					},
-					"name": "CUA04.1  Aceptar o rechazar solicitudes",
+					"name": "CUA03.1  Aceptar o rechazar solicitudes",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -4045,7 +4045,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFXXipY4EGSV2Q="
 					},
-					"name": "CUA02.1  Recuperar contraseña",
+					"name": "CUA01.1  Recuperar contraseña",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
@@ -4057,7 +4057,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFXXipY4EGSV2Q="
 					},
-					"name": "CUA04  Gestionar solicitudes",
+					"name": "CUA03  Gestionar solicitudes",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
