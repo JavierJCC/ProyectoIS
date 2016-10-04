@@ -12,7 +12,15 @@
 \contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Digramas de casos de uso}{8}{section.2.3}
 \contentsline {chapter}{\numberline {3}Descripcion de los Casos de uso}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Descripci\IeC {\'o}n casos de uso}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Consultar estatus de los tramites solicitados}{11}{subsection.3.1.1}
-\contentsline {subsubsection}{Trayectoria del Caso de Uso}{11}{section*.2}
-\contentsline {subsubsection}{Trayectroria Alternativa A}{12}{section*.3}
+\contentsline {section}{\numberline {3.1}Analista}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Autoridad pertinente}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Departamento escolar}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4} Alumno/Egresado}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}CUEE02 Solicitar tr\IeC {\'a}mite}{12}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Descripci\IeC {\'o}n completa}{12}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Atributos importantes}{12}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Trayectorias del Caso de Uso}{13}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Descripci\IeC {\'o}n casos de uso}{14}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Consultar estatus de los tramites solicitados}{14}{subsection.3.6.1}
+\contentsline {subsubsection}{Trayectoria del Caso de Uso}{15}{section*.2}
+\contentsline {subsubsection}{Trayectroria Alternativa A}{15}{section*.3}
