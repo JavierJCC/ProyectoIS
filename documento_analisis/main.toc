@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.5.1}Descripci\IeC {\'o}n completa}{12}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Atributos importantes}{12}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Trayectorias del Caso de Uso}{13}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Descripci\IeC {\'o}n casos de uso}{14}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Consultar estatus de los tramites solicitados}{14}{subsection.3.6.1}
-\contentsline {subsubsection}{Trayectoria del Caso de Uso}{15}{section*.2}
-\contentsline {subsubsection}{Trayectroria Alternativa A}{15}{section*.3}
+\contentsline {section}{\numberline {3.6}Descripci\IeC {\'o}n casos de uso}{13}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Consultar estatus de los tramites solicitados}{13}{subsection.3.6.1}
+\contentsline {subsubsection}{Trayectoria del Caso de Uso}{13}{section*.2}
+\contentsline {subsubsection}{Trayectroria Alternativa A}{14}{section*.3}
