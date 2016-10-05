@@ -1,43 +1,68 @@
-\begin{UseCase}{CUEE02}{Solicitar trámite}{Un alumno o egresado requiere hacer una petición de trámite a control escolar}
-	\UCitem{Version}{0.1}
-  \UCitem{Actor}{Alumno/Egresado}
-  \UCitem{Proposito}{El paciente evita ir físicamente a las oficinas de control escolar y tiene la posibilidad de pedir el tipo de documento deseado via internet.}
+\begin{UseCase}{CUG01}{Solicitar trámite}{Método para autentificar un usuario ante el sistema.}
+	\UCitem{Versión}{0.1}
+  \UCitem{Actor}{Estudiante/Egresado - Analista - Jefa de Gestión Escolar - Departamentos escolares - Autoridad pertinente}
+  \UCitem{Propósito}{Evitar el acceso al sistema de personas ajenas a la institución, así como el robo de identidad con el fin de solicitar trámites innecesarios.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item Tipo de documento a pedir: Cadena de carácteres  predeterminada que significará el tipo de documento  que el alumno solicita.
-    \item Razón de petición: Cadena de carácteres predeterminada que sirve para dar una explicación de por qué se está pidiendo el documento.
+      \item : cadena aleatoria de caracteres formada por MongoDB
+      \item Fecha de cita: cadena de caracteres con el formato ``DD/MM/YYYY HH:MM'', donde DD, MM, YYYY, HH, MM son número enteros que representan el día, mes, año, hora y minutos de la fecha respectivamente.
+      \item Consultorio: Número entero positivo entre 0 y 12, representa el número de consultorio.
+      \item Médico:  Nombre del médico que esta asignado al consultorio en ese horario de cita.
     \end{itemize}
   }
   \UCitem{Origen}{
     \begin{itemize}
+<<<<<<< HEAD
+      \item Id de la cita:  Variable de sesión de la aplicación.
+      \item Fecha de cita: Desde un calendario ordenado por mes que cambia dinamicamente para seleccionar el  año, mes, día, hora y minutos .
+      \item Consultorio: Desde una lista.
+      \item Médico: de un cuadro de texto de sólo lectura, se obtiene mediante una consulta.
+=======
     \item Seleccionable: Tipo de documento a pedir. Razón de petición
+>>>>>>> d8ab1e6361cf6b16c2bf87a5e11ae5d266619ba9
       \end{itemize}
   }
   \UCitem{Salidas}{
     \begin{itemize}
+<<<<<<< HEAD
+      \item Mensaje de notificación  {\bf MSG2a-}``Registro de cita exitoso".
+      \item Mensaje de notificación  {\bf MSG2b-}``Este horario fue agendado, seleccione otro por favor".
+       \item Mensaje de notificación  {\bf MSG2c-}``Seleccione un horario".
+
+=======
 		\item Mensaje de confirmación {\bf AlertaConfirmarCorreo-}`` Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse.  
 	[cuerpoCorreo@servidor.dominio]
 	¿Es correcto tu correo? Actualiza en caso de que no sea correcto	".
 		\item Mensaje de información {\bf AlertaLimitePeticion}``El número máximo de peticiones es 5."
 		\item Mensaje de información {\bf AlertasolicitudEnviada}
+>>>>>>> d8ab1e6361cf6b16c2bf87a5e11ae5d266619ba9
     \end{itemize}
   }
   \UCitem{Destino}{
     \begin{itemize}
+<<<<<<< HEAD
+      \item Mensaje de notificación : Pantalla.
+=======
       \item AlertaConfirmarCorreo,AlertaLimitePeticion,AlertasolicitudEnviada : Pantalla.
+>>>>>>> d8ab1e6361cf6b16c2bf87a5e11ae5d266619ba9
     \end{itemize}
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item El alumno debió haber sido identificado por el sistema.
+      \item Que haya un médico asignado en la misma fecha, hora y en el consultorio seleccionado.
+      \item Que no haya una cita registrada en la misma fecha, hora y en el consultorio seleccionado.
     \end{itemize}
   }
   \UCitem{Postcondiciones}{
     \begin{itemize}
-      \item Se registra la petición del alumno y/o egresado en el sistema.
+      \item Se registra la cita del actor en el sistema.
+      \item La cita registrada aparece en la lista de citas registradas del paciente.
     \end{itemize}
   }
   \UCitem{Observaciones}{
+<<<<<<< HEAD
+    Las citas agendadas se bloquean del calendario.
+=======
 		\begin{itemize}
 			\item El alumno puede pedir un máximo de 5 constancias al mes.
 			\item Las opciones de documentos son: 
@@ -50,22 +75,52 @@
 				\item 
 			\end{itemize}
 		\end{itemize}
+>>>>>>> d8ab1e6361cf6b16c2bf87a5e11ae5d266619ba9
   }
   \UCitem{Errores}{
-  	\begin{itemize}
-  	\item Ninguno.
-  	\end{itemize}
+  	El actor selecciona una fecha, hora y consultorio en los cuales ya existe una cita previamente registrada, se informa al actor mostrando el mensaje {\bf MSG2b-} ``Este horario fue agendado, seleccione otro por favor'' y se continúa desde el paso 5 
 	}
   \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
-	\UCitem{Volatilidad}{Baja}
-	\UCitem{Madurez}{Alta}
+	\UCitem{Volatilidad}{Media}
+	\UCitem{Madurez}{Media}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{En proceso}
-	\UCitem{Autor}{Rubén Murga Dionicio}
-	\UCitem{Revisor}{-----}
+  \UCitem{Estado}{En revisión}
+	\UCitem{Autor}{Adrián Eduardo Galindo García}
+	\UCitem{Revisor}{Rubén Murga Dionicio}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
+<<<<<<< HEAD
+  \UCpaso[\UCactor] solicita agendar cita haciendo clic en la opción del menú “Agendar cita”.
+  \UCpaso obtiene el total de citas disponibles para cada día.
+  \UCpaso muestra el calendario de la UI2A Agendar Citas con la cantidad de citas disponibles por día.
+  \UCpaso deshabilita los días del calendario que hayan llegado al máximo de citas disponibles.
+  \UCpaso[\UCactor] indica la fecha de la cita deseada haciendo click sobre el día.
+  \UCpaso oculta el calendario, y muestra un listado de horas disponibles para el día seleccionado. UI2B Agendar Citas
+  \UCpaso[\UCactor] indica la hora de la cita deseada haciendo click sobre ella.
+   \UCpaso oculta el listado de horas, y muestra un listado de horas con minutos, disponibles para la hora seleccionada. UI2C Agendar Citas
+   \UCpaso[\UCactor] indica la hora con minutos de la cita deseada haciendo click sobre ella.
+  \UCpaso habilita la selección del listado de los consultorios.
+  \UCpaso[\UCactor] indica el consultorio deseado seleccionandolo de la lista. [Trayectoria A]
+  \UCpaso obtiene el nombre del médico asignado al consultorio en la fecha y hora seleccionadas. 
+  \UCpaso muestra los datos seleccionados de la cita y habilita el botón \IUbutton{Agendar cita}.
+  \UCpaso[\UCactor] da click en el botón \IUbutton{Agendar cita}.
+  \UCpaso verifica que no se haya registrado una cita con los mismos datos [Trayectoria B].
+  \UCpaso notifica el resultado de la operación mostrando la información de la cita.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Horario no seleccionado}
+  \UCpaso notifica que no ha seleccionado un horario de cita, mostrando el mensaje {\bf MSG2c-} “Seleccione un horario”.
+  \UCpaso regresa a la vista UI2A Agendar Citas.
+  \UCpaso continúa transacción desde el paso 5.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{Confirmación de la creación de la cita}
+  \UCpaso notifica que ya hay una cita registrada con los mismos datos, mostrando el mensaje {\bf MSG2b-} “Este horario fue agendado, seleccione otro por favor”.
+  \UCpaso regresa a la vista UI2A Agendar Citas.
+  \UCpaso continúa transacción desde el paso 5.
+\end{UCtrayectoriaA}
+=======
   \UCpaso[\UCactor] solicita un trámite haciendo click en la opción del menú `` Solicitar trámite”.
   \UCpaso El sistema muestra la pantalla  {\bf UIEESolicitarTramite}
   \UCpaso[\UCactor] indica el tipo de documento deseada haciendo click sobre una opción del select tipo de documento a pedir  que se mencionó en las entradas previamente.
@@ -103,4 +158,5 @@
  \UCpaso Muestra pantalla anterior (UIEESolicitarTramite) con la lista de peticiones llenada anteriormente.
 \end{UCtrayectoriaA}
 
+>>>>>>> d8ab1e6361cf6b16c2bf87a5e11ae5d266619ba9
 %-------------------------------------- TERMINA descripción del caso de uso.

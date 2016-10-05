@@ -63,13 +63,14 @@
 -9
 
 \begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
-  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
   \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Datos no encontrados en el repositorio de datos}
-  \UCpaso Notifica que los datos ingresados son incorrectos o no existen y muestra alerta {\bf AlertaDatosIncorrectos}.
-  \UCpaso Continúa transacción desde el paso 2.
+\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectos}
+  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.
