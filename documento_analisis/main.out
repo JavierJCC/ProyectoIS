@@ -12,12 +12,16 @@
 \BOOKMARK [1][-]{section.2.3}{Digramas de casos de uso}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Descripcion de los Casos de uso}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Analista}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Autoridad pertinente}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Departamento escolar}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{ Alumno/Egresado}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.5}{CUEE02 Solicitar tr\341mite}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.5.1}{Descripci\363n completa}{section.3.5}% 19
-\BOOKMARK [2][-]{subsection.3.5.2}{Atributos importantes}{section.3.5}% 20
-\BOOKMARK [2][-]{subsection.3.5.3}{Trayectorias del Caso de Uso}{section.3.5}% 21
-\BOOKMARK [1][-]{section.3.6}{Descripci\363n casos de uso}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.6.1}{Consultar estatus de los tramites solicitados}{section.3.6}% 23
+\BOOKMARK [1][-]{section.3.2}{CUEE02 Solicitar tr\341mite}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{Descripci\363n completa}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{Atributos importantes}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.3}{Trayectorias del Caso de Uso}{section.3.2}% 18
+\BOOKMARK [1][-]{section.3.3}{Autoridad pertinente}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Departamento escolar}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{ Alumno/Egresado}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.6}{CUEE02 Solicitar tr\341mite}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.6.1}{Descripci\363n completa}{section.3.6}% 23
+\BOOKMARK [2][-]{subsection.3.6.2}{Atributos importantes}{section.3.6}% 24
+\BOOKMARK [2][-]{subsection.3.6.3}{Trayectorias del Caso de Uso}{section.3.6}% 25
+\BOOKMARK [1][-]{section.3.7}{Descripci\363n casos de uso}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.7.1}{Consultar estatus de los tramites solicitados}{section.3.7}% 27
