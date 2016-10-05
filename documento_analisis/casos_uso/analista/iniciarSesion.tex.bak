@@ -4,13 +4,13 @@
   \UCitem{Propósito}{Evitar el acceso al sistema de personas ajenas a la institución, así como el robo de identidad con el fin de solicitar trámites innecesarios.}
   \UCitem{Entradas}{
     \begin{itemize}
-      \item Boleta: cadena formada por 10 número, iniciada por el año de ingreso del alumno.
+      \item Boleta: cadena formada por 10 números, iniciada por el año de ingreso del alumno, seguida de 63 , código perteneciente a la institución y finalmente su número de estudiante asignado en formato de 4 dígitos.
       \item CURP: cadena de caracteres con el formato- primeras 2 letras del apellido paterno, primera letra del apellido materno y primera letra del nombre,``YY/MM/DD'', donde YY, MM, DD, son número enteros que representan el año,día y mes de nacimiento de la persona,``H o M'' donde H significa sexo hombre y M mujer y primeras dos letras del estado de nacimiento seguido de 3 letras y 2 números que conforman la clave homogénea que es irrepetible y es asignada aleatoriamente a cada persona.
     \end{itemize}
   }
   \UCitem{Origen}{
     \begin{itemize}
-      \item Desde teclado:  Todos los campos
+      \item Desde teclado:  Todas las entradas.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -26,7 +26,7 @@
   \UCitem{Precondiciones}{
    \begin{itemize}
       \item Que el estudiante no haya solicitado baja temporal o baja definitiva.
-      \item Que exista un registro del estudiante en la base de datos.
+      \item Que exista un registro del estudiante en el repositorio de datos.
     \end{itemize}
   }
   \UCitem{Postcondiciones}{
@@ -35,17 +35,18 @@
     \end{itemize}
   }
   \UCitem{Observaciones}{
-    Las citas agendadas se bloquean del calendario.
+    \begin{itemize}Ninguno
+  	\end{itemize}
   }
   \UCitem{Errores}{
   	\begin{itemize}Ninguno
   	\end{itemize}
 	}
   \UCitem{Tipo de ejecución}{Primaria}
-	\UCitem{Volatilidad}{Media}
+	\UCitem{Volatilidad}{Alta}
 	\UCitem{Madurez}{Media}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{En revisión}
+  \UCitem{Estado}{Esperando revisión}
 	\UCitem{Autor}{Marcela Castro Flores}
 	\UCitem{Revisor}{}
 \end{UseCase}
@@ -63,14 +64,13 @@
 -9
 
 \begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
-  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
   \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
-  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
-  \UCpaso Continúa transacción desde el paso 5.
+\begin{UCtrayectoriaA}{B}{Datos no encontrados en el repositorio de datos}
+  \UCpaso Notifica que los datos ingresados son incorrectos o no existen y muestra alerta {\bf AlertaDatosIncorrectos}.
+  \UCpaso Continúa transacción desde el paso 2.
 \end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.
