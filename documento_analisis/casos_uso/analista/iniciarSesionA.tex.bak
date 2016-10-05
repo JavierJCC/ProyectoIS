@@ -1,0 +1,80 @@
+\begin{UseCase}{CUG02}{Iniciar sesión empleado}{Método para autentificar un usuario ante el sistema.}
+	\UCitem{Versión}{0.1}
+  \UCitem{Actor}{Analista - Jefa de Gestión Escolar - Departamentos escolares - Autoridad pertinente}
+  \UCitem{Propósito}{
+	\begin{itemize}
+	  \item Evitar el acceso al sistema de personas ajenas a la institución.
+	\end{itemize}   
+ 
+  \UCitem{Entradas}{
+    \begin{itemize}
+      \item No. de empleado: cadena conformada por 8 números.
+      \item RFC: cadena compuesta por la primer letra de su apellido paterno así como la primer vocal del mismo, la tercer letra es la inicial de su apellido materno seguida de la primer letra de su nombre, ``YY/MM/DD'', donde YY, MM, DD, son número enteros que representan el año,día y mes de nacimiento de la persona, finalizando con la homoclave establecida por el sistema de RFC.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+      \item Desde teclado:  Todas las entradas.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+      \item Mensaje de notificación  {\bf AlertaConfirmarInicioSesión}``Inicio de sesión existoso".
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Mensaje de notificación : Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item Que el actor se encuentre laborando actualmente en la institución.
+      \item Que exista un registro del actor en el repositorio de datos.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+    \begin{itemize}
+      \item El actor queda autentificado ante el sistema.
+    \end{itemize}
+  }
+  \UCitem{Observaciones}{
+    \begin{itemize} \item Ninguno
+  	\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize} \item Ninguno
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Primaria}
+	\UCitem{Volatilidad}{Alta}
+	\UCitem{Madurez}{Media}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{Esperando revisión}
+	\UCitem{Autor}{Marcela Castro Flores}
+	\UCitem{Revisor}{}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita ingresar al sistema
+  \UCpaso Muestra la pantalla UIniciarSesión.
+  \UCpaso[\UCactor] Ingresa su número de no. de empleado y su RFC.
+  \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
+  \UCpaso Valida el formato de la entrada de los datos [TAA].
+  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos [TAB].
+  \UCpaso Muestra el mensaje AlertaConfirmaciónIniciarSesión. 
+  \UCpaso[\UCactor]Ingresa al sistema.
+\end{UCtrayectoria}
+-9
+
+\begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
+  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Ingresa el formato solicitado como en la muestra".
+  \UCpaso Continúa transacción desde el paso 5.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{Datos no encontrados en el repositorio de datos}
+  \UCpaso Notifica que los datos ingresados son incorrectos o no existen y muestra alerta {\bf AlertaDatosIncorrectos}.
+  \UCpaso Continúa transacción desde el paso 2.
+\end{UCtrayectoriaA}
+%-------------------------------------- TERMINA descripción del caso de uso.

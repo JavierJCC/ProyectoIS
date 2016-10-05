@@ -1,11 +1,14 @@
-\begin{UseCase}{CUG01}{Iniciar sesión}{Método para autentificar un usuario ante el sistema.}
+\begin{UseCase}{CUG01}{Iniciar sesión estudiante}{Método para autentificar un usuario ante el sistema.}
 	\UCitem{Versión}{0.1}
-  \UCitem{Actor}{Estudiante/Egresado - Analista - Jefa de Gestión Escolar - Departamentos escolares - Autoridad pertinente}
+  
+  \UCitem{Actor}{Estudiante/Egresado}
+  
   \UCitem{Propósito}{Evitar el acceso al sistema de personas ajenas a la institución, así como el robo de identidad con el fin de solicitar trámites innecesarios.}
+  
   \UCitem{Entradas}{
     \begin{itemize}
-      \item Boleta: cadena formada por 10 números, iniciada por el año de ingreso del alumno, seguida de 63 , código perteneciente a la institución y finalmente su número de estudiante asignado en formato de 4 dígitos.
-      \item CURP: cadena de caracteres con el formato- primeras 2 letras del apellido paterno, primera letra del apellido materno y primera letra del nombre,``YY/MM/DD'', donde YY, MM, DD, son número enteros que representan el año,día y mes de nacimiento de la persona,``H o M'' donde H significa sexo hombre y M mujer y primeras dos letras del estado de nacimiento seguido de 3 letras y 2 números que conforman la clave homogénea que es irrepetible y es asignada aleatoriamente a cada persona.
+      \item Boleta: cadena conformada por 10 números, iniciada por el año de ingreso del alumno, seguida de 63 , código perteneciente a la institución y finalmente su número de estudiante asignado en formato de 4 dígitos.
+      \item CURP: cadena de caracteres con el formato- primeras 2 letras del apellido paterno, primera letra del apellido materno y primera letra del nombre,``YY/MM/DD'', donde YY, MM, DD, son número enteros que representan el año,día y mes de nacimiento de la persona,``H o M'' donde H significa sexo hombre y M mujer y primeras dos letras del estado de nacimiento seguido de 3 letras y 2 números que conforman la homoclave asignada aleatoriamente por el sistema de CURP.
     \end{itemize}
   }
   \UCitem{Origen}{
@@ -35,11 +38,11 @@
     \end{itemize}
   }
   \UCitem{Observaciones}{
-    \begin{itemize}Ninguno
+    \begin{itemize} \item Ninguno
   	\end{itemize}
   }
   \UCitem{Errores}{
-  	\begin{itemize}Ninguno
+  	\begin{itemize} \item Ninguno
   	\end{itemize}
 	}
   \UCitem{Tipo de ejecución}{Primaria}
@@ -64,8 +67,8 @@
 -9
 
 \begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
-  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Ingresa el formato solicitado como en la muestra".
   \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 

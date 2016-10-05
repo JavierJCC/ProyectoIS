@@ -37,12 +37,21 @@
 
 \chapter{Descripcion de los Casos de uso}
 \section{Analista}
-\cfinput{casos_uso/Analista/iniciarSesion}
+\cfinput{casos_uso/alumnoEgresado/iniciarSesion}
+\cfinput{casos_uso/analista/iniciarSesionA}
 \section{Autoridad pertinente}
 \section{Departamento escolar}
 \section{ Alumno/Egresado}
 \cfinput{casos_uso/alumnoEgresado/solicitarTramite}
 \cfinput{casos_uso/alumnoEgresado/ConsultarEstadoTramitesSolicitados}
 
+
+\chapter{Interacción con el usuario (UI)}
+\section{Analista}
+\cfinput{casos_uso/analista/UI}
+\section{Autoridad pertinente}
+\section{Departamento escolar}
+\section{ Alumno/Egresado}
+\cfinput{casos_uso/alumnoEgresado/UI}
 
 \end{document}
