@@ -38,45 +38,39 @@
     Las citas agendadas se bloquean del calendario.
   }
   \UCitem{Errores}{
-  	El actor ingresa valores incorrectos {\bf MSG2b-} ``Este horario fue agendado, seleccione otro por favor'' y se continúa desde el paso 5 
+  	\begin{itemize}Ninguno
+  	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+  \UCitem{Tipo de ejecución}{Primaria}
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Media}
 	\UCitem{Prioridad}{Alta}
   \UCitem{Estado}{En revisión}
-	\UCitem{Autor}{Adrián Eduardo Galindo García}
-	\UCitem{Revisor}{Rubén Murga Dionicio}
+	\UCitem{Autor}{Marcela Castro Flores}
+	\UCitem{Revisor}{}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] solicita agendar cita haciendo clic en la opción del menú “Agendar cita”.
-  \UCpaso obtiene el total de citas disponibles para cada día.
-  \UCpaso muestra el calendario de la UI2A Agendar Citas con la cantidad de citas disponibles por día.
-  \UCpaso deshabilita los días del calendario que hayan llegado al máximo de citas disponibles.
-  \UCpaso[\UCactor] indica la fecha de la cita deseada haciendo click sobre el día.
-  \UCpaso oculta el calendario, y muestra un listado de horas disponibles para el día seleccionado. UI2B Agendar Citas
-  \UCpaso[\UCactor] indica la hora de la cita deseada haciendo click sobre ella.
-   \UCpaso oculta el listado de horas, y muestra un listado de horas con minutos, disponibles para la hora seleccionada. UI2C Agendar Citas
-   \UCpaso[\UCactor] indica la hora con minutos de la cita deseada haciendo click sobre ella.
-  \UCpaso habilita la selección del listado de los consultorios.
-  \UCpaso[\UCactor] indica el consultorio deseado seleccionandolo de la lista. [Trayectoria A]
-  \UCpaso obtiene el nombre del médico asignado al consultorio en la fecha y hora seleccionadas. 
-  \UCpaso muestra los datos seleccionados de la cita y habilita el botón \IUbutton{Agendar cita}.
-  \UCpaso[\UCactor] da click en el botón \IUbutton{Agendar cita}.
-  \UCpaso verifica que no se haya registrado una cita con los mismos datos [Trayectoria B].
-  \UCpaso notifica el resultado de la operación mostrando la información de la cita.
+  \UCpaso[\UCactor] Solicita ingresar al sistema
+  \UCpaso Muestra la pantalla UIniciarSesión.
+  \UCpaso[\UCactor] Ingresa su número de boleta y su CURP.
+  \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
+  \UCpaso Valida el formato de la entrada de los datos [TAA].
+  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos [TAB].
+  \UCpaso Muestra el mensaje AlertaConfirmaciónIniciarSesión. 
+  \UCpaso[\UCactor]Ingresa al sistema.
 \end{UCtrayectoria}
+-9
 
-\begin{UCtrayectoriaA}{A}{Horario no seleccionado}
-  \UCpaso notifica que no ha seleccionado un horario de cita, mostrando el mensaje {\bf MSG2c-} “Seleccione un horario”.
-  \UCpaso regresa a la vista UI2A Agendar Citas.
-  \UCpaso continúa transacción desde el paso 5.
+\begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
+  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Confirmación de la creación de la cita}
-  \UCpaso notifica que ya hay una cita registrada con los mismos datos, mostrando el mensaje {\bf MSG2b-} “Este horario fue agendado, seleccione otro por favor”.
-  \UCpaso regresa a la vista UI2A Agendar Citas.
-  \UCpaso continúa transacción desde el paso 5.
+\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectos}
+  \UCpaso Notifica que el formato de la boleta es incorrecta {\bf MFormatoIncorrecto1} ``Debe ingresar únicamente números".
+  \UCpaso Notifica que el formato de CURP es incorrecto {\bf MFormatoIncorrecto2} ``Debe ingresar el formato XXXX000000XXXXXX00".
+  \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.

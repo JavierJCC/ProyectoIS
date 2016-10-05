@@ -23,8 +23,8 @@
 \contentsline {section}{\numberline {3.6}CUG01 Solicitar tr\IeC {\'a}mite}{15}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Descripci\IeC {\'o}n completa}{15}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Atributos importantes}{15}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Trayectorias del Caso de Uso}{16}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Descripci\IeC {\'o}n casos de uso}{17}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Consultar estatus de los tramites solicitados}{17}{subsection.3.7.1}
-\contentsline {subsubsection}{Trayectoria del Caso de Uso}{18}{section*.2}
-\contentsline {subsubsection}{Trayectroria Alternativa A}{18}{section*.3}
+\contentsline {subsection}{\numberline {3.6.3}Trayectorias del Caso de Uso}{17}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Descripci\IeC {\'o}n casos de uso}{19}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Consultar estatus de los tramites solicitados}{19}{subsection.3.7.1}
+\contentsline {subsubsection}{Trayectoria del Caso de Uso}{19}{section*.2}
+\contentsline {subsubsection}{Trayectroria Alternativa A}{19}{section*.3}
