@@ -16,6 +16,7 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Descripci\363n completa}{section.3.2}% 16
 \BOOKMARK [2][-]{subsection.3.2.2}{Atributos importantes}{section.3.2}% 17
 \BOOKMARK [2][-]{subsection.3.2.3}{Trayectorias del Caso de Uso}{section.3.2}% 18
+<<<<<<< HEAD
 \BOOKMARK [1][-]{section.3.3}{Autoridad pertinente}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.4}{Departamento escolar}{chapter.3}% 20
 \BOOKMARK [1][-]{section.3.5}{ Alumno/Egresado}{chapter.3}% 21
@@ -39,3 +40,32 @@
 \BOOKMARK [1][-]{section.4.4}{ Alumno/Egresado}{chapter.4}% 39
 \BOOKMARK [2][-]{subsection.4.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.4.4}% 40
 \BOOKMARK [2][-]{subsection.4.4.2}{CUEE02 Solicitar tr\341mite}{section.4.4}% 41
+=======
+\BOOKMARK [1][-]{section.3.3}{CUG02 Iniciar sesi\363n empleado}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.1}{Descripci\363n completa}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.2}{Atributos importantes}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.3}{Trayectorias del Caso de Uso}{section.3.3}% 22
+\BOOKMARK [1][-]{section.3.4}{CUA03 Gestionar solicitudes}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.4.1}{Descripci\363n completa}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.2}{Atributos importantes}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.3}{Trayectorias del Caso de Uso}{section.3.4}% 26
+\BOOKMARK [1][-]{section.3.5}{Autoridad pertinente}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.6}{Departamento escolar}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.7}{ Alumno/Egresado}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.8}{CUEE02 Solicitar tr\341mite}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.8.1}{Descripci\363n completa}{section.3.8}% 31
+\BOOKMARK [2][-]{subsection.3.8.2}{Atributos importantes}{section.3.8}% 32
+\BOOKMARK [2][-]{subsection.3.8.3}{Trayectorias del Caso de Uso}{section.3.8}% 33
+\BOOKMARK [1][-]{section.3.9}{CUEE03 Consultar estatus de los tramites solicitados}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.9.1}{Descripci\363n completa}{section.3.9}% 35
+\BOOKMARK [2][-]{subsection.3.9.2}{Atributos importantes}{section.3.9}% 36
+\BOOKMARK [2][-]{subsection.3.9.3}{Trayectorias del Caso de Uso}{section.3.9}% 37
+\BOOKMARK [0][-]{chapter.4}{Interacci\363n con el usuario \(UI\)}{}% 38
+\BOOKMARK [1][-]{section.4.1}{Analista}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.1.1}{CUG02 Iniciar Sesi\363n Empleado}{section.4.1}% 40
+\BOOKMARK [1][-]{section.4.2}{Autoridad pertinente}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.3}{Departamento escolar}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.4}{ Alumno/Egresado}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.4.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.2}{CUEE02 Solicitar tr\341mite}{section.4.4}% 45
+>>>>>>> b91960c7eacb53a66311fbe874b044cbfa2beaf5
