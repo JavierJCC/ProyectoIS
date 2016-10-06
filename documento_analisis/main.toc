@@ -1,92 +1,47 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n del proyecto}{3}{section.1.1}
-\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis del problema}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Requerimientos Funcionales}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Requerimientos globales}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Jefa de Gesti\IeC {\'o}n Escolar}{6}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Autoridad Pertinente}{6}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Analista}{6}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Alumno / Egresado}{6}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{6}{subsection.2.1.6}
-\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Digramas de casos de uso}{9}{section.2.3}
-\contentsline {chapter}{\numberline {3}Descripcion de los Casos de uso}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Analista}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}CUG02 Iniciar sesi\IeC {\'o}n empleado}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Descripci\IeC {\'o}n completa}{13}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Atributos importantes}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Trayectorias del Caso de Uso}{14}{subsection.3.2.3}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {3.3}Autoridad pertinente}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Departamento escolar}{15}{section.3.4}
-\contentsline {section}{\numberline {3.5} Alumno/Egresado}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}CUG01 Iniciar sesi\IeC {\'o}n estudiante}{16}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Descripci\IeC {\'o}n completa}{16}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Atributos importantes}{16}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Trayectorias del Caso de Uso}{17}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}CUEE02 Solicitar tr\IeC {\'a}mite}{19}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Descripci\IeC {\'o}n completa}{19}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Atributos importantes}{19}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Trayectorias del Caso de Uso}{20}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}CUEE03 Consultar estatus de los tramites solicitados}{21}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Descripci\IeC {\'o}n completa}{21}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Atributos importantes}{21}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Trayectorias del Caso de Uso}{21}{subsection.3.8.3}
-\contentsline {chapter}{\numberline {4}Interacci\IeC {\'o}n con el usuario (UI)}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analista}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{23}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Autoridad pertinente}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Departamento escolar}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4} Alumno/Egresado}{24}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{24}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{24}{subsection.4.4.2}
-=======
-\contentsline {section}{\numberline {3.3}CUG02 Iniciar sesi\IeC {\'o}n empleado}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n completa}{16}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Atributos importantes}{16}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Trayectorias del Caso de Uso}{17}{subsection.3.3.3}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {3.4}Autoridad pertinente}{18}{section.3.4}
-\contentsline {section}{\numberline {3.5}Departamento escolar}{18}{section.3.5}
-\contentsline {section}{\numberline {3.6} Alumno/Egresado}{18}{section.3.6}
-\contentsline {section}{\numberline {3.7}CUEE02 Solicitar tr\IeC {\'a}mite}{19}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Descripci\IeC {\'o}n completa}{19}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Atributos importantes}{19}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Trayectorias del Caso de Uso}{20}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}CUEE03 Consultar estatus de los tramites solicitados}{22}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Descripci\IeC {\'o}n completa}{22}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Atributos importantes}{22}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Trayectorias del Caso de Uso}{22}{subsection.3.8.3}
-=======
-\contentsline {section}{\numberline {3.4}CUA03 Gestionar solicitudes}{18}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Descripci\IeC {\'o}n completa}{18}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Atributos importantes}{18}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Trayectorias del Caso de Uso}{19}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Autoridad pertinente}{19}{section.3.5}
-\contentsline {section}{\numberline {3.6}Departamento escolar}{19}{section.3.6}
-\contentsline {section}{\numberline {3.7} Alumno/Egresado}{19}{section.3.7}
-\contentsline {section}{\numberline {3.8}CUEE02 Solicitar tr\IeC {\'a}mite}{20}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Descripci\IeC {\'o}n completa}{20}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Atributos importantes}{20}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Trayectorias del Caso de Uso}{21}{subsection.3.8.3}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n del proyecto}{2}{section.1.1}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis del problema}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Requerimientos Funcionales}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Requerimientos globales}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Jefa de Gesti\IeC {\'o}n Escolar}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Autoridad Pertinente}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Analista}{5}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Alumno / Egresado}{5}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{5}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Digramas de casos de uso}{8}{section.2.3}
+\contentsline {chapter}{\numberline {3}Descripcion de los Casos de uso}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Analista}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}CUG02 Iniciar sesi\IeC {\'o}n empleado}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Descripci\IeC {\'o}n completa}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Atributos importantes}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Trayectorias del Caso de Uso}{13}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}CUA03 Gestionar solicitudes}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n completa}{14}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Atributos importantes}{14}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Trayectorias del Caso de Uso}{15}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Autoridad pertinente}{15}{section.3.4}
+\contentsline {section}{\numberline {3.5}Departamento escolar}{15}{section.3.5}
+\contentsline {section}{\numberline {3.6} Alumno/Egresado}{15}{section.3.6}
+\contentsline {section}{\numberline {3.7}CUG01 Iniciar sesi\IeC {\'o}n estudiante}{16}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Descripci\IeC {\'o}n completa}{16}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Atributos importantes}{16}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Trayectorias del Caso de Uso}{17}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}CUEE02 Solicitar tr\IeC {\'a}mite}{19}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Descripci\IeC {\'o}n completa}{19}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Atributos importantes}{19}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Trayectorias del Caso de Uso}{20}{subsection.3.8.3}
 \contentsline {section}{\numberline {3.9}CUEE03 Consultar estatus de los tramites solicitados}{22}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Descripci\IeC {\'o}n completa}{22}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Atributos importantes}{22}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}Trayectorias del Caso de Uso}{22}{subsection.3.9.3}
->>>>>>> b91960c7eacb53a66311fbe874b044cbfa2beaf5
 \contentsline {chapter}{\numberline {4}Interacci\IeC {\'o}n con el usuario (UI)}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}Analista}{24}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{24}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Autoridad pertinente}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Departamento escolar}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4} Alumno/Egresado}{25}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{25}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{25}{subsection.4.4.2}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {4.4.3}CUEE03 Consultar estatus de los tramites solicitados}{25}{subsection.4.4.3}
-=======
->>>>>>> fec39846fb36ceee98049f2881b30e0eb4fe5894
->>>>>>> b91960c7eacb53a66311fbe874b044cbfa2beaf5
+\contentsline {section}{\numberline {4.2}Autoridad pertinente}{27}{section.4.2}
+\contentsline {section}{\numberline {4.3}Departamento escolar}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4} Alumno/Egresado}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{28}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}CUEE03 Consultar estatus de los tramites solicitados}{29}{subsection.4.4.3}
