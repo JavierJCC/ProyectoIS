@@ -1,0 +1,77 @@
+\begin{UseCase}{CUA03}{Gestionar solicitudes}{Un analista requiere visualizar las solicitudes de trámites que se han generado, para poder aceptar o cancelarla dicha solicitud.}
+	\UCitem{Version}{0.1}
+  \UCitem{Actor}{Analista}
+  \UCitem{Proposito}{El analista podrá visualizar las solicitudes de los estudiantes, egresados o área de la escuela que estén pendientes o que aún no estén empezadas.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Identificador del analista.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item ---
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item ---
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item Un estudiante, egresado o área debió solicitar algún documento.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+    \begin{itemize}
+      \item ---
+    \end{itemize}
+  }
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item El analista visualizará las solicitudes que no han sido iniciadas
+			\item El soliciante pude ser:: 
+			\begin{itemize}
+				\item Mismo
+				\item Nombre del área de la escuela
+			\end{itemize}
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item Ninguno.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+	\UCitem{Volatilidad}{Media}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{En proceso}
+	\UCitem{Autor}{Juan Antonio Guzmán Chávez}
+	\UCitem{Revisor}{-----}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] visualiza las solicitudes haciendo clic en la opción del menú “Gestionar trámite”
+  \UCpaso El sistema realiza la consulta a la base de datos[TA]
+  \UCpaso El sistema muestra la pantalla  {\bf CUA03Gestionarsolicitudes}
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Error al cargar datos} 
+\UCpaso Muestra el mensaje {\bf Error de carga de datos}
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos} {TB} 
+  \UCpaso el sistema recarga los datos.
+  \UCpaso continua transacción desde el paso 3.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{No Recarga los datos} 
+  \UCpaso Da click en el botón \IUbutton{Cancelar}
+  \UCpaso El sistema muestra interfaz de inicio analista
+\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.
