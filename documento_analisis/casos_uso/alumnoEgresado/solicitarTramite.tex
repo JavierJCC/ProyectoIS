@@ -67,16 +67,16 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] solicita un trámite haciendo click en la opción del menú `` Solicitar trámite”.
+  \UCpaso[\UCactor] Solicita un trámite haciendo click en la opción del menú `` Solicitar trámite”.
   \UCpaso El sistema muestra la pantalla  {\bf UIEESolicitarTramite}
-  \UCpaso[\UCactor] indica el tipo de documento deseada haciendo click sobre una opción del select tipo de documento a pedir  que se mencionó en las entradas previamente.
+  \UCpaso[\UCactor] Indica el tipo de documento deseada haciendo click sobre una opción del select tipo de documento a pedir  que se mencionó en las entradas previamente.
   \UCpaso[\UCactor] Indica el la razón de la petición haciendo click sobre una opción del select de razón de petición que se mencionó en las entradas previamente.
-  \UCpaso[\UCactor] El actor da click en el botón\IUbutton{Agregar a lista de peticiones} 
+  \UCpaso[\UCactor] Da click en el botón\IUbutton{Agregar a lista de peticiones} 
   \UCpaso  Válida que el número de peticiones en el mes sea menor a 5 peticiones.[TAA] 
   \UCpaso Agrega el tipo de documento junto con su razón de pedido a la lista de peticiones [TAB]
-  \UCpaso[\UCactor] El actor da click en el botón\IUbutton{Enviar lista de peticiones} 
+  \UCpaso[\UCactor]  Da click en el botón\IUbutton{Enviar lista de peticiones} 
   \UCpaso Muestra la alerta {\bf AlertaConfirmarCorreo} 
-  \UCpaso[\UCactor] El actor verifica que su correo sea correcto. [TAC]
+  \UCpaso[\UCactor] Verifica que su correo sea correcto. [TAC]
   \UCpaso Almacena la petición en el repositorio de datos.
   \UCpaso Muestra la alerta  {\bf AlertasolicitudEnviada}
 \end{UCtrayectoria}
@@ -84,7 +84,7 @@
 \begin{UCtrayectoriaA}{A}{Peticiones excedidas} 
 \UCpaso Muestra el mensaje {\bf AlertaLimitePeticion}
   \UCpaso Inhabilita el botón  	\IUbutton{Solicitar trámite} 
-  \UCpaso continúa transacción desde el paso 8.
+  \UCpaso Continúa transacción desde el paso 8.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{Agregar documento a lista} 
