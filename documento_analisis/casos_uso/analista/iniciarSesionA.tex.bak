@@ -5,7 +5,7 @@
 	\begin{itemize}
 	  \item Evitar el acceso al sistema de personas ajenas a la institución.
 	\end{itemize}   
- 
+ }
   \UCitem{Entradas}{
     \begin{itemize}
       \item No. de empleado: cadena conformada por 8 números.
@@ -39,11 +39,13 @@
     \end{itemize}
   }
   \UCitem{Observaciones}{
-    \begin{itemize} \item Ninguno
+    \begin{itemize} 
+    	\item Ninguno
   	\end{itemize}
   }
   \UCitem{Errores}{
-  	\begin{itemize} \item Ninguno
+  	\begin{itemize} 
+  		\item Ninguno
   	\end{itemize}
 	}
   \UCitem{Tipo de ejecución}{Primaria}
@@ -65,7 +67,7 @@
   \UCpaso Muestra el mensaje AlertaConfirmaciónIniciarSesión. 
   \UCpaso[\UCactor]Ingresa al sistema.
 \end{UCtrayectoria}
--9
+
 
 \begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
   \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
