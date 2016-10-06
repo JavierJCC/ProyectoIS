@@ -1,4 +1,4 @@
-\begin{UseCase}{CUEE03}{Consultar estatus de los tramites solicitados}{El alumno o egresado podrá consultar el estado en el que se encuantra cada documento que haya solicitado.}
+\begin{UseCase}{CUEE03}{Consultar estatus de los trámites solicitados}{El alumno o egresado podrá consultar el estado en el que se encuentra cada documento que haya solicitado.}
 	\UCitem{Versión}{1.0}
 	\UCitem{Autor}{Estudiante/Egresado.}	
 	\UCitem{Propósito}{El estudiante o egresado podrá visualizar el estado de los tramites solicitados.}
@@ -17,7 +17,7 @@
 	
 	\UCitem{Precondiciones}{
 		\begin{itemize}
-			\item El alumno o egresado debio ser identificado por el sistema.
+			\item El alumno o egresado debió ser identificado por el sistema.
 			\item Debe existir al menos una solicitud de un documento.
 		\end{itemize}
 	
@@ -34,14 +34,12 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-	\UCpaso [\UCactor] Oprime el botón Estatus de los documentos en la pantalla Inicio.
-	\UCpaso Verifica si existen documentos solicitados.
-	\UCpaso Optiene los datos de los documentos.
+	\UCpaso [\UCactor] Da click el botón ''Estatus de los documentos'' ubicado en la pantalla Inicio.
+	\UCpaso Verifica si existen documentos solicitados.[TAA]
+	\UCpaso Obtiene los datos de los documentos.
 	\UCpaso Muestra en pantalla el estatus de los documentos.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{No existen documentos}
-	\UCpaso [\UCactor] Oprime el botón Estatus de los documentos en la pantalla Inicio.
-	\UCpaso Verifica si existen documentos solicitados.
 	\UCpaso Muestra el mensaje "No hay documentos solicitados'' en la pantalla de Estatus de los documentos.
 \end{UCtrayectoriaA}
