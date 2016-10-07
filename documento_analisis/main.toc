@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {3.9.1}Descripci\IeC {\'o}n completa}{22}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Atributos importantes}{22}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}Trayectorias del Caso de Uso}{23}{subsection.3.9.3}
-\contentsline {section}{\numberline {3.10}CUEE03 Consultar estatus de los tramites solicitados}{25}{section.3.10}
+\contentsline {section}{\numberline {3.10}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{25}{section.3.10}
 \contentsline {subsection}{\numberline {3.10.1}Descripci\IeC {\'o}n completa}{25}{subsection.3.10.1}
 \contentsline {subsection}{\numberline {3.10.2}Atributos importantes}{25}{subsection.3.10.2}
 \contentsline {subsection}{\numberline {3.10.3}Trayectorias del Caso de Uso}{25}{subsection.3.10.3}
@@ -47,5 +47,5 @@
 \contentsline {section}{\numberline {4.3}Departamento escolar}{30}{section.4.3}
 \contentsline {section}{\numberline {4.4} Alumno/Egresado}{30}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{30}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{31}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}CUEE03 Consultar estatus de los tramites solicitados}{32}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{30}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}CUEE03 Consultar estatus de los tramites solicitados}{30}{subsection.4.4.3}
