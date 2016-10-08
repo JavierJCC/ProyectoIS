@@ -1,4 +1,4 @@
-\begin{UseCase}{CUG01}{Iniciar sesión estudiante}{Método para autentificar un usuario ante el sistema.}
+\begin{UseCase}{CUG01}{Iniciar sesión  Estudiante/Egresado.}{Método para autentificar un usuario ante el sistema.}
 	\UCitem{Versión}{1.0}
   
   \UCitem{Actor}{Estudiante/Egresado}
@@ -51,7 +51,7 @@
 	\UCitem{Prioridad}{Alta}
   \UCitem{Estado}{Esperando revisión}
 	\UCitem{Autor}{Marcela Castro Flores}
-	\UCitem{Revisor}{}
+	\UCitem{Revisor}{Alberto Maldonado Romo}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
@@ -59,15 +59,15 @@
   \UCpaso Muestra la pantalla UIniciarSesión.
   \UCpaso[\UCactor] Ingresa su número de boleta y su CURP.
   \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
-  \UCpaso Valida el formato de la entrada de los datos [TAA].
-  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos [TAB].
-  \UCpaso Muestra el mensaje AlertaConfirmaciónIniciarSesión. 
+  \UCpaso Valida el formato de la entrada de los datos. [TAA]
+  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos. [TAB]
+  \UCpaso Muestra el mensaje {\bf AlertaConfirmaciónIniciarSesión}.
   \UCpaso[\UCactor]Ingresa al sistema.
 \end{UCtrayectoria}
 -9
 
 \begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
+  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje {\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
   \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje{\bf MFormatoIncorrecto2} ``Ingresa el formato solicitado como en la muestra".
   \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}

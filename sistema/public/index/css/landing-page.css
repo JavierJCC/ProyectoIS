@@ -28,6 +28,8 @@ h6 {
 .lead {
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .intro-header {
@@ -116,8 +118,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/banner-bg.png) no-repeat center center;
 }
 
 .banner h2 {
@@ -163,6 +164,8 @@ h6 {
 footer {
     padding: 50px 0;
     background-color: #f8f8f8;
+    background: url(../img/banner-bg.png) no-repeat center center;
+
 }
 
 p.copyright {

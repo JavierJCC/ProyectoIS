@@ -6,8 +6,7 @@ class Home extends Controller
   {
     $modelo = $this->model('Probando');
     $modelo->parametro = 'hey modelo';
-    $this->view('index',['parametro'=> $modelo->parametro]);
-
+    $this->view('index',['parametro' => $modelo->parametro]);
   }
   public function test()
   {

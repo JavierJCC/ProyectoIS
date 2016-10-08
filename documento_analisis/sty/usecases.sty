@@ -2,6 +2,7 @@
 %\usepackage{wasysym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{listings}
+\setcounter{secnumdepth}{4}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -14,6 +15,8 @@
 \definecolor{RFReferenceColor}{rgb}{0, 0, 0.7}
 \definecolor{FRMColor}{rgb}{0.3, 0.3, 1}
 \definecolor{ComentarioColor}{rgb}{0.7, 0.7, 0.7}
+\definecolor{TablaColor}{rgb}{.128,.159,.255}
+
 
 \newcommand{\comentario}[1]{\tiny\textcolor{ComentarioColor}{#1}}
 
@@ -125,20 +128,20 @@
 \newenvironment{UseCase}[4][default]
 {\newpage%
 \noindent\hypertarget{#2}{\includegraphics[width=1.1\textwidth]{images/uc/#1}}%
-\section{#2 #3}%
-\subsection{Descripción completa}%
+\subsection{#2 #3}%
+\subsubsection{Descripción completa}%
 #4%
-\subsection{Atributos importantes}%
+\paragraph{Atributos importantes}%
 \par\begin{longtable}{| p{.17\textwidth} | p{.75\textwidth} |}%
 	\arrayrulecolor{white}
-	\rowcolor{black}
+	\rowcolor{TablaColor}
 	\UCitem{\color{white}Caso de Uso}{\color{white}#2 #3}%
 	\endhead%
-	\arrayrulecolor{black}%
+	\arrayrulecolor{TablaColor}%
 %	\UCitem{Nombre}{#3}%
 }
 {\end{longtable}%
-\subsection{Trayectorias del Caso de Uso}}
+\paragraph{Trayectorias del Caso de Uso}}
 
 
 % Ejemplo: \item Message
@@ -264,7 +267,7 @@
 
  
  
-\newcommand{\IUbutton}[1]{\framebox[1.1\width][c]{#1}}
+\newcommand{\IUbutton}[1]{\framebox[1.2\width][c]{#1}}
 
 \newenvironment{Citemize}%
 {%

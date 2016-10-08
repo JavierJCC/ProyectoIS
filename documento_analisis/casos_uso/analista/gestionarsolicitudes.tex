@@ -1,7 +1,7 @@
 \begin{UseCase}{CUA03}{Gestionar solicitudes}{Un analista requiere visualizar las solicitudes de trámites que se han generado, para poder aceptar o cancelarla dicha solicitud.}
-	\UCitem{Version}{0.1}
+	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Analista}
-  \UCitem{Propósito}{El analista podrá visualizar las solicitudes de los estudiantes, egresados o área de la escuela que estén pendientes o que aún no estén empezadas.}
+  \UCitem{Propósito}{El analista podrá visualizar las solicitudes de los estudiantes, egresados o departamentos escolares que estén pendientes o que aún no estén autorizadas.}
   \UCitem{Entradas}{
     \begin{itemize}
     \item El analista debió haber sido identificado por el sistema.
@@ -24,17 +24,18 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item Un estudiante, egresado o área debió solicitar algún documento.
+      \item Un estudiante, egresado o departamento escolar debió haber solicitado algún trámite.
     \end{itemize}
   }
   
   \UCitem{Observaciones}{
 		\begin{itemize}
 			\item El analista visualizará las solicitudes que no han sido iniciadas
-			\item El soliciante pude ser: 
+			\item El Solicitante puede ser: 
 			\begin{itemize}
-				\item Mismo
-				\item Nombre del área de la escuela
+				\item Estudiante
+				\item Egresado
+				\item Departamentos escolares
 			\end{itemize}
 		\end{itemize}
   }
@@ -43,31 +44,31 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG02 Iniciar Sesión Empleado}
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Alta}
   \UCitem{Estado}{En proceso}
 	\UCitem{Autor}{Juan Antonio Guzmán Chávez}
-	\UCitem{Revisor}{-----}
+	\UCitem{Revisor}{Rubén Murga Dionicio}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] visualiza las solicitudes haciendo clic en la opción del menú “Gestionar trámite”
-  \UCpaso El sistema realiza la consulta a la base de datos[TA]
-  \UCpaso El sistema muestra la pantalla  {\bf CUA03Gestionarsolicitudes}
+  \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú “Gestionar trámite”.
+  \UCpaso Realiza la consulta a la base de datos [TAA].
+  \UCpaso Muestra la pantalla  {\bf CUA03Gestionarsolicitudes}.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Error al cargar datos} 
-\UCpaso Muestra el mensaje {\bf Error de carga de datos}
-  \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos} {TB} 
-  \UCpaso el sistema recarga los datos.
-  \UCpaso continua transacción desde el paso 3.
+\UCpaso Muestra la alerta {\bf AlertaErrorDeConexión}.
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos} [TAB]. 
+  \UCpaso Recarga los datos.
+  \UCpaso Continua transacción desde el paso 3.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{No Recarga los datos} 
-  \UCpaso Da click en el botón \IUbutton{Cancelar}
-  \UCpaso El sistema muestra interfaz de inicio analista
+  \UCpaso Da click en el botón \IUbutton{Cancelar}.
+  \UCpaso Muestra interfaz de inicio analista.
 \end{UCtrayectoriaA}
 
 %-------------------------------------- TERMINA descripción del caso de uso.
