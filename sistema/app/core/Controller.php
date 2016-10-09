@@ -11,9 +11,13 @@ class Controller
       echo 'MODELO NO ENCONTRADO, VERIFICA EL NOMBRE.';
     }
   }
-  protected function view($view, $data = []){ //si no queremos pasar datos inicializamos un array vacio
+  protected function view($view, $data = array() , $url_path='')
+  { //si no queremos pasar datos inicializamos un array vacio
+    $url_path = "/Proyecto_IS/ProyectoSemestreIS/sistema/public/";
     if(file_exists('../app/views/'. $view . '.php')){// existe la vista?
       require_once '../app/views/'. $view . '.php';
-    } 
+    } else{
+      echo 'Vista no encontrada o inexistente.';
+    }    
   }
 }

@@ -11,22 +11,22 @@
     <title>Startmin - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../interno/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="css/metisMenu.min.css" rel="stylesheet">
+    <link href="../interno/css/metisMenu.min.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="css/timeline.css" rel="stylesheet">
+    <link href="../interno/css/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/startmin.css" rel="stylesheet">
+    <link href="../interno/css/startmin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="css/morris.css" rel="stylesheet">
+    <link href="../interno/css/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../interno/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -143,7 +143,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Page Title</h1>
+                    <h1 class="page-header"> <?php emptyblock('title')?></h1>
                 </div>
             </div>
 

@@ -12,13 +12,13 @@
     <title>Bienvenido</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="index/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= $url_path ?>index/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="index/css/landing-page.css" rel="stylesheet">
+    <link href="<?= $url_path ?>index/css/landing-page.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href="index/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= $url_path ?>index/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">    <?php echo $data['parametro'] ?></a>
+                        <a href="#about"> Acerca de</a>
                     </li>
                     <li>
                         <a href="#services">Servicios</a>
@@ -178,9 +178,9 @@
         </div>
     </footer>
     <!-- jQuery -->
-    <script src="index/js/jquery.js"></script>
+    <script src="<?= $url_path ?>index/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="index/js/bootstrap.min.js"></script>
+    <script src="<?= $url_path ?>index/js/bootstrap.min.js"></script>
 </body>
 
 </html>
