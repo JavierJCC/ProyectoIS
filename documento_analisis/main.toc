@@ -7,8 +7,8 @@
 \contentsline {subsection}{\numberline {2.1.2}Jefa de Gesti\IeC {\'o}n Escolar}{6}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Autoridad Pertinente}{6}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Analista}{6}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Alumno / Egresado}{6}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{6}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.5}Estudiante / Egresado}{6}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{7}{subsection.2.1.6}
 \contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Digramas de casos de uso}{9}{section.2.3}
 \contentsline {chapter}{\numberline {3}Descripcion de los Casos de uso}{12}{chapter.3}
@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {4.1.3}CUA03 Gestionar solicitudes}{29}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Autoridad pertinente}{31}{section.4.2}
 \contentsline {section}{\numberline {4.3}Departamento escolar}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4} Alumno/Egresado}{31}{section.4.4}
+\contentsline {section}{\numberline {4.4} Estudiante/Egresado}{31}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{31}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{32}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{31}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}CUEE03 Consultar estatus de los tramites solicitados}{33}{subsection.4.4.3}

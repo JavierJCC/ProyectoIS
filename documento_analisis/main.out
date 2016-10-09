@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.1.2}{Jefa de Gesti\363n Escolar}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.3}{Autoridad Pertinente}{section.2.1}% 7
 \BOOKMARK [2][-]{subsection.2.1.4}{Analista}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.5}{Alumno / Egresado}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.5}{Estudiante / Egresado}{section.2.1}% 9
 \BOOKMARK [2][-]{subsection.2.1.6}{Departamentos escolares}{section.2.1}% 10
 \BOOKMARK [1][-]{section.2.2}{Requerimientos no funcionales}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.3}{Digramas de casos de uso}{chapter.2}% 12
@@ -28,7 +28,7 @@
 \BOOKMARK [2][-]{subsection.4.1.3}{CUA03 Gestionar solicitudes}{section.4.1}% 28
 \BOOKMARK [1][-]{section.4.2}{Autoridad pertinente}{chapter.4}% 29
 \BOOKMARK [1][-]{section.4.3}{Departamento escolar}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.4}{ Alumno/Egresado}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{ Estudiante/Egresado}{chapter.4}% 31
 \BOOKMARK [2][-]{subsection.4.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.4.4}% 32
 \BOOKMARK [2][-]{subsection.4.4.2}{CUEE02 Solicitar tr\341mite}{section.4.4}% 33
 \BOOKMARK [2][-]{subsection.4.4.3}{CUEE03 Consultar estatus de los tramites solicitados}{section.4.4}% 34
