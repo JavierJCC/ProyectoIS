@@ -21,6 +21,8 @@
 %
 %
 % \end{problemas}
+\newcommand{\problema}[4]{ {#1} & {#2} & {#3} & {#4} \\ \hline}
+
 \newenvironment{problemas}[1][tblProbColor]
 {%
 	\arrayrulecolor{#1}%
@@ -44,12 +46,10 @@
 %
 % \problema{1}{Error Humano}{La captura en hojas de Excel provoca que errores de dedo afecten los resultados.}{M}
 %\hypertarget{#1}{
-\newcommand{\problema}[4]{ {#1} & {#2} & {#3} & {#4} \\ \hline}
 
+\newcommand{\riesgo}[3]{ {#1} & {#2} & {#3} \\ \hline}
 
-\newcommand{\mensaje}[3]{ {#1} & {#2} & {#3} \\ \hline}
-
-\newenvironment{mensajes}[1][tblProbColor]
+\newenvironment{riesgos}[1][tblProbColor]
 {%
 	\arrayrulecolor{#1}%
 	%\begin{table}[h]%
@@ -57,14 +57,13 @@
 	\par\begin{longtable}{| p{.2\textwidth} | p{.2\textwidth} | p{.6\textwidth} |}%
 		\arrayrulecolor{white}%
 		\rowcolor{#1}%
-		\mensaje{\color{white}\bf Id}{\color{white}\bf Nombre}{\color{white}\bf Descripción}\endhead%
+		\riesgo{\color{white}\bf Riesgo}{\color{white}\bf Probabilidad}{\color{white}\bf Efecto}\endhead%
 		\arrayrulecolor{#1}%
 }{%
 	\end{longtable} %
 	%\end{table}%
 	\arrayrulecolor{black} %
 }
-
 
 \newcommand{\FRitem}[3]{{#1} & {#2} & {#3}\\ \hline}
 
