@@ -76,8 +76,34 @@
                         <!-- <h1>ESCOM</h1>-->
                         <h1>Sistema de Gestión Escolar</h1>
                         <h3> Solicita tus trámites en línea</h3>
+                        <br>
+                        <h4>Iniciar Sesión</h4>
                         <hr class="intro-divider">
+                        
+                        <form class="form-horizontal">
+                            <div class="col-md-offset-4 .col-md-offset-2">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-2 lead">Boleta</label>
+                                    <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="2015630195">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 lead">Contraseña</label>
+                                    <div class="col-sm-4">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-default">Iniciar Sesión</button>
+                                </div>
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
+
                 </div>
             </div>
 
@@ -141,11 +167,10 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">¿Cómo pido mi documento?</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <h2 class="section-heading">¿Cómo solicito mi documento?</h2>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                <div class="row">
+                   <img class="img-responsive" src="index/img/proceso.png" alt="" style="width:100%; height:100%;">
                 </div>
             </div>
 
@@ -160,7 +185,7 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Servicio Social</a>
+                            <a href="#contact">Servicio Social</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
