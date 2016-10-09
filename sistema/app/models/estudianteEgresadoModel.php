@@ -7,8 +7,8 @@ class estudianteEgresadoModel
   private $password;
   private $db;
   function __construct(){
-    $username="root";
-    $password="postcardfrom1952";
+    $username="ingenieria2016";
+    $password="ingenieria";
     $db="ingenieria";
     $connection = mysql_connect("127.0.0.1",$username,$password);
     if($connection){
