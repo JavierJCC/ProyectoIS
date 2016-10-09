@@ -5,19 +5,34 @@ controller('solicitarTramiteController',  function($scope){
     motivo:0
   };
   $scope.contador = 0;
-  $scope.documentos = [];
+  $scope.documentos =[]; 
+  $scope.documentos_aux = [];
   $scope.agregar_peticion = function(){
     if($scope.contador < 5){
       if($scope.data.documento == 1)
-        $scope.documentos.push({'nombre': 'Boleta','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo});
+        $scope.documentos_aux.push({'nombre': 'Boleta','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo});
       else
-        $scope.documentos.push({'nombre': 'Constancia','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo});
+        $scope.documentos_aux.push({'nombre': 'Constancia','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo});
       $scope.contador++;
+      $scope.documentos = $scope.documentos_aux;
     }
     else{
       alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>
       <div style='position:absolute; top:50%; left:30%; color:gray;'> El número máximo de peticiones es 5`);
     }
+  };
+  $scope.eliminarPeticion = function(id){
+    $scope.documentos_aux.splice(id,1);
+    $scope.documentos = $scope.documentos_aux;
+    $scope.contador--;
+    /*alertify.confirm('Confirm Title', 'Se ha eliminado', function(){ 
+      alertify.success('Ok'); 
+      $scope.documentos_aux.splice(id,1);
+      $scope.documentos = $scope.documentos_aux;
+      $scope.contador--; 
+    },function(){ 
+      alertify.error('No se ha eliminador')});*/
+
   };
   
 });

@@ -40,9 +40,9 @@
     <div class = "col-md-6">
       <center>
         <h4> Lista de documentos </h4>
-        <div class="panel panel-primary col-md-6" ng-repeat="documento in documentos">
+        <div class="panel panel-primary col-md-6" ng-repeat="documento in documentos track by $index">
           <div class="panel-heading"> [[documento.nombre]]</div>
-          <div class="panel-footer"> <img src = "<?= $url_path ?>interno/images/cross.png"> </div>
+          <div class="panel-footer"> <a href="#" ng-click="eliminarPeticion([[$index]])"> <img src = "<?= $url_path ?>interno/images/cross.png" alt="Eliminar de lista de peticiones"> </a> </div>
         <div>
       </center>
     </div>
