@@ -114,18 +114,18 @@ CREATE TABLE IF NOT EXISTS `tramite` (
   CONSTRAINT `fk_Tramite_Documento1`
     FOREIGN KEY (`Documento_idDocumento`)
     REFERENCES `documento` (`idDocumento`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_Tramite_Solicitante`
     FOREIGN KEY (`solicitante`)
     REFERENCES `Solicitante` (`idSolicitante`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_Tramite_Motivo1`
     FOREIGN KEY (`Motivo_idMotivo`)
     REFERENCES `motivo` (`idMotivo`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_Tramite_Analista`
     FOREIGN KEY (`idAnalista`)
     REFERENCES `Analista` (`idAnalista`)
