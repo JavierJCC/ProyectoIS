@@ -6,8 +6,5 @@ class Home extends Controller
   {
     $this->view('index');
   }
-  public function test()
-  {
-    echo 'test';
-  }
+  
 }

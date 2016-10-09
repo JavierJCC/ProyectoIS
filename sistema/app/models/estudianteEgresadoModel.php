@@ -21,12 +21,12 @@ class estudianteEgresadoModel
   function select_all_documentos(){
     $query = 'SELECT * FROM DOCUMENTO';
     $documentos = mysql_query($query);
-    return $documentos; 
+    return $documentos ? $documentos : array();
   }
   function select_all_motivos(){
     $query = 'SELECT * FROM MOTIVO';
     $motivos = mysql_query($query);
-    return $motivos ? $motivos : null;
+    return $motivos ? $motivos : array();
   }
   
 } 
