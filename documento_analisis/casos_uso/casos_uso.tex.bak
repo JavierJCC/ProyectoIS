@@ -1,4 +1,4 @@
-\section{Digramas de casos de uso}
+\section{Diagramas de casos de uso}
 \begin{figure}[htbp!]
     \centering
         \includegraphics[width=0.7\textwidth]{images/img_casos/Analista.jpg}
@@ -8,7 +8,7 @@
 \begin{figure}[htbp!]
     \centering
         \includegraphics[width=0.7\textwidth]{images/img_casos/AutoridadPertinente.jpg}
-    \caption{Casos de uso Autoridad pertinente}
+    \caption{Casos de uso autoridad pertinente}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -21,13 +21,13 @@
 \begin{figure}[htbp!]
     \centering
         \includegraphics[width=0.7\textwidth]{images/img_casos/Estudiante.jpg}
-    \caption{Casos de uso Estudiante/Egresado}
+    \caption{Casos de uso estudiante/egresado}
 \end{figure}
 
 
 \begin{figure}[htbp!]
     \centering
         \includegraphics[width=0.7\textwidth]{images/img_casos/JefadeGestion.jpg}
-    \caption{Casos de uso Jefa de gestión}
+    \caption{Casos de uso jefa de Gestión Escolar}
 \end{figure}
 
