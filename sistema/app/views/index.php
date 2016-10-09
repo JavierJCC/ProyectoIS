@@ -77,6 +77,29 @@
                         <h1>Sistema de Gestión Escolar</h1>
                         <h3> Solicita tus trámites en línea</h3>
                         <hr class="intro-divider">
+                        
+                        <form class="form-horizontal">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-6 control-label">Boleta</label>
+                                    <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="2015630195">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-6 control-label">Contraseña</label>
+                                    <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Iniciar Sesión</button>
+                                </div>
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
