@@ -10,26 +10,27 @@
 \BOOKMARK [2][-]{subsection.2.1.6}{Departamentos escolares}{section.2.1}% 10
 \BOOKMARK [1][-]{section.2.2}{Requerimientos no funcionales}{chapter.2}% 11
 \BOOKMARK [0][-]{chapter.3}{An\341lisis de riesgos}{}% 12
-\BOOKMARK [0][-]{chapter.4}{Descripcion de los Casos de uso}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Diagramas de casos de uso}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Analista}{chapter.4}% 15
-\BOOKMARK [2][-]{subsection.4.2.1}{CUG02 Iniciar sesi\363n empleado}{section.4.2}% 16
-\BOOKMARK [2][-]{subsection.4.2.2}{CUA03 Gestionar solicitudes}{section.4.2}% 17
-\BOOKMARK [2][-]{subsection.4.2.3}{CUA02 Actualizar estado}{section.4.2}% 18
-\BOOKMARK [1][-]{section.4.3}{Autoridad pertinente}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.4}{Departamento escolar}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.5}{ Alumno/Egresado}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.5.1}{CUG01 Iniciar sesi\363n Estudiante/Egresado.}{section.4.5}% 22
-\BOOKMARK [2][-]{subsection.4.5.2}{CUEE02 Solicitar tr\341mite}{section.4.5}% 23
-\BOOKMARK [2][-]{subsection.4.5.3}{CUEE03 Consultar estatus de los tr\341mites solicitados}{section.4.5}% 24
-\BOOKMARK [0][-]{chapter.5}{Interacci\363n con el usuario \(UI\)}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Analista}{chapter.5}% 26
-\BOOKMARK [2][-]{subsection.5.1.1}{CUG02 Iniciar Sesi\363n Empleado}{section.5.1}% 27
-\BOOKMARK [2][-]{subsection.5.1.2}{CUA02 Actualizar estado}{section.5.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.3}{CUA03 Gestionar solicitudes}{section.5.1}% 29
-\BOOKMARK [1][-]{section.5.2}{Autoridad pertinente}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.3}{Departamento escolar}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.4}{ Estudiante/Egresado}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.5.4}% 33
-\BOOKMARK [2][-]{subsection.5.4.2}{CUEE02 Solicitar tr\341mite}{section.5.4}% 34
-\BOOKMARK [2][-]{subsection.5.4.3}{CUEE03 Consultar estatus de los tramites solicitados}{section.5.4}% 35
+\BOOKMARK [1][-]{section.3.1}{Tabla de Riesgos}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Descripcion de los Casos de uso}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Diagramas de casos de uso}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Analista}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.2.1}{CUG02 Iniciar sesi\363n empleado}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.2}{CUA03 Gestionar solicitudes}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.3}{CUA02 Actualizar estado}{section.4.2}% 19
+\BOOKMARK [1][-]{section.4.3}{Autoridad pertinente}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{Departamento escolar}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{ Alumno/Egresado}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.5.1}{CUG01 Iniciar sesi\363n Estudiante/Egresado.}{section.4.5}% 23
+\BOOKMARK [2][-]{subsection.4.5.2}{CUEE02 Solicitar tr\341mite}{section.4.5}% 24
+\BOOKMARK [2][-]{subsection.4.5.3}{CUEE03 Consultar estatus de los tr\341mites solicitados}{section.4.5}% 25
+\BOOKMARK [0][-]{chapter.5}{Interacci\363n con el usuario \(UI\)}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Analista}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.1.1}{CUG02 Iniciar Sesi\363n Empleado}{section.5.1}% 28
+\BOOKMARK [2][-]{subsection.5.1.2}{CUA02 Actualizar estado}{section.5.1}% 29
+\BOOKMARK [2][-]{subsection.5.1.3}{CUA03 Gestionar solicitudes}{section.5.1}% 30
+\BOOKMARK [1][-]{section.5.2}{Autoridad pertinente}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Departamento escolar}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.4}{ Estudiante/Egresado}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.5.4}% 34
+\BOOKMARK [2][-]{subsection.5.4.2}{CUEE02 Solicitar tr\341mite}{section.5.4}% 35
+\BOOKMARK [2][-]{subsection.5.4.3}{CUEE03 Consultar estatus de los tramites solicitados}{section.5.4}% 36
