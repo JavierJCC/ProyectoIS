@@ -96,11 +96,15 @@
                                     <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-6">
-                                        <button type="submit" id="iniciarSesion" ng-click="iniciarSesion();">Iniciar Sesión</button>
+                               <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 style="align-text: left;">¿Olvidó su contraseña?</h5>
                                     </div>
-                                </div>
+                                        <div class="col-sm-offset-0 col-md-4">
+                                            
+                                            <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+                                        </div>
+                                    </div>
                             </div>
                         </form>
 
