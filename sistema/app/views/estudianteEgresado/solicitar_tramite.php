@@ -12,7 +12,7 @@
         <select ng-model='data.documento'>
           <?php 
               if ($data['documentos']){
-                while($documento = mysql_fetch_array($data['documentos']))
+                while($documento = $data['documentos']->fetch_assoc())
                 {
                   print "<option value= '{$documento['idDocumento']}'> {$documento['nombre']}";
                 }
@@ -25,7 +25,7 @@
         <select ng-model='data.motivo'>
           <?php 
               if ($data['motivos']){
-                while($motivo = mysql_fetch_array($data['motivos']))
+                while($motivo = $data['motivos']->fetch_assoc())
                 {
                   print "<option value= '{$motivo['idMotivo']}'> {$motivo['nombre']}";
                 }
