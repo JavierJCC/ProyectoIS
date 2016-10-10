@@ -19,7 +19,6 @@ class estudianteEgresadoModel
   function select_all_documentos(){
     $query = 'SELECT * FROM DOCUMENTO';
     $documentos = $this->connection->query($query);
-    print_r($documentos);
     return $documentos ? $documentos : array();
   }
   function select_all_motivos(){

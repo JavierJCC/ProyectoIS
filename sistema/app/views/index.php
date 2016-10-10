@@ -85,18 +85,20 @@
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-md-2 lead">Boleta</label>
                                     <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="2015630195">
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="2015630195" ng-model="boleta" required>
+                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword3" class="col-sm-2 lead">Contraseña</label>
                                     <div class="col-sm-4">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" ng-model="pass" required>
+                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-6">
-                                        <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+                                        <button type="submit" id="iniciarSesion" ng-click="iniciarSesion();">Iniciar Sesión</button>
                                     </div>
                                 </div>
                             </div>
@@ -206,12 +208,12 @@
     <script src="<?= $url_path ?>index/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?= $url_path ?>index/js/bootstrap.min.js"></script>
-    <script src="<?= $url_path ?>interno/js/alertifyjs/alertify.min.js"> </script>
 
     <!-- angular -->
     <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/services/indexFactory.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/controllers/IndexController.js"></script>
 </body>
 
