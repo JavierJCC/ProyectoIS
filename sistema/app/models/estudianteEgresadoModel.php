@@ -7,10 +7,10 @@ class estudianteEgresadoModel
   private $db;
   private $connection;
   function __construct(){
-    $username="ingenieria2016";
-    $password="ingenieria";
-    $db="ingenieria";
-    $this->connection = new mysqli("127.0.0.1",$username,$password,$db);
+    $this->username="ingenieria2016";
+    $this->password="ingenieria";
+    $this->db="ingenieria";
+    $this->connection = new mysqli("127.0.0.1",$this->username,$this->password,$this->db);
     if(mysqli_connect_errno()){
       echo mysqli_connect_error();
     }
