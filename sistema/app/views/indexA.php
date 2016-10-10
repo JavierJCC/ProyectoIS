@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body ng-app="app">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -67,7 +67,7 @@
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="intro-header">
+    <div class="intro-header" ng-controller="indexControllerTrabajador">
         <div class="container">
 
             <div class="row">
@@ -85,13 +85,13 @@
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-md-3 lead">No. de empleado</label>
                                     <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="12345678">
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="12345678" ng-model="RFC">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword3" class="col-sm-3 lead">Contraseña</label>
                                     <div class="col-sm-4">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" ng-model="password">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -99,8 +99,7 @@
                                         <h5 style="align-text: left;">¿Olvidó su contraseña?</h5>
                                     </div>
                                         <div class="col-sm-offset-0 col-md-4">
-                                            
-                                            <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+                                            <button type="submit" id="iniciarSesion" ng-click="iniciarSesion()">Iniciar Sesión</button>
                                         </div>
                                 </div>
                             </div>
@@ -151,6 +150,13 @@
     <script src="<?= $url_path ?>index/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?= $url_path ?>index/js/bootstrap.min.js"></script>
+
+     <!-- angular -->
+    <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/services/indexFactory.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/controllers/IndexController.js"></script>
 </body>
 
 </html>

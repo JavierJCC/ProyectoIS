@@ -19,5 +19,11 @@ class usuarioModel{
     $alumno = $this->connection->query($query);
     return $alumno? $alumno->fetch_object() : NULL;
   }
+
+  function loginTrabajador($RFC, $password){
+    $query = "SELECT Persona.idPersona,TrabajadorArea.RFC from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.idPersona and TrabajadorArea.RFC = '" .$RFC. "' and Persona.contrasena = '" . $password . "';";
+    $persona = $this->connection->query($query);
+    return $persona ? $persona->fetch_object() : NULL;
+  }
   
 } 

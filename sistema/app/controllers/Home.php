@@ -7,7 +7,7 @@ class Home extends Controller
     $this->view('index');
   }
 
-  public function Analista($param = '')
+  public function IndexTrabajador($param = '')
   {
     $this->view('indexA');
   }

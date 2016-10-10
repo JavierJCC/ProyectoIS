@@ -18,4 +18,16 @@ class Index extends Controller
     header('Content-Type: application/json');
     echo json_encode($data);
   }
+
+  function loginT(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $usuario = $this->usuarioModel->loginTrabajador($request->RFC,$request->password);
+    if($usuario->RFC){
+      $data = array('Valida' => 1);
+      $_SESSION["usuario"]=$usuario;
+    }
+    header('Content-Type: application/json');
+    echo json_encode($data);
+  }
 }
