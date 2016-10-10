@@ -80,7 +80,7 @@
                         <h4>Iniciar Sesión</h4>
                         <hr class="intro-divider">
                         
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" >
                             <div class="col-md-offset-4 .col-md-offset-2">
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-md-2 lead">Boleta</label>
@@ -95,9 +95,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                <div class="col-sm-offset-0 col-sm-6">
-                                <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
-                                </div>
+                                    <div class="col-sm-offset-2 col-sm-6">
+                                        <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
