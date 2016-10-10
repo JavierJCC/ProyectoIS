@@ -171,3 +171,25 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+#iniciarSesion{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    background-color: transparent; /* Green */
+    border: solid;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#iniciarSesion:hover{
+    background-color: transparent;
+    color: #4CAF50;
+}

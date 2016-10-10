@@ -95,8 +95,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-6">
-                                <button type="submit" class="btn btn-default">Iniciar Sesión</button>
+                                <div class="col-sm-offset-0 col-sm-6">
+                                <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
                                 </div>
                                 </div>
                             </div>
