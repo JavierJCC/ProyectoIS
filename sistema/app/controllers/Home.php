@@ -6,5 +6,10 @@ class Home extends Controller
   {
     $this->view('index');
   }
+
+  public function Analista($param = '')
+  {
+    $this->view('indexA');
+  }
   
 }
