@@ -32,11 +32,13 @@ controller('solicitarTramiteController',  function($scope){
       $scope.contador--; 
     },function(){ 
       alertify.error('No se ha eliminador')});*/
-
+    alertify.error('Has eliminado un documento de tu lista.')
   };
   $scope.enviarPeticiones = function(){
-    alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'Prompt Value'
-               , function(evt, value) { alertify.success('You entered: ' + value) }
+    alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'cuerpoCorreo@servidor.dominio'
+               , function(evt, value) {
+                 alertify.success("Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de 'Mis solicitudes en proceso.'");
+                }
                , function() { alertify.error('Cancel') });
   };
   

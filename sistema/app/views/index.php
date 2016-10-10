@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body ng-app="app">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -67,7 +67,7 @@
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="intro-header">
+    <div class="intro-header" ng-controller="indexController">
         <div class="container">
 
             <div class="row">
@@ -206,6 +206,13 @@
     <script src="<?= $url_path ?>index/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?= $url_path ?>index/js/bootstrap.min.js"></script>
+    <script src="<?= $url_path ?>interno/js/alertifyjs/alertify.min.js"> </script>
+
+    <!-- angular -->
+    <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/controllers/IndexController.js"></script>
 </body>
 
 </html>
