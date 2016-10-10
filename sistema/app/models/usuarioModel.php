@@ -14,4 +14,10 @@ class usuarioModel{
     }
   }
   
+  function login($boleta,$password){
+    $query = "SELECT boleta,contrasena from Alumno where boleta ='" .$boleta. "' and contrasena = '" .$password ."';";
+    $alumno = $this->connection->query($query);
+    return $alumno? $alumno->fetch_object() : NULL;
+  }
+  
 } 

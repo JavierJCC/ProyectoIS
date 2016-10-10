@@ -5,7 +5,9 @@ controller('indexController', function($scope,indexFactory){
   $scope.iniciarSesion = function(){
     $scope.errorBoleta = '';
     indexFactory.login({'boleta':$scope.boleta,'password':$scope.pass}, function(resultado){
-    console.log(resultado);
+      if(resultado){
+        console.log(resultado);
+      }
     });
     
   };

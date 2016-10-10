@@ -1,20 +1,21 @@
 <?php 
+session_start();
 
 class Index extends Controller
 {
-  private $boleta;
-  private $password;
   private $usuarioModel;
   function __construct(){
     $this->usuarioModel = $this->model('usuarioModel');
   }
   function login(){
-    header('Content-Type: application/json');
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-    $this->boleta = $request->boleta;
-    $this->password = $request->password;
-    $data = array('a'=>'hola');
+    $usuario = $this->usuarioModel->login($request->boleta,$request->password);
+    if($usuario->boleta){
+      $data = array('Valida' => 1);
+      $_SESSION["usuario"]=$usuario;
+    }
+    header('Content-Type: application/json');
     echo json_encode($data);
   }
 }
