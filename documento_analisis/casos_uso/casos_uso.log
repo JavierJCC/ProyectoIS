@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 OCT 2016 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 OCT 2016 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,7 +8,7 @@ LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 ! Undefined control sequence.
 l.1 \section
-            {Digramas de casos de uso}
+            {Diagramas de casos de uso}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -23,12 +23,13 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1 \section{D
-              igramas de casos de uso}
+              iagramas de casos de uso}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no D in font nullfont!
 Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -283,12 +284,12 @@ Missing character: There is no g in font nullfont!
 <inserted text> 
                 $
 l.10 ...egraphics[width=0.7\textwidth]{images/img_
-                                                  casos/AutoridadPerninente....
+                                                  casos/AutoridadPertinente....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.10 ...{images/img_casos/AutoridadPerninente.jpg}
+l.10 ...{images/img_casos/AutoridadPertinente.jpg}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -304,7 +305,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.11     \caption
-                 {Casos de uso Autoridad pertinente}
+                 {Casos de uso autoridad pertinente}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -349,8 +350,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 8--13
  []
 
 
-Overfull \hbox (287.46342pt too wide) in paragraph at lines 8--13
-[]\OML/cmm/m/it/10 asos=AutoridadPerninente:jpg[]$ 
+Overfull \hbox (282.85806pt too wide) in paragraph at lines 8--13
+[]\OML/cmm/m/it/10 asos=AutoridadPertinente:jpg[]$ 
  []
 
 
@@ -618,7 +619,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.24     \caption
-                 {Casos de uso Estudiante/Egresado}
+                 {Casos de uso estudiante/egresado}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -663,7 +664,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 21--26
  []
 
 
-Overfull \hbox (246.63306pt too wide) in paragraph at lines 21--26
+Overfull \hbox (240.02896pt too wide) in paragraph at lines 21--26
 []\OML/cmm/m/it/10 asos=Estudiante:jpg[]$ 
  []
 
@@ -674,7 +675,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \begin{figure}
+l.27 \begin{figure}
                    [htbp!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -687,7 +688,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \begin{figure}[
+l.27 \begin{figure}[
                     htbp!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -700,7 +701,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.30         \includegraphics
+l.29         \includegraphics
                              [width=0.7\textwidth]{images/img_casos/JefadeGe...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -721,7 +722,7 @@ Missing character: There is no 7 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.30         \includegraphics[width=0.7\textwidth]
+l.29         \includegraphics[width=0.7\textwidth]
                                                   {images/img_casos/JefadeGe...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -730,7 +731,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.30         \includegraphics[width=0.7\textwidth]
+l.29         \includegraphics[width=0.7\textwidth]
                                                   {images/img_casos/JefadeGe...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -753,13 +754,13 @@ Missing character: There is no g in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.30 ...egraphics[width=0.7\textwidth]{images/img_
+l.29 ...egraphics[width=0.7\textwidth]{images/img_
                                                   casos/JefadeGestion.jpg}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.30 ...width]{images/img_casos/JefadeGestion.jpg}
+l.29 ...width]{images/img_casos/JefadeGestion.jpg}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -774,8 +775,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31     \caption
-                 {Casos de uso Jefa de gestión}
+l.30     \caption
+                 {Casos de uso jefa de Gestión Escolar}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -786,7 +787,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{figure}
+l.31 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -795,7 +796,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.32 \end{figure}
+l.31 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -808,7 +809,7 @@ Missing character: There is no � in font cmr10!
 ! Missing } inserted.
 <inserted text> 
                 }
-l.32 \end{figure}
+l.31 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)

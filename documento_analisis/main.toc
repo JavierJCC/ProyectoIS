@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {3.1}Tabla de Riesgos}{10}{section.3.1}
 \contentsline {chapter}{\numberline {4}Descripcion de los Casos de uso}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}Diagramas de casos de uso}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Analista}{12}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}CUG02 Iniciar sesi\IeC {\'o}n empleado}{14}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Descripci\IeC {\'o}n completa}{14}{subsubsection.4.2.1.1}
-\contentsline {paragraph}{\numberline {4.2.1.1.1}Atributos importantes}{15}{table.4.1}
+\contentsline {section}{\numberline {4.2}Analista}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}CUG02 Iniciar sesi\IeC {\'o}n empleado}{15}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Descripci\IeC {\'o}n completa}{15}{subsubsection.4.2.1.1}
+\contentsline {paragraph}{\numberline {4.2.1.1.1}Atributos importantes}{16}{table.4.1}
 \contentsline {subsection}{\numberline {4.2.2}CUA03 Gestionar solicitudes}{17}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Descripci\IeC {\'o}n completa}{17}{subsubsection.4.2.2.1}
 \contentsline {paragraph}{\numberline {4.2.2.1.1}Atributos importantes}{18}{table.4.2}
