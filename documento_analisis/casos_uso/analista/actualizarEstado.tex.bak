@@ -1,5 +1,4 @@
-\pagebreak 
- \begin{UseCase}{CUA02}{Actualizar estado}{Un analista modificará el estado del proceso de la cosntancia o boleta}
+\begin{UseCase}{CUA02}{Actualizar estado}{Un analista modificará el estado del proceso de la cosntancia o boleta}
 	\UCitem{Version}{1.0}
   \UCitem{Actor}{Analista}
   \UCitem{Propósito}{El analista informa por vía internet al estudiante o egresado el progreso de su documento para que  evite ir físicamente a las oficinas de control escolar.}
@@ -26,7 +25,7 @@
   \UCitem{Precondiciones}{
    \begin{itemize}
       \item El alumno debió haber solicitado un documento al sistema.
-      \item El analista debió haber sido identificado por el sistema.
+      \item El analisto debió haber sido identificado por el sistema.
       \item El documento  todavia no esta en el estado de finalizado.
     \end{itemize}
   }
@@ -53,11 +52,11 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU02 Iniciar Sesión Empleado}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU01 Iniciar Sesión}
 	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Alta}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{Autorizado}
+  \UCitem{Estado}{En proceso}
 	\UCitem{Autor}{Alberto Maldonado Romo}
 	\UCitem{Revisor}{Juan Antonio Guzman Chavez }
 \end{UseCase}
@@ -72,6 +71,6 @@
 
 \begin{UCtrayectoriaA}{A}{Peticiones excedidas} 
 \UCpaso Muestra el mensaje {\bf AlertaDocumentoFinalizadon}
-  \UCpaso Notificará al estudiante o egresado por medio de un correo electrónico. 	
+  \UCpaso Notificará al estudiante o egresado por medio de un correo electrónico  	
 \end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,3 +1,4 @@
+
 \begin{UseCase}{CUG02}{Iniciar sesión empleado}{Método para autentificar un usuario ante el sistema.}
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Analista - Jefa de Gestión Escolar - Departamentos escolares - Autoridad pertinente}
@@ -60,7 +61,7 @@
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Solicita ingresar al sistema.
   \UCpaso Muestra la pantalla UIniciarSesión.
-  \UCpaso[\UCactor] Ingresa su número de no. de empleado y su RFC.
+  \UCpaso[\UCactor] Ingresa su número de no. de empleado y su contraseña.
   \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
   \UCpaso Valida el formato de la entrada de los datos [TAA].
   \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos [TAB].

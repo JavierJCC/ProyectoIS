@@ -1,4 +1,3 @@
-\pagebreak
 \begin{UseCase}{CUEE03}{Consultar estatus de los trámites solicitados}{El alumno o egresado podrá consultar el estado en el que se encuentra cada documento que haya solicitado.}
 	\UCitem{Versión}{1.0}
 	\UCitem{Autor}{Estudiante/Egresado.}	
@@ -11,7 +10,7 @@
 	}
 	\UCitem{Salidas}{
 	\begin{itemize}
-		\item Mensaje de notificación:  ``No hay documentos solicitados".
+		\item Mensaje de notificación:  "No hay documentos solicitados".
 \end{itemize}		
 	}
 	
@@ -28,7 +27,7 @@
 	\UCitem{Volatilidad}{Baja.}
 	\UCitem{Madurez}{Baja.}
 	\UCitem{Prioridad}{Alta.}
-	\UCitem{Estado}{Autorizado}
+	\UCitem{Estado}{En proceso}
 	\UCitem{Autor}{Javier Chávez Chávez}
 	\UCitem{Revisor}{Marcela Castro Flores}
 	
