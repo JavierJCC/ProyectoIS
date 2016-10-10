@@ -1,281 +1,358 @@
--- MySQL Workbench Forward Engineering
+-- MySQL dump 10.13  Distrib 5.6.25, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ingenieria
+-- ------------------------------------------------------
+-- Server version	5.7.14
 
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- -----------------------------------------------------
--- Schema ingenieria
--- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `ingenieria` ;
+--
+-- Table structure for table `alumno`
+--
 
--- -----------------------------------------------------
--- Schema ingenieria
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `ingenieria` DEFAULT CHARACTER SET utf8 ;
-USE `ingenieria` ;
+DROP TABLE IF EXISTS `alumno`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alumno` (
+  `Boleta` varchar(10) NOT NULL,
+  `CURP` varchar(18) NOT NULL,
+  `PeriodoIngreso` varchar(10) NOT NULL,
+  `Carrera` varchar(45) NOT NULL DEFAULT 'Ingeniería en sistemas computacionales',
+  `Plan` varchar(45) NOT NULL,
+  `Secuencia` varchar(45) DEFAULT NULL,
+  `TotalCreditos` varchar(45) NOT NULL,
+  `Promedio` varchar(45) NOT NULL,
+  `Telefono` varchar(45) DEFAULT NULL,
+  `TelefonoMovil` varchar(45) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Boleta`),
+  UNIQUE KEY `CURP_UNIQUE` (`CURP`),
+  KEY `Boleta_Solicitante_idx` (`Boleta`),
+  CONSTRAINT `fk_Boleta_Solicitante` FOREIGN KEY (`Boleta`) REFERENCES `persona` (`idPersona`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- -----------------------------------------------------
--- Table `documento`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `documento` ;
+--
+-- Dumping data for table `alumno`
+--
 
-CREATE TABLE IF NOT EXISTS `documento` (
-  `idDocumento` INT(11) NOT NULL COMMENT '',
-  `nombre` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
-  PRIMARY KEY (`idDocumento`)  COMMENT '')
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+LOCK TABLES `alumno` WRITE;
+/*!40000 ALTER TABLE `alumno` DISABLE KEYS */;
+INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,'58.5','8.5','55555555','555555555','javisever2@gmail.com'),('2014630645','MARA950406HDFLSO94','B14','Ingeniería en sistemas computacionales','09',NULL,'62','9.5','55555555','555555555','alberto.maldo1312@gmail.com'),('2016635489','GOVJ970806HDFPAZ09','A16','Ingeniería en sistemas computacionales','09',NULL,'20','8','55555555','555555555','jacinto@gmail.com');
+/*!40000 ALTER TABLE `alumno` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Table structure for table `area`
+--
 
--- -----------------------------------------------------
--- Table `Persona`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Persona` ;
+DROP TABLE IF EXISTS `area`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `area` (
+  `idArea` varchar(10) NOT NULL,
+  `NombreArea` varchar(45) NOT NULL,
+  `Departamento` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idArea`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE TABLE IF NOT EXISTS `Persona` (
-  `idPersona` VARCHAR(10) NOT NULL COMMENT '',
-  `Nom` VARCHAR(45) NOT NULL COMMENT '',
-  `ApPat` VARCHAR(45) NOT NULL COMMENT '',
-  `ApMat` VARCHAR(45) NULL COMMENT '',
-  `Contrasenia` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`idPersona`)  COMMENT '')
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+--
+-- Dumping data for table `area`
+--
 
+LOCK TABLES `area` WRITE;
+/*!40000 ALTER TABLE `area` DISABLE KEYS */;
+INSERT INTO `area` VALUES ('A01','Area de becas','Departamento de Extensión y Apoyos Educativos');
+/*!40000 ALTER TABLE `area` ENABLE KEYS */;
+UNLOCK TABLES;
 
--- -----------------------------------------------------
--- Table `motivo`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `motivo` ;
+--
+-- Table structure for table `documento`
+--
 
-CREATE TABLE IF NOT EXISTS `motivo` (
-  `idMotivo` INT(11) NOT NULL COMMENT '',
-  `nombre` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
-  PRIMARY KEY (`idMotivo`)  COMMENT '')
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+DROP TABLE IF EXISTS `documento`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `documento` (
+  `idDocumento` int(11) NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idDocumento`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `documento`
+--
 
--- -----------------------------------------------------
--- Table `Alumno`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Alumno` ;
+LOCK TABLES `documento` WRITE;
+/*!40000 ALTER TABLE `documento` DISABLE KEYS */;
+INSERT INTO `documento` VALUES (1,'Boleta'),(2,'Constancia');
+/*!40000 ALTER TABLE `documento` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE TABLE IF NOT EXISTS `Alumno` (
-  `Boleta` VARCHAR(10) NOT NULL COMMENT '',
-  `CURP` VARCHAR(12) NOT NULL COMMENT '',
-  `PeriodoIngreso` VARCHAR(10) NOT NULL COMMENT '',
-  `Carrera` VARCHAR(45) NOT NULL DEFAULT 'Ingeniería en sistemas computacionales' COMMENT '',
-  `Plan` VARCHAR(45) NOT NULL COMMENT '',
-  `Secuencia` VARCHAR(45) NULL COMMENT '',
-  `TotalCreditos` VARCHAR(45) NOT NULL COMMENT '',
-  `Promedio` VARCHAR(45) NOT NULL COMMENT '',
-  `Telefono` VARCHAR(45) NULL COMMENT '',
-  `TelefonoMovil` VARCHAR(45) NULL COMMENT '',
-  `Email` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`Boleta`)  COMMENT '',
-  CONSTRAINT `fk_Boleta_Solicitante`
-    FOREIGN KEY (`Boleta`)
-    REFERENCES `Persona` (`idPersona`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+--
+-- Table structure for table `estadotramite`
+--
 
-CREATE INDEX `Boleta_Solicitante_idx` ON `Alumno` (`Boleta` ASC)  COMMENT '';
+DROP TABLE IF EXISTS `estadotramite`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `estadotramite` (
+  `idEstadoTramite` int(11) NOT NULL,
+  `Estado` varchar(10) NOT NULL,
+  PRIMARY KEY (`idEstadoTramite`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE UNIQUE INDEX `CURP_UNIQUE` ON `Alumno` (`CURP` ASC)  COMMENT '';
+--
+-- Dumping data for table `estadotramite`
+--
 
+LOCK TABLES `estadotramite` WRITE;
+/*!40000 ALTER TABLE `estadotramite` DISABLE KEYS */;
+/*!40000 ALTER TABLE `estadotramite` ENABLE KEYS */;
+UNLOCK TABLES;
 
--- -----------------------------------------------------
--- Table `Solicitud`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Solicitud` ;
+--
+-- Table structure for table `estudianteinscrito`
+--
 
-CREATE TABLE IF NOT EXISTS `Solicitud` (
-  `idSolicitud` INT(11) NOT NULL COMMENT '',
-  `Documento_idDocumento` INT(11) NOT NULL COMMENT '',
-  `Motivo_idMotivo` INT(11) NOT NULL COMMENT '',
-  `idSolicitante` VARCHAR(10) NOT NULL COMMENT '',
-  `idAlumno` VARCHAR(10) NOT NULL COMMENT '',
-  `Fecha` DATE NOT NULL COMMENT '',
-  `Aceptacion` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`idSolicitud`)  COMMENT '',
-  CONSTRAINT `fk_Solicitud_Documento1`
-    FOREIGN KEY (`Documento_idDocumento`)
-    REFERENCES `documento` (`idDocumento`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Solicitud_Motivo1`
-    FOREIGN KEY (`Motivo_idMotivo`)
-    REFERENCES `motivo` (`idMotivo`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Solicitud_Solicitante`
-    FOREIGN KEY (`idSolicitante`)
-    REFERENCES `Persona` (`idPersona`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Solicitud_Alumno`
-    FOREIGN KEY (`idAlumno`)
-    REFERENCES `Alumno` (`Boleta`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+DROP TABLE IF EXISTS `estudianteinscrito`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `estudianteinscrito` (
+  `Boleta` varchar(10) NOT NULL,
+  `Semestre` int(11) NOT NULL,
+  `MateriasInscritas` int(11) DEFAULT NULL,
+  `MateriasReprobadas` int(11) DEFAULT NULL,
+  `CreditosInscritos` float DEFAULT NULL,
+  PRIMARY KEY (`Boleta`),
+  KEY `Est_Estinscrito_idx` (`Boleta`),
+  CONSTRAINT `Est_Estinscrito` FOREIGN KEY (`Boleta`) REFERENCES `alumno` (`Boleta`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE INDEX `fk_Tramite_Documento1_idx` ON `Solicitud` (`Documento_idDocumento` ASC)  COMMENT '';
+--
+-- Dumping data for table `estudianteinscrito`
+--
 
-CREATE INDEX `fk_Tramite_Motivo1_idx` ON `Solicitud` (`Motivo_idMotivo` ASC)  COMMENT '';
+LOCK TABLES `estudianteinscrito` WRITE;
+/*!40000 ALTER TABLE `estudianteinscrito` DISABLE KEYS */;
+/*!40000 ALTER TABLE `estudianteinscrito` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE INDEX `fk_Solicitud_Solicitante_idx` ON `Solicitud` (`idSolicitante` ASC)  COMMENT '';
+--
+-- Table structure for table `motivo`
+--
 
-CREATE INDEX `fk_Solicitud_Alumno_idx` ON `Solicitud` (`idAlumno` ASC)  COMMENT '';
+DROP TABLE IF EXISTS `motivo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `motivo` (
+  `idMotivo` int(11) NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idMotivo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `motivo`
+--
 
--- -----------------------------------------------------
--- Table `EstudianteInscrito`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `EstudianteInscrito` ;
+LOCK TABLES `motivo` WRITE;
+/*!40000 ALTER TABLE `motivo` DISABLE KEYS */;
+INSERT INTO `motivo` VALUES (0,'Ninguno'),(1,'Actividad Cultural'),(2,'Actividad Deportiva'),(3,'Beca');
+/*!40000 ALTER TABLE `motivo` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE TABLE IF NOT EXISTS `EstudianteInscrito` (
-  `Boleta` VARCHAR(10) NOT NULL COMMENT '',
-  `Semestre` INT NOT NULL COMMENT '',
-  `MateriasInscritas` INT NULL COMMENT '',
-  `MateriasReprobadas` INT NULL COMMENT '',
-  `CreditosInscritos` FLOAT NULL COMMENT '',
-  PRIMARY KEY (`Boleta`)  COMMENT '',
-  CONSTRAINT `Est_Estinscrito`
-    FOREIGN KEY (`Boleta`)
-    REFERENCES `Alumno` (`Boleta`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+--
+-- Table structure for table `motivosolicitud`
+--
 
-CREATE INDEX `Est_Estinscrito_idx` ON `EstudianteInscrito` (`Boleta` ASC)  COMMENT '';
+DROP TABLE IF EXISTS `motivosolicitud`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `motivosolicitud` (
+  `idmotivosol` int(11) NOT NULL,
+  `Descripcion` varchar(45) NOT NULL,
+  PRIMARY KEY (`idmotivosol`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `motivosolicitud`
+--
 
--- -----------------------------------------------------
--- Table `Area`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Area` ;
+LOCK TABLES `motivosolicitud` WRITE;
+/*!40000 ALTER TABLE `motivosolicitud` DISABLE KEYS */;
+/*!40000 ALTER TABLE `motivosolicitud` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE TABLE IF NOT EXISTS `Area` (
-  `idArea` VARCHAR(10) NOT NULL COMMENT '',
-  `NombreArea` VARCHAR(45) NOT NULL COMMENT '',
-  `Departamento` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`idArea`)  COMMENT '')
-ENGINE = InnoDB;
+--
+-- Table structure for table `persona`
+--
 
+DROP TABLE IF EXISTS `persona`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `persona` (
+  `idPersona` varchar(10) NOT NULL,
+  `Nom` varchar(45) NOT NULL,
+  `ApPat` varchar(45) NOT NULL,
+  `ApMat` varchar(45) DEFAULT NULL,
+  `Contrasenia` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idPersona`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- -----------------------------------------------------
--- Table `TrabajadorArea`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `TrabajadorArea` ;
+--
+-- Dumping data for table `persona`
+--
 
-CREATE TABLE IF NOT EXISTS `TrabajadorArea` (
-  `IdTrabajador` VARCHAR(10) NOT NULL COMMENT '',
-  `IdArea` VARCHAR(10) NOT NULL COMMENT '',
-  PRIMARY KEY (`IdTrabajador`)  COMMENT '',
-  CONSTRAINT `fk_Trab_Solicitante`
-    FOREIGN KEY (`IdTrabajador`)
-    REFERENCES `Persona` (`idPersona`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Trab_Area`
-    FOREIGN KEY (`IdArea`)
-    REFERENCES `Area` (`idArea`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+LOCK TABLES `persona` WRITE;
+/*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO `persona` VALUES ('1234567890','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678');
+/*!40000 ALTER TABLE `persona` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE INDEX `Trab_Solicitante_idx` ON `TrabajadorArea` (`IdTrabajador` ASC)  COMMENT '';
+--
+-- Table structure for table `solicitanteajeno`
+--
 
-CREATE INDEX `Trab_Area_idx` ON `TrabajadorArea` (`IdArea` ASC)  COMMENT '';
+DROP TABLE IF EXISTS `solicitanteajeno`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `solicitanteajeno` (
+  `idsolicitanteAjeno` varchar(10) NOT NULL,
+  `idmotivo` int(11) NOT NULL,
+  PRIMARY KEY (`idsolicitanteAjeno`),
+  KEY `fk_Solicitante_Motivo_idx` (`idmotivo`),
+  KEY `fk_Solicitante_SolicitanteA_idx` (`idsolicitanteAjeno`),
+  CONSTRAINT `fk_Solicitante_Motivo` FOREIGN KEY (`idmotivo`) REFERENCES `motivosolicitud` (`idmotivosol`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_Solicitante_SolicitanteA` FOREIGN KEY (`idsolicitanteAjeno`) REFERENCES `persona` (`idPersona`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `solicitanteajeno`
+--
 
--- -----------------------------------------------------
--- Table `EstadoTramite`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `EstadoTramite` ;
+LOCK TABLES `solicitanteajeno` WRITE;
+/*!40000 ALTER TABLE `solicitanteajeno` DISABLE KEYS */;
+/*!40000 ALTER TABLE `solicitanteajeno` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE TABLE IF NOT EXISTS `EstadoTramite` (
-  `idEstadoTramite` INT NOT NULL COMMENT '',
-  `Estado` VARCHAR(10) NOT NULL COMMENT '',
-  PRIMARY KEY (`idEstadoTramite`)  COMMENT '')
-ENGINE = InnoDB;
+--
+-- Table structure for table `solicitud`
+--
 
+DROP TABLE IF EXISTS `solicitud`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `solicitud` (
+  `idSolicitud` int(11) NOT NULL,
+  `Documento_idDocumento` int(11) NOT NULL,
+  `Motivo_idMotivo` int(11) NOT NULL,
+  `idSolicitante` varchar(10) NOT NULL,
+  `idAlumno` varchar(10) NOT NULL,
+  `Fecha` date NOT NULL,
+  `Aceptacion` int(11) NOT NULL,
+  PRIMARY KEY (`idSolicitud`),
+  KEY `fk_Tramite_Documento1_idx` (`Documento_idDocumento`),
+  KEY `fk_Tramite_Motivo1_idx` (`Motivo_idMotivo`),
+  KEY `fk_Solicitud_Solicitante_idx` (`idSolicitante`),
+  KEY `fk_Solicitud_Alumno_idx` (`idAlumno`),
+  CONSTRAINT `fk_Solicitud_Alumno` FOREIGN KEY (`idAlumno`) REFERENCES `alumno` (`Boleta`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_Solicitud_Documento1` FOREIGN KEY (`Documento_idDocumento`) REFERENCES `documento` (`idDocumento`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Solicitud_Motivo1` FOREIGN KEY (`Motivo_idMotivo`) REFERENCES `motivo` (`idMotivo`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Solicitud_Solicitante` FOREIGN KEY (`idSolicitante`) REFERENCES `persona` (`idPersona`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- -----------------------------------------------------
--- Table `motivosolicitud`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `motivosolicitud` ;
+--
+-- Dumping data for table `solicitud`
+--
 
-CREATE TABLE IF NOT EXISTS `motivosolicitud` (
-  `idmotivosol` INT NOT NULL COMMENT '',
-  `Descripcion` VARCHAR(45) NOT NULL COMMENT '',
-  PRIMARY KEY (`idmotivosol`)  COMMENT '')
-ENGINE = InnoDB;
+LOCK TABLES `solicitud` WRITE;
+/*!40000 ALTER TABLE `solicitud` DISABLE KEYS */;
+INSERT INTO `solicitud` VALUES (1,1,0,'2014630002','2014630002','2016-10-10',3),(2,2,3,'1234567890','2014630645','2016-10-10',3),(3,2,3,'1234567890','2016635489','2016-10-10',3);
+/*!40000 ALTER TABLE `solicitud` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Table structure for table `trabajadorarea`
+--
 
--- -----------------------------------------------------
--- Table `solicitanteAjeno`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `solicitanteAjeno` ;
+DROP TABLE IF EXISTS `trabajadorarea`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `trabajadorarea` (
+  `IdTrabajador` varchar(10) NOT NULL,
+  `IdArea` varchar(10) NOT NULL,
+  PRIMARY KEY (`IdTrabajador`),
+  KEY `Trab_Solicitante_idx` (`IdTrabajador`),
+  KEY `Trab_Area_idx` (`IdArea`),
+  CONSTRAINT `fk_Trab_Area` FOREIGN KEY (`IdArea`) REFERENCES `area` (`idArea`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_Trab_Solicitante` FOREIGN KEY (`IdTrabajador`) REFERENCES `persona` (`idPersona`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE TABLE IF NOT EXISTS `solicitanteAjeno` (
-  `idsolicitanteAjeno` VARCHAR(10) NOT NULL COMMENT '',
-  `idmotivo` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`idsolicitanteAjeno`)  COMMENT '',
-  CONSTRAINT `fk_Solicitante_Motivo`
-    FOREIGN KEY (`idmotivo`)
-    REFERENCES `motivosolicitud` (`idmotivosol`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Solicitante_SolicitanteA`
-    FOREIGN KEY (`idsolicitanteAjeno`)
-    REFERENCES `Persona` (`idPersona`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+--
+-- Dumping data for table `trabajadorarea`
+--
 
-CREATE INDEX `fk_Solicitante_Motivo_idx` ON `solicitanteAjeno` (`idmotivo` ASC)  COMMENT '';
+LOCK TABLES `trabajadorarea` WRITE;
+/*!40000 ALTER TABLE `trabajadorarea` DISABLE KEYS */;
+INSERT INTO `trabajadorarea` VALUES ('1234567890','A01');
+/*!40000 ALTER TABLE `trabajadorarea` ENABLE KEYS */;
+UNLOCK TABLES;
 
-CREATE INDEX `fk_Solicitante_SolicitanteA_idx` ON `solicitanteAjeno` (`idsolicitanteAjeno` ASC)  COMMENT '';
+--
+-- Table structure for table `tramite`
+--
 
+DROP TABLE IF EXISTS `tramite`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tramite` (
+  `idTramite` int(11) NOT NULL AUTO_INCREMENT,
+  `idEstado` int(11) NOT NULL,
+  `idAnalista` varchar(10) NOT NULL,
+  PRIMARY KEY (`idTramite`,`idEstado`,`idAnalista`),
+  KEY `fk_Tramite_Estado_idx` (`idEstado`),
+  KEY `fk_Tramite_Analista_idx` (`idAnalista`),
+  CONSTRAINT `fk_Tramite_Analista` FOREIGN KEY (`idAnalista`) REFERENCES `persona` (`idPersona`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_Tramite_Estado` FOREIGN KEY (`idEstado`) REFERENCES `estadotramite` (`idEstadoTramite`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_Tramite_Solicitud` FOREIGN KEY (`idTramite`) REFERENCES `solicitud` (`idSolicitud`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- -----------------------------------------------------
--- Table `Tramite`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Tramite` ;
+--
+-- Dumping data for table `tramite`
+--
 
-CREATE TABLE IF NOT EXISTS `Tramite` (
-  `idTramite` INT NOT NULL AUTO_INCREMENT COMMENT '',
-  `idEstado` INT NOT NULL COMMENT '',
-  `idAnalista` VARCHAR(10) NOT NULL COMMENT '',
-  PRIMARY KEY (`idTramite`, `idEstado`, `idAnalista`)  COMMENT '',
-  CONSTRAINT `fk_Tramite_Solicitud`
-    FOREIGN KEY (`idTramite`)
-    REFERENCES `Solicitud` (`idSolicitud`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Tramite_Estado`
-    FOREIGN KEY (`idEstado`)
-    REFERENCES `EstadoTramite` (`idEstadoTramite`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Tramite_Analista`
-    FOREIGN KEY (`idAnalista`)
-    REFERENCES `Persona` (`idPersona`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
+LOCK TABLES `tramite` WRITE;
+/*!40000 ALTER TABLE `tramite` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
-CREATE INDEX `fk_Tramite_Estado_idx` ON `Tramite` (`idEstado` ASC)  COMMENT '';
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-CREATE INDEX `fk_Tramite_Analista_idx` ON `Tramite` (`idAnalista` ASC)  COMMENT '';
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+-- Dump completed on 2016-10-10 15:30:39
