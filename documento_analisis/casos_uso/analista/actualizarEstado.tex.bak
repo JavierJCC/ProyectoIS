@@ -52,11 +52,11 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU02 Iniciar Sesión Empleado}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU01 Iniciar Sesión}
 	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Alta}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{Autorizado}
+  \UCitem{Estado}{En proceso}
 	\UCitem{Autor}{Alberto Maldonado Romo}
 	\UCitem{Revisor}{Juan Antonio Guzman Chavez }
 \end{UseCase}

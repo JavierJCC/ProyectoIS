@@ -28,14 +28,19 @@
 \pagebreak
 \cfinput{requerimientos/requerimientos}
 \pagebreak
-\cfinput{casos_uso/casos_uso}
-
+\chapter{Análisis de riesgos}
+\cfinput{riesgos/riesgos}
+\pagebreak
 %=========================================================
 %\chapter{Descripcion de los Casos de uso}
 %\cfinput{DescripcionEstatus/descripcion}
 	
 
+\chapter{Diagramas de Casos de uso}
+\pagebreak
+\cfinput{casos_uso/casos_uso}
 \chapter{Descripcion de los Casos de uso}
+\pagebreak
 \section{Analista}
 \cfinput{casos_uso/analista/iniciarSesionA}
 \cfinput{casos_uso/analista/gestionarsolicitudes}
@@ -58,6 +63,4 @@
 \cfinput{casos_uso/alumnoEgresado/UI}
 
 
-\chapter{Análisis de riesgos}
-\cfinput{riesgos/riesgos}
 \end{document}
