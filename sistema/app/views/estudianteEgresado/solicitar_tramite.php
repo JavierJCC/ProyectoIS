@@ -46,7 +46,13 @@
         <div>
       </center>
     </div>
+    <div class = "col-md-12"> 
+    <center>
+      <button class="btn btn-primary" ng-click="enviarPeticiones()"> Enviar lista de documentos</button>
+    </center>
+    </div>
   </div>
+  
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>

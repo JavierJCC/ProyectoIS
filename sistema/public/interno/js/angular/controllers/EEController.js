@@ -34,5 +34,10 @@ controller('solicitarTramiteController',  function($scope){
       alertify.error('No se ha eliminador')});*/
 
   };
+  $scope.enviarPeticiones = function(){
+    alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'Prompt Value'
+               , function(evt, value) { alertify.success('You entered: ' + value) }
+               , function() { alertify.error('Cancel') });
+  };
   
 });
