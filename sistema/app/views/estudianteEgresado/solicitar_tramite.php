@@ -61,6 +61,7 @@
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>
+<script src="<?= $url_path ?>interno/js/angular/services/estudianteFactory.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/controllers/EEController.js"></script>
 
 <?php endblock() ?>

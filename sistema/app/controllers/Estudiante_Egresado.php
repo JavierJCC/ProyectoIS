@@ -2,16 +2,23 @@
 session_start();
 class Estudiante_Egresado extends Controller
 {
+  private $EE_modelo;
   function __construct(){
     if(!$_SESSION["usuario"]){
       header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
     }
+    $this->EE_modelo = $this->model('estudianteEgresadoModel');
   }
   public function Solicitar_Tramite(){
-    $EE_modelo = $this->model('estudianteEgresadoModel');
-    $documentos = $EE_modelo->select_all_documentos();
-    $motivos = $EE_modelo->select_all_motivos();
+    $documentos = $this->EE_modelo->select_all_documentos();
+    $motivos = $this->EE_modelo->select_all_motivos();
     print_r($_SESSION["usuario"]);
     $this->view('estudianteEgresado/solicitar_tramite',['documentos'=> $documentos, 'motivos'=> $motivos ]);
+  }
+  public function Enviar_Peticion(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
+
   }
 }

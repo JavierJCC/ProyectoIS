@@ -27,4 +27,15 @@ class estudianteEgresadoModel
     return $motivos ? $motivos : array();
   }
 
+  function insert_peticiones($peticiones,$solicitante){
+    foreach($peticiones as $peticion){
+      $query = 'Insert into solicitud(documento_idDocumento,motivo_idMotivo,idAlumno,fecha,aceptacion) values('.$peticion->idDocumento.','.$peticion->idMotivo.','.$solicitante.',now(),0)';
+      if($this->connection->query($query) === TRUE){
+        echo "Solicitudes guardadas";
+      }else{
+         echo  $this->connection->error;
+      }
+    }
+  }
+
 } 

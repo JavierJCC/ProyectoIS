@@ -104,13 +104,11 @@
     <!-- Page Content -->
     <div id="page-wrapper" ng-app="app">
         <div class="container-fluid">
-
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header"> <?php emptyblock('title')?></h1>
                 </div>
             </div>
-
             <?php emptyblock('main') ?>
             <!-- ... Your content goes here ... -->
 
