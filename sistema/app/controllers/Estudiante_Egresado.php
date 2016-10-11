@@ -1,9 +1,10 @@
 <?php 
-session_start();
+
 class Estudiante_Egresado extends Controller
 {
   private $EE_modelo;
   function __construct(){
+    session_start();
     if(!$_SESSION["usuario"]){
       header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
     }
@@ -12,7 +13,6 @@ class Estudiante_Egresado extends Controller
   public function Solicitar_Tramite(){
     $documentos = $this->EE_modelo->select_all_documentos();
     $motivos = $this->EE_modelo->select_all_motivos();
-    print_r($_SESSION["usuario"]);
     $this->view('estudianteEgresado/solicitar_tramite',['documentos'=> $documentos, 'motivos'=> $motivos ]);
   }
   public function Enviar_Peticion(){

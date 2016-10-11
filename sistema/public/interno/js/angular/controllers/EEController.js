@@ -41,7 +41,9 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
       alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'cuerpoCorreo@servidor.dominio'
       ,function(evt, value) {
         alertify.success("Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de 'Mis solicitudes en proceso.'");
-        estudianteFactory.post_solicitudes($scope.documentos,function(resultado){});
+        estudianteFactory.post_solicitudes($scope.documentos,function(resultado){
+          $scope.documentos = [];
+        });
       },function() { alertify.error('No se ha enviado tu solicitud, puedes seguir agregando o quitando documentos.') });
   
     }else{

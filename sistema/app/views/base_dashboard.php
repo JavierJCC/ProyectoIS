@@ -36,7 +36,6 @@
     <![endif]-->
 </head>
 <body>
-<?php session_start(); ?>
 <div id="wrapper">
 
     <!-- Navigation -->
