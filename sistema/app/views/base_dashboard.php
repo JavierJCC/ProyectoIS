@@ -71,7 +71,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Cambiar contraseña</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+                    <li><a href="<?= $url_path ?>Index/logout"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
                     </li>
                 </ul>
             </li>

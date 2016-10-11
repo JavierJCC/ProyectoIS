@@ -11,12 +11,16 @@ class Index extends Controller
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
     $usuario = $this->usuarioModel->login($request->boleta,$request->password);
-    if($usuario->boleta){
+    if($usuario){
       $data = array('Valida' => 1);
       $_SESSION["usuario"]=$usuario;
+      header('Content-Type: application/json');
+      $this->response = json_encode($data);
+    }else{
+        //header('HTTP/1.1 500 Internal Server Booboo');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'ERROR', 'code' => 1337)));
     }
-    header('Content-Type: application/json');
-    echo json_encode($data);
   }
 
   function loginT(){
@@ -29,5 +33,9 @@ class Index extends Controller
     }
     header('Content-Type: application/json');
     echo json_encode($data);
+  }
+  function logout(){
+    session_destroy();
+    header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
   }
 }

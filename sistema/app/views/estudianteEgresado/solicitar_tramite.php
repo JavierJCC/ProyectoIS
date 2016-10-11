@@ -40,12 +40,17 @@
     <div class = "col-md-6">
       <center>
         <h4> Lista de documentos </h4>
-        <div class="panel panel-primary col-md-6" ng-repeat="documento in documentos track by $index">
-          <div class="panel-heading"> [[documento.nombre]]</div>
-          <div class="panel-footer"> <a href="#" ng-click="eliminarPeticion([[$index]])"> <img src = "<?= $url_path ?>interno/images/cross.png" alt="Eliminar de lista de peticiones"> </a> </div>
-        <div>
+        <div ng-if="documentos.length != 0">
+          <div class="panel panel-primary col-md-6" ng-repeat="documento in documentos track by $index">
+            <div class="panel-heading"> [[documento.nombre]]</div>
+            <div class="panel-footer" style="padding-bottom:0px; padding-top:0px;"> [[documento.motivo]] <br> <a href="#" ng-click="eliminarPeticion([[$index]])"> <img src = "<?= $url_path ?>interno/images/cross.png" alt="Eliminar de lista de peticiones"> </a> </div>
+          <div>
+        </div>
       </center>
     </div>
+    <div ng-if="documentos.length == 0" style="text-align:center;" class="alert alert-danger">
+        No has agregado ningún documento.
+      </div>
     <div class = "col-md-12"> 
     <center>
       <button class="btn btn-primary" ng-click="enviarPeticiones()"> Enviar lista de documentos</button>
