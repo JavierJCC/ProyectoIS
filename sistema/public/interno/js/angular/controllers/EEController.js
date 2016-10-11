@@ -37,11 +37,15 @@ controller('solicitarTramiteController',  function($scope){
     alertify.error('Has eliminado un documento de tu lista.')
   };
   $scope.enviarPeticiones = function(){
-    alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'cuerpoCorreo@servidor.dominio'
-               , function(evt, value) {
-                 alertify.success("Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de 'Mis solicitudes en proceso.'");
-                }
-               , function() { alertify.error('Cancel') });
+    if($scope.documentos.length != 0){
+      alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'cuerpoCorreo@servidor.dominio'
+      ,function(evt, value) {
+        alertify.success("Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de 'Mis solicitudes en proceso.'");
+      },function() { alertify.error('No se ha enviado tu solicitud, puedes seguir agregando o quitando documentos.') });
+  
+    }else{
+      alertify.error('Debes tener al menos un documento en tu petición.');
+    }
   };
   
 });

@@ -42,7 +42,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <img src="<?=$url_path ?>index/img/menu.png" style="width:100px; height:70px;">
+                <a class="navbar-brand" href="index.html">Escuela Superior de Cómputo</a>
         </div>
 
        <!-- Top Navigation: Right Menu -->
