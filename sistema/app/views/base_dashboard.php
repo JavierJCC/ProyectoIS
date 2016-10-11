@@ -8,9 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Startmin - Bootstrap Admin Theme</title>
-
-    <!-- Bootstrap Core CSS -->
+   <!-- Bootstrap Core CSS -->
     <link href="<?= $url_path ?>interno/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -44,22 +42,10 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Startmin</a>
+            <img src="<?=$url_path ?>index/img/menu.png" style="width:100px; height:70px;">
         </div>
 
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-
-        <!-- Top Navigation: Left Menu -->
-        <ul class="nav navbar-nav navbar-left navbar-top-links">
-            <li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>
-        </ul>
-
-        <!-- Top Navigation: Right Menu -->
+       <!-- Top Navigation: Right Menu -->
         <ul class="nav navbar-right navbar-top-links">
             <li class="dropdown navbar-inverse">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -69,16 +55,8 @@
                     <li>
                         <a href="#">
                             <div>
-                                <i class="fa fa-comment fa-fw"></i> New Comment
-                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                <i class="fa fa-comment fa-fw"></i> Documento finalizado
                             </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>See All Alerts</strong>
-                            <i class="fa fa-angle-right"></i>
                         </a>
                     </li>
                 </ul>
@@ -88,12 +66,12 @@
                     <i class="fa fa-user fa-fw"></i> <?= $_SESSION["usuario"]->boleta ?> <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
                     </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Cambiar contraseña</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
                     </li>
                 </ul>
             </li>
@@ -106,32 +84,16 @@
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
                         <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                            <small class="text-muted">
+                                Menú de navegación
+                            </small>    
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="#"><i class="fa fa-file-text-o fa-fw"></i>     Solicitar documento</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Consultar estatus de documentos</a>
                     </li>
                 </ul>
 
