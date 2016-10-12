@@ -94,6 +94,9 @@
                     <li>
                         <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Consultar estatus de documentos</a>
                     </li>
+                    <li>
+                        <a href="estado_Tramite"><i class="fa fa-table fa-fw"></i>     Estatus de las solicitudes</a>
+                    </li>
                 </ul>
 
             </div>
