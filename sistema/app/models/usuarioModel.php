@@ -20,9 +20,10 @@ class usuarioModel{
     return $alumno? $alumno->fetch_object() : NULL;
   }
 
-  function loginTrabajador($RFC, $password){
+  function loginTrabajador($noEmp, $password){
     $query = "SELECT Persona.nombre, Persona.apPaterno, Persona.apMaterno,TrabajadorArea.noEmpleado from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.idPersona and TrabajadorArea.noEmpleado = '" .$noEmp. "' and Persona.contrasena = '" . $password . "';";
     $persona = $this->connection->query($query);
+    printf($this->connection->error);
     return $persona ? $persona->fetch_object() : NULL;
   }
   
