@@ -38,4 +38,13 @@ class estudianteEgresadoModel
     }
   }
 
+    function select_all_estados(){
+    $query = 'SELECT doc.nombre, sol.Fecha, mot.nombre, est.Estado
+    FROM documento AS doc, solicitud AS sol, motivo AS mot, tramite AS tra, estadotramite AS est
+    WHERE sol.Documento_idDocumento = doc.idDocumento AND sol.Motivo_idMotivo = mot.idMotivo AND tra.idEstado= est.idEstadoTramite 
+    AND idSolicitud=tra.idTramite';
+    $motivos = $this->connection->query($query);
+    return $motivos ? $motivos : array();
+  }
+  
 } 

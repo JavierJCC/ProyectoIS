@@ -10,59 +10,57 @@
  
 
  <?php startblock('title') ?>
-     <h1 class="section-heading">Estatus de los documentos</h1>
+     <h1 class="section-heading">Estatus de las solicitudes</h1>
   <?php endblock() ?>
 
  <?php startblock('main') ?>
-		<p>En esta sección el alumno puede ver los documentos solicitados a lo largo del semestre.</p>
-
-	<div class="container">
-		<div class="row" style="width:70%">
-			<table class="table table-hover">
-				<thead  style="color:white;background:#4f94e0">
+		<p>Estado de los documentos solicitados.</p><br>
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="table-responssive table-border">
+			<table class="table">
+				<thead style="color:white;background:#4f94e0">
 		    		<tr>
-		        		<th id="boleta"><b>Número de solicitudes</b> </th>
-		   				<th id="documento"><b>Documento solicitado</b>  </th>
-		        		<th id ="estado"><b>Estado</b> </th>
-		        		<th id ="razon"><b>Razón</b> </th>
-		        		<th id ="cantidad"><b>Cantidad</b> </th>
-		        		<th id ="fechaT"><b>Fecha de tramite</b> </th>
-		        		<th id ="fechaE"><b>Fecha de entrega</b> </th>
+		    			
+		        		<th id="boleta"><center> <b>Número de solicitudes</b> </center></th>
+		   				<th id="documento"><center><b>Documento solicitado</b></center>  </th>
+		        		<th id ="estado"><center><b>Estado</b></center> </th>
+		        		<th id ="razon"><center><b>Motivo</b></center> </th>
+		        		<th id ="fechaT"><center><b>Fecha de solicitud</b></center> </th>
+
 		      		</tr>
 		    	</thead>
 		    	<tbody>
-		      		<tr class="info">
-		        		<td><b>1</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td><b>Entregado</b></td>
-		        		<td><b>Actividad deportiva</b></td>
-		        		<td><b>1</b></td>
-		        		<td><b>12/09/2016</b></td>
-		        		<td><b>15/09/2016<b></td>
-		  
-		      		</tr>
-		      		<tr class="info">
-		        		<td><b>2</b></td>
-		        		<td><b>Constancia</b></td>
-		        		<td><b>Entregado</b></td>
-		        		<td><b>Actividad cultural</b></td>
-		        		<td><b>1</b></td>
-		        		<td><b>20/09/2016</b></td>
-		        		<td><b>24/09/2016<b></td>
-		      		</tr>
-		      		<tr class="info">
-		        		<td><b>3</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td><b>Entregado</b></td>
-		        		<td><b>Actividad deportiva</b></td>
-		        		<td><b>1</b></td>
-		        		<td><b>30/09/2016</b></td>
-		        		<td><b>03/10/2016<b></td>
-		      		</tr>
+		      		<?php
+		      			$i=0;
+		      			if ($data['estado']){
+		      				while($Estado = mysqli_fetch_array($data['estado']))
+			                {
+			                	echo "<tr><td><center><b>";
+				                printf("%s", ++$i);
+				                echo "</b></center></td>";
+				                echo "<td><center><b>";
+				                printf("%s", $Estado[0]);
+				                echo "</b></center></td>";
+				                echo "<td><center><b>";
+				                printf("%s", $Estado[3]);
+				                echo "</b></center></td>";
+				                echo "<td><center><b>";
+				                printf("%s", $Estado[2]);
+				                echo "</b></center></td>";
+				                echo "<td><center><b>";
+				                printf("%s", $Estado[1]);
+				                echo "</b></center></td>";
+				                echo "</tr>";
+
+			                }
+		      			}
+
+		      		?>
 		    	</tbody>
-			</table>
-			
+			</table>	
 		</div>
+	</div>
 	</div>
      
   <?php endblock() ?>

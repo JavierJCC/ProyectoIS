@@ -20,4 +20,10 @@ class Estudiante_Egresado extends Controller
     $request = json_decode($postdata);
     $this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
   }
+  
+  public function	Estado_Tramite(){
+    $EE_modelo = $this->model('estudianteEgresadoModel');
+    $estado = $EE_modelo->select_all_estados();
+    $this->view('estudianteEgresado/estado_tramite', ['estado'=> $estado]);
+  }
 }
