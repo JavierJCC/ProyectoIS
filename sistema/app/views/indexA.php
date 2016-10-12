@@ -86,14 +86,14 @@
                                     <label for="inputEmail3" class="col-md-3 lead">No. de empleado</label>
                                     <div class="col-sm-4">
                                     <input type="text" class="form-control" id="inputEmail3" placeholder="12345678" ng-model="noEmpleado">
-                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
+                                    <span ng-if="errorBoleta" class="text-danger"> [[errorEmpleado]]</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword3" class="col-sm-3 lead">Contraseña</label>
                                     <div class="col-sm-4">
                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" ng-model="password">
-                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
+                                    <span ng-if="errorBoleta" class="text-danger"> [[errorContrasena]]</span>
                                     </div>
                                 </div>
                                 <div class="row">

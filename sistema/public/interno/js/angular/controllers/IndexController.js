@@ -24,7 +24,6 @@ controller('indexController', function($scope,indexFactory,$window){
   $scope.iniciarSesion = function(){
     indexFactory.loginTrabajador({'noEmpleado': $scope.noEmpleado, 'password':$scope.password}, function(resultado){
       if(resultado.noEmpleado){
-        console.log(resultado);
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/check.png' style='position:absolute; top:35%; left:50 %;'>
       <div style='position:absolute; top:50%; left:30%; color:gray;'> Inicio de sesión exitoso.`).set('basic', true); ;
         sleep(1700).then(() => {
