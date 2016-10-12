@@ -26,8 +26,8 @@ class Index extends Controller
   function loginT(){
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-    $usuario = $this->usuarioModel->loginTrabajador($request->RFC,$request->password);
-    if($usuario->RFC){
+    $usuario = $this->usuarioModel->loginTrabajador($request->noEmp,$request->password);
+    if($usuario->noEmp){
       $data = array('Valida' => 1);
       $_SESSION["usuario"]=$usuario;
     }
