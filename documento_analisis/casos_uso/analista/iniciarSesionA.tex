@@ -9,7 +9,7 @@
  }
   \UCitem{Entradas}{
     \begin{itemize}
-      \item No. de empleado: cadena conformada por 8 números.
+      \item No. de empleado: Cadena conformada por 8 números.
       \item Contraseña: Campo de tipo password.
     \end{itemize}
   }
@@ -41,7 +41,7 @@
   }
   \UCitem{Observaciones}{
     \begin{itemize} 
-    	\item Ninguno
+    	\item Al ingresar por primera vez al sistema, la contraseña que deberá utilizar el empleado deberá ser su RFC.
   	\end{itemize}
   }
   \UCitem{Errores}{
@@ -60,23 +60,28 @@
 
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Solicita ingresar al sistema.
-  \UCpaso Muestra la pantalla UIniciarSesión.
+  \UCpaso Muestra la pantalla {\bf UIniciarSesión}.
+  \UCpaso[\UCactor] Verifica que no es su primera vez en el sistema. [TAA]
   \UCpaso[\UCactor] Ingresa su número de no. de empleado y su contraseña.
   \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
-  \UCpaso Valida el formato de la entrada de los datos [TAA].
-  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos [TAB].
+  \UCpaso Valida el formato de la entrada de los datos.[TAB]
+  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos.[TAB]
   \UCpaso Muestra el mensaje {\bf AlertaConfirmaciónIniciarSesión. }
   \UCpaso[\UCactor]Ingresa al sistema.
 \end{UCtrayectoria}
 
-
-\begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
-  \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
-  \UCpaso Notifica que el formato de CURP es incorrecto y muestra mensaje {\bf MFormatoIncorrecto2} ``Ingresa el formato solicitado como en la muestra".
-  \UCpaso Continúa transacción desde el paso 5.
+\begin{UCtrayectoriaA}{A}{Primera vez en el sistema}
+  \UCpaso Muestra el mensaje {\bf MPrimeraVezRFC} ``Ingrese en el campo de contraseña tu RFC.
+Podrá modificarlo posteriormente si lo desea.".
+  \UCpaso Continúa transacción desde el paso 4.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Datos no encontrados en el repositorio de datos}
+\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectos}
+  \UCpaso Notifica que el formato del no. de empleado es incorrecta y muestra mensaje{\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
+  \UCpaso Continúa transacción desde el paso 3.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{Datos no encontrados en el repositorio de datos}
   \UCpaso Notifica que los datos ingresados son incorrectos o no existen y muestra alerta {\bf AlertaDatosIncorrectos}.
   \UCpaso Continúa transacción desde el paso 2.
 \end{UCtrayectoriaA}
