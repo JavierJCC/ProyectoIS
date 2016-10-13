@@ -89,7 +89,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-file-text-o fa-fw"></i>     Solicitar documento</a>
+                        <a href="Solicitar_Tramite"><i class="fa fa-file-text-o fa-fw"></i>     Solicitar documento</a>
                     </li>
                     <li>
                         <a href="estado_Tramite"><i class="fa fa-table fa-fw"></i>     Estado de las solicitudes</a>
