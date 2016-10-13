@@ -92,10 +92,7 @@
                         <a href="#"><i class="fa fa-file-text-o fa-fw"></i>     Solicitar documento</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Consultar estatus de documentos</a>
-                    </li>
-                    <li>
-                        <a href="estado_Tramite"><i class="fa fa-table fa-fw"></i>     Estatus de las solicitudes</a>
+                        <a href="estado_Tramite"><i class="fa fa-table fa-fw"></i>     Estado de las solicitudes</a>
                     </li>
                 </ul>
 
