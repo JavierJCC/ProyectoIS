@@ -1,0 +1,46 @@
+\pagebreak
+\begin{UseCase}{CUEE03}{Consultar estatus de los trámites solicitados}{El alumno o egresado podrá consultar el estado en el que se encuentra cada documento que haya solicitado.}
+	\UCitem{Versión}{1.0}
+	\UCitem{Autor}{Estudiante/Egresado.}	
+	\UCitem{Propósito}{El estudiante o egresado podrá visualizar el estado de los tramites solicitados.}
+	\UCitem{Entradas}{
+		\begin{itemize}
+			\item Identificador: Cadena de caracteres la cual servirá para identificar el usuario.
+		\end{itemize}			
+	
+	}
+	\UCitem{Salidas}{
+	\begin{itemize}
+		\item Mensaje de notificación:  ``No hay documentos solicitados".
+\end{itemize}		
+	}
+	
+	
+	\UCitem{Precondiciones}{
+		\begin{itemize}
+			\item El alumno o egresado debió ser identificado por el sistema.
+			\item Debe existir al menos una solicitud de un documento.
+		\end{itemize}
+	
+	
+	}
+	\UCitem{Tipo de ejecución}{Secundario, viene de CUG01 Iniciar sesión Estudiante/Egresado.}
+	\UCitem{Volatilidad}{Baja.}
+	\UCitem{Madurez}{Baja.}
+	\UCitem{Prioridad}{Alta.}
+	\UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Javier Chávez Chávez}
+	\UCitem{Revisor}{Marcela Castro Flores}
+	
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+	\UCpaso [\UCactor] Solicita ver el estado de las solicitudes haciendo click en el botón del menú \IUbutton{Estado de las solicitudes}.
+	\UCpaso Verifica si existe al menos un documento solicitado. [TAA]
+	\UCpaso Obtiene los datos de los documentos.
+	\UCpaso Muestra en pantalla (UIEEConsultarEstadoDeLosDocumentos).
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{No existen documentos}
+	\UCpaso Muestra el mensaje {\bf No hay documentos solicitados.} en la pantalla (UIEEConsultarEstadoDeLosDocumentos).
+\end{UCtrayectoriaA}
