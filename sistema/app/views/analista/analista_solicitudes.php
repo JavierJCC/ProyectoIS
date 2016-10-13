@@ -96,32 +96,6 @@
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>
-	<script language="javascript" type="text/javascript">
-		function eliminaEstudiante(NumEmp){
-			r = confirm("Estas seguro?");
-			if(r==true){
-			  eliminaEstudianteBD(NumEmp);
-			}
-		  }
-		  
-		  function rechazar_solicitud(idSolicitud){
-			$.ajax({
-			  method:"post",
-			  url:"Analista_solicitudes/Peticion_Acep",
-			  data:{idSolicitud:idSolicitud},
-			  beforeSend:function(){
-				  $("#myModal").foundation("reveal", "open");
-				  $("#AX1").html("<center><img src='../imgs/ajax-loader.gif'></center>");
-			  },
-			  success:function(data){
-				$("#AX1").html("<h2>"+data+"</h2>");
-				setTimeout(function(){$("#AX").foundation("reveal", "close");},2000);
-			  }
-			});
-			return false;
-		  }
-		
-	</script>
 <script src="<?= $url_path ?>interno/js/angular/controllers/AnalistaController.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
