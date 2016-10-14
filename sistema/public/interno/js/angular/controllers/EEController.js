@@ -26,7 +26,7 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
         <div style='position:absolute; top:50%; left:30%; color:gray;'> El número máximo de peticiones es 5`);
       }
     }else{
-      alertify.error('Debes introducir un motivo para tu petición.');
+      alertify.error('Debes introducir un motivo válido para tu petición.');
     }
     
   };
@@ -44,7 +44,7 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
         estudianteFactory.post_solicitudes($scope.documentos,function(resultado){
           $scope.documentos = [];
         });
-      },function() { alertify.error('No se ha enviado tu solicitud, puedes seguir agregando o quitando documentos.') });
+      },function() { alertify.error('No se ha enviado tu solicitud, puedes seguir agregando o quitando documentos.') }).set('labels', {ok:'Enviar', cancel:'Cancelar'});;
   
     }else{
       alertify.error('Debes tener al menos un documento en tu petición.');

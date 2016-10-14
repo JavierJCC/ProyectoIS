@@ -37,9 +37,10 @@ class Index extends Controller
         header('Content-Type: application/json; charset=UTF-8');
         die(json_encode(array('message' => 'ERROR', 'code' => 1337)));
     }
+  
+  }
   function logout(){
     session_destroy();
     header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
   }
-}
 }

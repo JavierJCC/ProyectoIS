@@ -31,7 +31,6 @@
    
 </head>
 <body>
-<?php session_start(); ?>
 <div id="wrapper">
 
     <!-- Navigation -->
@@ -58,7 +57,7 @@
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <?= $_SESSION["usuario"]->noEmp ?> <b class="caret"></b>
+                    <i class="fa fa-user fa-fw"></i> <?= $_SESSION["usuario"]->nombre ?> <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
