@@ -35,4 +35,9 @@ class Analista_solicitudes extends Controller
 	$this->EE_modelo->acep_solicitudes($idSolicitud, $idAlumno);
     //$this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
   }
+	
+  public function Estado_peticion(){
+	  $EE_modelo = $this->model('analistaModel');
+	  $this->view('analista/actualizar_estado');
+  }
 }
