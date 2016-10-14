@@ -18,7 +18,7 @@ class Estudiante_Egresado extends Controller
   public function Enviar_Peticion(){
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-    $this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
+    $this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->idPersona);
   }
   
   public function	Estado_Tramite(){

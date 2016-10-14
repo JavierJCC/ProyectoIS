@@ -2,21 +2,14 @@
 
 class Analista_solicitudes extends Controller
 {
-<<<<<<< HEAD
-=======
-  /*private $EE_modelo;
->>>>>>> be95097c53b7fa2b20bc122270f280227b79b524
+  private $EE_modelo;
   function __construct(){
     session_start();
     if(!$_SESSION["usuario"]){
-      header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
+      header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/"); 
     }
-<<<<<<< HEAD
-  }
-=======
     $this->EE_modelo = $this->model('analistaModel');
-  }*/
->>>>>>> be95097c53b7fa2b20bc122270f280227b79b524
+  }
   public function Visualizar_Tramite(){
     $EE_modelo = $this->model('analistaModel');
     $solicitudes = $EE_modelo->select_all_solicitudes();
