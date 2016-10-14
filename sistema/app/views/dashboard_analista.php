@@ -99,7 +99,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
+                        <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
                     </li>
                 </ul>
 
