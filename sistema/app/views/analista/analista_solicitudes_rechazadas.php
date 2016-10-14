@@ -1,13 +1,13 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/Proyecto_IS/ProyectoSemestreIS/sistema/app/views/dashboard_analista.php");?>
 
  <?php startblock('title') ?>
-     Solicitudes pendientes
+     Solicitudes rechazadas
 	 
   <?php endblock() ?>
 
  <?php startblock('main') ?>
-  <div ng-controller="solicitarTramiteController" id="SolicitudesPen">
-	<section id="SolicitudesPen">
+  <div ng-controller="solicitarTramiteController" id="SolicitudesRec">
+	<section id="SolicitudesRec">
 		<div class="row">
 			<div class="col-log-6">
 				<div class="panel panel-default">
@@ -41,25 +41,25 @@
 										<th style="text-align:center">Tipo de documento</th>
 										<th style="text-align:center">Motivo</th>
 										<th style="text-align:center" width="10%">Fecha solicitud</th>
-										<th style="text-align:center">Aceptación</th>
+										<th style="text-align:center">Aceptar</th>
 									  </tr>
 								</thead>
 								<tbody>
 									  <?php 
-									  if ($data['solicitudes']){
-										while($solicitudes = $data['solicitudes']->fetch_assoc())
+									  if ($data['solac']){
+										while($solac = $data['solac']->fetch_assoc())
 										{
 										  print "<tr>";
-										  print "<th> {$solicitudes['idSolicitud']}</th>";
-										  print "<th> {$solicitudes['Boleta']}</th>";
-										  print "<th> {$solicitudes['Nombre']}</th>";
-										  print "<th> {$solicitudes['Tipo de Documento']}</th>";
-										  print "<th> {$solicitudes['Motivo']}</th>";
-										  print "<th> {$solicitudes['Fecha']}</th>";
-										  print "<th> 
+										  print "<th> {$solac['idSolicitud']}</th>";
+										  print "<th> {$solac['Boleta']}</th>";
+										  print "<th> {$solac['Nombre']}</th>";
+										  print "<th> {$solac['Tipo de Documento']}</th>";
+										  print "<th> {$solac['Motivo']}</th>";
+										  print "<th> {$solac['Fecha']}</th>";
+										  print "<th style='text-align:center'> 
 													<!--<button type='button' class='btn btn-success btn-circle'><i class='glyphicon glyphicon-ok'></i></button>-->
-													<button class='btn btn-outline btn-success' data-toggle='modal' data-target='#myModal'><span class='glyphicon glyphicon-ok'></span></button>
-													<a href='#' class='btn btn-outline btn-danger '><span class='glyphicon glyphicon-minus-sign'></span></a>
+													<a href='#' class='btn btn-outline btn-success'><span class='glyphicon glyphicon-ok'></span></a>
+													<!--<a href='#' class='btn btn-outline btn-danger '><span class='glyphicon glyphicon-minus-sign'></span></a>-->
 												<th>";
 										  print "</tr>";
 										}
@@ -73,30 +73,10 @@
 			</div>
 		</div>
 	</section>
-	<div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog">
-		
-		  <!-- Modal content-->
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Modal Header</h4>
-			</div>
-			<div class="modal-body">
-			  <p>Some text in the modal.</p>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		  </div>
-		  
-		</div>
-	  </div>
   </div>
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>
-<script src="<?= $url_path ?>interno/js/angular/controllers/AnalistaController.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="<?= $url_path ?>interno/js/angular/controllers/EEController.js"></script>
+
 <?php endblock() ?>

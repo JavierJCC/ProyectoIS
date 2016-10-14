@@ -35,12 +35,12 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-	\UCpaso [\UCactor] Da click el botón ''Estatus de los documentos'' ubicado en la pantalla Inicio.
-	\UCpaso Verifica si existen documentos solicitados.[TAA]
+	\UCpaso [\UCactor] Solicita ver el estado de las solicitudes haciendo click en el botón del menú \IUbutton{Estado de las solicitudes}.
+	\UCpaso Verifica si existe al menos un documento solicitado. [TAA]
 	\UCpaso Obtiene los datos de los documentos.
-	\UCpaso Muestra en pantalla el estatus de los documentos.
+	\UCpaso Muestra en pantalla (UIEEConsultarEstadoDeLosDocumentos).
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{No existen documentos}
-	\UCpaso Muestra el mensaje "No hay documentos solicitados'' en la pantalla de Estatus de los documentos.
+	\UCpaso Muestra el mensaje {\bf No hay documentos solicitados.} en la pantalla (UIEEConsultarEstadoDeLosDocumentos).
 \end{UCtrayectoriaA}

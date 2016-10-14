@@ -41,9 +41,9 @@
 \contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{31}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{31}{subsection.6.1.2}
 \contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{33}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Autoridad pertinente}{35}{section.6.2}
-\contentsline {section}{\numberline {6.3}Departamento escolar}{35}{section.6.3}
-\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{35}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{35}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{35}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los tramites solicitados}{37}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.2}Autoridad pertinente}{34}{section.6.2}
+\contentsline {section}{\numberline {6.3}Departamento escolar}{34}{section.6.3}
+\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{34}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{34}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{34}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los tramites solicitados}{34}{subsection.6.4.3}

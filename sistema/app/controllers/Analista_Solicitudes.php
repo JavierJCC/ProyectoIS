@@ -2,16 +2,49 @@
 
 class Analista_solicitudes extends Controller
 {
+<<<<<<< HEAD
+=======
+  /*private $EE_modelo;
+>>>>>>> be95097c53b7fa2b20bc122270f280227b79b524
   function __construct(){
     session_start();
     if(!$_SESSION["usuario"]){
       header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
     }
+<<<<<<< HEAD
   }
+=======
+    $this->EE_modelo = $this->model('analistaModel');
+  }*/
+>>>>>>> be95097c53b7fa2b20bc122270f280227b79b524
   public function Visualizar_Tramite(){
-    $EE_modelo = $this->model('analistavistaModel');
+    $EE_modelo = $this->model('analistaModel');
     $solicitudes = $EE_modelo->select_all_solicitudes();
-    //$motivos = $EE_modelo->select_all_motivos();
     $this->view('analista/analista_solicitudes',['solicitudes'=> $solicitudes]);
+  }
+  
+  public function Tramites_Aceptados(){
+    $EE_modelo = $this->model('analistaModel');
+    $solac = $EE_modelo->select_solicitudes_aceptadas();
+    $this->view('analista/analista_solicitudes_aceptadas',['solac'=> $solac]);
+  }
+  
+  public function Tramites_Rechazados(){
+    $EE_modelo = $this->model('analistaModel');
+    $solac = $EE_modelo->select_solicitudes_rechazadas();
+    $this->view('analista/analista_solicitudes_rechazadas',['solac'=> $solac]);
+  }
+  
+  public function Peticion_Acep(){
+	$EE_modelo = $this->model('analistaModel');
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+	$this->EE_modelo->acep_solicitudes($idSolicitud, $idAlumno);
+    //$this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
+  }
+	
+  public function Estado_peticion(){
+	  $EE_modelo = $this->model('analistaModel');
+	  $this->view('analista/actualizar_estado');
   }
 }

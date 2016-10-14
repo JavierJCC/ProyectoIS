@@ -26,7 +26,7 @@
 		   				<th id="documento"><center><b>Documento solicitado</b></center>  </th>
 		        		<th id ="estado"><center><b>Estado</b></center> </th>
 		        		<th id ="razon"><center><b>Motivo</b></center> </th>
-		        		<th id ="fechaT"><center><b>Fecha de solicitud</b></center> </th>
+		        		<th id ="fechaT"><center><b>Fecha y hora de la solicitud</b></center> </th>
 
 		      		</tr>
 		    	</thead>
@@ -40,16 +40,16 @@
 				                printf("%s", ++$i);
 				                echo "</b></center></td>";
 				                echo "<td><center><b>";
-				                printf("%s", $Estado[0]);
+				                printf("%s", $Estado[2]);
 				                echo "</b></center></td>";
 				                echo "<td><center><b>";
 				                printf("%s", $Estado[3]);
 				                echo "</b></center></td>";
 				                echo "<td><center><b>";
-				                printf("%s", $Estado[2]);
+				                printf("%s", $Estado[1]);
 				                echo "</b></center></td>";
 				                echo "<td><center><b>";
-				                printf("%s", $Estado[1]);
+				                printf("%s", $Estado[0]);
 				                echo "</b></center></td>";
 				                echo "</tr>";
 

@@ -84,10 +84,21 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-file-text-o fa-fw"></i>     Gestión de solicitudes</a>
+                        <a href="#"><i class="fa fa-List-alt fa-fw"></i> Gestionar solicitudes<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="Visualizar_Tramite">Solicitudes pendientes</a>
+                            </li>
+							<li>
+                                <a href="Tramites_Aceptados">Solicitudes aceptadas</a>
+                            </li>
+							<li>
+                                <a href="Tramites_Rechazados">Solicitudes rechazadas</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
+                        <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
                     </li>
                 </ul>
 
