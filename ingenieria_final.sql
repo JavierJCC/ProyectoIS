@@ -283,6 +283,7 @@ CREATE TABLE `solicitud` (
 
 LOCK TABLES `solicitud` WRITE;
 /*!40000 ALTER TABLE `solicitud` DISABLE KEYS */;
+INSERT INTO `solicitud` VALUES (5,1,1,NULL,'2014630002','2016-10-14',0),(6,1,2,NULL,'2014630002','2016-10-14',0);
 /*!40000 ALTER TABLE `solicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,7 +330,7 @@ CREATE TABLE `tramite` (
   KEY `idEstado` (`idEstado`),
   CONSTRAINT `tramite_ibfk_1` FOREIGN KEY (`idAnalista`) REFERENCES `persona` (`idPersona`),
   CONSTRAINT `tramite_ibfk_2` FOREIGN KEY (`idEstado`) REFERENCES `estadoTramite` (`idEstado`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,6 +339,7 @@ CREATE TABLE `tramite` (
 
 LOCK TABLES `tramite` WRITE;
 /*!40000 ALTER TABLE `tramite` DISABLE KEYS */;
+INSERT INTO `tramite` VALUES (2,1,'12345'),(3,1,'12345'),(4,1,'12345'),(5,1,'12345'),(6,1,'12345');
 /*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -350,4 +352,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-14 21:16:25
+-- Dump completed on 2016-10-14 21:41:32

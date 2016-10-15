@@ -27,7 +27,7 @@
               if ($data['motivos']){
                 while($motivo = $data['motivos']->fetch_assoc())
                 {
-                  print "<option value= '{$motivo['idMotivo']}'> {$motivo['nombre']}";
+                  print "<option value= '{$motivo['idmotivo']}'> {$motivo['nombre']}";
                 }
               }
             ?>
