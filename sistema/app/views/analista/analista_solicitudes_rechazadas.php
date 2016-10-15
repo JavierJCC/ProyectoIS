@@ -7,6 +7,7 @@
 
  <?php startblock('main') ?>
   <div ng-controller="solicitarTramiteController" id="SolicitudesRec">
+	<p> Si desea cambiar de cancelar a aceptar la solicitud de clic en el boton de aceptar.</p>
 	<section id="SolicitudesRec">
 		<div class="row">
 			<div class="col-log-6">
