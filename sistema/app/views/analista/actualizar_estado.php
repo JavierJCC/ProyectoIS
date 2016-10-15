@@ -1,5 +1,5 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/Proyecto_IS/ProyectoSemestreIS/sistema/app/views/dashboard_analista.php");?>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">-->
     <style type="text/css">
         #radioBtn .notActive,#radio2Btn .notActive{
     color: #3276b1;
@@ -46,7 +46,7 @@ alertify.alert()
 		<p>Documentos solicitados con espera a cambio de estatus.</p>
 
 	<div class="container">
-		<div class="row text-center" style="width:70%">
+		<div class="row text-center" style="width:90%">
 			<table class="table table-hover">
 				<thead class="text-center" style="color:white;background:#4f94e0">
 		    		<tr class="text-center">
