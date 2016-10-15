@@ -61,7 +61,7 @@
 \contentsline {subsection}{\numberline {5.4.1}CUG01 Iniciar sesi\IeC {\'o}n Estudiante/Egresado.}{23}{subsection.5.4.1}
 \contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{23}{subsubsection.5.4.1.1}
 \contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{24}{table.5.4}
-\contentsline {subsection}{\numberline {5.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{26}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}CUEE02 Solicitar documento}{26}{subsection.5.4.2}
 \contentsline {subsubsection}{\numberline {5.4.2.1}Descripci\IeC {\'o}n completa}{26}{subsubsection.5.4.2.1}
 \contentsline {paragraph}{\numberline {5.4.2.1.1}Atributos importantes}{27}{table.5.5}
 \contentsline {subsection}{\numberline {5.4.3}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{29}{subsection.5.4.3}

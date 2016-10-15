@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-   <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="<?= $url_path ?>interno/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -28,10 +28,14 @@
 
     <link href="<?= $url_path ?>interno/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<?php session_start(); ?>
 <div id="wrapper">
 
     <!-- Navigation -->
@@ -58,7 +62,7 @@
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <?= $_SESSION["usuario"]->noEmp ?> <b class="caret"></b>
+                    <i class="fa fa-user fa-fw"></i> <?= $_SESSION["usuario"]->nom ?> <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
@@ -99,7 +103,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
+                        <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
                     </li>
                 </ul>
 

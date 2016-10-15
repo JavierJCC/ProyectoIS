@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="<?= $url_path ?>index/css/landing-page.css" rel="stylesheet" type="text/css">
+    <link href="<?= $url_path ?>interno/js/alertifyjs/css/alertify.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="<?= $url_path ?>index/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" type="text/css">
@@ -138,6 +139,7 @@
     <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/services/indexFactory.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/controllers/IndexController.js"></script>
+    <script src="<?= $url_path ?>interno/js/alertifyjs/alertify.min.js"> </script>
 </body>
 
 </html>

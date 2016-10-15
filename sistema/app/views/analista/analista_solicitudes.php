@@ -2,7 +2,6 @@
 
  <?php startblock('title') ?>
      Solicitudes pendientes
-	 
   <?php endblock() ?>
 
  <?php startblock('main') ?>
@@ -58,8 +57,8 @@
 										  print "<th> {$solicitudes['Fecha']}</th>";
 										  print "<th> 
 													<!--<button type='button' class='btn btn-success btn-circle'><i class='glyphicon glyphicon-ok'></i></button>-->
-													<button class='btn btn-outline btn-success' data-toggle='modal' data-target='#myModal'><span class='glyphicon glyphicon-ok'></span></button>
-													<a href='#' class='btn btn-outline btn-danger '><span class='glyphicon glyphicon-minus-sign'></span></a>
+													<button class='btn btn-outline btn-success' data-toggle='modal' data-target='#Modal_aceptar'><span class='glyphicon glyphicon-ok'></span></button>
+													<button class='btn btn-outline btn-danger' data-toggle='modal' data-target='#Modal_rechazar'><span class='glyphicon glyphicon-minus-sign'></span></button>
 												<th>";
 										  print "</tr>";
 										}
@@ -73,17 +72,37 @@
 			</div>
 		</div>
 	</section>
-	<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal fade" id="Modal_aceptar" role="dialog">
 		<div class="modal-dialog">
 		
 		  <!-- Modal content-->
 		  <div class="modal-content">
 			<div class="modal-header">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Modal Header</h4>
+			  <h4 class="modal-title">Acepatar solicitud</h4>
 			</div>
 			<div class="modal-body">
-			  <p>Some text in the modal.</p>
+			  <p>Ingrese el folio del documento</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+	<div class="modal fade" id="Modal_rechazar" role="dialog">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Rechazar solicitud</h4>
+			</div>
+			<div class="modal-body">
+			  <p>Indique el motivo por el cual quiere rechar</p>
 			</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,7 +115,33 @@
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>
-<script src="<?= $url_path ?>interno/js/angular/controllers/AnalistaController.js"></script>
+	<!--<script language="javascript" type="text/javascript">
+		function eliminaEstudiante(NumEmp){
+			r = confirm("Estas seguro?");
+			if(r==true){
+			  eliminaEstudianteBD(NumEmp);
+			}
+		  }
+		  
+		  function rechazar_solicitud(idSolicitud){
+			$.ajax({
+			  method:"post",
+			  url:"Analista_solicitudes/Peticion_Acep",
+			  data:{idSolicitud:idSolicitud},
+			  beforeSend:function(){
+				  $("#myModal").foundation("reveal", "open");
+				  $("#AX1").html("<center><img src='../imgs/ajax-loader.gif'></center>");
+			  },
+			  success:function(data){
+				$("#AX1").html("<h2>"+data+"</h2>");
+				setTimeout(function(){$("#AX").foundation("reveal", "close");},2000);
+			  }
+			});
+			return false;
+		  }
+		
+	</script>-->
+<!--<script src="interno/js/angular/controllers/AnalistaController.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 <?php endblock() ?>

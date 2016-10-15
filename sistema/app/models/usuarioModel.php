@@ -15,13 +15,13 @@ class usuarioModel{
   }
   
   function login($boleta,$password){
-    $query = "SELECT boleta,contrasena from Alumno where boleta ='" .$boleta. "' and contrasena = '" .$password ."';";
+    $query = "SELECT persona.idPersona from persona,alumno where persona.idPersona = alumno.boleta  and persona.idPersona ='" .$boleta. "' and persona.contrasena = '" .$password ."';";
     $alumno = $this->connection->query($query);
     return $alumno? $alumno->fetch_object() : NULL;
   }
 
   function loginTrabajador($noEmp, $password){
-    $query = "SELECT Persona.nombre, Persona.apPaterno, Persona.apMaterno,TrabajadorArea.noEmpleado from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.idPersona and TrabajadorArea.noEmpleado = '" .$noEmp. "' and Persona.contrasena = '" . $password . "';";
+    $query = "SELECT Persona.nom, Persona.apPat, Persona.apMat,TrabajadorArea.IdTrabajador from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.IdTrabajador and TrabajadorArea.idTrabajador = '" .$noEmp. "' and Persona.contrasena = '" . $password . "';";
     $persona = $this->connection->query($query);
     printf($this->connection->error);
     return $persona ? $persona->fetch_object() : NULL;

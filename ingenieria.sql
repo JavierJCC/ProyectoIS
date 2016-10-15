@@ -1,8 +1,16 @@
+<<<<<<< HEAD:ingenieria.sql
 -- MySQL dump 10.13  Distrib 5.7.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ingenieria
 -- ------------------------------------------------------
 -- Server version	5.7.13-log
+=======
+-- MySQL dump 10.13  Distrib 5.7.15, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ingenieria
+-- ------------------------------------------------------
+-- Server version	5.7.15-log
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -15,6 +23,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE DATABASE IF NOT EXISTS `ingenieria` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `ingenieria`;
 --
 -- Table structure for table `alumno`
 --
@@ -24,16 +34,17 @@ DROP TABLE IF EXISTS `alumno`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `alumno` (
   `Boleta` varchar(10) NOT NULL,
-  `CURP` varchar(18) NOT NULL,
-  `PeriodoIngreso` varchar(10) NOT NULL,
+  `CURP` varchar(18) DEFAULT NULL,
+  `PeriodoIngreso` varchar(10) DEFAULT NULL,
   `Carrera` varchar(45) NOT NULL DEFAULT 'Ingeniería en sistemas computacionales',
-  `Plan` varchar(45) NOT NULL,
+  `Plan` varchar(45) DEFAULT NULL,
   `Secuencia` varchar(45) DEFAULT NULL,
-  `TotalCreditos` varchar(45) NOT NULL,
-  `Promedio` varchar(45) NOT NULL,
+  `TotalCreditos` varchar(45) DEFAULT NULL,
+  `Promedio` varchar(45) DEFAULT NULL,
   `Telefono` varchar(45) DEFAULT NULL,
   `TelefonoMovil` varchar(45) DEFAULT NULL,
   `Email` varchar(45) DEFAULT NULL,
+  `inscrito` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Boleta`),
   UNIQUE KEY `CURP_UNIQUE` (`CURP`),
   KEY `Boleta_Solicitante_idx` (`Boleta`),
@@ -47,9 +58,49 @@ CREATE TABLE `alumno` (
 
 LOCK TABLES `alumno` WRITE;
 /*!40000 ALTER TABLE `alumno` DISABLE KEYS */;
-INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,'58.5','8.5','55555555','555555555','javisever2@gmail.com'),('2014630645','MARA950406HDFLSO94','B14','Ingeniería en sistemas computacionales','09',NULL,'62','9.5','55555555','555555555','alberto.maldo1312@gmail.com'),('2016635489','GOVJ970806HDFPAZ09','A16','Ingeniería en sistemas computacionales','09',NULL,'20','8','55555555','555555555','jacinto@gmail.com');
+INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,'58.5','8.5','55555555','555555555','javisever2@gmail.com',0),('2014630206',NULL,NULL,'Ingeniería en sistemas computacionales',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),('2014630645','MARA950406HDFLSO94','B14','Ingeniería en sistemas computacionales','09',NULL,'62','9.5','55555555','555555555','alberto.maldo1312@gmail.com',1),('2016635489','GOVJ970806HDFPAZ09','A16','Ingeniería en sistemas computacionales','09',NULL,'20','8','55555555','555555555','jacinto@gmail.com',0);
 /*!40000 ALTER TABLE `alumno` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `ingenieria`.`alumno_AFTER_INSERT` AFTER INSERT ON `alumno` FOR EACH ROW
+BEGIN
+	if (new.inscrito = '1') then 
+		insert estudianteinscrito(Boleta) values (new.Boleta);
+	end if;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `ingenieria`.`alumno_AFTER_UPDATE` AFTER UPDATE ON `alumno` FOR EACH ROW
+BEGIN
+	if (new.inscrito = '1') then 
+		insert estudianteinscrito(Boleta) values (new.Boleta);
+	end if;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `area`
@@ -120,6 +171,7 @@ CREATE TABLE `estadotramite` (
 
 LOCK TABLES `estadotramite` WRITE;
 /*!40000 ALTER TABLE `estadotramite` DISABLE KEYS */;
+INSERT INTO `estadotramite` VALUES (0,'Solicitado'),(1,'Impreso'),(2,'En firma'),(3,'Listo'),(4,'Entregado');
 /*!40000 ALTER TABLE `estadotramite` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -132,7 +184,7 @@ DROP TABLE IF EXISTS `estudianteinscrito`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `estudianteinscrito` (
   `Boleta` varchar(10) NOT NULL,
-  `Semestre` int(11) NOT NULL,
+  `Semestre` int(11) DEFAULT NULL,
   `MateriasInscritas` int(11) DEFAULT NULL,
   `MateriasReprobadas` int(11) DEFAULT NULL,
   `CreditosInscritos` float DEFAULT NULL,
@@ -148,6 +200,7 @@ CREATE TABLE `estudianteinscrito` (
 
 LOCK TABLES `estudianteinscrito` WRITE;
 /*!40000 ALTER TABLE `estudianteinscrito` DISABLE KEYS */;
+INSERT INTO `estudianteinscrito` VALUES ('2014630645',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `estudianteinscrito` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -195,6 +248,7 @@ CREATE TABLE `motivosolicitud` (
 
 LOCK TABLES `motivosolicitud` WRITE;
 /*!40000 ALTER TABLE `motivosolicitud` DISABLE KEYS */;
+INSERT INTO `motivosolicitud` VALUES (1,'Enfermedad'),(2,'Fuera de la ciudad');
 /*!40000 ALTER TABLE `motivosolicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,7 +264,7 @@ CREATE TABLE `persona` (
   `Nom` varchar(45) NOT NULL,
   `ApPat` varchar(45) NOT NULL,
   `ApMat` varchar(45) DEFAULT NULL,
-  `Contrasenia` varchar(45) DEFAULT NULL,
+  `Contrasena` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idPersona`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -221,9 +275,31 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES ('1234567890','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678');
+INSERT INTO `persona` VALUES ('12345','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `ingenieria`.`persona_AFTER_INSERT` AFTER INSERT ON `persona` FOR EACH ROW
+BEGIN
+	if (LENGTH(new.idPersona) = 10) then 
+		insert into alumno(Boleta) values (new.idPersona);
+	else
+		insert into trabajadorarea(idTrabajador) values (new.idPersona);
+	end if;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `solicitanteajeno`
@@ -285,7 +361,7 @@ CREATE TABLE `solicitud` (
 
 LOCK TABLES `solicitud` WRITE;
 /*!40000 ALTER TABLE `solicitud` DISABLE KEYS */;
-INSERT INTO `solicitud` VALUES (1,1,0,'2014630002','2014630002','2016-10-10',3),(2,2,3,'1234567890','2014630645','2016-10-10',3),(3,2,3,'1234567890','2016635489','2016-10-10',3);
+INSERT INTO `solicitud` VALUES (1,1,0,'2014630002','2014630002','2016-10-10',1),(2,2,3,'12345','2014630645','2016-10-10',0),(3,2,3,'12345','2016635489','2016-10-10',2);
 /*!40000 ALTER TABLE `solicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -314,7 +390,11 @@ CREATE TABLE `trabajadorarea` (
 
 LOCK TABLES `trabajadorarea` WRITE;
 /*!40000 ALTER TABLE `trabajadorarea` DISABLE KEYS */;
+<<<<<<< HEAD:ingenieria.sql
 INSERT INTO `trabajadorarea` VALUES ('1234567890','A01',NULL);
+=======
+INSERT INTO `trabajadorarea` VALUES ('12345','A01');
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql
 /*!40000 ALTER TABLE `trabajadorarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -356,4 +436,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+<<<<<<< HEAD:ingenieria.sql
 -- Dump completed on 2016-10-13 13:57:07
+=======
+-- Dump completed on 2016-10-14 17:08:37
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql

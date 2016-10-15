@@ -2,14 +2,14 @@
 
 class Analista_solicitudes extends Controller
 {
-  /*private $EE_modelo;
+  private $EE_modelo;
   function __construct(){
     session_start();
     if(!$_SESSION["usuario"]){
-      header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
+      header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/"); 
     }
     $this->EE_modelo = $this->model('analistaModel');
-  }*/
+  }
   public function Visualizar_Tramite(){
     $EE_modelo = $this->model('analistaModel');
     $solicitudes = $EE_modelo->select_all_solicitudes();
@@ -34,5 +34,10 @@ class Analista_solicitudes extends Controller
     $request = json_decode($postdata);
 	$this->EE_modelo->acep_solicitudes($idSolicitud, $idAlumno);
     //$this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
+  }
+	
+  public function Estado_peticion(){
+	  $EE_modelo = $this->model('analistaModel');
+	  $this->view('analista/actualizar_estado');
   }
 }

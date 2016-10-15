@@ -27,19 +27,21 @@
               if ($data['motivos']){
                 while($motivo = $data['motivos']->fetch_assoc())
                 {
-                  print "<option value= '{$motivo['idMotivo']}'> {$motivo['nombre']}";
+                  print "<option value= '{$motivo['idmotivo']}'> {$motivo['nombre']}";
                 }
               }
             ?>
         </select>
       </div>
-      <center>
         <button class="btn btn-primary" ng-click="agregar_peticion()"> Agregar a lista de documentos</button>
-      </center>
     </div>
     <div class = "col-md-6">
       <center>
         <h4> Lista de documentos </h4>
+        <center>
+          <button class="btn btn-primary" ng-click="enviarPeticiones()"> Enviar lista de documentos</button>
+        </center>
+        <br>
         <div ng-if="documentos.length != 0">
           <div class="panel panel-primary col-md-6" ng-repeat="documento in documentos track by $index">
             <div class="panel-heading"> [[documento.nombre]]</div>
@@ -51,11 +53,6 @@
     <div ng-if="documentos.length == 0" style="text-align:center;" class="alert alert-danger">
         No has agregado ningún documento.
       </div>
-    <div class = "col-md-12"> 
-    <center>
-      <button class="btn btn-primary" ng-click="enviarPeticiones()"> Enviar lista de documentos</button>
-    </center>
-    </div>
   </div>
   
   <?php endblock() ?>
