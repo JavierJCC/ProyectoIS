@@ -9,11 +9,13 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
   $scope.documentos_aux = [];
   $scope.motivoTex;
   $scope.agregar_peticion = function(){
-    if($scope.data.motivo != 0){
-      if($scope.data.motivo == 1)
+    if($scope.data.motivo != 1){
+      if($scope.data.motivo == 2)
         $scope.motivoTex = 'Actividad Cultural';
-      else if($scope.data.motivo == 2)
+      else if($scope.data.motivo == 3)
         $scope.motivoTex = 'Actividad Deportiva';
+      else if($scope.data.motivo == 4)
+        $scope.motivoTex = 'Beca';
       if($scope.contador < 5){
         if($scope.data.documento == 1)
           $scope.documentos_aux.push({'nombre': 'Boleta','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo,'motivo':$scope.motivoTex});
@@ -23,7 +25,7 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
         $scope.documentos = $scope.documentos_aux;
       }else{
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>
-        <div style='position:absolute; top:50%; left:30%; color:gray;'> El número máximo de peticiones es 5`);
+        <div style='position:absolute; top:50%; left:30%; color:gray;'> El número máximo de peticiones al mes es 5.`);
       }
     }else{
       alertify.error('Debes introducir un motivo válido para tu petición.');
