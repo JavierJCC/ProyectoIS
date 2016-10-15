@@ -15,7 +15,7 @@ class usuarioModel{
   }
   
   function login($boleta,$password){
-    $query = "SELECT idPersona,contrasena from persona where idPersona ='" .$boleta. "' and contrasena = '" .$password ."';";
+    $query = "SELECT persona.idPersona from persona,alumno where persona.idPersona = alumno.boleta  and persona.idPersona ='" .$boleta. "' and persona.contrasena = '" .$password ."';";
     $alumno = $this->connection->query($query);
     return $alumno? $alumno->fetch_object() : NULL;
   }
