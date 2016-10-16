@@ -1,0 +1,68 @@
+\pagebreak
+\begin{UseCase}{CUJGE05.3}{Desactivar cuentas}{La jefa de Gestión Escolar desactiva cuentas de analistas,personal de departamentos escolares y autoridades pertinentes.}
+	\UCitem{Versión}{1.0}
+  \UCitem{Actor}{Jefa de Gestión Escolar}
+  \UCitem{Propósito}{La jefa de Gestión Escolar podrá desactivar cuentas de los diferentes perfiles de usuario en caso de que estos no pertenezcan ya a la institución.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Ninguna
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item Select que obtiene los datos del repositorio de datos.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Mensaje de notificación  {\bf AlertaConfirmaciónDesactivarCuenta}``Usuario desactivado".
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El usuario debe tener una cuenta previamente registrada.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+   \begin{itemize}
+      \item La jefa de Gestión Escolar desactiva la cuenta del empleado.
+    \end{itemize}
+  }
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Ninguna.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item Ninguno.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG05 Gestionar cuentas.}
+	\UCitem{Volatilidad}{Baja}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Baja}
+  \UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Marcela Castro Flores}
+	\UCitem{Revisor}{Alberto Maldonado Romo}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita desactivar la cuenta de un usuario haciendo click en el botón \IUbutton{Desactivar}.
+  \UCpaso Muestra la alerta {\bf MDesactivarCuenta} ''¿Está seguro que desea desactivar la cuenta? Una vez realizada esta acción no podrá activarse nuevamente".
+  \UCpaso[\UCactor] Da click sobre el botón \IUbutton{Si}.[TAA]
+  \UCpaso Desactiva la cuenta del usuario.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Cancelar desactivación de cuenta.} 
+  \UCpaso[\UCactor] Da click sobre el botón \IUbutton{No}.
+  \UCpaso Cancela desactivación de cuenta.
+\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

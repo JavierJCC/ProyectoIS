@@ -1,0 +1,66 @@
+\pagebreak
+\begin{UseCase}{CUJGE05}{Gestionar cuentas}{La jefa de Gestión Escolar visualiza la información personal de las cuentas de analistas,personal de departamentos escolares y autoridades pertinentes.}
+	\UCitem{Versión}{1.0}
+  \UCitem{Actor}{Jefa de Gestión Escolar}
+  \UCitem{Propósito}{La jefa de Gestión Escolar podrá visualizar la información personal de las cuentas de empleados previamente registrados.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Ninguna
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item Datos obtenidos desde un select al repositorio de datos.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Ninguna
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El empleado debe tener una cuenta previamente registrada.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+   \begin{itemize}
+      \item Los datos se muestran en pantalla.
+    \end{itemize}
+  }  
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Ninguna.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item Ninguno.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG02 Iniciar Sesión Empleado.}
+	\UCitem{Volatilidad}{Baja}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Marcela Castro Flores}
+	\UCitem{Revisor}{Alberto Maldonado Romo}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita visualizar la información de un usuario haciendo click en la opción del menú ''Gestionar cuentas".
+  \UCpaso Realizar consulta a repositorio de datos. [TAA]
+  \UCpaso Muestra la pantalla {\bf UIJGE Gestionar cuentas}.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Datos no encontrados} 
+  \UCpaso Muestra pantalla {\bf UI CuentasSinRegistrar}.
+\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

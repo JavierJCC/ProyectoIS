@@ -35,7 +35,7 @@
   }
   \UCitem{Postcondiciones}{
    \begin{itemize}
-      \item El empleado debe tener una cuenta previamente registrada.
+      \item Los datos se actualizan y almacenan en el repositorio de datos.
     \end{itemize}
   }  
   \UCitem{Observaciones}{
@@ -68,13 +68,13 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Datos con formato incorrecto} 
-  \UCpaso Muestra mensajes de validación {\bf MFormatoincorrecto}.
+  \UCpaso Muestra mensajes de validación {\bf MFormatoIncorrecto}.
   \UCpaso Continua transacción desde el paso 3.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{Datos no almacenados} 
   \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
-  \UCpaso Continua transacción desde el paso .
+  \UCpaso Continua transacción desde el paso 4.
 \end{UCtrayectoriaA}
 
 

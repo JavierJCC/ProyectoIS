@@ -37,20 +37,26 @@
 \contentsline {subsubsection}{\numberline {5.4.3.1}Descripci\IeC {\'o}n completa}{30}{subsubsection.5.4.3.1}
 \contentsline {paragraph}{\numberline {5.4.3.1.1}Atributos importantes}{30}{table.5.6}
 \contentsline {section}{\numberline {5.5}Jefa de Gesti\IeC {\'o}n Escolar}{31}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}CUJGE05.1 Actualizar cuentas}{32}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.1}CUJGE05 Gestionar cuentas}{32}{subsection.5.5.1}
 \contentsline {subsubsection}{\numberline {5.5.1.1}Descripci\IeC {\'o}n completa}{32}{subsubsection.5.5.1.1}
 \contentsline {paragraph}{\numberline {5.5.1.1.1}Atributos importantes}{33}{table.5.7}
-\contentsline {subsection}{\numberline {5.5.2}CUJGE05.2 Registrar cuentas}{34}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.2}CUJGE05.1 Actualizar cuentas}{34}{subsection.5.5.2}
 \contentsline {subsubsection}{\numberline {5.5.2.1}Descripci\IeC {\'o}n completa}{34}{subsubsection.5.5.2.1}
 \contentsline {paragraph}{\numberline {5.5.2.1.1}Atributos importantes}{35}{table.5.8}
-\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Analista}{37}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{37}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{37}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{40}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Autoridad pertinente}{41}{section.6.2}
-\contentsline {section}{\numberline {6.3}Departamento escolar}{41}{section.6.3}
-\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{41}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{41}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{41}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{44}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {5.5.3}CUJGE05.2 Registrar cuentas}{37}{subsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.3.1}Descripci\IeC {\'o}n completa}{37}{subsubsection.5.5.3.1}
+\contentsline {paragraph}{\numberline {5.5.3.1.1}Atributos importantes}{38}{table.5.9}
+\contentsline {subsection}{\numberline {5.5.4}CUJGE05.3 Desactivar cuentas}{40}{subsection.5.5.4}
+\contentsline {subsubsection}{\numberline {5.5.4.1}Descripci\IeC {\'o}n completa}{40}{subsubsection.5.5.4.1}
+\contentsline {paragraph}{\numberline {5.5.4.1.1}Atributos importantes}{41}{table.5.10}
+\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{42}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analista}{42}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{42}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{42}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{45}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Autoridad pertinente}{46}{section.6.2}
+\contentsline {section}{\numberline {6.3}Departamento escolar}{46}{section.6.3}
+\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{46}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{46}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{46}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{49}{subsection.6.4.3}
