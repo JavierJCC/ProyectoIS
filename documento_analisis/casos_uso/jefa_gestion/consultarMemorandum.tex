@@ -1,0 +1,71 @@
+\pagebreak
+\begin{UseCase}{CUJGE09}{Consultar memorandúm}{Pantalla que le permita al actor descargar el archivo memorandum y lista de alumnos que un departamento escolar envió previamente.}
+	\UCitem{Version}{1.0}
+  \UCitem{Actor}{Jefa de gestión escolar}
+  \UCitem{Propósito}{El actor descarga archivos que un departamento escolar envió previamente}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Ninguna.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item Ninguno.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Mensaje de confirmación {\bf  SinConexión}`` No se ha podido descargar el archivo, revise su conexión."
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item SinConexion: Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El actor debió haber sido identificado por el sistema como jefe de gestión escolar.
+      \item Un departamento escolar debió haber subido uno o varios archivos previamente.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+    \begin{itemize}
+      \item Cuando un archivo fue descargado el sistema actualizará el estado de no leído a leído.
+    \end{itemize}
+  }
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Ninguna.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item SinConexion.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU02 Iniciar Sesión}
+	\UCitem{Volatilidad}{Baja}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{En proceso}
+	\UCitem{Autor}{Rubén Murga Dionicio}
+	\UCitem{Revisor}{Javier Chávez Chávez}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita un documento haciendo click en la opción del menú ``Consultar memorandum".
+  \UCpaso Muestra la pantalla  {\bf UIDEMemorandum}.
+  \UCpaso[\UCactor] Da click en el apartado {\bf descargar} 
+  \UCpaso Valida la conexión del actor. [TAA]
+  \UCpaso Muestra la pantalla predefinida por el navegador para descargar archivos.
+  \UCpaso[\UCactor] Selecciona la locación donde se guardará el archivo previamente seleccionado.
+  \UCpaso Comienza a descargar el archivo al equipo del actor.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Sin conexión} 
+\UCpaso Muestra la alerta {\bf SinConexion}.
+\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

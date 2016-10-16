@@ -21,9 +21,9 @@ class usuarioModel{
   }
 
   function loginTrabajador($noEmp, $password){
-    $query = "SELECT Persona.nom, Persona.apPat, Persona.apMat,TrabajadorArea.IdTrabajador from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.IdTrabajador and TrabajadorArea.idTrabajador = '" .$noEmp. "' and Persona.contrasena = '" . $password . "';";
+    $query = "SELECT Persona.nom, Persona.apPat, Persona.apMat,TrabajadorArea.IdTrabajador,TrabajadorArea.idArea from Persona,TrabajadorArea where Persona.idPersona = TrabajadorArea.IdTrabajador and TrabajadorArea.idTrabajador = '" .$noEmp. "' and Persona.contrasena = '" . $password . "';";
     $persona = $this->connection->query($query);
-    printf($this->connection->error);
+    //printf($this->connection->error);
     return $persona ? $persona->fetch_object() : NULL;
   }
   
