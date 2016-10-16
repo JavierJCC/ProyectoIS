@@ -99,10 +99,9 @@
                                 </div>
                                <div class="row">
                                     <div class="col-md-3">
-                                        <h5 style="align-text: left;">¿Olvidó su contraseña?</h5>
+                                        <h5 style="align-text: left;">¿Olvidaste tu contraseña?</h5>
                                     </div>
-                                        <div class="col-sm-offset-0 col-md-4">
-                                            
+                                        <div class="col-sm-offset-0 col-md-4">                                            
                                             <button type="submit" id="iniciarSesion" ng-click="iniciarSesion()">Iniciar Sesión</button>
                                         </div>
                                     </div>

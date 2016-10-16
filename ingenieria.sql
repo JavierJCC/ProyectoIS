@@ -1,8 +1,16 @@
+<<<<<<< HEAD:ingenieria.sql
+-- MySQL dump 10.13  Distrib 5.7.13, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ingenieria
+-- ------------------------------------------------------
+-- Server version	5.7.13-log
+=======
 -- MySQL dump 10.13  Distrib 5.7.15, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ingenieria
 -- ------------------------------------------------------
 -- Server version	5.7.15-log
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -367,6 +375,7 @@ DROP TABLE IF EXISTS `trabajadorarea`;
 CREATE TABLE `trabajadorarea` (
   `IdTrabajador` varchar(10) NOT NULL,
   `IdArea` varchar(10) NOT NULL,
+  `noEmpleado` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`IdTrabajador`),
   KEY `Trab_Solicitante_idx` (`IdTrabajador`),
   KEY `Trab_Area_idx` (`IdArea`),
@@ -381,7 +390,11 @@ CREATE TABLE `trabajadorarea` (
 
 LOCK TABLES `trabajadorarea` WRITE;
 /*!40000 ALTER TABLE `trabajadorarea` DISABLE KEYS */;
+<<<<<<< HEAD:ingenieria.sql
+INSERT INTO `trabajadorarea` VALUES ('1234567890','A01',NULL);
+=======
 INSERT INTO `trabajadorarea` VALUES ('12345','A01');
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql
 /*!40000 ALTER TABLE `trabajadorarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -423,4 +436,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+<<<<<<< HEAD:ingenieria.sql
+-- Dump completed on 2016-10-13 13:57:07
+=======
 -- Dump completed on 2016-10-14 17:08:37
+>>>>>>> 93ad4927479d6c638b16576e527ab38dd4d0ad9d:ingenieria.sql

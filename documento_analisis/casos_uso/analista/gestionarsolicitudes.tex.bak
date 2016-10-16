@@ -1,3 +1,4 @@
+\pagebreak
 \begin{UseCase}{CUA03}{Gestionar solicitudes}{Un analista requiere visualizar las solicitudes de trámites que se han generado, para poder aceptar o cancelarla dicha solicitud.}
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Analista}
@@ -48,20 +49,20 @@
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{En proceso}
+  \UCitem{Estado}{Autorizado}
 	\UCitem{Autor}{Juan Antonio Guzmán Chávez}
 	\UCitem{Revisor}{Rubén Murga Dionicio}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú “Gestionar trámite”.
-  \UCpaso Realiza la consulta a la base de datos [TAA].
+  \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú ``Gestionar trámite”.
+  \UCpaso Realiza la consulta a la base de datos. [TAA]
   \UCpaso Muestra la pantalla  {\bf CUA03Gestionarsolicitudes}.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Error al cargar datos} 
 \UCpaso Muestra la alerta {\bf AlertaErrorDeConexión}.
-  \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos} [TAB]. 
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos}. [TAB]
   \UCpaso Recarga los datos.
   \UCpaso Continua transacción desde el paso 3.
 \end{UCtrayectoriaA}

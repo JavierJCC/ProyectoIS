@@ -1,0 +1,82 @@
+\pagebreak
+\begin{UseCase}{CUJGE05.1}{Actualizar cuentas}{La jefa de Gestión Escolar actualiza la información personal de las cuentas de analistas,personal de departamentos escolares y autoridades pertinentes.}
+	\UCitem{Versión}{1.0}
+  \UCitem{Actor}{Jefa de Gestión Escolar}
+  \UCitem{Propósito}{La jefa de Gestión Escolar podrá actualizar la información personal de las cuentas de empleados previamente registrados.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Nombre: Cadena de caracteres.
+    \item Apellido Paterno: Cadena de caracteres.
+    \item Apellido Materno: Cadena de caracteres.
+    \item RFC: Cadena alfanumérica compuesta por la inicial del  apellido paterno y su primera vocal, la inicial del apellido materno, la inicial del nombre, fecha de nacimiento en formato (YY/MM/DD) donde Y es el año en formato de dos dígitos, M es el mes de nacimiento y D el día del mismo y finalmente la homoclave asignada. 
+	\item Correo: Cadena alfanumérica personalizada, ,seguida del caracter '@' y el dominio del correo que finaliza en .com ó .com.mx.
+	\item Área: Select con información obtenida desde el repositorio de datos.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item Datos personales desde teclado y datos de área de un select que obtiene los datos del repositorio de datos.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Mensaje de notificación  {\bf AlertaConfirmaciónActualización}``Información de usuario actualizada existosamente".
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El empleado debe tener una cuenta previamente registrada.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+   \begin{itemize}
+      \item Los datos se actualizan y almacenan en el repositorio de datos.
+    \end{itemize}
+  }  
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Ninguna.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item Ninguno.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG05 Gestionar cuentas.}
+	\UCitem{Volatilidad}{Media}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Marcela Castro Flores}
+	\UCitem{Revisor}{Alberto Maldonado Romo}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita actualizar la información de un usuario haciendo click en la opción ''Actualizar".
+  \UCpaso Muestra la pantalla {\bf UIJGE Actualizar cuenta}.
+  \UCpaso[\UCactor] Ingresa los datos del empleado que desea actualizar.
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Actualizar}.
+  \UCpaso Valida que existan datos escritos correctamente en el formulario. [TAA]
+  \UCpaso Almacena los datos en el repositorio de datos. [TAB]
+  \UCpaso Muestra la alerta  {\bf AlertaConfirmaciónActualizaciónDatos}.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Datos con formato incorrecto} 
+  \UCpaso Muestra mensajes de validación {\bf MFormatoIncorrecto}.
+  \UCpaso Continua transacción desde el paso 3.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{Datos no almacenados} 
+  \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
+  \UCpaso Continua transacción desde el paso 4.
+\end{UCtrayectoriaA}
+
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

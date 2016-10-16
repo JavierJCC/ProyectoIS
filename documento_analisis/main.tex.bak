@@ -52,7 +52,8 @@
 \cfinput{casos_uso/alumnoEgresado/iniciarSesion}
 \cfinput{casos_uso/alumnoEgresado/solicitarTramite}
 \cfinput{casos_uso/alumnoEgresado/ConsultarEstadoTramitesSolicitados}
-
+\section{Jefa de Gestión Escolar}
+\cfinput{casos_uso/jefa_gestion/agregarCuentas}
 
 \chapter{Interacción con el usuario (UI)}
 \section{Analista}

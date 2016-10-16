@@ -7,7 +7,7 @@
   
   \UCitem{Entradas}{
     \begin{itemize}
-      \item Boleta: Cadena conformada por 10 números, iniciada por el año de ingreso del alumno, seguida de el número 63, código perteneciente a la institución y finalmente su número de estudiante asignado en formato de 4 dígitos.
+      \item Boleta: Cadena conformada por 10 números, iniciada por el año de ingreso del alumno, seguida de 63 , código perteneciente a la institución y finalmente su número de estudiante asignado en formato de 4 dígitos.
       \item Contraseña: Campo de tipo password.
     \end{itemize}
   }
@@ -29,7 +29,7 @@
   \UCitem{Precondiciones}{
    \begin{itemize}
       \item Que el estudiante no haya solicitado baja temporal o baja definitiva.
-      \item Que exista un registro del estudiante y/o egresado en el repositorio de datos.
+      \item Que exista un registro del estudiante en el repositorio de datos.
     \end{itemize}
   }
   \UCitem{Postcondiciones}{
@@ -38,11 +38,7 @@
     \end{itemize}
   }
   \UCitem{Observaciones}{
-    \begin{itemize} 
-    \item Para la primera vez de uso del sistema, el estudiante ingresará su CURP en la sección de contraseña, posteriormente podrá modificar dicha sección.
-   	\end{itemize}
-    \begin{itemize} 
-    \item Se guardará un campo en la variable de sesión para saber si es un egresado o un alumno.
+    \begin{itemize} \item Para la primera vez de uso del sistema, el estudiante ingresará su CURP en la sección de contraseña, posteriormente podrá modificar dicha sección.
   	\end{itemize}
   }
   \UCitem{Errores}{
@@ -59,31 +55,24 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Solicita ingresar al sistema.
-  \UCpaso Muestra la pantalla {\bf UIniciarSesión}.
-  \UCpaso[\UCactor] Verifica que no sea su primera vez en el sistema.[TAA]
+  \UCpaso[\UCactor] Solicita ingresar al sistema
+  \UCpaso Muestra la pantalla UIniciarSesión.
   \UCpaso[\UCactor] Ingresa su número de boleta y su contraseña.
   \UCpaso[\UCactor]Da click en el botón \IUbutton{Iniciar Sesión}.
-  \UCpaso Valida el formato de la entrada de los datos. [TAB]
-  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos. [TAC]
-  \UCpaso Muestra el mensaje {\bf AlertaConfirmaciónIniciarSesión}.
+  \UCpaso Valida el formato de la entrada de los datos. [TAA]
+  \UCpaso Obtiene los datos y verifica si se encuentran en el repositorio de datos. [TAB]
+  \UCpaso Muestra el mensaje {\bf AlertaConfirmacionIniciarSesion}.
   \UCpaso[\UCactor]Ingresa al sistema.
 \end{UCtrayectoria}
+-9
 
-
-\begin{UCtrayectoriaA}{A}{Primera vez en el sistema}
-  \UCpaso Muestra el mensaje {\bf MPrimeraVezCURP} ``Ingresa en el campo de contraseña tu CURP.
-Podrás modificarlo posteriormente si lo deseas.".
-  \UCpaso Continúa transacción desde el paso 4.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectos}
+\begin{UCtrayectoriaA}{A}{Datos ingresados incorrectos}
   \UCpaso Notifica que el formato de la boleta es incorrecta y muestra mensaje {\bf MFormatoIncorrecto1} ``Ingresa únicamente números".
-  \UCpaso Continúa transacción desde el paso 4.
+  \UCpaso Continúa transacción desde el paso 5.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{Datos no encontrados en el repositorio de datos}
+\begin{UCtrayectoriaA}{B}{Datos no encontrados en el repositorio de datos}
   \UCpaso Notifica que los datos ingresados son incorrectos o no existen y muestra alerta {\bf AlertaDatosIncorrectos}.
-  \UCpaso Continúa transacción desde el paso 4.
+  \UCpaso Continúa transacción desde el paso 2.
 \end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.
