@@ -21,13 +21,21 @@ controller('indexController', function($scope,indexFactory,$window){
   };
 }).controller('indexControllerTrabajador',function($scope,indexFactory,$window){
   $scope.url_path = "/Proyecto_IS/ProyectoSemestreIS/sistema/public/";
+  $scope.url_term;
   $scope.iniciarSesion = function(){
     indexFactory.loginTrabajador({'noEmpleado': $scope.noEmpleado, 'password':$scope.password}, function(resultado){
+      console.log(resultado);
       if(resultado.noEmpleado){
+        console.log(resultado);
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/check.png' style='position:absolute; top:35%; left:50 %;'>
       <div style='position:absolute; top:50%; left:30%; color:gray;'> Inicio de sesión exitoso.`).set('basic', true);
+        if(resultado.area == "A01"){
+          $scope.url_term = "Departamento_Escolar/Index";
+        }else if(resultado.area == "A02"){
+          $scope.url_term = "Analista_Solicitudes/Visualizar_Tramite";
+        }
         sleep(1700).then(() => {
-              $window.location.href = $scope.url_path+'Analista_Solicitudes/Visualizar_Tramite';
+              $window.location.href = $scope.url_path+$scope.url_term;
         });
       }else{
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>

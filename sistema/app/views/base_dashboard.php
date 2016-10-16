@@ -132,6 +132,7 @@
 
 <!-- angular -->
 <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
+<script src="<?= $url_path ?>interno/js/angular/angular-file-model.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
 <?php emptyblock('scripts') ?>

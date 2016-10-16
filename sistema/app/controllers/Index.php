@@ -1,8 +1,10 @@
 <?php 
+header('Content-Type: application/json');
 session_start();
 
 class Index extends Controller
 {
+  private $response;
   private $usuarioModel;
   function __construct(){
     $this->usuarioModel = $this->model('usuarioModel');
@@ -18,7 +20,6 @@ class Index extends Controller
       $this->response = json_encode($data);
     }else{
         //header('HTTP/1.1 500 Internal Server Booboo');
-        header('Content-Type: application/json; charset=UTF-8');
         die(json_encode(array('message' => 'ERROR', 'code' => 1337)));
     }
   }
@@ -28,10 +29,9 @@ class Index extends Controller
     $request = json_decode($postdata);
     $usuario = $this->usuarioModel->loginTrabajador($request->noEmpleado,$request->password);
    if($usuario){
-      $data = array('Valida' => 1);
       $_SESSION["usuario"]=$usuario;
-      header('Content-Type: application/json');
-      $this->response = json_encode($data);
+      //$this->response = json_encode((array)$usuario);
+      die(json_encode(array('area'=>$usuario->idArea,'noEmpleado'=>$usuario->IdTrabajador)));
     }else{
         //header('HTTP/1.1 500 Internal Server Booboo');
         header('Content-Type: application/json; charset=UTF-8');
