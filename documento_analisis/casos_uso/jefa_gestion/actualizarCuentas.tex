@@ -1,11 +1,10 @@
 \pagebreak
-\begin{UseCase}{CUJGE05.2}{Registrar cuentas}{La jefa de Gestión Escolar registra cuentas de analistas,personal de departamentos escolares y autoridades pertinentes con el fin de que accedan a posteriormente a ciertas acciones del sistema.}
+\begin{UseCase}{CUJGE05.1}{Actualizar cuentas}{La jefa de Gestión Escolar actualiza la información personal de las cuentas de analistas,personal de departamentos escolares y autoridades pertinentes.}
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Jefa de Gestión Escolar}
-  \UCitem{Propósito}{La jefa de Gestión Escolar podrá añadir cuentas a los diferentes perfiles de usuario.}
+  \UCitem{Propósito}{La jefa de Gestión Escolar podrá actualizar la información personal de las cuentas de empleados previamente registrados.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item No. de empleado: Cadena compuesta de entre 5  y 7 dígitos.
     \item Nombre: Cadena de caracteres.
     \item Apellido Paterno: Cadena de caracteres.
     \item Apellido Materno: Cadena de caracteres.
@@ -21,7 +20,7 @@
   }
   \UCitem{Salidas}{
     \begin{itemize}
-		\item Mensaje de notificación  {\bf AlertaConfirmaciónRegistro}``Usuario registrado existosamente".
+		\item Mensaje de notificación  {\bf AlertaConfirmaciónActualización}``Información de usuario actualizada existosamente".
     \end{itemize}
   }
   \UCitem{Destino}{
@@ -31,10 +30,14 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item La jefa de Gestión Escolar debe haber ingresado previamente con su cuenta personal.
+      \item El empleado debe tener una cuenta previamente registrada.
     \end{itemize}
   }
-  
+  \UCitem{Postcondiciones}{
+   \begin{itemize}
+      \item Los datos se actualizan y almacenan en el repositorio de datos.
+    \end{itemize}
+  }  
   \UCitem{Observaciones}{
 		\begin{itemize}
 			\item Ninguna.
@@ -55,15 +58,13 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Solicita registrar un nuevo usuario haciendo click en la opción del menú ''Registrar cuenta".
-  \UCpaso Muestra la pantalla {\bf UIJGE Registrar cuenta}.
-  \UCpaso[\UCactor] Ingresa los datos del empleado que desea registrar.
-  \UCpaso[\UCactor] Da click en el botón \IUbutton{Registrar}.
+  \UCpaso[\UCactor] Solicita actualizar la información de un usuario haciendo click en la opción ''Actualizar".
+  \UCpaso Muestra la pantalla {\bf UIJGE Actualizar cuenta}.
+  \UCpaso[\UCactor] Ingresa los datos del empleado que desea actualizar.
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Actualizar}.
   \UCpaso Valida que existan datos escritos correctamente en el formulario. [TAA]
-  \UCpaso Muestra el mensaje {\bf MConfirmaciónDatos} "¿Está seguro que los datos ingresados son correctos?".
-  \UCpaso[\UCactor] Verifica los datos y da click en el botón \IUbutton{Si}. [TAB]
-  \UCpaso Almacena los datos en el repositorio de datos. [TAC]
-  \UCpaso Muestra la alerta  {\bf AlertaConfirmaciónRegistro}.
+  \UCpaso Almacena los datos en el repositorio de datos. [TAB]
+  \UCpaso Muestra la alerta  {\bf AlertaConfirmaciónActualizaciónDatos}.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Datos con formato incorrecto} 
@@ -71,11 +72,7 @@
   \UCpaso Continua transacción desde el paso 3.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectamente} 
-  \UCpaso Continua transacción desde el paso 3.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{C}{Datos no almacenados} 
+\begin{UCtrayectoriaA}{B}{Datos no almacenados} 
   \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
   \UCpaso Continua transacción desde el paso 4.
 \end{UCtrayectoriaA}

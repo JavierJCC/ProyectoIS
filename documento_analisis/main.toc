@@ -1,53 +1,56 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n del proyecto}{2}{section.1.1}
-\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis del problema}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Requerimientos Funcionales}{4}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Requerimientos globales}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Jefa de Gesti\IeC {\'o}n Escolar}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Autoridad Pertinente}{5}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Analista}{5}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Estudiante / Egresado}{5}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{6}{subsection.2.1.6}
-\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{6}{section.2.2}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis de riesgos}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tabla de Riesgos}{9}{section.3.1}
-\contentsline {chapter}{\numberline {4}Diagramas de Casos de uso}{11}{chapter.4}
-\contentsline {chapter}{\numberline {5}Descripcion de los Casos de uso}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Analista}{16}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}CUG02 Iniciar sesi\IeC {\'o}n empleado}{16}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Descripci\IeC {\'o}n completa}{16}{subsubsection.5.1.1.1}
-\contentsline {paragraph}{\numberline {5.1.1.1.1}Atributos importantes}{17}{table.5.1}
-\contentsline {subsection}{\numberline {5.1.2}CUA03 Gestionar solicitudes}{19}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Descripci\IeC {\'o}n completa}{19}{subsubsection.5.1.2.1}
-\contentsline {paragraph}{\numberline {5.1.2.1.1}Atributos importantes}{20}{table.5.2}
-\contentsline {subsection}{\numberline {5.1.3}CUA02 Actualizar estado}{21}{subsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.3.1}Descripci\IeC {\'o}n completa}{21}{subsubsection.5.1.3.1}
-\contentsline {paragraph}{\numberline {5.1.3.1.1}Atributos importantes}{22}{table.5.3}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n del proyecto}{3}{section.1.1}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis del problema}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Requerimientos Funcionales}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Requerimientos globales}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Jefa de Gesti\IeC {\'o}n Escolar}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Autoridad Pertinente}{6}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Analista}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Estudiante / Egresado}{6}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Departamentos escolares}{7}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Requerimientos no funcionales}{7}{section.2.2}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis de riesgos}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tabla de Riesgos}{10}{section.3.1}
+\contentsline {chapter}{\numberline {4}Diagramas de Casos de uso}{12}{chapter.4}
+\contentsline {chapter}{\numberline {5}Descripcion de los Casos de uso}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Analista}{17}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}CUG02 Iniciar sesi\IeC {\'o}n empleado}{17}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Descripci\IeC {\'o}n completa}{17}{subsubsection.5.1.1.1}
+\contentsline {paragraph}{\numberline {5.1.1.1.1}Atributos importantes}{18}{table.5.1}
+\contentsline {subsection}{\numberline {5.1.2}CUA03 Gestionar solicitudes}{20}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Descripci\IeC {\'o}n completa}{20}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{\numberline {5.1.2.1.1}Atributos importantes}{21}{table.5.2}
+\contentsline {subsection}{\numberline {5.1.3}CUA02 Actualizar estado}{22}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Descripci\IeC {\'o}n completa}{22}{subsubsection.5.1.3.1}
+\contentsline {paragraph}{\numberline {5.1.3.1.1}Atributos importantes}{23}{table.5.3}
 \contentsline {section}{\numberline {5.2}Autoridad pertinente}{23}{section.5.2}
 \contentsline {section}{\numberline {5.3}Departamento escolar}{23}{section.5.3}
-\contentsline {section}{\numberline {5.4} Alumno/Egresado}{23}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}CUG01 Iniciar sesi\IeC {\'o}n Estudiante/Egresado.}{23}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{23}{subsubsection.5.4.1.1}
-\contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{24}{table.5.4}
-\contentsline {subsection}{\numberline {5.4.2}CUEE02 Solicitar documento}{26}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Descripci\IeC {\'o}n completa}{26}{subsubsection.5.4.2.1}
-\contentsline {paragraph}{\numberline {5.4.2.1.1}Atributos importantes}{27}{table.5.5}
-\contentsline {subsection}{\numberline {5.4.3}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{29}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Descripci\IeC {\'o}n completa}{29}{subsubsection.5.4.3.1}
-\contentsline {paragraph}{\numberline {5.4.3.1.1}Atributos importantes}{29}{table.5.6}
-\contentsline {section}{\numberline {5.5}Jefa de Gesti\IeC {\'o}n Escolar}{30}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}CUJGE05.2 Agregar cuentas}{31}{subsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.1.1}Descripci\IeC {\'o}n completa}{31}{subsubsection.5.5.1.1}
-\contentsline {paragraph}{\numberline {5.5.1.1.1}Atributos importantes}{32}{table.5.7}
-\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Analista}{33}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{33}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{33}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{33}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Autoridad pertinente}{37}{section.6.2}
-\contentsline {section}{\numberline {6.3}Departamento escolar}{37}{section.6.3}
-\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{37}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{37}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{37}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{40}{subsection.6.4.3}
+\contentsline {section}{\numberline {5.4} Alumno/Egresado}{24}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}CUG01 Iniciar sesi\IeC {\'o}n Estudiante/Egresado.}{24}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{24}{subsubsection.5.4.1.1}
+\contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{25}{table.5.4}
+\contentsline {subsection}{\numberline {5.4.2}CUEE02 Solicitar documento}{27}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Descripci\IeC {\'o}n completa}{27}{subsubsection.5.4.2.1}
+\contentsline {paragraph}{\numberline {5.4.2.1.1}Atributos importantes}{28}{table.5.5}
+\contentsline {subsection}{\numberline {5.4.3}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{30}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Descripci\IeC {\'o}n completa}{30}{subsubsection.5.4.3.1}
+\contentsline {paragraph}{\numberline {5.4.3.1.1}Atributos importantes}{30}{table.5.6}
+\contentsline {section}{\numberline {5.5}Jefa de Gesti\IeC {\'o}n Escolar}{31}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}CUJGE05.1 Actualizar cuentas}{32}{subsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.1.1}Descripci\IeC {\'o}n completa}{32}{subsubsection.5.5.1.1}
+\contentsline {paragraph}{\numberline {5.5.1.1.1}Atributos importantes}{33}{table.5.7}
+\contentsline {subsection}{\numberline {5.5.2}CUJGE05.2 Registrar cuentas}{34}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Descripci\IeC {\'o}n completa}{34}{subsubsection.5.5.2.1}
+\contentsline {paragraph}{\numberline {5.5.2.1.1}Atributos importantes}{35}{table.5.8}
+\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analista}{37}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{37}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{37}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{40}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Autoridad pertinente}{41}{section.6.2}
+\contentsline {section}{\numberline {6.3}Departamento escolar}{41}{section.6.3}
+\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{41}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{41}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{41}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{44}{subsection.6.4.3}

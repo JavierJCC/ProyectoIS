@@ -1,11 +1,17 @@
 \pagebreak
-\begin{UseCase}{CUJGE05.2}{Agregar cuentas}{La jefa de Gestión Escolar registra cuentas de analistas,personal de departamentos escolares y autoridades pertinentes con l fin de que accedan a posteriormente a ciertas acciones del sistema.}
+\begin{UseCase}{CUJGE05.2}{Registrar cuentas}{La jefa de Gestión Escolar registra cuentas de analistas,personal de departamentos escolares y autoridades pertinentes con el fin de que accedan a posteriormente a ciertas acciones del sistema.}
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Jefa de Gestión Escolar}
   \UCitem{Propósito}{La jefa de Gestión Escolar podrá añadir cuentas a los diferentes perfiles de usuario.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item 
+    \item No. de empleado: Cadena compuesta de entre 5  y 7 dígitos.
+    \item Nombre: Cadena de caracteres.
+    \item Apellido Paterno: Cadena de caracteres.
+    \item Apellido Materno: Cadena de caracteres.
+    \item RFC: Cadena alfanumérica compuesta por la inicial del  apellido paterno y su primera vocal, la inicial del apellido materno, la inicial del nombre, fecha de nacimiento en formato (YY/MM/DD) donde Y es el año en formato de dos dígitos, M es el mes de nacimiento y D el día del mismo y finalmente la homoclave asignada. 
+	\item Correo: Cadena alfanumérica personalizada, ,seguida del caracter '@' y el dominio del correo que finaliza en .com ó .com.mx.
+	\item Área: Select con información obtenida desde el repositorio de datos.
     \end{itemize}
   }
   \UCitem{Origen}{
@@ -39,7 +45,7 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG02 Iniciar Sesión Empleado}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG05 Gestionar cuentas.}
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Alta}
@@ -49,7 +55,7 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Solicita registrar un nuevo usuario haciendo click en la opción del menú "Registrar cuenta".
+  \UCpaso[\UCactor] Solicita registrar un nuevo usuario haciendo click en la opción del menú ''Registrar cuenta".
   \UCpaso Muestra la pantalla {\bf UIJGE Registrar cuenta}.
   \UCpaso[\UCactor] Ingresa los datos del empleado que desea registrar.
   \UCpaso[\UCactor] Da click en el botón \IUbutton{Registrar}.
@@ -71,7 +77,7 @@
 
 \begin{UCtrayectoriaA}{C}{Datos no almacenados} 
   \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
-  \UCpaso Continua transacción desde el paso .
+  \UCpaso Continua transacción desde el paso 4.
 \end{UCtrayectoriaA}
 
 
