@@ -15,7 +15,8 @@
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Datos personales desde teclado y datos de área de un select que obtiene los datos del repositorio de datos.
+    \item Teclado: Nombre, apellido paterno, apellido materno, RFC y correo.
+    \item Seleccionable: Área.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -30,6 +31,7 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
+     \item El actor debió haber sido identificado por el sistema como jefa de Gestión Escolar.
       \item El empleado debe tener una cuenta previamente registrada.
     \end{itemize}
   }
@@ -62,8 +64,8 @@
   \UCpaso Muestra la pantalla {\bf UIJGE Actualizar cuenta}.
   \UCpaso[\UCactor] Ingresa los datos del empleado que desea actualizar.
   \UCpaso[\UCactor] Da click en el botón \IUbutton{Actualizar}.
-  \UCpaso Valida que existan datos escritos correctamente en el formulario. [TAA]
-  \UCpaso Almacena los datos en el repositorio de datos. [TAB]
+  \UCpaso Valida que los datos proporcionados por el actor sean correctos. [TAA]
+  \UCpaso Actualiza los datos pertenecientes al usuario en el repositorio de datos. [TAB]
   \UCpaso Muestra la alerta  {\bf AlertaConfirmaciónActualizaciónDatos}.
 \end{UCtrayectoria}
 
@@ -73,7 +75,7 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{Datos no almacenados} 
-  \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
+  \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Fallo en la conexión, los datos no han sido almacenados. Inténtelo nuevamente".
   \UCpaso Continua transacción desde el paso 4.
 \end{UCtrayectoriaA}
 

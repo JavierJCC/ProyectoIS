@@ -5,17 +5,17 @@
   \UCitem{Propósito}{La jefa de Gestión Escolar podrá desactivar cuentas de los diferentes perfiles de usuario en caso de que estos no pertenezcan ya a la institución.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item Ninguna
+    \item 
     \end{itemize}
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Datos personales desde teclado y datos de área de un select que obtiene los datos del repositorio de datos.
+    \item Select que obtiene los datos del repositorio de datos.
       \end{itemize}
   }
   \UCitem{Salidas}{
     \begin{itemize}
-		\item Mensaje de notificación  {\bf AlertaConfirmaciónRegistro}``Usuario registrado existosamente".
+		\item Mensaje de notificación  {\bf AlertaConfirmaciónDesactivarCuenta}``Usuario desactivado".
     \end{itemize}
   }
   \UCitem{Destino}{
@@ -25,10 +25,14 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item La jefa de Gestión Escolar debe haber ingresado previamente con su cuenta personal.
+      \item El usuario debe tener una cuenta previamente registrada.
     \end{itemize}
   }
-  
+  \UCitem{Postcondiciones}{
+   \begin{itemize}
+      \item La jefa de Gestión Escolar desactiva la cuenta del empleado.
+    \end{itemize}
+  }
   \UCitem{Observaciones}{
 		\begin{itemize}
 			\item Ninguna.
@@ -40,40 +44,25 @@
   	\end{itemize}
 	}
   \UCitem{Tipo de ejecución}{Secundaria, viene de CUG05 Gestionar cuentas.}
-	\UCitem{Volatilidad}{Media}
+	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Baja}
-	\UCitem{Prioridad}{Alta}
+	\UCitem{Prioridad}{Baja}
   \UCitem{Estado}{Autorizado}
 	\UCitem{Autor}{Marcela Castro Flores}
 	\UCitem{Revisor}{Alberto Maldonado Romo}
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Solicita registrar un nuevo usuario haciendo click en la opción del menú ''Registrar cuenta".
-  \UCpaso Muestra la pantalla {\bf UIJGE Registrar cuenta}.
-  \UCpaso[\UCactor] Ingresa los datos del empleado que desea registrar.
-  \UCpaso[\UCactor] Da click en el botón \IUbutton{Registrar}.
-  \UCpaso Valida que existan datos escritos correctamente en el formulario. [TAA]
-  \UCpaso Muestra el mensaje {\bf MConfirmaciónDatos} "¿Está seguro que los datos ingresados son correctos?".
-  \UCpaso[\UCactor] Verifica los datos y da click en el botón \IUbutton{Si}. [TAB]
-  \UCpaso Almacena los datos en el repositorio de datos. [TAC]
-  \UCpaso Muestra la alerta  {\bf AlertaConfirmaciónRegistro}.
+  \UCpaso[\UCactor] Solicita desactivar la cuenta de un usuario haciendo click en el botón \IUbutton{Desactivar}.
+  \UCpaso Muestra la alerta {\bf MDesactivarCuenta} ''¿Está seguro que desea desactivar la cuenta? Una vez realizada esta acción no podrá activarse nuevamente".
+  \UCpaso[\UCactor] Da click sobre el botón \IUbutton{Si}.[TAA]
+  \UCpaso Desactiva la cuenta del usuario.
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}{A}{Datos con formato incorrecto} 
-  \UCpaso Muestra mensajes de validación {\bf MFormatoIncorrecto}.
-  \UCpaso Continua transacción desde el paso 3.
+\begin{UCtrayectoriaA}{A}{Cancelar desactivación de cuenta.} 
+  \UCpaso[\UCactor] Da click sobre el botón \IUbutton{No}.
+  \UCpaso Cancela desactivación de cuenta.
 \end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{B}{Datos ingresados incorrectamente} 
-  \UCpaso Continua transacción desde el paso 3.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{C}{Datos no almacenados} 
-  \UCpaso Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
-  \UCpaso Continua transacción desde el paso 4.
-\end{UCtrayectoriaA}
-
 
 
 %-------------------------------------- TERMINA descripción del caso de uso.

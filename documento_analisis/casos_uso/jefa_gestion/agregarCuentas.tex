@@ -5,7 +5,7 @@
   \UCitem{Propósito}{La jefa de Gestión Escolar podrá añadir cuentas a los diferentes perfiles de usuario.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item No. de empleado: Cadena compuesta de entre 5  y 7 dígitos.
+    \item No. Empleado: Cadena compuesta de entre 5  y 7 dígitos.
     \item Nombre: Cadena de caracteres.
     \item Apellido Paterno: Cadena de caracteres.
     \item Apellido Materno: Cadena de caracteres.
@@ -16,7 +16,8 @@
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Datos personales desde teclado y datos de área de un select que obtiene los datos del repositorio de datos.
+    \item Teclado: No. Empleado, nombre, apellido paterno, apellido materno, RFC y correo.
+    \item Seleccionable: Área.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -31,7 +32,7 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item La jefa de Gestión Escolar debe haber ingresado previamente con su cuenta personal.
+      \item El actor debió haber sido identificado por el sistema como jefa de Gestión Escolar.
     \end{itemize}
   }
   
@@ -42,14 +43,15 @@
   }
   \UCitem{Errores}{
   	\begin{itemize}
-  	\item Ninguno.
+  	\item  Muestra mensajes de validación {\bf MFormatoIncorrecto}.
+  	\item Muestra mensaje {\bf MDatosNoAlmacenados} "Los datos no han sido almacenados, inténtelo nuevamente".
   	\end{itemize}
 	}
   \UCitem{Tipo de ejecución}{Secundaria, viene de CUG05 Gestionar cuentas.}
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{Autorizado}
+  \UCitem{Estado}{En Proceso}
 	\UCitem{Autor}{Marcela Castro Flores}
 	\UCitem{Revisor}{Alberto Maldonado Romo}
 \end{UseCase}
@@ -59,7 +61,7 @@
   \UCpaso Muestra la pantalla {\bf UIJGE Registrar cuenta}.
   \UCpaso[\UCactor] Ingresa los datos del empleado que desea registrar.
   \UCpaso[\UCactor] Da click en el botón \IUbutton{Registrar}.
-  \UCpaso Valida que existan datos escritos correctamente en el formulario. [TAA]
+  \UCpaso Valida que el formato de los datos proporcionados por el actor sea correcto.[TAA]
   \UCpaso Muestra el mensaje {\bf MConfirmaciónDatos} "¿Está seguro que los datos ingresados son correctos?".
   \UCpaso[\UCactor] Verifica los datos y da click en el botón \IUbutton{Si}. [TAB]
   \UCpaso Almacena los datos en el repositorio de datos. [TAC]

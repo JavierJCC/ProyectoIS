@@ -5,12 +5,12 @@
   \UCitem{Propósito}{La jefa de Gestión Escolar podrá desactivar cuentas de los diferentes perfiles de usuario en caso de que estos no pertenezcan ya a la institución.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item Ninguna
+    \item No. Empleado: Cadena compuesta de entre 5  y 7 dígitos.
     \end{itemize}
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Select que obtiene los datos del repositorio de datos.
+    \item Repositorio de datos.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -25,12 +25,14 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item El usuario debe tener una cuenta previamente registrada.
+      \item La cuenta del usuario debe estar activada.
+      \item El usuario debió haber sido identificado por el sistema como jefa de Gestión Escolar.
     \end{itemize}
   }
   \UCitem{Postcondiciones}{
    \begin{itemize}
       \item La jefa de Gestión Escolar desactiva la cuenta del empleado.
+      \item La cuenta del empleado queda desactivada.
     \end{itemize}
   }
   \UCitem{Observaciones}{
@@ -47,7 +49,7 @@
 	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Baja}
-  \UCitem{Estado}{Autorizado}
+  \UCitem{Estado}{En Proceso}
 	\UCitem{Autor}{Marcela Castro Flores}
 	\UCitem{Revisor}{Alberto Maldonado Romo}
 \end{UseCase}
@@ -57,6 +59,7 @@
   \UCpaso Muestra la alerta {\bf MDesactivarCuenta} ''¿Está seguro que desea desactivar la cuenta? Una vez realizada esta acción no podrá activarse nuevamente".
   \UCpaso[\UCactor] Da click sobre el botón \IUbutton{Si}.[TAA]
   \UCpaso Desactiva la cuenta del usuario.
+  \UCpaso Actualiza la cuenta del usuario de activa a inactiva en el repositorio de datos.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Cancelar desactivación de cuenta.} 

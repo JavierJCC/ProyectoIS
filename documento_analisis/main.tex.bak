@@ -46,25 +46,40 @@
 \cfinput{casos_uso/analista/gestionarsolicitudes}
 \cfinput{casos_uso/analista/actualizarEstado}
 
-\section{Autoridad pertinente}
-\section{Departamento escolar}
+
+
+
 \section{ Alumno/Egresado}
 \cfinput{casos_uso/alumnoEgresado/iniciarSesion}
 \cfinput{casos_uso/alumnoEgresado/solicitarTramite}
 \cfinput{casos_uso/alumnoEgresado/ConsultarEstadoTramitesSolicitados}
+<<<<<<< HEAD
 \section{Jefa de Gestión Escolar}
 \cfinput{casos_uso/jefa_gestion/gestionarCuentas}
 \cfinput{casos_uso/jefa_gestion/actualizarCuentas}
 \cfinput{casos_uso/jefa_gestion/agregarCuentas}
 \cfinput{casos_uso/jefa_gestion/desactivarCuentas}
+=======
+
+\section{Departamento Escolar}
+\cfinput{casos_uso/departamentoEscolar/enviarMemorandum}
+
+\section{Jefa de gestión escolar}
+\cfinput{casos_uso/jefa_gestion/consultarMemorandum}
+>>>>>>> f08bbc3730d1c53ad143800d414efb54429e5d55
 
 \chapter{Interacción con el usuario (UI)}
 \section{Analista}
 \cfinput{casos_uso/analista/UI}
 \section{Autoridad pertinente}
 \section{Departamento escolar}
+departamentoEscolardepartamentoEsc\cfinput{casos_uso/departamentoEscolar/UI}
 \section{ Estudiante/Egresado}
 \cfinput{casos_uso/alumnoEgresado/UI}
+\section{Jefa de gestión escolar}
+\cfinput{casos_uso/jefa_gestion/UI}
+
+
 
 
 \end{document}
