@@ -68,7 +68,9 @@ alertify.alert()
 		        			<div id="radioBtn" class="btn-group">
     					<a class="btn btn-danger btn-sm active" data-toggle="fun" data-title="Solicitado">Solicitado</a>
                         <a class="btn btn-warning btn-sm notActive" data-toggle="fun" data-title="En firma">En firma</a>
+    					<a class="btn btn-info btn-sm notActive" data-toggle="fun" data-title="Finalizado">Finalizado</a>
     					<a class="btn btn-success btn-sm notActive" data-toggle="fun" data-title="Entragado">Entregado</a>
+    					
     				</div>
 		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
 							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
@@ -87,7 +89,9 @@ alertify.alert()
 		        			<div id="radioBtn" class="btn-group">
     					<a class="btn btn-danger btn-sm notActive" data-toggle="fun1" data-title="Solicitado">Solicitado</a>
                         <a class="btn btn-warning btn-sm Active" data-toggle="fun1" data-title="En firma">En firma</a>
-    					<a class="btn btn-success btn-sm notActive" data-toggle="fun1" data-title="Entragado">Entregado</a>
+                        <a class="btn btn-info btn-sm notActive" data-toggle="fun1" data-title="Finalizado">Finalizado</a>
+                        <a class="btn btn-success btn-sm notActive" data-toggle="fun1" data-title="Entragado">Entregado</a>
+    					
     				</div>
 		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
 							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
@@ -106,8 +110,32 @@ alertify.alert()
 		        			</select-->
 		        			<div id="radioBtn" class="btn-group">
     					<a class="btn btn-danger btn-sm notActive" data-toggle="fun2" data-title="Solicitado">Solicitado</a>
-                        <a class="btn btn-warning btn-sm Active" data-toggle="fun2" data-title="En firma">En firma</a>
+                        <a class="btn btn-warning btn-sm notActive" data-toggle="fun2" data-title="En firma">En firma</a>
+    					<a class="btn btn-info btn-sm Active" data-toggle="fun2" data-title="Finalizado">Finalizado</a>
     					<a class="btn btn-success btn-sm notActive" data-toggle="fun2" data-title="Entragado">Entregado</a>
+    					
+    				</div>
+		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
+							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
+							<label class="radio-inline"><input type="radio" name="optradio2">Entregado</label-->
+		        		</td>
+		      		</tr>
+
+		      		<tr class="secondary">
+		        		<td><b>201663110</b></td>
+		        		<td><b>Boleta</b></td>
+		        		<td>
+		        			<!--select class="info">
+		        				  <option value="solicitado">Solicitado</option>
+								  <option value="enfirma">En firma</option>
+								  <option value="entregado">Entregado</option>
+		        			</select-->
+		        			<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-danger btn-sm notActive" data-toggle="fun3" data-title="Solicitado">Solicitado</a>
+                        <a class="btn btn-warning btn-sm notActive" data-toggle="fun3" data-title="En firma">En firma</a>
+    					<a class="btn btn-info btn-sm notActive" data-toggle="fun3" data-title="Finalizado">Finalizado</a>
+    					<a class="btn btn-success btn-sm Active" data-toggle="fun3" data-title="Entragado">Entregado</a>
+    					
     				</div>
 		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
 							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
