@@ -20,7 +20,7 @@
 
 \textsc{\begin{figure}[htbp!]
     \centering
-        \includegraphics[width=0.7\textwidth]{images/UI/jefaGestion/actmal}
+        \includegraphics[width=0.6\textwidth]{images/UI/jefaGestion/actmal}
     \caption{MFormatoIncorrecto}
 \end{figure}}
 
@@ -80,7 +80,7 @@
     \caption{UIJGE Cuenta Desactivada}
 \end{figure}}
 
-\subsection{CUJGE09 Consultar memorándum}
+\subsection{CUJGE09 Consultar memorandum}
 \textsc{\begin{figure}[htbp!]
     \centering
         \includegraphics[width=0.7\textwidth]{images/UI/jefaGestion/UIMemorandum}

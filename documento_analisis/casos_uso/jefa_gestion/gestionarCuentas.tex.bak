@@ -5,34 +5,29 @@
   \UCitem{Propósito}{La jefa de Gestión Escolar podrá visualizar la información personal de las cuentas de empleados previamente registrados.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item Ninguna
+    \item Ninguna.
     \end{itemize}
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Datos obtenidos desde un select al repositorio de datos.
+    \item Repositorio de datos.
       \end{itemize}
   }
   \UCitem{Salidas}{
     \begin{itemize}
-		\item Ninguna
+		\item Ninguna.
     \end{itemize}
   }
   \UCitem{Destino}{
     \begin{itemize}
-      \item Pantalla.
+      \item Ninguno.
     \end{itemize}
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item El empleado debe tener una cuenta previamente registrada.
+      \item Deben existir cuentas de empleados registradas en el repositorio de datos.
     \end{itemize}
-  }
-  \UCitem{Postcondiciones}{
-   \begin{itemize}
-      \item Los datos se muestran en pantalla.
-    \end{itemize}
-  }  
+  } 
   \UCitem{Observaciones}{
 		\begin{itemize}
 			\item Ninguna.
@@ -54,7 +49,7 @@
 
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Solicita visualizar la información de un usuario haciendo click en la opción del menú ''Gestionar cuentas".
-  \UCpaso Realizar consulta a repositorio de datos. [TAA]
+  \UCpaso Consulta cuentas de usuario en el repositorio de datos. [TAA]
   \UCpaso Muestra la pantalla {\bf UIJGE Gestionar cuentas}.
 \end{UCtrayectoria}
 

@@ -54,7 +54,7 @@
 	\UCitem{Volatilidad}{Media}
 	\UCitem{Madurez}{Baja}
 	\UCitem{Prioridad}{Alta}
-  \UCitem{Estado}{Autorizado}
+  \UCitem{Estado}{En Proceso}
 	\UCitem{Autor}{Marcela Castro Flores}
 	\UCitem{Revisor}{Alberto Maldonado Romo}
 \end{UseCase}
