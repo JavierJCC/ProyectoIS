@@ -3,9 +3,9 @@
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Analista}
   \UCitem{Propósito}{El analista podrá visualizar las solicitudes de los estudiantes, egresados o departamentos escolares que estén pendientes o que aún no estén autorizadas.}
-  \UCitem{Entradas}{
+  \UCitem{Origen}{
     \begin{itemize}
-    \item El analista debió haber sido identificado por el sistema.
+    \item Repositorio de datos.
     \end{itemize}
   }
   \UCitem{Salidas}{
@@ -20,14 +20,13 @@
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
-      \item Un estudiante, egresado o departamento escolar debió haber solicitado algún trámite.
+      \item Un estudiante, egresado o departamento escolar debió haber solicitado algún trámite de documento.
     \end{itemize}
   }
   
   \UCitem{Observaciones}{
 		\begin{itemize}
-			\item El analista visualizará las solicitudes que no han sido iniciadas
-			\item El Solicitante puede ser: 
+			\item El solicitante puede ser: 
 			\begin{itemize}
 				\item Estudiante
 				\item Egresado
@@ -51,20 +50,19 @@
 
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú ''Gestionar trámite''.
-  \UCpaso Realiza la consulta a la base de datos. [TAA]
+  \UCpaso Realiza la consulta y obtiene los datos del repositorio de datos. [TAA]
   \UCpaso Muestra la pantalla con las solicitudes {\bf CUA03Gestionarsolicitudes}.[TAC]
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Error al cargar datos} 
 \UCpaso Muestra la alerta {\bf AlertaErrorDeConexión}.
   \UCpaso[\UCactor] Da click en el botón \IUbutton{Volver a cargar datos}. [TAB]
-  \UCpaso Recarga los datos.
-  \UCpaso Continua transacción desde el paso 3.
+  \UCpaso Continua transacción desde el paso 2.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{No Recarga los datos} 
   \UCpaso Da click en el botón \IUbutton{Cancelar}.
-  \UCpaso Muestra interfaz de inicio analista.
+  \UCpaso Continua transacción en el paso 1.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No hay solicitudes pendientes} 
