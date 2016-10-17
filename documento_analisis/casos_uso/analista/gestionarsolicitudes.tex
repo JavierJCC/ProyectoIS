@@ -1,5 +1,5 @@
 \pagebreak
-\begin{UseCase}{CUA03}{Gestionar solicitudes}{Un analista requiere visualizar las solicitudes de trámites que se han generado, para poder aceptar o cancelarla dicha solicitud.}
+\begin{UseCase}{CUA03}{Gestionar solicitudes}{Un analista requiere visualizar las solicitudes de trámites que se han generado.}
 	\UCitem{Versión}{1.0}
   \UCitem{Actor}{Analista}
   \UCitem{Propósito}{El analista podrá visualizar las solicitudes de los estudiantes, egresados o departamentos escolares que estén pendientes o que aún no estén autorizadas.}
@@ -8,14 +8,9 @@
     \item El analista debió haber sido identificado por el sistema.
     \end{itemize}
   }
-  \UCitem{Origen}{
-    \begin{itemize}
-    \item Select de la base de datos
-      \end{itemize}
-  }
   \UCitem{Salidas}{
     \begin{itemize}
-		\item Tabla de información: Visualización de solicitudes hechas por estudiantes, egresados o áreas de la escuela.
+		\item Tabla de información: Visualización de solicitudes hechas por estudiantes, exestudiantes (egresados o alumnos dados de baja, ya sea temporal o definitiva) o áreas de la escuela.
     \end{itemize}
   }
   \UCitem{Destino}{
@@ -55,9 +50,9 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú ``Gestionar trámite”.
+  \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú ''Gestionar trámite''.
   \UCpaso Realiza la consulta a la base de datos. [TAA]
-  \UCpaso Muestra la pantalla  {\bf CUA03Gestionarsolicitudes}.
+  \UCpaso Muestra la pantalla con las solicitudes {\bf CUA03Gestionarsolicitudes}.[TAC]
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Error al cargar datos} 
@@ -70,6 +65,10 @@
 \begin{UCtrayectoriaA}{B}{No Recarga los datos} 
   \UCpaso Da click en el botón \IUbutton{Cancelar}.
   \UCpaso Muestra interfaz de inicio analista.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{No hay solicitudes pendientes} 
+  \UCpaso Muestra la pantalla {\bf No hay solicitudes pendientes}.
 \end{UCtrayectoriaA}
 
 %-------------------------------------- TERMINA descripción del caso de uso.
