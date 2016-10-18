@@ -14,7 +14,7 @@ class analistaModel
     if(mysqli_connect_errno()){
       echo mysqli_connect_error();
     }
-}
+  }
 
   function select_all_solicitudes(){
     $query = "select solicitud.idSolicitud, solicitud.idAlumno as 'Boleta',  CONCAT(persona.ApPat, concat(' ',concat(persona.ApMat, concat(' ',Nom)))) as 'Nombre', 
@@ -75,6 +75,31 @@ class analistaModel
          echo  $this->connection->error;
       }
   }
+
+  function get_documentos(){
+    $query = "SELECT solicitud.idSolicitud, documento.nombre, solicitud.idAlumno, tramite.idTramite, tramite.idEstado from solicitud,documento,tramite where tramite.idTramite = solicitud.idSolicitud and solicitud.Documento_idDocumento = documento.idDocumento;";
+    echo $this->connection->error;
+    echo "hola";
+    $documentos = $this->connection->query($query);
+    return $documentos ? $documentos : array();
+  }
+  function update_estado($idTramite, $estado){
+    
+    $query = "UPDATE tramite set idEstado={$estado} where idTramite={$idTramite}";
+    $estado_anterior = analistaModel::get_estado($idTramite);
+    if($estado > $estado_anterior->idEstado){
+      if($this->connection->query($query) === TRUE){
+        return "exito";
+      }else{
+         echo  $this->connection->error;
+      }
+    }
+    else 
+      return "error";
+  }
+  function get_estado($idTramite){
+      $query = "Select idEstado from tramite where idTramite={$idTramite}";
+      return $this->connection->query($query)->fetch_object();
+  }  
   
- 
 } 

@@ -10,16 +10,7 @@
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="js/alertify.min.js"></script>
-<script src="js/alertify.js"></script>
-
-
-<link rel="stylesheet" type="text/css" href="css/alertify.core.css">
-<link rel="stylesheet" type="text/css" href="css/alertify.default.css">
-
 <script type="text/javascript">
-
-
 	$(document).ready(function()
 	{
 		$("#confirmar").click(function()
@@ -31,11 +22,8 @@ alertify.alert()
   }).show();*/
 
 		alertify.alert("Se actualizo el estado de los documentos.");
-			
         //una notificación correcta
       	alertify.success("Se actualizo"); 
-
-
 		});
 	});
 </script> 
@@ -56,98 +44,26 @@ alertify.alert()
 		      		</tr>
 		    	</thead>
 		    	<tbody>
-		      		<tr class="secondary">
-		        		<td><b>2016630001</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td>
-		        			<!--select class="info">
-		        				  <option value="solicitado">Solicitado</option>
-								  <option value="enfirma">En firma</option>
-								  <option value="entregado">Entregado</option>
-		        			</select-->
-		        			<div id="radioBtn" class="btn-group">
-    					<a class="btn btn-danger btn-sm active" data-toggle="fun" data-title="Solicitado">Solicitado</a>
-                        <a class="btn btn-warning btn-sm notActive" data-toggle="fun" data-title="En firma">En firma</a>
-    					<a class="btn btn-info btn-sm notActive" data-toggle="fun" data-title="Finalizado">Finalizado</a>
-    					<a class="btn btn-success btn-sm notActive" data-toggle="fun" data-title="Entragado">Entregado</a>
-    					
-    				</div>
-		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">Entregado</label-->
-		        		</td>
-		      		</tr>
-		      		<tr class="secondary">
-		        		<td><b>201663000</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td>
-		        			<!--select class="info">
-		        				  <option value="solicitado">Solicitado</option>
-								  <option value="enfirma">En firma</option>
-								  <option value="entregado">Entregado</option>
-		        			</select-->
-		        			<div id="radioBtn" class="btn-group">
-    					<a class="btn btn-danger btn-sm notActive" data-toggle="fun1" data-title="Solicitado">Solicitado</a>
-                        <a class="btn btn-warning btn-sm Active" data-toggle="fun1" data-title="En firma">En firma</a>
-                        <a class="btn btn-info btn-sm notActive" data-toggle="fun1" data-title="Finalizado">Finalizado</a>
-                        <a class="btn btn-success btn-sm notActive" data-toggle="fun1" data-title="Entragado">Entregado</a>
-    					
-    				</div>
-		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">Entregado</label-->
-		        		</td>
-		      		</tr>
-
-		      		<tr class="secondary">
-		        		<td><b>201663110</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td>
-		        			<!--select class="info">
-		        				  <option value="solicitado">Solicitado</option>
-								  <option value="enfirma">En firma</option>
-								  <option value="entregado">Entregado</option>
-		        			</select-->
-		        			<div id="radioBtn" class="btn-group">
-    					<a class="btn btn-danger btn-sm notActive" data-toggle="fun2" data-title="Solicitado">Solicitado</a>
-                        <a class="btn btn-warning btn-sm notActive" data-toggle="fun2" data-title="En firma">En firma</a>
-    					<a class="btn btn-info btn-sm Active" data-toggle="fun2" data-title="Finalizado">Finalizado</a>
-    					<a class="btn btn-success btn-sm notActive" data-toggle="fun2" data-title="Entragado">Entregado</a>
-    					
-    				</div>
-		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">Entregado</label-->
-		        		</td>
-		      		</tr>
-
-		      		<tr class="secondary">
-		        		<td><b>201663110</b></td>
-		        		<td><b>Boleta</b></td>
-		        		<td>
-		        			<!--select class="info">
-		        				  <option value="solicitado">Solicitado</option>
-								  <option value="enfirma">En firma</option>
-								  <option value="entregado">Entregado</option>
-		        			</select-->
-		        			<div id="radioBtn" class="btn-group">
-    					<a class="btn btn-danger btn-sm notActive" data-toggle="fun3" data-title="Solicitado">Solicitado</a>
-                        <a class="btn btn-warning btn-sm notActive" data-toggle="fun3" data-title="En firma">En firma</a>
-    					<a class="btn btn-info btn-sm notActive" data-toggle="fun3" data-title="Finalizado">Finalizado</a>
-    					<a class="btn btn-success btn-sm Active" data-toggle="fun3" data-title="Entragado">Entregado</a>
-    					
-    				</div>
-		        			<!--label class="radio-inline"><input type="radio" name="optradio2">Solicitado</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">En firma</label>
-							<label class="radio-inline"><input type="radio" name="optradio2">Entregado</label-->
-		        		</td>
-		      		</tr>
+				<?php 
+					if($data['documentos']){
+						while($documento = $data['documentos']->fetch_assoc()){
+							print "<tr>";
+							print "<td> <b> {$documento['idAlumno']} </b> </td>";
+							print "<td> <b> {$documento['nombre']} </b> </td>";
+							print "<td> ";
+							print "<div  id='radioBtn' class='btn-group'>";
+							print "<a class='btn btn-danger btn-sm active' data-toggle=fun{$documento['idSolicitud']} data-title='Solicitado' data-id={$documento['idSolicitud']} data-estado=1>Solicitado</a>";
+							print "<a class='btn btn-warning btn-sm notActive' data-toggle=fun{$documento['idSolicitud']} data-title='En firma' data-id={$documento['idSolicitud']} data-estado=2>En firma</a>";
+							print "<a class='btn btn-info btn-sm notActive' data-toggle=fun{$documento['idSolicitud']} data-title='Finalizado' data-id={$documento['idSolicitud']} data-estado=3>Finalizado</a>";
+							print "<a class='btn btn-success btn-sm notActive' data-toggle=fun{$documento['idSolicitud']} data-title='Entragado' data-id={$documento['idSolicitud']} data-estado=4>Entregado</a>";
+							print "</div>"; 
+							print "</td>";
+							print "</tr>";
+						}
+					}
+				?>
 		    	</tbody>
 			</table>
-			<div class="text-center">
-				<button type="button" class="btn btn-primary btn-md" id="confirmar">Modificar estado</button>
-
-			</div>
 		</div>
 	</div>
   <?php endblock() ?>
@@ -155,6 +71,23 @@ alertify.alert()
 $('#radioBtn a').on('click', function(){
     var sel = $(this).data('title');
     var tog = $(this).data('toggle');
+	var id_send = $(this).data('id'); //obtenemos el id solicitud
+	var estado_actualizar_send = $(this).data('estado'); //obtenemos el id del estado del botón que le picamos
+	//mandar el id de la solicitud con jquery a un controlador php para poder actualizarlo dependiendo del id
+	//mostrar alerta de que se actualizó correctamente
+	$.ajax({
+		type: 'POST',
+		url: '/Proyecto_IS/ProyectoSemestreIS/sistema/public/Analista_Solicitudes/Actualizar_Estado',
+		data: {id: id_send, estado: estado_actualizar_send},
+		success: function(data){
+			if(data == "error"){
+				alertify.error("No se permite regresar a un estado anterior."); 
+			}else{
+				alertify.success("Se actualizo correctamente"); 
+			}
+			
+		}
+	});
     $('#'+tog).prop('value', sel);
     
     $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
