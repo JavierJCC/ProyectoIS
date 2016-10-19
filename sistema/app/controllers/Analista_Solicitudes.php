@@ -38,6 +38,12 @@ class Analista_solicitudes extends Controller
 	
   public function Estado_peticion(){
 	  $EE_modelo = $this->model('analistaModel');
-	  $this->view('analista/actualizar_estado');
+    $documentos = $this->EE_modelo->get_documentos();
+	  $this->view('analista/actualizar_estado', ['documentos'=>$documentos]);
+  }
+  public function Actualizar_Estado(){
+    $EE_modelo = $this->model('analistaModel');
+    $resultado = $EE_modelo->update_estado($_POST["id"],$_POST["estado"]);
+    echo $resultado;
   }
 }

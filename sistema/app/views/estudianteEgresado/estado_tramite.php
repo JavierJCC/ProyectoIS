@@ -19,41 +19,55 @@
 	<div class="panel-body">
 		<div class="table-responssive table-border">
 			<table class="table">
-				<thead style="color:white;background:#4f94e0">
-		    		<tr>
-		    			
-		        		<th id="boleta"><center> <b>Número de solicitudes</b> </center></th>
-		   				<th id="documento"><center><b>Documento solicitado</b></center>  </th>
-		        		<th id ="estado"><center><b>Estado</b></center> </th>
-		        		<th id ="razon"><center><b>Motivo</b></center> </th>
-		        		<th id ="fechaT"><center><b>Fecha y hora de la solicitud</b></center> </th>
-
-		      		</tr>
-		    	</thead>
-		    	<tbody>
-		      		<?php
+				<?php 
 		      			$i=0;
-		      			if ($data['estado']){
-		      				while($Estado = mysqli_fetch_array($data['estado']))
-			                {
-			                	echo "<tr><td><center><b>";
-				                printf("%s", ++$i);
-				                echo "</b></center></td>";
-				                echo "<td><center><b>";
-				                printf("%s", $Estado[2]);
-				                echo "</b></center></td>";
-				                echo "<td><center><b>";
-				                printf("%s", $Estado[3]);
-				                echo "</b></center></td>";
-				                echo "<td><center><b>";
-				                printf("%s", $Estado[1]);
-				                echo "</b></center></td>";
-				                echo "<td><center><b>";
-				                printf("%s", $Estado[0]);
-				                echo "</b></center></td>";
-				                echo "</tr>";
+		      			if ($data['motivos']){
+		      				
+		      				while($Estado= mysqli_fetch_array($data['motivos'])){
+		      					$i++;
+		      				}
+		      				if($i<1){
+		      					$color="color:red";
+		      					echo "<h3 style=\"".$color."\"><center>No hay documentos solicitados</center></h3>";
+		      				}else {
+			      					$Estilo="color:white;background:#4f94e0";
+									$id1="numero";
+									$id2="documento";
+									$id3="estado";
+									$id4="motivo";
+									$id5="fecha";
 
-			                }
+									echo "<thead style= \"".$Estilo."\">";
+									echo "<tr>";
+									echo "<th id=\"".$id1."\"><center> <b>Número de solicitudes</b> </center></th>";
+									echo "<th id=\"".$id2."\"><center><b>Documento solicitado</b></center>  </th>";
+									echo "<th id=\"".$id3."\"><center><b>Estado</b></center> </th>";	
+									echo "<th id =\"".$id4."\"><center><b>Motivo</b></center> </th>";
+									echo "<th id =\"".$id5."\"><center><b>Fecha</b></center> </th>";
+									echo "</tr>";
+									echo "</thead><tbody>";	
+							$ir=0;
+				      				while($Estado= mysqli_fetch_array($data['motivos2']))
+					                {
+					                	echo "<tr><td><center><b>";
+						                printf("%s", ++$ir);
+						                echo "</b></center></td>";
+						                echo "<td><center><b>";
+						                printf("%s", $Estado[0]);
+						                echo "</b></center></td>";
+						                echo "<td><center><b>";
+						                printf("%s", $Estado[3]);
+						                echo "</b></center></td>";
+						                echo "<td><center><b>";
+						                printf("%s", $Estado[2]);
+						                echo "</b></center></td>";
+						                echo "<td><center><b>";
+						                printf("%s", $Estado[1]);
+						                echo "</b></center></td>";
+						                echo "</tr>";
+
+					                } 
+			            	}
 		      			}
 
 		      		?>

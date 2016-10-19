@@ -11,15 +11,9 @@ escuela, dependiendo de la situación que se encuentre el usuario al cual se
 le va a realizar el documento.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item El analista debió haber sido identificado por el sistema.
 		\item El analista debe oprimir un botón ya sea, aceptar o rechazar.
     \end{itemize}
   }
-	\UCitem{Origen}{
-		\begin{itemize}
-			\item Caso de uso CUA03.1 Gestionar solicitudes.
-		\end{itemize}
-	}
   \UCitem{Salidas}{
     \begin{itemize}
 			\item Mensaje de solicitud {\bf AlertaSolicitaMotivo-}. ``Indique el 
@@ -46,7 +40,7 @@ solicitado algún trámite.
   
   \UCitem{Observaciones}{
 		\begin{itemize}
-			\item El analista en dado de que se equivoque odrá cambiar de aceptar a rechazar o viceversa en la opcion que se encuentra del lado izquierdo en el menu.
+			\item El analista en dado de que se equivoque podrá cambiar de aceptar a rechazar o viceversa en la opcion que se encuentra del lado izquierdo en el menu.
 			\end{itemize}
   }
   \UCitem{Errores}{
@@ -69,7 +63,7 @@ solicitado algún trámite.
 	\UCpaso Muestra un modal en la pantalla {\bf AlertaSolicitaFolio}.
   \UCpaso [\UCactor] Da click en el botón \IUbutton{Aceptar}.[TAB]
 	\UCpaso Realiza los cambios en la base de datos.[TAC]
-	\UCpaso Muestra una alerta en pantalla {\bf AlertaConfirmaAceptacion}.
+	\UCpaso Muestra una alerta en pantalla {\bf AlertaConfirma}.
 	\UCpaso Muestra la pantalla {\bf CUA03Gestionarsolicitudes}.
 \end{UCtrayectoria}
 

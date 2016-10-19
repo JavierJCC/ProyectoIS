@@ -1,9 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.4)  9 OCT 2016 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2016 00:01
 entering extended mode
-**./UI.tex
-(UI.tex
-LaTeX2e <2016/03/31> patch level 3
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**UI.tex
+(./UI.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 ! Undefined control sequence.
 l.1 \subsection
                {CUG01 Iniciar Sesión Estudiante/Egresado}
@@ -77,7 +79,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-<argument> ...[htbp!] \centering \includegraphics 
+<argument> ...}[htbp] \centering \includegraphics 
                                                   [width=0.7\textwidth ]{ima...
 l.6 \end{figure}}
                  
@@ -141,8 +143,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--7
  []
 
 
-Overfull \hbox (33.00531pt too wide) in paragraph at lines 1--7
-\OT1/cmr/m/sc/10 [htbp!]
+Overfull \hbox (29.81091pt too wide) in paragraph at lines 1--7
+\OT1/cmr/m/sc/10 [htbp]
  []
 
 
@@ -182,8 +184,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -194,17 +196,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
 <argument> ...[htbp!] \centering \includegraphics 
-                                                  [width=0.5\textwidth ]{ima...
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+                                                  [width=0.6\textwidth ]{ima...
+l.12 \end{figure}}
+                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -214,8 +216,8 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -223,8 +225,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -239,15 +241,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no � in font cmcsc10!
-Missing character: There is no � in font cmcsc10!
-Missing character: There is no � in font cmcsc10!
-Missing character: There is no � in font cmcsc10!
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
 
@@ -255,65 +253,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...aConfirmaciónIniciarSesión}\end{figure}}
-                                                  
+l.12 \end{figure}}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (53.00531pt too wide) in paragraph at lines 11--12
+Overfull \hbox (53.00531pt too wide) in paragraph at lines 12--13
 []\OT1/cmr/m/sc/10 [htbp!]
  []
 
 
-Overfull \hbox (212.44563pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/ACIS
+Overfull \hbox (217.98727pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/sc/10 [width=0.6]images/UI/IniciarSesion/CURP
  []
 
 
-Overfull \hbox (28.6498pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 Aler-
+Overfull \hbox (49.19408pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/sc/10 MPrimer-
  []
 
 
-Overfull \hbox (15.15544pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 ta-
- []
-
-
-Overfull \hbox (24.12762pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 Con-
- []
-
-
-Overfull \hbox (18.17769pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 fir-
- []
-
-
-Overfull \hbox (17.37769pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 ma-
- []
-
-
-Overfull \hbox (32.05534pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 cinIni-
- []
-
-
-Overfull \hbox (18.84433pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 cia-
- []
-
-
-Overfull \hbox (15.91098pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 rS-
- []
-
-
-Overfull \hbox (19.31102pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/sc/10 esin 
+Overfull \hbox (56.28842pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/sc/10 aVezCURP
  []
 
 
@@ -323,8 +286,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -335,8 +298,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -344,8 +307,8 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <argument> ...[htbp!] \centering \includegraphics 
                                                   [width=0.5\textwidth ]{ima...
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -355,8 +318,8 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -364,8 +327,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -380,11 +343,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no � in font cmcsc10!
+Missing character: There is no � in font cmcsc10!
+Missing character: There is no � in font cmcsc10!
+Missing character: There is no � in font cmcsc10!
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
 
@@ -392,8 +359,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \end{figure}}
-                  
+l.17 ...aConfirmaciónIniciarSesión}\end{figure}}
+                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -404,23 +371,28 @@ Overfull \hbox (53.00531pt too wide) in paragraph at lines 17--18
  []
 
 
-Overfull \hbox (234.23174pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/Mensaje1
+Overfull \hbox (212.44563pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/ACIS
  []
 
 
-Overfull \hbox (25.37758pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 Men-
+Overfull \hbox (28.6498pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 Aler-
  []
 
 
-Overfull \hbox (24.31099pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 saje-
+Overfull \hbox (15.15544pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 ta-
  []
 
 
-Overfull \hbox (22.98874pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 For-
+Overfull \hbox (24.12762pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 Con-
+ []
+
+
+Overfull \hbox (18.17769pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 fir-
  []
 
 
@@ -429,18 +401,23 @@ Overfull \hbox (17.37769pt too wide) in paragraph at lines 17--18
  []
 
 
-Overfull \hbox (26.23315pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 toIn-
+Overfull \hbox (32.05534pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 cinIni-
  []
 
 
-Overfull \hbox (22.06654pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 cor-
+Overfull \hbox (18.84433pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 cia-
  []
 
 
-Overfull \hbox (29.77762pt too wide) in paragraph at lines 17--18
-\OT1/cmr/m/sc/10 recto
+Overfull \hbox (15.91098pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 rS-
+ []
+
+
+Overfull \hbox (19.31102pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/sc/10 esin 
  []
 
 
@@ -531,18 +508,33 @@ Overfull \hbox (53.00531pt too wide) in paragraph at lines 23--24
  []
 
 
-Overfull \hbox (225.67622pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/alerta1
+Overfull \hbox (234.23174pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/Mensaje1
  []
 
 
-Overfull \hbox (28.6498pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/sc/10 Aler-
+Overfull \hbox (25.37758pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 Men-
  []
 
 
-Overfull \hbox (55.65517pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/sc/10 taDatosIn-
+Overfull \hbox (24.31099pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 saje-
+ []
+
+
+Overfull \hbox (22.98874pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 For-
+ []
+
+
+Overfull \hbox (17.37769pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 ma-
+ []
+
+
+Overfull \hbox (26.23315pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 toIn-
  []
 
 
@@ -551,17 +543,129 @@ Overfull \hbox (22.06654pt too wide) in paragraph at lines 23--24
  []
 
 
-Overfull \hbox (21.28876pt too wide) in paragraph at lines 23--24
+Overfull \hbox (29.77762pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/sc/10 recto
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{figure}}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{figure}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> ...[htbp!] \centering \includegraphics 
+                                                  [width=0.5\textwidth ]{ima...
+l.29 \end{figure}}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.29 \end{figure}}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.29 \end{figure}}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{figure}}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{figure}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (53.00531pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/m/sc/10 [htbp!]
+ []
+
+
+Overfull \hbox (225.67622pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/IniciarSesion/alerta1
+ []
+
+
+Overfull \hbox (28.6498pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/sc/10 Aler-
+ []
+
+
+Overfull \hbox (55.65517pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/sc/10 taDatosIn-
+ []
+
+
+Overfull \hbox (22.06654pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/sc/10 cor-
+ []
+
+
+Overfull \hbox (21.28876pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/sc/10 rec-
  []
 
 
-Overfull \hbox (16.84436pt too wide) in paragraph at lines 23--24
+Overfull \hbox (16.84436pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/sc/10 tos
  []
 
 ! Undefined control sequence.
-l.27 \subsection
+l.33 \subsection
                 {CUEE02 Solicitar trámite}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -576,7 +680,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \subsection{C
+l.33 \subsection{C
                   UEE02 Solicitar trámite}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -611,7 +715,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -620,7 +724,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <argument> ...[htbp!] \centering \includegraphics 
                                                   [width=0.7\textwidth ]{ima...
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -631,7 +735,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -640,7 +744,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -656,7 +760,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -668,172 +772,50 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{figure}}
+l.38 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 27--33
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--39
 []
  []
 
 
-Overfull \hbox (33.00531pt too wide) in paragraph at lines 27--33
+Overfull \hbox (33.00531pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 [htbp!]
  []
 
 
-Overfull \hbox (324.56998pt too wide) in paragraph at lines 27--33
+Overfull \hbox (324.56998pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 [width=0.7]images/UI/AlumnoEgresado/UIEESolicitarTramite
  []
 
 
-Overfull \hbox (43.27177pt too wide) in paragraph at lines 27--33
+Overfull \hbox (43.27177pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 UIEESo-
  []
 
 
-Overfull \hbox (17.84431pt too wide) in paragraph at lines 27--33
+Overfull \hbox (17.84431pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 lic-
  []
 
 
-Overfull \hbox (6.79994pt too wide) in paragraph at lines 27--33
+Overfull \hbox (6.79994pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 i-
  []
 
 
-Overfull \hbox (21.17764pt too wide) in paragraph at lines 27--33
+Overfull \hbox (21.17764pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 tar-
  []
 
 
-Overfull \hbox (41.9942pt too wide) in paragraph at lines 27--33
+Overfull \hbox (41.9942pt too wide) in paragraph at lines 33--39
 \OT1/cmr/m/sc/10 Tramite
- []
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \end{figure}}
-                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Environment figure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \end{figure}}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-<argument> ...[htbp!] \centering \includegraphics 
-                                                  [width=0.5\textwidth ]{ima...
-l.38 \end{figure}}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.38 \end{figure}}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.38 \end{figure}}
-                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \end{figure}}
-                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \end{figure}}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (53.00531pt too wide) in paragraph at lines 38--39
-[]\OT1/cmr/m/sc/10 [htbp!]
- []
-
-
-Overfull \hbox (336.74236pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/AlertaConfirmarCorreo
- []
-
-
-Overfull \hbox (28.6498pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 Aler-
- []
-
-
-Overfull \hbox (15.15544pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 ta-
- []
-
-
-Overfull \hbox (24.12762pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 Con-
- []
-
-
-Overfull \hbox (18.17769pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 fir-
- []
-
-
-Overfull \hbox (23.39989pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 mar-
- []
-
-
-Overfull \hbox (38.19424pt too wide) in paragraph at lines 38--39
-\OT1/cmr/m/sc/10 Correo
  []
 
 
@@ -924,8 +906,8 @@ Overfull \hbox (53.00531pt too wide) in paragraph at lines 44--45
  []
 
 
-Overfull \hbox (319.35896pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/AlertaLimitePeticion
+Overfull \hbox (336.74236pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/AlertaConfirmarCorreo
  []
 
 
@@ -934,23 +916,28 @@ Overfull \hbox (28.6498pt too wide) in paragraph at lines 44--45
  []
 
 
-Overfull \hbox (32.47754pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/sc/10 taLim-
+Overfull \hbox (15.15544pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 ta-
  []
 
 
-Overfull \hbox (18.28876pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/sc/10 ite-
+Overfull \hbox (24.12762pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 Con-
  []
 
 
-Overfull \hbox (25.70534pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/sc/10 Peti-
+Overfull \hbox (18.17769pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 fir-
  []
 
 
-Overfull \hbox (21.42212pt too wide) in paragraph at lines 44--45
-\OT1/cmr/m/sc/10 cion
+Overfull \hbox (23.39989pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 mar-
+ []
+
+
+Overfull \hbox (38.19424pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/sc/10 Correo
  []
 
 
@@ -1041,8 +1028,8 @@ Overfull \hbox (53.00531pt too wide) in paragraph at lines 50--51
  []
 
 
-Overfull \hbox (295.8982pt too wide) in paragraph at lines 50--51
-\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/solicitudEnviada
+Overfull \hbox (319.35896pt too wide) in paragraph at lines 50--51
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/AlertaLimitePeticion
  []
 
 
@@ -1051,48 +1038,165 @@ Overfull \hbox (28.6498pt too wide) in paragraph at lines 50--51
  []
 
 
-Overfull \hbox (15.15544pt too wide) in paragraph at lines 50--51
+Overfull \hbox (32.47754pt too wide) in paragraph at lines 50--51
+\OT1/cmr/m/sc/10 taLim-
+ []
+
+
+Overfull \hbox (18.28876pt too wide) in paragraph at lines 50--51
+\OT1/cmr/m/sc/10 ite-
+ []
+
+
+Overfull \hbox (25.70534pt too wide) in paragraph at lines 50--51
+\OT1/cmr/m/sc/10 Peti-
+ []
+
+
+Overfull \hbox (21.42212pt too wide) in paragraph at lines 50--51
+\OT1/cmr/m/sc/10 cion
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{figure}}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{figure}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> ...[htbp!] \centering \includegraphics 
+                                                  [width=0.5\textwidth ]{ima...
+l.56 \end{figure}}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.56 \end{figure}}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.56 \end{figure}}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{figure}}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{figure}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (53.00531pt too wide) in paragraph at lines 56--57
+[]\OT1/cmr/m/sc/10 [htbp!]
+ []
+
+
+Overfull \hbox (295.8982pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/sc/10 [width=0.5]images/UI/AlumnoEgresado/solicitudEnviada
+ []
+
+
+Overfull \hbox (28.6498pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/sc/10 Aler-
+ []
+
+
+Overfull \hbox (15.15544pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 ta-
  []
 
 
-Overfull \hbox (14.71103pt too wide) in paragraph at lines 50--51
+Overfull \hbox (14.71103pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 so-
  []
 
 
-Overfull \hbox (17.84431pt too wide) in paragraph at lines 50--51
+Overfull \hbox (17.84431pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 lic-
  []
 
 
-Overfull \hbox (6.79994pt too wide) in paragraph at lines 50--51
+Overfull \hbox (6.79994pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 i-
  []
 
 
-Overfull \hbox (15.82213pt too wide) in paragraph at lines 50--51
+Overfull \hbox (15.82213pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 tu-
  []
 
 
-Overfull \hbox (23.57207pt too wide) in paragraph at lines 50--51
+Overfull \hbox (23.57207pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 dEn-
  []
 
 
-Overfull \hbox (12.93326pt too wide) in paragraph at lines 50--51
+Overfull \hbox (12.93326pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 vi-
  []
 
 
-Overfull \hbox (18.28883pt too wide) in paragraph at lines 50--51
+Overfull \hbox (18.28883pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/sc/10 ada
  []
 
 ! Undefined control sequence.
-l.52 \subsection
-                {CUEE03 Consultar estatus de los tramites solicitados}
+l.58 \subsection
+                {CUEE03 Consultar estatus de los documentos solicitados}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1106,8 +1210,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \subsection{C
-                  UEE03 Consultar estatus de los tramites solicitados}
+l.58 \subsection{C
+                  UEE03 Consultar estatus de los documentos solicitados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1138,13 +1242,15 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -1164,7 +1270,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1173,7 +1279,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <argument> ...[htbp!] \centering \includegraphics 
                                                   [width=0.7\textwidth ]{ima...
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1184,7 +1290,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1193,7 +1299,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1209,7 +1315,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1221,64 +1327,64 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \end{figure}}
+l.63 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 52--58
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--64
 []
  []
 
 
-Overfull \hbox (33.00531pt too wide) in paragraph at lines 52--58
+Overfull \hbox (33.00531pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 [htbp!]
  []
 
 
-Overfull \hbox (310.63412pt too wide) in paragraph at lines 52--58
+Overfull \hbox (310.63412pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 [width=0.7]images/UI/AlumnoEgresado/EstatusDocumentos
  []
 
 
-Overfull \hbox (51.15509pt too wide) in paragraph at lines 52--58
+Overfull \hbox (51.15509pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 UIEECon-
  []
 
 
-Overfull \hbox (59.72737pt too wide) in paragraph at lines 52--58
+Overfull \hbox (59.72737pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 sultarEsta-
  []
 
 
-Overfull \hbox (16.3777pt too wide) in paragraph at lines 52--58
+Overfull \hbox (16.3777pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 do-
  []
 
 
-Overfull \hbox (17.64708pt too wide) in paragraph at lines 52--58
+Overfull \hbox (17.64708pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 De-
  []
 
 
-Overfull \hbox (21.5443pt too wide) in paragraph at lines 52--58
+Overfull \hbox (21.5443pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 Los-
  []
 
 
-Overfull \hbox (24.33594pt too wide) in paragraph at lines 52--58
+Overfull \hbox (24.33594pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 Doc-
  []
 
 
-Overfull \hbox (9.91106pt too wide) in paragraph at lines 52--58
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 u-
  []
 
 
-Overfull \hbox (31.44429pt too wide) in paragraph at lines 52--58
+Overfull \hbox (31.44429pt too wide) in paragraph at lines 58--64
 \OT1/cmr/m/sc/10 mento
  []
 
@@ -1289,7 +1395,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1301,7 +1407,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1310,7 +1416,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <argument> ...[htbp!] \centering \includegraphics 
                                                   [width=0.7\textwidth ]{ima...
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1321,7 +1427,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1330,7 +1436,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1346,7 +1452,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1358,7 +1464,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \end{figure}}
+l.69 \end{figure}}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1366,17 +1472,17 @@ or  <return>  to continue without it.
 
 )
 ! Emergency stop.
-<*> ./UI.tex
-            
+<*> UI.tex
+          
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 12 strings out of 493334
- 118 string characters out of 3136666
- 55242 words of memory out of 3000000
- 3641 multiletter control sequences out of 15000+200000
- 3941 words of font info for 15 fonts, out of 3000000 for 9000
+ 11 strings out of 493089
+ 163 string characters out of 6134842
+ 55199 words of memory out of 5000000
+ 3595 multiletter control sequences out of 15000+600000
+ 3941 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 13i,1n,10p,105b,88s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 13i,1n,10p,102b,88s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

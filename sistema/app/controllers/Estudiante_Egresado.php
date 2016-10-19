@@ -23,7 +23,8 @@ class Estudiante_Egresado extends Controller
   
   public function	Estado_Tramite(){
     $EE_modelo = $this->model('estudianteEgresadoModel');
-    $estado = $EE_modelo->select_all_estados();
-    $this->view('estudianteEgresado/estado_tramite', ['estado'=> $estado]);
+    $motivos = $EE_modelo->select_all_estados();
+    $motivos2 = $EE_modelo->select_all_estados();
+      $this->view('estudianteEgresado/estado_tramite', ['motivos'=> $motivos,'motivos2'=> $motivos2 ]);
   }
 }
