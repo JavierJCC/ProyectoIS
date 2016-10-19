@@ -43,15 +43,17 @@
 \pagebreak
 \section{Analista}
 \cfinput{casos_uso/analista/iniciarSesionA}
-\cfinput{casos_uso/analista/actualizarEstado}
 \cfinput{casos_uso/analista/gestionarsolicitudes}
-\cfinput{casos_uso/analista/aceptarrechazarsolicitud}
-\section{Departamento Escolar}
-\cfinput{casos_uso/departamentoEscolar/enviarMemorandum}
+\cfinput{casos_uso/analista/actualizarEstado}
+
+
+
+
 \section{ Alumno/Egresado}
 \cfinput{casos_uso/alumnoEgresado/iniciarSesion}
 \cfinput{casos_uso/alumnoEgresado/solicitarTramite}
 \cfinput{casos_uso/alumnoEgresado/ConsultarEstadoTramitesSolicitados}
+\cfinput{casos_uso/alumnoEgresado/datosPersonales}
 \section{Jefa de Gestión Escolar}
 \cfinput{casos_uso/jefa_gestion/gestionarCuentas}
 \cfinput{casos_uso/jefa_gestion/actualizarCuentas}
@@ -60,16 +62,22 @@
 \cfinput{casos_uso/jefa_gestion/consultarMemorandum}
 
 
+\section{Departamento Escolar}
+\cfinput{casos_uso/departamentoEscolar/enviarMemorandum}
+
+
 \chapter{Interacción con el usuario (UI)}
 \section{Analista}
 \cfinput{casos_uso/analista/UI}
 \section{Autoridad pertinente}
 \section{Departamento escolar}
-departamentoEscolardepartamentoEsc\cfinput{casos_uso/departamentoEscolar/UI}
+\cfinput{casos_uso/departamentoEscolar/UI}
 \section{ Estudiante/Egresado}
 \cfinput{casos_uso/alumnoEgresado/UI}
-\section{Jefa de Gestión Escolar}
+\section{Jefa de gestión escolar}
 \cfinput{casos_uso/jefa_gestion/UI}
+
+
 
 
 \end{document}

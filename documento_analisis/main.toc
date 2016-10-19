@@ -18,65 +18,12 @@
 \contentsline {subsection}{\numberline {5.1.1}CUG02 Iniciar sesi\IeC {\'o}n empleado}{17}{subsection.5.1.1}
 \contentsline {subsubsection}{\numberline {5.1.1.1}Descripci\IeC {\'o}n completa}{17}{subsubsection.5.1.1.1}
 \contentsline {paragraph}{\numberline {5.1.1.1.1}Atributos importantes}{18}{table.5.1}
-\contentsline {subsection}{\numberline {5.1.2}CUA02 Actualizar estado}{20}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}CUA03 Gestionar solicitudes}{20}{subsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.2.1}Descripci\IeC {\'o}n completa}{20}{subsubsection.5.1.2.1}
 \contentsline {paragraph}{\numberline {5.1.2.1.1}Atributos importantes}{21}{table.5.2}
-\contentsline {subsection}{\numberline {5.1.3}CUA03 Gestionar solicitudes}{22}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}CUA02 Actualizar estado}{22}{subsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.3.1}Descripci\IeC {\'o}n completa}{22}{subsubsection.5.1.3.1}
 \contentsline {paragraph}{\numberline {5.1.3.1.1}Atributos importantes}{23}{table.5.3}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {5.1.4}CUA03.1 Aceptar o rechazar solicitudes}{24}{subsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.4.1}Descripci\IeC {\'o}n completa}{24}{subsubsection.5.1.4.1}
-\contentsline {paragraph}{\numberline {5.1.4.1.1}Atributos importantes}{25}{table.5.4}
-\contentsline {section}{\numberline {5.2}Departamento Escolar}{26}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}CUDES01 Enviar memorandum}{27}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}Descripci\IeC {\'o}n completa}{27}{subsubsection.5.2.1.1}
-\contentsline {paragraph}{\numberline {5.2.1.1.1}Atributos importantes}{28}{table.5.5}
-\contentsline {section}{\numberline {5.3} Alumno/Egresado}{29}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}CUG01 Iniciar sesi\IeC {\'o}n Estudiante/Egresado.}{29}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Descripci\IeC {\'o}n completa}{29}{subsubsection.5.3.1.1}
-\contentsline {paragraph}{\numberline {5.3.1.1.1}Atributos importantes}{30}{table.5.6}
-\contentsline {subsection}{\numberline {5.3.2}CUEE02 Solicitar documento}{32}{subsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Descripci\IeC {\'o}n completa}{32}{subsubsection.5.3.2.1}
-\contentsline {paragraph}{\numberline {5.3.2.1.1}Atributos importantes}{33}{table.5.7}
-\contentsline {subsection}{\numberline {5.3.3}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{35}{subsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Descripci\IeC {\'o}n completa}{35}{subsubsection.5.3.3.1}
-\contentsline {paragraph}{\numberline {5.3.3.1.1}Atributos importantes}{35}{table.5.8}
-\contentsline {section}{\numberline {5.4}Jefa de Gesti\IeC {\'o}n Escolar}{36}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}CUJGE05 Gestionar cuentas}{37}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{37}{subsubsection.5.4.1.1}
-\contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{38}{table.5.9}
-\contentsline {subsection}{\numberline {5.4.2}CUJGE05.1 Actualizar cuentas}{39}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Descripci\IeC {\'o}n completa}{39}{subsubsection.5.4.2.1}
-\contentsline {paragraph}{\numberline {5.4.2.1.1}Atributos importantes}{40}{table.5.10}
-\contentsline {subsection}{\numberline {5.4.3}CUJGE05.2 Registrar cuentas}{42}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Descripci\IeC {\'o}n completa}{42}{subsubsection.5.4.3.1}
-\contentsline {paragraph}{\numberline {5.4.3.1.1}Atributos importantes}{43}{table.5.11}
-\contentsline {subsection}{\numberline {5.4.4}CUJGE05.3 Desactivar cuentas}{45}{subsection.5.4.4}
-\contentsline {subsubsection}{\numberline {5.4.4.1}Descripci\IeC {\'o}n completa}{45}{subsubsection.5.4.4.1}
-\contentsline {paragraph}{\numberline {5.4.4.1.1}Atributos importantes}{46}{table.5.12}
-\contentsline {subsection}{\numberline {5.4.5}CUJGE09 Consultar memorand\IeC {\'u}m}{47}{subsection.5.4.5}
-\contentsline {subsubsection}{\numberline {5.4.5.1}Descripci\IeC {\'o}n completa}{47}{subsubsection.5.4.5.1}
-\contentsline {paragraph}{\numberline {5.4.5.1.1}Atributos importantes}{48}{table.5.13}
-\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Analista}{49}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{49}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{49}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{52}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Autoridad pertinente}{52}{section.6.2}
-\contentsline {section}{\numberline {6.3}Departamento escolar}{52}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}CUDESO1 Enviar memorandum}{52}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{55}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{55}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{55}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{58}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Jefa de Gesti\IeC {\'o}n Escolar}{59}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}CUJGE05 Gestionar cuentas}{59}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}CUJGE05.1 Actualizar cuentas}{59}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}CUJGE05.2 Registrar cuentas}{61}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}CUJGE05.3 Desactivar cuenta}{61}{subsection.6.5.4}
-\contentsline {subsection}{\numberline {6.5.5}CUJGE09 Consultar memor\IeC {\'a}ndum}{61}{subsection.6.5.5}
-=======
 \contentsline {section}{\numberline {5.2} Alumno/Egresado}{23}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}CUG01 Iniciar sesi\IeC {\'o}n Estudiante/Egresado.}{23}{subsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.1.1}Descripci\IeC {\'o}n completa}{24}{subsubsection.5.2.1.1}
@@ -87,42 +34,44 @@
 \contentsline {subsection}{\numberline {5.2.3}CUEE03 Consultar estatus de los tr\IeC {\'a}mites solicitados}{29}{subsection.5.2.3}
 \contentsline {subsubsection}{\numberline {5.2.3.1}Descripci\IeC {\'o}n completa}{29}{subsubsection.5.2.3.1}
 \contentsline {paragraph}{\numberline {5.2.3.1.1}Atributos importantes}{29}{table.5.6}
-\contentsline {section}{\numberline {5.3}Jefa de Gesti\IeC {\'o}n Escolar}{30}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}CUJGE05 Gestionar cuentas}{31}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Descripci\IeC {\'o}n completa}{31}{subsubsection.5.3.1.1}
-\contentsline {paragraph}{\numberline {5.3.1.1.1}Atributos importantes}{32}{table.5.7}
-\contentsline {subsection}{\numberline {5.3.2}CUJGE05.1 Actualizar cuentas}{33}{subsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Descripci\IeC {\'o}n completa}{33}{subsubsection.5.3.2.1}
-\contentsline {paragraph}{\numberline {5.3.2.1.1}Atributos importantes}{34}{table.5.8}
-\contentsline {subsection}{\numberline {5.3.3}CUJGE05.2 Registrar cuentas}{36}{subsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Descripci\IeC {\'o}n completa}{36}{subsubsection.5.3.3.1}
-\contentsline {paragraph}{\numberline {5.3.3.1.1}Atributos importantes}{37}{table.5.9}
-\contentsline {subsection}{\numberline {5.3.4}CUJGE05.3 Desactivar cuentas}{39}{subsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.4.1}Descripci\IeC {\'o}n completa}{39}{subsubsection.5.3.4.1}
-\contentsline {paragraph}{\numberline {5.3.4.1.1}Atributos importantes}{40}{table.5.10}
-\contentsline {subsection}{\numberline {5.3.5}CUJGE09 Consultar memorand\IeC {\'u}m}{41}{subsection.5.3.5}
-\contentsline {subsubsection}{\numberline {5.3.5.1}Descripci\IeC {\'o}n completa}{41}{subsubsection.5.3.5.1}
-\contentsline {paragraph}{\numberline {5.3.5.1.1}Atributos importantes}{42}{table.5.11}
-\contentsline {section}{\numberline {5.4}Departamento Escolar}{42}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}CUDES01 Agregar memorandum}{43}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{43}{subsubsection.5.4.1.1}
-\contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{44}{table.5.12}
-\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Analista}{45}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{45}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{47}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{47}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Autoridad pertinente}{50}{section.6.2}
-\contentsline {section}{\numberline {6.3}Departamento escolar}{50}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}CUDESO1 Agregar memor\IeC {\'a}ndum}{50}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{51}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{52}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{54}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{55}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Jefa de gesti\IeC {\'o}n escolar}{55}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}CUJGE05 Gestionar cuentas}{56}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}CUJGE05.1 Actualizar cuentas}{57}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}CUJGE05.2 Registrar cuentas}{60}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}CUJGE05.3 Desactivar cuenta}{64}{subsection.6.5.4}
-\contentsline {subsection}{\numberline {6.5.5}CUJGE09 Consultar memor\IeC {\'a}ndum}{64}{subsection.6.5.5}
->>>>>>> 634592b787b4299157c81e2667d17cfae582725b
+\contentsline {subsection}{\numberline {5.2.4}CUEE03 Consultar informaci\IeC {\'o}n}{31}{subsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.4.1}Descripci\IeC {\'o}n completa}{31}{subsubsection.5.2.4.1}
+\contentsline {paragraph}{\numberline {5.2.4.1.1}Atributos importantes}{31}{table.5.7}
+\contentsline {section}{\numberline {5.3}Jefa de Gesti\IeC {\'o}n Escolar}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}CUJGE05 Gestionar cuentas}{33}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Descripci\IeC {\'o}n completa}{33}{subsubsection.5.3.1.1}
+\contentsline {paragraph}{\numberline {5.3.1.1.1}Atributos importantes}{34}{table.5.8}
+\contentsline {subsection}{\numberline {5.3.2}CUJGE05.1 Actualizar cuentas}{35}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Descripci\IeC {\'o}n completa}{35}{subsubsection.5.3.2.1}
+\contentsline {paragraph}{\numberline {5.3.2.1.1}Atributos importantes}{36}{table.5.9}
+\contentsline {subsection}{\numberline {5.3.3}CUJGE05.2 Registrar cuentas}{38}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Descripci\IeC {\'o}n completa}{38}{subsubsection.5.3.3.1}
+\contentsline {paragraph}{\numberline {5.3.3.1.1}Atributos importantes}{39}{table.5.10}
+\contentsline {subsection}{\numberline {5.3.4}CUJGE05.3 Desactivar cuentas}{41}{subsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.4.1}Descripci\IeC {\'o}n completa}{41}{subsubsection.5.3.4.1}
+\contentsline {paragraph}{\numberline {5.3.4.1.1}Atributos importantes}{42}{table.5.11}
+\contentsline {subsection}{\numberline {5.3.5}CUJGE09 Consultar memorand\IeC {\'u}m}{43}{subsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.5.1}Descripci\IeC {\'o}n completa}{43}{subsubsection.5.3.5.1}
+\contentsline {paragraph}{\numberline {5.3.5.1.1}Atributos importantes}{44}{table.5.12}
+\contentsline {section}{\numberline {5.4}Departamento Escolar}{44}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}CUDES01 Agregar memorandum}{45}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Descripci\IeC {\'o}n completa}{45}{subsubsection.5.4.1.1}
+\contentsline {paragraph}{\numberline {5.4.1.1.1}Atributos importantes}{46}{table.5.13}
+\contentsline {chapter}{\numberline {6}Interacci\IeC {\'o}n con el usuario (UI)}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analista}{47}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}CUG02 Iniciar Sesi\IeC {\'o}n Empleado}{47}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}CUA02 Actualizar estado}{49}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}CUA03 Gestionar solicitudes}{49}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Autoridad pertinente}{52}{section.6.2}
+\contentsline {section}{\numberline {6.3}Departamento escolar}{52}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}CUDESO1 Agregar memor\IeC {\'a}ndum}{52}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4} Estudiante/Egresado}{52}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}CUG01 Iniciar Sesi\IeC {\'o}n Estudiante/Egresado}{53}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}CUEE02 Solicitar tr\IeC {\'a}mite}{55}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}CUEE03 Consultar estatus de los documentos solicitados}{56}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Jefa de gesti\IeC {\'o}n escolar}{56}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}CUJGE05 Gestionar cuentas}{58}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}CUJGE05.1 Actualizar cuentas}{58}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}CUJGE05.2 Registrar cuentas}{61}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}CUJGE05.3 Desactivar cuenta}{65}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.5}CUJGE09 Consultar memor\IeC {\'a}ndum}{65}{subsection.6.5.5}
