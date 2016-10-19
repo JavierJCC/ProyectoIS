@@ -57,9 +57,10 @@ class analistaModel
     print_r($solac);
     return $solac ? $solac : array();
   }
-  
-  function acep_solicitudes($idSolicitud, $idAlumno){
-	  //$query = 'UPDATE solicitud SET Aceptacion=1 WHERE idSolicitud='.$idSolicitud' and idAlumno='.$idAlumno'';
+  	
+  function acep_solicitudes($idSolicitud, $Boleta){
+	  $query = 'Call actTramite('.$idSolicitud.','.$Boleta.');';
+	  print_r($query);
       if($this->connection->query($query) === TRUE){
         echo "Solicitud Aceptada";
       }else{
