@@ -34,7 +34,7 @@ class Estudiante_Egresado extends Controller
   
     public function Datos_Personales(){
     $EE_modelo = $this->model('estudianteEgresadoModel');
-    $estado = $EE_modelo->select_all_estados();
-    $this->view('estudianteEgresado/consulta_datos', ['estado'=> $estado]);
+    $datos = $EE_modelo->datos_personales();
+    $this->view('estudianteEgresado/consulta_datos', ['datos'=> $datos]);
   }
 }

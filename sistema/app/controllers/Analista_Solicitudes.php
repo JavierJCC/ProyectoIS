@@ -32,7 +32,8 @@ class Analista_solicitudes extends Controller
 	$EE_modelo = $this->model('analistaModel');
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-	$this->EE_modelo->acep_solicitudes($idSolicitud, $idAlumno);
+    print_r($request);
+	$this->EE_modelo->acep_solicitudes($request->idSolicitud, $request->idAlumno);
     //$this->EE_modelo->insert_peticiones($request,$_SESSION["usuario"]->boleta);
   }
 	

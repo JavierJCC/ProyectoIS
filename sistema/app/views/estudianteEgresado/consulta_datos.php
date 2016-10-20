@@ -1,23 +1,10 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/Proyecto_IS/ProyectoSemestreIS/sistema/app/views/base_dashboard.php");?>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
     <style type="text/css">
 .form-control {
 		font-size: 20px;
 }
 
     </style>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="js/alertify.min.js"></script>
-<script src="js/alertify.js"></script>
-
-
-<link rel="stylesheet" type="text/css" href="css/alertify.core.css">
-<link rel="stylesheet" type="text/css" href="css/alertify.default.css">
-
 <!--<script type="text/javascript">
 
 
@@ -57,18 +44,16 @@ alertify.alert()
 		        	<h2>Datos escolares</h2>
 		    	</div>
 		  	</div>
-
-		  	<br>
-
-		  	<div class="row text-center">
+					<?php 
+						print_r($data['datos']);
+						
+					?>
+					<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
-		    		<?php	if ($data['']){
-		      				while($datosPersonales = mysqli_fetch_array($data['']))
-			            { ?>
-		    			<div class="col-md-2" ><h4><label>Nombre</label></h4></div>
-		    			<div class="col-md-6 text-center"><h4><span class="form-control" disabled><?php  printf("%s", $datosPersonales[1]); ?></span> <!--input class="form-control" id="disabledInput" type="text" disabled placeholder="Abecedario Uno"--></h4></div>
+			    			<div class="col-md-2" ><h4><label>Nombre</label></h4></div>
+		    			<div class="col-md-6 text-center"><h4><span class="form-control" disabled><?php  echo $data['datos']->boleta; ?></span> <!--input class="form-control" id="disabledInput" type="text" disabled placeholder="Abecedario Uno"--></h4></div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6">
@@ -214,4 +199,7 @@ alertify.alert()
 			</div>
 		</div>
 	</div>
-  <?php endblock() ?>
+		  	
+		  	<br>
+
+<?php endblock() ?>

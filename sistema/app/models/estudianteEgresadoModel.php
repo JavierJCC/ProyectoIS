@@ -43,20 +43,21 @@ class estudianteEgresadoModel
     $query = 'SELECT doc.nombre, sol.Fecha, mot.nombre, est.Estado
     FROM documento AS doc, solicitud AS sol, motivo AS mot, tramite AS tra, estadotramite AS est
     WHERE sol.Documento_idDocumento = doc.idDocumento AND sol.Motivo_idMotivo = mot.idMotivo AND tra.idEstado= est.idEstado 
-    AND idSolicitud=tra.idTramite AND sol.idSolicitante='.$pao.'';
+    AND idSolicitud=tra.idTramite AND sol.idAlumno='.$pao.'';
     $motivos = $this->connection->query($query);
     return $motivos ? $motivos : array();
   }
   
-     function select_all_datos(){
-    $pao=$_SESSION["usuario"]->boleta;
+     function datos_personales(){
+    $pao=$_SESSION["usuario"]->idPersona;
+    print_r($_SESSION["usuario"]);
     echo $pao;
     $query = 'SELECT alum.boleta, alum.CURP, alum.PeriodoIngreso, alum.Carrera, alum.plan, alum.TotalCreditos, alum.Promedio, 
               alum.telefono, alum.TelefonoMovil, alum.email, alum.inscrito  
     FROM Alumno AS alum
     WHERE alum.boleta='.$pao.'';
-    $motivos = $this->connection->query($query);
-    return $motivos ? $motivos : array();
+    $datos = $this->connection->query($query);
+    return $datos ? $datos->fetch_object() : array();
   }
   
   

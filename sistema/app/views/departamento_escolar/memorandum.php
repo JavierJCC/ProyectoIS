@@ -1,7 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/Proyecto_IS/ProyectoSemestreIS/sistema/app/views/dashboard_departamento.php");?>
 
 <?php startblock('title') ?>
-     Agregar memorandum
+     Agregar memorándum
 <?php endblock() ?>
 
 <?php startblock('main') ?>

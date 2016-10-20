@@ -92,18 +92,12 @@
                         <a href="#"><i class="fa fa-List-alt fa-fw"></i> Gestionar solicitudes<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="Visualizar_Tramite">Solicitudes pendientes</a>
+                                <a href="Visualizar_Tramite"> Enviar memorándum</a>
                             </li>
 							<li>
-                                <a href="Tramites_Aceptados">Solicitudes aceptadas</a>
-                            </li>
-							<li>
-                                <a href="Tramites_Rechazados">Solicitudes rechazadas</a>
+                                <a href="Tramites_Aceptados">Visualizar estados de trámite</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
                     </li>
                 </ul>
 
