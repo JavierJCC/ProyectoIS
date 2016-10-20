@@ -1,0 +1,41 @@
+\pagebreak
+\begin{UseCase}{CUEE03}{Visualizar bitacora}{La jefa de gestión escolar tendrá la capacidad de visualizar la bitacora de manera remota.}
+	\UCitem{Versión}{1.0}
+	\UCitem{Autor}{Jefa de gestión escolar}	
+	\UCitem{Propósito}{Proporcionar a la jefa de gestión escolar una vision general de todas las solicitudes hechas hasta el momento.}
+	\UCitem{Salidas}{
+	\begin{itemize}
+		\item Mensaje de notificación:  ``No hay solicitudes hasta el momento".
+	\end{itemize}		
+	}
+	
+	
+	\UCitem{Precondiciones}{
+		\begin{itemize}
+			\item La jefa de gestión escolar debe ser identificada por el sistema.
+			\item Debe existir al menos una solicitud de un documento.
+		\end{itemize}
+	
+	
+	}
+	\UCitem{Tipo de ejecución}{Secundario, viene de CUG02 Iniciar sesión de Jefa de Gestión Escolar.}
+	\UCitem{Volatilidad}{Baja.}
+	\UCitem{Madurez}{Baja.}
+	\UCitem{Prioridad}{Alta.}
+	\UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Javier Chávez Chávez}
+	\UCitem{Revisor}{Marcela Castro Flores}
+	
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+	\UCpaso [\UCactor] Solicita ver la bitacora hasta el momento dando click en el botón \IUbutton{Visualizar Bitacora}.
+	\UCpaso Verifica si existe al menos un documento solicitado. [TAA]
+	\UCpaso Obtiene los datos de los documentos.
+	\UCpaso Muestra en pantalla (UIEEConsultarEstadoDeLosDocumentos).
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{No existen documentos}
+	\UCpaso Muestra el mensaje {\bf No hay solicitudes hasta el momento.} en la pantalla (UIEEMensajeEstadoDeLosDocumentos).
+\end{UCtrayectoriaA}
+

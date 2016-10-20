@@ -31,4 +31,10 @@ class Estudiante_Egresado extends Controller
     header('Content-Type: application/json; charset=UTF-8');
     die(json_encode(array('tipo' => $_SESSION["usuario"]->egresado)));
   }
+  
+    public function Datos_Personales(){
+    $EE_modelo = $this->model('estudianteEgresadoModel');
+    $estado = $EE_modelo->select_all_estados();
+    $this->view('estudianteEgresado/consulta_datos', ['estado'=> $estado]);
+  }
 }

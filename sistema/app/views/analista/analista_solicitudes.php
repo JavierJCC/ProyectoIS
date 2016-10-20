@@ -5,67 +5,55 @@
   <?php endblock() ?>
 
  <?php startblock('main') ?>
-  <div ng-controller="solicitarTramiteController" id="SolicitudesPen">
+  <div ng-controller="AnalistaController" id="SolicitudesPen">
 	<section id="SolicitudesPen">
 		<div class="row">
 			<div class="col-log-6">
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<!--<div class = "dataTable_wrapper">
-							<div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="dataTables_length" id="dataTables-example_length">
-											<label>Mostrar
-												<select name="dataTables-example_length" aria-controls= "dataTables-example" class="form-control input-sm">
-													<option value="10">10</option>
-													<option value="10">20</option>
-													<option value="10">50</option>
-													<option value="10">100</option>
-												</select>
-												solicitudes
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>-->
 						<div class="table-responsive">
-							<table class="table">
-								<thead  style="color:white;background: #288CCC">
-									<tr>
-										<th style="text-align:center">idSolicitud</th>
-										<th style="text-align:center">Boleta</th>
-										<th style="text-align:center">Nombre</th>
-										<th style="text-align:center">Tipo de documento</th>
-										<th style="text-align:center">Motivo</th>
-										<th style="text-align:center" width="10%">Fecha solicitud</th>
-										<th style="text-align:center">Aceptación</th>
-									  </tr>
-								</thead>
-								<tbody>
-									  <?php 
-									  if ($data['solicitudes']){
-										while($solicitudes = $data['solicitudes']->fetch_assoc())
-										{
-										  print "<tr>";
-										  print "<th> {$solicitudes['idSolicitud']}</th>";
-										  print "<th> {$solicitudes['Boleta']}</th>";
-										  print "<th> {$solicitudes['Nombre']}</th>";
-										  print "<th> {$solicitudes['Tipo de Documento']}</th>";
-										  print "<th> {$solicitudes['Motivo']}</th>";
-										  print "<th> {$solicitudes['Fecha']}</th>";
-										  print "<th> 
-													<!--<button type='button' class='btn btn-success btn-circle'><i class='glyphicon glyphicon-ok'></i></button>-->
-													<button class='btn btn-outline btn-success' data-toggle='modal' data-target='#Modal_aceptar'><span class='glyphicon glyphicon-ok'></span></button>
-													<button class='btn btn-outline btn-danger' data-toggle='modal' data-target='#Modal_rechazar'><span class='glyphicon glyphicon-minus-sign'></span></button>
-												<th>";
-										  print "</tr>";
+							<?php 
+								if ($data['solicitudes']){
+									$con=0;									  
+									while($solicitudes = $data['solicitudes']->fetch_assoc())
+									{
+										$con++;
+										if ($con==1){
+											print "<table class='table'>
+													   <thead  style='color:white;background: #288CCC'>
+													   <tr>
+														   <th style='text-align:center'>idSolicitud</th>
+														   <th style='text-align:center'>Boleta</th>
+														   <th style='text-align:center'>Nombre</th>
+														   <th style='text-align:center'>Tipo de documento</th>
+														   <th style='text-align:center'>Motivo</th>
+														   <th style='text-align:center' width='10%'>Fecha solicitud</th>
+														   <th style='text-align:center'>Aceptación</th>
+													   </tr>
+													   </thead>
+													   <tbody>";
 										}
-									  }
-									?>
-								</tbody>
-							</table>
+										print "<tr>";
+										print "<th ng-model='idSolicitud'> {$solicitudes['idSolicitud']}</th>";
+										print "<th ng-model='Boleta'> {$solicitudes['Boleta']}</th>";
+										print "<th> {$solicitudes['Nombre']}</th>";
+										print "<th> {$solicitudes['Tipo de Documento']}</th>";
+										print "<th> {$solicitudes['Motivo']}</th>";
+										print "<th> {$solicitudes['Fecha']}</th>";
+										print "<th> 
+												<!--<a href='#'  class='btn btn-outline btn-success' data-toggle='modal' data-target='#Modal_aceptar'><span class='glyphicon glyphicon-ok'></span></a>-->
+												<button ng-click='aceptarSolicitud()' class='btn btn-outline btn-success'> <span class='glyphicon glyphicon-ok'></span></button>
+												<!--<button ng-click='aceptarSolicitud()' class='btn btn-outline btn-success' data-toggle='modal' data-target='#Modal_aceptar'><span class='glyphicon glyphicon-ok'></span></button>-->
+												<button class='btn btn-outline btn-danger' data-toggle='modal' data-target='#Modal_rechazar'><span class='glyphicon glyphicon-minus-sign'></span></button>
+											   </th>";
+										print "</tr>";
+									}
+									print "</tbody></table>";
+								}
+								if ($con==0){
+									print "<h3 style='text-align:center; color:red'>No hay solicitudes pendientes</h3>";
+								}
+							?>
 						</div>
 					</div>
 				</div>
@@ -73,19 +61,21 @@
 		</div>
 	</section>
 	<div class="modal fade" id="Modal_aceptar" role="dialog">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-sm">
 		
 		  <!-- Modal content-->
 		  <div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header" style="background:#4f94e0">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
 			  <h4 class="modal-title">Aceptar solicitud</h4>
 			</div>
 			<div class="modal-body">
-			  <p>Ingrese el folio del documento</p>
+			  <p>Ingrese el folio del documento que fue asignado</p>
+			  <input type="text" class="form-control" id="inputFolio" required>
 			</div>
 			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-info" >Aceptar</button>
+			  <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
 			</div>
 		  </div>
 		  
@@ -97,15 +87,22 @@
 		
 		  <!-- Modal content-->
 		  <div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header" style="background:#4f94e0">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
 			  <h4 class="modal-title">Rechazar solicitud</h4>
 			</div>
 			<div class="modal-body">
-			  <p>Indique el motivo por el cual quiere rechar</p>
+			  <p>Indique el motivo por el cual se rechaza la solicitud.</p>
+			  <select style="width:300px">
+				  <option value="0">--Seleccione--</option>
+				  <option value="1">No es fecha de solicitud de documentos</option>
+				  <option value="2">No puede solicitar el documento</option>
+				  <option value="3">Los datos son incorrectos</option>
+			  </select>
 			</div>
 			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-info" data-dismiss="modal">Aceptar</button>
+			  <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
 			</div>
 		  </div>
 		  
@@ -115,33 +112,6 @@
   <?php endblock() ?>
 
 <?php startblock('scripts') ?>
-	<!--<script language="javascript" type="text/javascript">
-		function eliminaEstudiante(NumEmp){
-			r = confirm("Estas seguro?");
-			if(r==true){
-			  eliminaEstudianteBD(NumEmp);
-			}
-		  }
-		  
-		  function rechazar_solicitud(idSolicitud){
-			$.ajax({
-			  method:"post",
-			  url:"Analista_solicitudes/Peticion_Acep",
-			  data:{idSolicitud:idSolicitud},
-			  beforeSend:function(){
-				  $("#myModal").foundation("reveal", "open");
-				  $("#AX1").html("<center><img src='../imgs/ajax-loader.gif'></center>");
-			  },
-			  success:function(data){
-				$("#AX1").html("<h2>"+data+"</h2>");
-				setTimeout(function(){$("#AX").foundation("reveal", "close");},2000);
-			  }
-			});
-			return false;
-		  }
-		
-	</script>-->
-<!--<script src="interno/js/angular/controllers/AnalistaController.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="<?= $url_path ?>interno/js/angular/services/analistaFactory.js"></script>
+	<script src="<?= $url_path ?>interno/js/angular/controllers/AnalistaController.js"></script>
 <?php endblock() ?>

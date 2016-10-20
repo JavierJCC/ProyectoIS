@@ -48,4 +48,16 @@ class estudianteEgresadoModel
     return $motivos ? $motivos : array();
   }
   
+     function select_all_datos(){
+    $pao=$_SESSION["usuario"]->boleta;
+    echo $pao;
+    $query = 'SELECT alum.boleta, alum.CURP, alum.PeriodoIngreso, alum.Carrera, alum.plan, alum.TotalCreditos, alum.Promedio, 
+              alum.telefono, alum.TelefonoMovil, alum.email, alum.inscrito  
+    FROM Alumno AS alum
+    WHERE alum.boleta='.$pao.'';
+    $motivos = $this->connection->query($query);
+    return $motivos ? $motivos : array();
+  }
+  
+  
 } 
