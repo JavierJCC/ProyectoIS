@@ -33,5 +33,16 @@ class Jefa_Gestion extends Controller{
     }
     
     
+    public function reportes_estadisticos(){
+		//$EE_modelo = $this->model('jefagestionModel');
+        $this->view('jefaGestion/reportes');
+    }
+	
+	public function reportes_documentos(){
+		//$EE_modelo = $this->model('jefagestionModel');
+        $this->view('jefaGestion/reportedocumento');
+    }
+    
+    
 }
 
