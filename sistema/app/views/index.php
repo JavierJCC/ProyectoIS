@@ -11,6 +11,11 @@
 
     <title>Bienvenido</title>
 
+    <style>
+        #primerMensaje:hover{
+            cursor:pointer;
+        }
+    </style>
     <!-- Bootstrap Core CSS -->
     <link href="<?= $url_path ?>index/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -87,18 +92,18 @@
                                     <label for="inputEmail3" class="col-md-2 lead">Boleta</label>
                                     <div class="col-sm-4">
                                     <input type="text" class="form-control" id="inputEmail3" placeholder="2015630195" ng-model="boleta" required>
-                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
+                                    <span ng-if="errorBoleta" class="text-danger" style="color:#F90000;"> [[errorBoleta]]</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword3" class="col-sm-2 lead">Contraseña</label>
                                     <div class="col-sm-4">
                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" ng-model="pass" required>
-                                    <span ng-if="errorBoleta" class="text-danger"> [[errorBoleta]]</span>
                                     </div>
                                 </div>
                                <div class="row">
                                     <div class="col-md-3">
+                                        <h5 style="align-text: left;" id="primerMensaje" ng-click="primerMensaje();">[[mensaje]]</h5>
                                         <h5 style="align-text: left;">¿Olvidaste tu contraseña?</h5>
                                     </div>
                                         <div class="col-sm-offset-0 col-md-4">                                            
