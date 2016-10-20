@@ -4,6 +4,11 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
     documento:0,
     motivo:0
   };
+  $scope.tipo;
+  estudianteFactory.get_tipo(function(response){
+    $scope.tipo = response.tipo;
+    console.log($scope.tipo);
+  });
   $scope.contador = 0;
   $scope.documentos =[]; 
   $scope.documentos_aux = [];
