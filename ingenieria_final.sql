@@ -35,6 +35,7 @@ CREATE TABLE `alumno` (
   `TelefonoMovil` varchar(10) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
   `inscrito` int(1) DEFAULT NULL,
+  `egresado` int(1) NOT NULL DEFAULT '0',
   KEY `boleta` (`boleta`),
   CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`boleta`) REFERENCES `persona` (`idPersona`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -46,7 +47,7 @@ CREATE TABLE `alumno` (
 
 LOCK TABLES `alumno` WRITE;
 /*!40000 ALTER TABLE `alumno` DISABLE KEYS */;
-INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,58.5,8.5,'55555555','555555555','javisever2@gmail.com',0),('2014630206',NULL,NULL,'Ingeniería en sistemas computacionales',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),('2014630645','MARA950406HDFLSO94','B14','Ingeniería en sistemas computacionales','09',NULL,62,9.5,'55555555','555555555','alberto.maldo1312@gmail.com',1),('2016635489','GOVJ970806HDFPAZ09','A16','Ingeniería en sistemas computacionales','09',NULL,20,8,'55555555','555555555','jacinto@gmail.com',0);
+INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,58.5,8.5,'55555555','555555555','javisever2@gmail.com',0,0),('2014630206',NULL,NULL,'Ingeniería en sistemas computacionales',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0),('2014630645','MARA950406HDFLSO94','B14','Ingeniería en sistemas computacionales','09',NULL,62,9.5,'55555555','555555555','alberto.maldo1312@gmail.com',1,0),('2016635489','GOVJ970806HDFPAZ09','A16','Ingeniería en sistemas computacionales','09',NULL,20,8,'55555555','555555555','jacinto@gmail.com',0,0);
 /*!40000 ALTER TABLE `alumno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -283,7 +284,7 @@ CREATE TABLE `solicitud` (
 
 LOCK TABLES `solicitud` WRITE;
 /*!40000 ALTER TABLE `solicitud` DISABLE KEYS */;
-INSERT INTO `solicitud` VALUES (5,1,1,NULL,'2014630002','2016-10-14',0),(6,1,2,NULL,'2014630002','2016-10-14',0),(7,1,2,NULL,'2014630002','2016-10-17',0),(8,1,2,NULL,'2014630002','2016-10-17',0),(9,2,3,NULL,'2014630002','2016-10-17',0),(10,2,3,NULL,'2014630002','2016-10-17',0),(11,2,3,NULL,'2014630002','2016-10-17',0),(12,2,3,NULL,'2014630002','2016-10-17',0);
+INSERT INTO `solicitud` VALUES (5,1,1,NULL,'2014630002','2016-10-14',0),(6,1,2,NULL,'2014630002','2016-10-14',0),(7,1,2,NULL,'2014630002','2016-10-17',0),(8,1,2,NULL,'2014630002','2016-10-17',0),(9,2,3,NULL,'2014630002','2016-10-17',0),(10,2,3,NULL,'2014630002','2016-10-17',0),(11,2,3,NULL,'2014630002','2016-10-17',0),(12,2,3,NULL,'2014630002','2016-10-17',0),(13,2,4,NULL,'2014630002','2016-10-20',0);
 /*!40000 ALTER TABLE `solicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -330,7 +331,7 @@ CREATE TABLE `tramite` (
   KEY `idEstado` (`idEstado`),
   CONSTRAINT `tramite_ibfk_1` FOREIGN KEY (`idAnalista`) REFERENCES `persona` (`idPersona`),
   CONSTRAINT `tramite_ibfk_2` FOREIGN KEY (`idEstado`) REFERENCES `estadoTramite` (`idEstado`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -339,35 +340,9 @@ CREATE TABLE `tramite` (
 
 LOCK TABLES `tramite` WRITE;
 /*!40000 ALTER TABLE `tramite` DISABLE KEYS */;
-INSERT INTO `tramite` VALUES (2,1,'12345'),(3,1,'12345'),(4,1,'12345'),(5,4,'12345'),(6,4,'12345'),(7,1,'12345'),(8,1,'12345'),(9,1,'12345'),(10,1,'12345'),(11,1,'12345'),(12,1,'12345');
+INSERT INTO `tramite` VALUES (2,1,'12345'),(3,1,'12345'),(4,1,'12345'),(5,4,'12345'),(6,4,'12345'),(7,3,'12345'),(8,1,'12345'),(9,4,'12345'),(10,1,'12345'),(11,1,'12345'),(12,1,'12345'),(13,1,'12345');
 /*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'ingenieria'
---
-/*!50003 DROP PROCEDURE IF EXISTS `altaTramite` */;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8 */ ;
-/*!50003 SET character_set_results = utf8 */ ;
-/*!50003 SET collation_connection  = utf8_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `altaTramite`(in p_idDocumento int ,in p_idMotivo int ,in p_idAlumno varchar(10))
-begin 
-    DECLARE p_idEstado int;
-    insert into tramite(idEstado,idAnalista) values(1,"12345");
-    select idTramite into p_idEstado from tramite ORDER BY idTramite DESC LIMIT 1;
-    insert into solicitud(idSolicitud,Documento_idDocumento,Motivo_idMotivo,idAlumno,Fecha,Aceptacion) values(p_idEstado,p_idDocumento,p_idMotivo,p_idAlumno,now(),0);
-  end ;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -378,4 +353,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-17 14:31:05
+-- Dump completed on 2016-10-20 14:15:12
