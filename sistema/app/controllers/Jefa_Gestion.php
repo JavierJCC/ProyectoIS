@@ -24,5 +24,25 @@ class Jefa_Gestion extends Controller{
     public function desactivar_cuentas(){
         $this->view('');
     }
-
+    
+    public function visualizar_bitacora(){
+    $EE_modelo = $this->model('jefagestionModel');
+    $motivos = $EE_modelo->bitacora();
+    $motivos2 = $EE_modelo->bitacora();
+    $this->view('jefaGestion/visualizar_bitacora', ['motivos'=> $motivos, 'motivos2'=> $motivos2]);
+    }
+    
+    
+    public function reportes_estadisticos(){
+		//$EE_modelo = $this->model('jefagestionModel');
+        $this->view('jefaGestion/reportes');
+    }
+	
+	public function reportes_documentos(){
+		//$EE_modelo = $this->model('jefagestionModel');
+        $this->view('jefaGestion/reportedocumento');
+    }
+    
+    
 }
+

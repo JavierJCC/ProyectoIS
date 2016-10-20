@@ -31,3 +31,9 @@ create table solicitud(
 
 INSERT INTO `alumno` VALUES ('2014630002','CACJ950812HDFKNO03','A15','Ingeniería en sistemas computacionales','09',NULL,58.5,8.5,'55555555','555555555','javisever2@gmail.com',0);
 call altaTramite(1,1,"2014630002");
+
+
+CREATE PROCEDURE actTramite (IN p_idSolicitud INT(11), IN p_idAlumno varchar(10))
+BEGIN
+	UPDATE solicitud SET Aceptacion=1 WHERE idSolicitud=p_idSolicitud and idAlumno=p_idAlumno;
+END

@@ -27,4 +27,10 @@ class Estudiante_Egresado extends Controller
     $motivos2 = $EE_modelo->select_all_estados();
       $this->view('estudianteEgresado/estado_tramite', ['motivos'=> $motivos,'motivos2'=> $motivos2 ]);
   }
+  
+    public function Datos_Personales(){
+    $EE_modelo = $this->model('estudianteEgresadoModel');
+    $estado = $EE_modelo->select_all_estados();
+    $this->view('estudianteEgresado/consulta_datos', ['estado'=> $estado]);
+  }
 }
