@@ -34,21 +34,15 @@
 <body ng-app="app">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" style=" background-color: white;">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#" style="color:#4f94e0;"> Escuela Superior de Cómputo </a>
+            <div class="navbar-header" style="height: 150px;">
+                <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; right: 80px; top:20px;" src= "<?= $url_path ?>escudos/ipn.jpg">
+                <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; left: 80px; top:20px;" src= "<?= $url_path ?>escudos/SEP.jpg">
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="navbar-header" style="height: 50px; color: dark-gray; position: absolute; top: 140px;">
+                <ul class="nav navbar-nav navbar-right" style="background-color: dark-gray;">
                     <li>
                         <a href="#about"> Acerca de</a>
                     </li>
