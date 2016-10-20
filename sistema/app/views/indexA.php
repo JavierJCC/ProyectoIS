@@ -34,14 +34,14 @@
 <body ng-app="app">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" style=" background-color: white;">
+        <div class="container topnav" style="text-align:right;">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" style="height:100px;">   
-                <a class="navbar-brand topnav" href="#" style="color:#4f94e0;"> Escuela Superior de Cómputo </a>
+            <div class="navbar-header" style="height: 150px;">
+                <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; right: 80px; top:20px;" src= "<?= $url_path ?>escudos/ipn.jpg">
+                <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; left: 80px; top:20px;" src= "<?= $url_path ?>escudos/SEP.jpg">
             </div>
         </div>
-        <!-- /.container -->
     </nav>
 
 

@@ -35,28 +35,13 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" style=" background-color: white;">
-        <div class="container topnav">
+        <div class="container topnav" style="text-align:right;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header" style="height: 150px;">
                 <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; right: 80px; top:20px;" src= "<?= $url_path ?>escudos/ipn.jpg">
                 <img class="img-responsive" style="width: 400px; height: 100px; position: absolute; left: 80px; top:20px;" src= "<?= $url_path ?>escudos/SEP.jpg">
             </div>
-            <div class="navbar-header" style="height: 50px; color: dark-gray; position: absolute; top: 140px;">
-                <ul class="nav navbar-nav navbar-right" style="background-color: dark-gray;">
-                    <li>
-                        <a href="#about"> Acerca de</a>
-                    </li>
-                    <li>
-                        <a href="#services">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
 

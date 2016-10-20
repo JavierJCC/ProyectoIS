@@ -39,9 +39,11 @@
 <div id="wrapper">
 
     <!-- Navigation -->
+    
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Escuela Superior de Cómputo</a>
+                
         </div>
 
        <!-- Top Navigation: Right Menu -->
