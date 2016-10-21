@@ -85,7 +85,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-gears"></i> Gestionar cuentas<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-gears"></i> Gestionar cuentas</a>
                     </li>
                     <li>
                         <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>

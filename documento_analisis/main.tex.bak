@@ -1,3 +1,4 @@
+
 \documentclass[oneside,10pt]{book}
 
 \usepackage{sty/cdtBook}
@@ -44,6 +45,7 @@
 \section{Analista}
 \cfinput{casos_uso/analista/iniciarSesionA}
 \cfinput{casos_uso/analista/gestionarsolicitudes}
+\cfinput{casos_uso/analista/aceptarrechazarsolicitud}
 \cfinput{casos_uso/analista/actualizarEstado}
 
 
@@ -59,8 +61,10 @@
 \cfinput{casos_uso/jefa_gestion/actualizarCuentas}
 \cfinput{casos_uso/jefa_gestion/agregarCuentas}
 \cfinput{casos_uso/jefa_gestion/desactivarCuentas}
+\cfinput{casos_uso/jefa_gestion/reportesEstadisticos}
 \cfinput{casos_uso/jefa_gestion/consultarMemorandum}
-
+\cfinput{casos_uso/jefa_gestion/bitacora}
+\pagebreak
 
 \section{Departamento Escolar}
 \cfinput{casos_uso/departamentoEscolar/enviarMemorandum}

@@ -17,7 +17,7 @@
 \usepackage[Sonny]{fncychap}                     % Manejo de capítulos: Sonny, Lenny, Glenn, Conny, Rejne and Bjarne.
 \usepackage{marvosym}                            % Algunos símbolos.
 %\usepackage{minitoc}
-
+\usepackage{placeins}
 
 %=====================================================
 % Definición de colores
@@ -72,7 +72,7 @@
 \newcommand{\varAuthor}[1]{}
 \let\varAuthor=\author
 \renewcommand{\author}[1]{%
-	\varAuthor{\color{authorColor}#1\\\varOrganization{Castro Flores Marcela}{Chavez Chavez Javier}{Guzmán Chávez Juan Antonio}{Maldonado Romo Alberto}{Murga Dionicio Rubén}}%
+	\varAuthor{\color{authorColor}#1\\\varOrganization{Castro Flores Marcela}{Chávez Chávez Javier}{Guzmán Chávez Juan Antonio}{Maldonado Romo Alberto}{Murga Dionicio Rubén}}%
 }
 
 \renewcommand{\labelitemi}{\color{sectionColor}\textbullet}

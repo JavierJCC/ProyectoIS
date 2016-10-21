@@ -37,7 +37,7 @@
                                         <th></th>
                                         <th>
                                             <button type="button" class="btn btn-outline btn-primary" style="margin:auto;">Actualizar</button>
-                                            <button type="button" class="btn btn-outline btn-danger" style="margin:auto;">Actualizar</button>
+                                            <button type="button" class="btn btn-outline btn-danger" style="margin:auto;">Desactivar</button>
                                         </th>    
                                     </tr>
 								</thead>

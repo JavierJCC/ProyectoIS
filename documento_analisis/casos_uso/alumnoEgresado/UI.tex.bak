@@ -1,69 +1,77 @@
+\FloatBarrier
 \subsection{CUG01 Iniciar Sesión Estudiante/Egresado}
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.7\textwidth]{images/UI/IniciarSesion/IniciarSesionE}
     \caption{UIIniciarSesión}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.6\textwidth]{images/UI/IniciarSesion/CURP}
     \caption{MPrimeraVezCURP}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/IniciarSesion/ACIS}
     \caption{AlertaConfirmaciónIniciarSesión}\end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/IniciarSesion/Mensaje1}
     \caption{MensajeFormatoIncorrecto}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/IniciarSesion/alerta1}
     \caption{AlertaDatosIncorrectos}
 \end{figure}}
 
 
-
+\FloatBarrier
 \subsection{CUEE02 Solicitar trámite}
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[hb]
     \centering
         \includegraphics[width=0.7\textwidth]{images/UI/AlumnoEgresado/UIEESolicitarTramite}
     \caption{UIEESolicitarTramite}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/AlumnoEgresado/AlertaConfirmarCorreo}
     \caption{AlertaConfirmarCorreo}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/AlumnoEgresado/AlertaLimitePeticion}
     \caption{AlertaLimitePeticion}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.5\textwidth]{images/UI/AlumnoEgresado/solicitudEnviada}
     \caption{AlertasolicitudEnviada}
 \end{figure}}
-
+\FloatBarrier
 \subsection{CUEE03 Consultar estatus de los documentos solicitados}
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.7\textwidth]{images/UI/AlumnoEgresado/EstatusDocumentos}
     \caption{UIEEConsultarEstadoDeLosDocumento}
 \end{figure}}
 
-\textsc{\begin{figure}[htbp!]
+\textsc{\begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.7\textwidth]{images/UI/AlumnoEgresado/EstatusDocumentos2}
     \caption{UIEEMensajeEstadoDeLosDocumento}
+\end{figure}}
+
+
+\textsc{\begin{figure}[htbp!]
+    \centering
+        \includegraphics[width=0.7\textwidth]{images/UI/AlumnoEgresado/DatosPersonales}
+    \caption{UIEEDatosPersonales}
 \end{figure}}

@@ -30,24 +30,26 @@
 \BOOKMARK [2][-]{subsection.5.3.4}{CUJGE05.3 Desactivar cuentas}{section.5.3}% 30
 \BOOKMARK [2][-]{subsection.5.3.5}{CUJGE07 Visualizar reporte estad\355stico}{section.5.3}% 31
 \BOOKMARK [2][-]{subsection.5.3.6}{CUJGE09 Consultar memorand\372m}{section.5.3}% 32
-\BOOKMARK [1][-]{section.5.4}{Departamento Escolar}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.4.1}{CUDES01 Agregar memorandum}{section.5.4}% 34
-\BOOKMARK [0][-]{chapter.6}{Interacci\363n con el usuario \(UI\)}{}% 35
-\BOOKMARK [1][-]{section.6.1}{Analista}{chapter.6}% 36
-\BOOKMARK [2][-]{subsection.6.1.1}{CUG02 Iniciar Sesi\363n Empleado}{section.6.1}% 37
-\BOOKMARK [2][-]{subsection.6.1.2}{CUA02 Actualizar estado}{section.6.1}% 38
-\BOOKMARK [2][-]{subsection.6.1.3}{CUA03 Gestionar solicitudes}{section.6.1}% 39
-\BOOKMARK [1][-]{section.6.2}{Autoridad pertinente}{chapter.6}% 40
-\BOOKMARK [1][-]{section.6.3}{Departamento escolar}{chapter.6}% 41
-\BOOKMARK [2][-]{subsection.6.3.1}{CUDESO1 Agregar memor\341ndum}{section.6.3}% 42
-\BOOKMARK [1][-]{section.6.4}{ Estudiante/Egresado}{chapter.6}% 43
-\BOOKMARK [2][-]{subsection.6.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.6.4}% 44
-\BOOKMARK [2][-]{subsection.6.4.2}{CUEE02 Solicitar tr\341mite}{section.6.4}% 45
-\BOOKMARK [2][-]{subsection.6.4.3}{CUEE03 Consultar estatus de los documentos solicitados}{section.6.4}% 46
-\BOOKMARK [1][-]{section.6.5}{Jefa de gesti\363n escolar}{chapter.6}% 47
-\BOOKMARK [2][-]{subsection.6.5.1}{CUJGE05 Gestionar cuentas}{section.6.5}% 48
-\BOOKMARK [2][-]{subsection.6.5.2}{CUJGE05.1 Actualizar cuentas}{section.6.5}% 49
-\BOOKMARK [2][-]{subsection.6.5.3}{CUJGE05.2 Registrar cuentas}{section.6.5}% 50
-\BOOKMARK [2][-]{subsection.6.5.4}{CUJGE05.3 Desactivar cuenta}{section.6.5}% 51
-\BOOKMARK [2][-]{subsection.6.5.5}{CUJGE07 Visualizar reporte estad\355stico}{section.6.5}% 52
-\BOOKMARK [2][-]{subsection.6.5.6}{CUJGE09 Consultar memor\341ndum}{section.6.5}% 53
+\BOOKMARK [2][-]{subsection.5.3.7}{CUEE03 Visualizar bitacora}{section.5.3}% 33
+\BOOKMARK [1][-]{section.5.4}{Departamento Escolar}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.4.1}{CUDES01 Agregar memorandum}{section.5.4}% 35
+\BOOKMARK [0][-]{chapter.6}{Interacci\363n con el usuario \(UI\)}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Analista}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.1.1}{CUG02 Iniciar Sesi\363n Empleado}{section.6.1}% 38
+\BOOKMARK [2][-]{subsection.6.1.2}{CUA02 Actualizar estado}{section.6.1}% 39
+\BOOKMARK [2][-]{subsection.6.1.3}{CUA03 Gestionar solicitudes}{section.6.1}% 40
+\BOOKMARK [1][-]{section.6.2}{Autoridad pertinente}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.3}{Departamento escolar}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.3.1}{CUDESO1 Agregar memor\341ndum}{section.6.3}% 43
+\BOOKMARK [1][-]{section.6.4}{ Estudiante/Egresado}{chapter.6}% 44
+\BOOKMARK [2][-]{subsection.6.4.1}{CUG01 Iniciar Sesi\363n Estudiante/Egresado}{section.6.4}% 45
+\BOOKMARK [2][-]{subsection.6.4.2}{CUEE02 Solicitar tr\341mite}{section.6.4}% 46
+\BOOKMARK [2][-]{subsection.6.4.3}{CUEE03 Consultar estatus de los documentos solicitados}{section.6.4}% 47
+\BOOKMARK [1][-]{section.6.5}{Jefa de gesti\363n escolar}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.5.1}{CUJGE05 Gestionar cuentas}{section.6.5}% 49
+\BOOKMARK [2][-]{subsection.6.5.2}{CUJGE05.1 Actualizar cuentas}{section.6.5}% 50
+\BOOKMARK [2][-]{subsection.6.5.3}{CUJGE05.2 Registrar cuentas}{section.6.5}% 51
+\BOOKMARK [2][-]{subsection.6.5.4}{CUJGE05.3 Desactivar cuenta}{section.6.5}% 52
+\BOOKMARK [2][-]{subsection.6.5.5}{CUJGE07 Visualizar reporte estad\355stico}{section.6.5}% 53
+\BOOKMARK [2][-]{subsection.6.5.6}{CUJGE09 Consultar memor\341ndum}{section.6.5}% 54
+\BOOKMARK [2][-]{subsection.6.5.7}{CUJGE06 Visualizar bitacora}{section.6.5}% 55
