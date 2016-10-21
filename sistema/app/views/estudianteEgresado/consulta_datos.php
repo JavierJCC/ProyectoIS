@@ -5,7 +5,7 @@
 }
 
     </style>
-
+<meta charset="UTF-8">
  <?php startblock('title') ?>
 
      <h1 class="section-heading">Consulta de datos personales</h1>
@@ -23,16 +23,12 @@
 		        	<h2>Datos escolares</h2>
 		    	</div>
 		  	</div>
-					<?php 
-						print_r($data['datos']);
-						
-					?>
-					<div class="row text-center">
+				<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
 			    			<div class="col-md-2" ><h4><label>Nombre</label></h4></div>
-		    			<div class="col-md-6 text-center"><h4><span class="form-control" disabled><?php  echo $data['datos']->nombre; ?></span> <!--input class="form-control" id="disabledInput" type="text" disabled placeholder="Abecedario Uno"--></h4></div>
+		    			<div class="col-md-6 text-center"><h4><span class="form-control" disabled><?php  echo $data['datos']->nom." ".$data['datos']->apPat." ".$data['datos']->apMat; ?></span> <!--input class="form-control" id="disabledInput" type="text" disabled placeholder="Abecedario Uno"--></h4></div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6">
@@ -108,7 +104,7 @@
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
 		    			<div class="col-md-2" > <h4><label>E-mail</label></h4> </div>
-		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->email; ?></span></h4> </div>
+		    			<div class="col-md-6 text-center"> <h6><span class="form-control" disabled><?php  echo $data['datos']->email; ?></span></h6> </div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6 text-left">
@@ -153,7 +149,7 @@
 		        	<div class="row">
 		        		<div class="col-md-4"></div>
 		    			<div class="col-md-2" > <h4><label>Inscrito</label></h4> </div>
-		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->Inscrito; ?></span></h4> </div>
+		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->inscrito; ?></span></h4> </div>
 		    		</div>
 		    	</div>
 			</div>
