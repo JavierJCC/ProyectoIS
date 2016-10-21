@@ -70,7 +70,7 @@
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
 		    			<div class="col-md-2" > <h4><label>N&uacute;mero Telef&oacute;nico</label></h4> </div>
-		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->Telefono; ?></span></h4> </div>
+		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->telefono; ?></span></h4> </div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6 text-left">
@@ -89,7 +89,7 @@
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
 		    			<div class="col-md-2" > <h4><label>N&uacute;mero de celular</label></h4></div>
-		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->TelefonoMovil; ?>></span></h4> </div>
+		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled><?php  echo $data['datos']->TelefonoMovil; ?></span></h4> </div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6 text-left">
