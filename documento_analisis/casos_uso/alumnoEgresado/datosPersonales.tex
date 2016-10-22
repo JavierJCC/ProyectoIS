@@ -1,0 +1,51 @@
+\pagebreak
+ \begin{UseCase}{CUEE03}{ Consultar información}{El estudiante o egresado podrá ver sus datos generales que contiene el sistema}
+    \UCitem{Version}{1.0}
+  \UCitem{Actor}{Estudiante/Egresado}
+  \UCitem{Propósito}{El alumno podrá verificar los datos que contiene el sistema, para poder corroborar la existencia de datos incorrectos.}
+
+
+  \UCitem{Salidas}{
+    \begin{itemize}
+        \item Despliegue de los datos personales del usuario.
+    \end{itemize}
+  }
+
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El estudiante o egresado debe estar registrado en el sistema.
+      \item El estudiante o egresado debió haber iniciado sesión.
+
+    \end{itemize}
+  }
+
+  \UCitem{Observaciones}{
+        \begin{itemize}
+            \item En caso de un dato incorrecto se le notificará a gestión escolar de manera presencial.
+        \end{itemize}
+  }
+  \UCitem{Errores}{
+      \begin{itemize}
+      \item Ninguno.
+      \end{itemize}
+    }
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+    \UCitem{Volatilidad}{Baja}
+    \UCitem{Madurez}{Alta}
+    \UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{Autorizado}
+    \UCitem{Autor}{Alberto Maldonado Romo}
+    \UCitem{Revisor}{Juan Antonio Guzman Chavez }
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Se muestran los datos personales en cualquier momento dando  click en "perfil".
+  \UCpaso Muestra la pantalla  {\bf UIDatosPersonales}
+  \UCpaso[\UCactor] Se verifican que los datos personales sean correctos [TAA]
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Datos incorrectos}
+  \UCpaso[\UCactor] Va el estudiante o egresado de manera presencial a gestión escolar.
+  \UCpaso regresa al punto uno de la trayectoria principal.
+\end{UCtrayectoriaA}
+%-------------------------------------- TERMINA descripción del caso de uso.
