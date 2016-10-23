@@ -7,9 +7,12 @@ class Jefa_Gestion extends Controller{
         if(!$_SESSION["usuario"]){
             header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
         }
+<<<<<<< HEAD
         $modelo_jefa = $this->model('jefagestionModel');
+=======
+        $this->modelo_jefa = $this->model('jefagestionModel');
+>>>>>>> a0678277f1ac469b8de40a2846ef61040d00990a
     } 
-
     public function gestionar_cuentas(){
         $this->view('jefaGestion/gestionar_cuentas');
         $this->modelo_jefa->gestionar();
@@ -48,6 +51,23 @@ class Jefa_Gestion extends Controller{
         $this->view('jefaGestion/reportedocumento');
     }
     
+    public function memorandums(){
+        $memorandums = $this->model('DEModel')->get_memorandum();
+        $this->view('jefaGestion/memorandums',['memorandums'=>$memorandums]);
+    }
+
+    //Angular regresa numero de memorandums sin leer
+    public function get_no_memorandums(){
+        $numero = $this->modelo_jefa->get_no_memorandums();
+        die(json_encode(array('numero' => $numero->numero)));
+    }
+
+    public function update_memorandum(){
+        $postdata = file_get_contents("php://input");
+        $request = json_decode($postdata);
+        $this->modelo_jefa->update_memorandum($request->id);    
+
+    }
     
 }
 
