@@ -37,5 +37,12 @@ class jefagestionModel
         else 
             echo $this->connection->error;
     }
+    function gestionar(){
+        $query = 'SELECT p.ipersona, p.nom, p.ApPat, p.ApMat, p.Contrasenia, t.RFC, t.email, a.NombreArea
+                  FROM persona p, trabajadorarea t, area a 
+                  WHERE p.idpersona = t.idtrabajador and t.idarea = a.idarea';
+        $consulta = $this->connection->query($query);
+        return $consulta ? $consulta : array();
+    }
   
 } 

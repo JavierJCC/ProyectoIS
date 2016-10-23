@@ -53,12 +53,11 @@ class estudianteEgresadoModel
     print_r($_SESSION["usuario"]);
     echo $pao;
     $query = 'SELECT alum.boleta, alum.CURP, alum.PeriodoIngreso, alum.Carrera, alum.plan, alum.TotalCreditos, alum.Promedio, 
-              alum.telefono, alum.TelefonoMovil, alum.email, alum.inscrito  
-    FROM Alumno AS alum
-    WHERE alum.boleta='.$pao.'';
+              alum.telefono, alum.TelefonoMovil, alum.email, alum.inscrito, pers.nom, pers.apPat, pers.apMat
+    FROM Alumno AS alum,  persona AS pers
+    WHERE  pers.idPersona = alum.boleta AND  alum.boleta='.$pao.'';
     $datos = $this->connection->query($query);
     return $datos ? $datos->fetch_object() : array();
   }
-  
   
 } 

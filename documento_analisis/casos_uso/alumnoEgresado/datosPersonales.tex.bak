@@ -1,15 +1,8 @@
 \pagebreak
- \begin{UseCase}{CUEE03}{ Consultar información}{El estudiante o egresado podrá ver sus datos generales que contiene el sistema}
+\begin{UseCase}{CUEE03}{ Consultar información}{El estudiante o egresado podrá visualizar sus datos generales}
     \UCitem{Version}{1.0}
   \UCitem{Actor}{Estudiante/Egresado}
   \UCitem{Propósito}{El alumno podrá verificar los datos que contiene el sistema, para poder corroborar la existencia de datos incorrectos.}
-
-
-  \UCitem{Salidas}{
-    \begin{itemize}
-        \item Despliegue de los datos personales del usuario.
-    \end{itemize}
-  }
 
   \UCitem{Precondiciones}{
    \begin{itemize}
@@ -21,7 +14,7 @@
 
   \UCitem{Observaciones}{
         \begin{itemize}
-            \item En caso de un dato incorrecto se le notificará a gestión escolar de maner presencial.
+            \item En caso de un dato incorrecto se deberá notificar a gestión escolar de manera presencial.
         \end{itemize}
   }
   \UCitem{Errores}{
@@ -29,13 +22,13 @@
       \item Ninguno.
       \end{itemize}
     }
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG01 Iniciar Sesión Estudiante/Egresado}
     \UCitem{Volatilidad}{Baja}
     \UCitem{Madurez}{Alta}
     \UCitem{Prioridad}{Alta}
   \UCitem{Estado}{Autorizado}
     \UCitem{Autor}{Alberto Maldonado Romo}
-    \UCitem{Revisor}{Juan Antonio Guzman Chavez }
+    \UCitem{Revisor}{Juan Antonio Guzman Chá vez }
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}

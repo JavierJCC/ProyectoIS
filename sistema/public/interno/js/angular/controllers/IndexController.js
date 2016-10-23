@@ -49,6 +49,8 @@ controller('indexController', function($scope,indexFactory,$window){
             $scope.url_term = "Departamento_Escolar/Index";
           }else if(resultado.area == "A02"){
             $scope.url_term = "Analista_Solicitudes/Visualizar_Tramite";
+          }else if(resultado.area == "A03"){
+            $scope.url_term = "Jefa_Gestion/gestionar_cuentas";
           }
           sleep(1700).then(() => {
                 $window.location.href = $scope.url_path+$scope.url_term;
