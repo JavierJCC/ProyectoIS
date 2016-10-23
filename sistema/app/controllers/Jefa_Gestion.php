@@ -1,16 +1,21 @@
 <?php
 
 class Jefa_Gestion extends Controller{
-    private $model;
-    function _construct(){
+    private $modelo_jefa;
+    function __construct(){
         session_start();
         if(!$_SESSION["usuario"]){
             header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
         }
+        $modelo_jefa = $this->model('jefagestionModel');
     } 
 
     public function gestionar_cuentas(){
         $this->view('jefaGestion/gestionar_cuentas');
+        $this->modelo_jefa->gestionar();
+        $usuarios = $this->modelo_jefa->gestionar();
+        print_r($usuarios);
+        echo "Hola";
     }
 
     public function registrar_cuentas(){
