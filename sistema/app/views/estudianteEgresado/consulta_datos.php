@@ -1,8 +1,11 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/Proyecto_IS/ProyectoSemestreIS/sistema/app/views/base_dashboard.php");?>
     <style type="text/css">
 .form-control {
-		font-size: 20px;
+		font-size: 14px;
 }
+ h4{
+ 	font-size: 16px;	
+ }
 
     </style>
 <meta charset="UTF-8">
@@ -40,7 +43,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -59,7 +62,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -73,12 +76,12 @@
 		        	<div class="row">
 		        		<div class="col-md-4 "></div>
 		    			<div class="col-md-2" > <h4><label>Carrera</label></h4> </div>
-		    			<div class="col-md-6 text-center"> <h4><span class="form-control" disabled style="width:150%"><?php  echo $data['datos']->Carrera; ?></span></h4> </div>
+		    			<div class="col-md-4 text-center"> <h4><span class="form-control" disabled style="width:150%; height:50;" ><?php  echo $data['datos']->Carrera; ?></span></h4> </div>
 		    		</div>
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -97,7 +100,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -116,7 +119,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -135,7 +138,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
@@ -154,7 +157,7 @@
 		    	</div>
 			</div>
 
-			<br>
+			
 
 			<div class="row text-center">
 		    	<div class="col-md-6 text-left"> 
