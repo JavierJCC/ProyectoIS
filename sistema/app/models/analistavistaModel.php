@@ -14,7 +14,7 @@ class analistavistaModel
     if(mysqli_connect_errno()){
       echo mysqli_connect_error();
     }
-}
+  }
 
   function select_all_solicitudes(){
     $query = "select solicitud.idSolicitud, solicitud.idAlumno as 'Boleta',  CONCAT(persona.ApPat, concat(' ',concat(persona.ApMat, concat(' ',Nom)))) as 'Nombre', 

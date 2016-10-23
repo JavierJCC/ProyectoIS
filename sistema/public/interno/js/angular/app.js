@@ -1,7 +1,8 @@
 var app = angular.module('app',
         [
             'ngResource',
-            'file-model'
+            'file-model',
+            'ngFileUpload'
         ])
         .factory('httpInterceptor', function ($q, $rootScope, $log) {
             var loadingCount = 0;

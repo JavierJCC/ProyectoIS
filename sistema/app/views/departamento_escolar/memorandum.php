@@ -12,11 +12,10 @@
       <h4> Agregar tus archivos para enviarlos a control escolar. </h4>
       <span class="btn btn-outline btn-success btn-file">
         Elige un archivo
-        <input type='file' file-model='file'>
+        <input type='file' file-model='file' name="archivo">
       </span>
       </form>
     </div>
-
     <div class="col-md-6">
       <div class="col-md-6" ng-repeat="file in files track by $index">
         <div class="panel panel-success"> 
@@ -35,6 +34,7 @@
 <?php endblock() ?>
 
 <?php startblock('scripts') ?>
+<script src="<?= $url_path ?>interno/js/angular/services/departamento_escolar.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/controllers/memorandumController.js"></script>
 <?php endblock() ?>
 

@@ -23,5 +23,19 @@ class jefagestionModel
         $motivos = $this->connection->query($query);
         return $motivos ? $motivos : array();
     }
+
+    function get_no_memorandums(){
+        $query = "select count(*) as numero from memorandum where descargado=0";
+        $numero = $this->connection->query($query);
+        return $numero ? $numero->fetch_object() : 0;
+    }
+
+    function update_memorandum($id){
+        $query = "update memorandum set descargado=1 where idMemorandum = {$id}";
+        if($this->connection->query($query))
+            echo "actualizado";
+        else 
+            echo $this->connection->error;
+    }
   
 } 

@@ -30,7 +30,7 @@
 
    
 </head>
-<body>
+<body  ng-app="app">
 <?php //session_start(); ?>
 <div id="wrapper">
 
@@ -74,7 +74,7 @@
 
         <!-- Sidebar -->
         <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
+            <div class="sidebar-nav navbar-collapse" ng-controller="notificacionController">
 
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
@@ -104,6 +104,11 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="<?= $url_path ?>Jefa_gestion/memorandums"><i class="fa fa-gears"></i> Consultar memorándums <span class="fa arrow"></span>
+                        <button type="button" class="btn btn-danger btn-circle" ng-if="memorandums_no_leidos != 0">[[memorandums_no_leidos]]</button>
+                         </a>
+                    </li>
                 </ul>
 
             </div>
@@ -111,7 +116,7 @@
     </nav>
 
     <!-- Page Content -->
-    <div id="page-wrapper" ng-app="app">
+    <div id="page-wrapper">
         <div class="container-fluid">
 
             <div class="row">
@@ -146,13 +151,16 @@
 <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/angular-file-model.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
+<script src="<?= $url_path ?>interno/js/angular/ng-file-upload-shim.min.js"></script>
+<script src="<?= $url_path ?>interno/js/angular/ng-file-upload.min.js"></script>
 <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
-
+<script src="<?= $url_path ?>interno/js/angular/services/jefaGestionFactory.js"></script>
+<script src="<?= $url_path ?>interno/js/angular/controllers/jefaGestion.js"></script>
 <script src="<?= $url_path ?>interno/js/Highcharts-4.1.5/js/highcharts.js"></script>
 <script src="<?= $url_path ?>interno/js/Highcharts-4.1.5/js/highcharts-3d.js"></script>
 <script src="<?= $url_path ?>interno/js/Highcharts-4.1.5/js/modules/exporting.js"></script>
-
 <?php emptyblock('scripts') ?>
+
 </body>
 </html>
 
