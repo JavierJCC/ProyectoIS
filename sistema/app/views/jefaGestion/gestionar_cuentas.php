@@ -38,7 +38,7 @@
 													print "<td>{$usuario['nom']}</td>";
 													print "<td>{$usuario['ApPat']}</td>";
 													print "<td>{$usuario['ApMat']}</td>";
-													print "<td>{$usuario['RFC']}</td>";
+													print "<td>{$usuario['rfc']}</td>";
 													print "<td>{$usuario['email']}</td>";
 													print "<td>{$usuario['NombreArea']}</td>";
 													print "<td style='text-align: center;'>";

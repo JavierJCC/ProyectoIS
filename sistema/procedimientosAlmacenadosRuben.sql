@@ -12,7 +12,7 @@ Delimiter #
 create procedure altacuenta(in noEmp varchar(10), in nombre varchar(45), in apPaterno varchar(45), in apMaterno varchar(45), in rfcc varchar(15),in correo varchar(50),in idareaa varchar(10))
   begin 
     insert into persona(idPersona,nom,apPat,apMat) values(noEmp,nombre,apPaterno,apMaterno);
-    insert into trabajadorarea values(noEmp,idareaa,rfcc,correo);
+    insert into trabajadorarea(idTrabajador,idArea,RFC,email) values(noEmp,idareaa,rfcc,correo);
   end #
 delimiter ;
 

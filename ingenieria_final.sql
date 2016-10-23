@@ -152,6 +152,32 @@ LOCK TABLES `estudianteInscrito` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `memorandum`
+--
+
+DROP TABLE IF EXISTS `memorandum`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `memorandum` (
+  `idMemorandum` int(11) NOT NULL AUTO_INCREMENT,
+  `nombreArchivo` varchar(50) NOT NULL,
+  `fechaSubido` date NOT NULL,
+  `descargado` int(1) DEFAULT NULL,
+  PRIMARY KEY (`idMemorandum`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `memorandum`
+--
+
+LOCK TABLES `memorandum` WRITE;
+/*!40000 ALTER TABLE `memorandum` DISABLE KEYS */;
+INSERT INTO `memorandum` VALUES (1,'Carta-Baja-Marce.docx','2016-10-22',1),(2,'plan30006412.pdf','2016-10-22',1);
+/*!40000 ALTER TABLE `memorandum` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `motivo`
 --
 
@@ -222,7 +248,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES ('12345','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678');
+INSERT INTO `persona` VALUES ('12345','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678'),('56789','RubÃ©n','Murga','Dionicio',NULL),('567891','RubÃ©n','Murga','Dionicio',NULL),('5678912','RubÃ©n','Murga','Dionicio',NULL),('56789123','RubÃ©n','Murga','Dionicio',NULL),('987','23','dsfs','dfs',NULL);
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,6 +324,9 @@ DROP TABLE IF EXISTS `trabajadorArea`;
 CREATE TABLE `trabajadorArea` (
   `idTrabajador` varchar(10) NOT NULL,
   `idArea` varchar(10) DEFAULT 'A01',
+  `RFC` varchar(18) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `status` int(1) DEFAULT '1',
   KEY `idTrabajador` (`idTrabajador`),
   KEY `idArea` (`idArea`),
   CONSTRAINT `trabajadorarea_ibfk_1` FOREIGN KEY (`idTrabajador`) REFERENCES `persona` (`idPersona`),
@@ -311,7 +340,7 @@ CREATE TABLE `trabajadorArea` (
 
 LOCK TABLES `trabajadorArea` WRITE;
 /*!40000 ALTER TABLE `trabajadorArea` DISABLE KEYS */;
-INSERT INTO `trabajadorArea` VALUES ('12345','A01');
+INSERT INTO `trabajadorArea` VALUES ('12345','A01',NULL,NULL,1),('56789123','A01','dfsdf','ruben.murga.d@gmail.com',0),('987','A01','dfsd','dfsdfs@gmail',1);
 /*!40000 ALTER TABLE `trabajadorArea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -343,6 +372,71 @@ LOCK TABLES `tramite` WRITE;
 INSERT INTO `tramite` VALUES (2,1,'12345'),(3,1,'12345'),(4,1,'12345'),(5,4,'12345'),(6,4,'12345'),(7,3,'12345'),(8,1,'12345'),(9,4,'12345'),(10,1,'12345'),(11,1,'12345'),(12,1,'12345'),(13,1,'12345');
 /*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'ingenieria'
+--
+/*!50003 DROP PROCEDURE IF EXISTS `altacuenta` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `altacuenta`(in noEmp varchar(10), in nombre varchar(45), in apPaterno varchar(45), in apMaterno varchar(45), in rfcc varchar(15),in correo varchar(50),in idareaa varchar(10))
+begin 
+    insert into persona(idPersona,nom,apPat,apMat) values(noEmp,nombre,apPaterno,apMaterno);
+    insert into trabajadorarea(idTrabajador,idArea,RFC,email) values(noEmp,idareaa,rfcc,correo);
+  end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `altaTramite` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `altaTramite`(in p_idDocumento int ,in p_idMotivo int ,in p_idAlumno varchar(10))
+begin 
+    DECLARE p_idEstado int;
+    insert into tramite(idEstado,idAnalista) values(1,"12345");
+    select idTramite into p_idEstado from tramite ORDER BY idTramite DESC LIMIT 1;
+    insert into solicitud(idSolicitud,Documento_idDocumento,Motivo_idMotivo,idAlumno,Fecha,Aceptacion) values(p_idEstado,p_idDocumento,p_idMotivo,p_idAlumno,now(),0);
+  end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `insert_memorandum` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_memorandum`(in nombreArchivo_in varchar(50))
+begin
+  insert into memorandum(nombreArchivo,fechaSubido,descargado) values(nombreArchivo_in,now(),0);
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -353,4 +447,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-20 14:15:12
+-- Dump completed on 2016-10-23 15:22:57
