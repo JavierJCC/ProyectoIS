@@ -7,6 +7,12 @@
  	font-size: 16px;	
  }
 
+ .container{
+ 	position: absolute;
+ 	left: 150px;
+ 	padding: 10px;
+ }
+
     </style>
 <meta charset="UTF-8">
  <?php startblock('title') ?>
@@ -164,7 +170,7 @@
 		    		<div class="row">
 		    			<div class="col-md-4"></div>
 		    			<div class="col-md-2" > <h4><label></label></h4> </div>
-		    			<div class="col-md-6 text-center"> <h4><span></span>></h4> </div>
+		    			<div class="col-md-6 text-center"> <h4><span></span></h4> </div>
 		    		</div>		
 		     	</div>
 		    	<div class="col-md-6 text-left">
