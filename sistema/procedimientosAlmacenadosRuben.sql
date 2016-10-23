@@ -8,6 +8,13 @@ create procedure altaTramite(in p_idDocumento int ,in p_idMotivo int ,in p_idAlu
   end #
 delimiter ;
 
+Delimiter #
+create procedure altacuenta(in noEmp varchar(10), in nombre varchar(45), in apPaterno varchar(45), in apMaterno varchar(45), in rfcc varchar(15),in correo varchar(50),in idareaa varchar(10))
+  begin 
+    insert into persona(idPersona,nom,apPat,apMat) values(noEmp,nombre,apPaterno,apMaterno);
+    insert into trabajadorarea values(noEmp,idareaa,rfcc,correo);
+  end #
+delimiter ;
 
 
 ALTER DATABASE ingenieria CHARACTER SET utf8 COLLATE utf8_unicode_ci;

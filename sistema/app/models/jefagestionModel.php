@@ -38,11 +38,29 @@ class jefagestionModel
             echo $this->connection->error;
     }
     function gestionar(){
-        $query = 'SELECT p.ipersona, p.nom, p.ApPat, p.ApMat, p.Contrasenia, t.RFC, t.email, a.NombreArea
+        $query = 'SELECT p.idpersona, p.nom, p.ApPat, p.ApMat, t.RFC, t.email, a.NombreArea
                   FROM persona p, trabajadorarea t, area a 
                   WHERE p.idpersona = t.idtrabajador and t.idarea = a.idarea';
         $consulta = $this->connection->query($query);
+      //  echo($this->connection->error);
         return $consulta ? $consulta : array();
     }
-  
+
+    function get_area(){
+        $query = 'SELECT idArea,nombreArea from area';
+        $area = $this->connection->query($query);
+        return $area ? $area : array();
+    }
+
+    function registrar($noEmp,$nombre,$apPaterno,$apMaterno,$rfcc,$correo,$idareaa){
+        $query = "call altacuenta('{$noEmp}','{$nombre}','{$apPaterno}','{$apMaterno}','{$rfcc}','{$correo}','{$idareaa}')";
+        $registro = $this->connection->query($query);
+    }
+    
+    function desactivar($idPersona){
+        $query = "UPDATE trabajadorarea 
+                  set status = 0 
+                  WHERE idTrabajador = '{$idPersona}'";
+        $desactivar = $this->connection->query($query);
+    }
 } 

@@ -7,30 +7,25 @@ class Jefa_Gestion extends Controller{
         if(!$_SESSION["usuario"]){
             header("Location: ". "/Proyecto_IS/ProyectoSemestreIS/sistema/public/");
         }
-<<<<<<< HEAD
-        $modelo_jefa = $this->model('jefagestionModel');
-=======
         $this->modelo_jefa = $this->model('jefagestionModel');
->>>>>>> a0678277f1ac469b8de40a2846ef61040d00990a
     } 
+
     public function gestionar_cuentas(){
-        $this->view('jefaGestion/gestionar_cuentas');
-        $this->modelo_jefa->gestionar();
         $usuarios = $this->modelo_jefa->gestionar();
-        print_r($usuarios);
-        echo "Hola";
+        $area = $this->modelo_jefa->get_area();
+        $this->view('jefaGestion/gestionar_cuentas',['usuarios'=>$usuarios,"areas"=>$area]);
     }
 
     public function registrar_cuentas(){
-        $this->view('jefaGestion/agregar_cuentas');
+        $this->modelo_jefa->registrar($_POST["no_empleado"],$_POST["nombre"],$_POST["apPaterno"],$_POST["apMaterno"],$_POST["rfc"],$_POST["email"],$_POST["area"]);
     }
 
     public function actualizar_cuentas(){
         $this->view('jefaGestion/actualizar_cuentas');
     }
 
-    public function desactivar_cuentas(){
-        $this->view('');
+    public function desactivar_cuentas($noEmp){
+        $this->modelo_jefa->desactivar($noEmp);
     }
     
     public function visualizar_bitacora(){
