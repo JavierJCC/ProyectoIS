@@ -2,10 +2,10 @@
  \begin{UseCase}{CUA02}{Actualizar estado}{Un analista modificará el estado del proceso de la cosntancia o boleta}
 	\UCitem{Version}{1.0}
   \UCitem{Actor}{Analista}
-  \UCitem{Propósito}{El analista informa por vía internet al estudiante o egresado el progreso de su documento para que  evite ir físicamente a las oficinas de control escolar.}
+  \UCitem{Propósito}{El analista informa por vía internet al estudiante o egresado el progreso de su documento para que  evite ir físicamente a las oficinas de gestión escolar.}
   \UCitem{Entradas}{
     \begin{itemize}
-    \item Tipo de documento a pedir: Cadena de carácteres  predeterminada que identifiará el estado del documento  del estudiante o egresado que previamente solicito.
+    \item Botón de cambio de estado.
 	\item Los estados del documento son: 
 	\end{itemize}
 			\begin{itemize}
@@ -17,7 +17,7 @@
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Seleccionable: Tipo de documento a pedir. El estado del documento
+    \item Documentos solicitados obtenidos desde el repositorio de datos.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -27,7 +27,7 @@
   }
   \UCitem{Destino}{
     \begin{itemize}
-      \item AlertaDocumentoFinalizado : Pantalla.
+      \item Pantalla.
     \end{itemize}
   }
   \UCitem{Precondiciones}{
@@ -52,7 +52,7 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG02 Iniciar Sesión Empleado}
 	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Alta}
 	\UCitem{Prioridad}{Alta}
@@ -66,11 +66,19 @@
   \UCpaso Muestra la pantalla  {\bf UIActualizarEstado}
   \UCpaso[\UCactor] Indica los diferentes  tipos de estado del documento haciendo click sobre una opción del select.
   \UCpaso[\UCactor] Da click en el botón\IUbutton{Modificar Estado} 
-  \UCpaso  Válida que sea concluyo el trámite. [TAA] 
+  \UCpaso  Válida que sse finalizo el documento. [TAA] 
 \end{UCtrayectoria} 
 
 \begin{UCtrayectoriaA}{A}{Peticiones excedidas} 
 \UCpaso Muestra el mensaje {\bf AlertaDocumentoFinalizadon}
   \UCpaso Notificará al estudiante o egresado por medio de un correo electrónico. 	
 \end{UCtrayectoriaA}
+
+\textsc{\begin{figure}[!htbp]
+    \centering
+        \includegraphics[width=0.6\textwidth]{images/UI/Analista/diagramEst}
+    \caption{Diagrama de estados}\end{figure}}
+\FloatBarrier
 %-------------------------------------- TERMINA descripción del caso de uso.
+
+

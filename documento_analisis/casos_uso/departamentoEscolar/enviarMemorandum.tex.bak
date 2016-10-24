@@ -1,0 +1,79 @@
+\pagebreak
+\begin{UseCase}{CUDES01}{Agregar memorandum}{Un usuario de un departamento escolar manda un memorandum y una lista de alumnos a control escolar.}
+	\UCitem{Version}{1.0}
+  \UCitem{Actor}{Departamento escolar}
+  \UCitem{Propósito}{El actor da a conocer una petición de constancia o boleta a control escolar.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Documento: Archivo con terminación ``.pdf",``.docx", ``.xlsx". de cualquier tamaño.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item input tipo file: Documento.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Mensaje de confirmación {\bf DocumentoAgregado-}`` Se ha cargado el archivo [nombre del archivo]."
+		\item Mensaje de información {\bf DocumentoNoAgregado}``No se ha podido cargar el archivo. Sube un archivo con extensión valida.."
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item DocumentoAgregado,DocumentoNoAgregado: Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item El actor debió haber sido identificado por el sistema como un actor perteneciente a un departamento escolar.
+    \end{itemize}
+  }
+  \UCitem{Postcondiciones}{
+    \begin{itemize}
+      \item Se carga o se cargan uno o múltiples documentos al sistema.
+    \end{itemize}
+  }
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Las extensiones permitidas son las siguientes:
+				\begin{itemize}
+					\item docx
+					\item pdf
+					\item xlsx
+				\end{itemize}
+				\item Es posible agregar más de un documento.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item DocumentoNoAgregado.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU02 Iniciar Sesión}
+	\UCitem{Volatilidad}{Baja}
+	\UCitem{Madurez}{Media}
+	\UCitem{Prioridad}{Alta}
+  \UCitem{Estado}{En proceso}
+	\UCitem{Autor}{Rubén Murga Dionicio}
+	\UCitem{Revisor}{Javier Chávez Chávez}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita un documento haciendo click en la opción del menú `` Agregar memorandum".
+  \UCpaso Muestra la pantalla  {\bf UIDEMemorandum}.
+  \UCpaso[\UCactor] Da click en el botón \IUbutton{Elegir un archivo}
+  \UCpaso Valida que la extensión del archivo se encuentre en una de las extensiones válidas mencionadas previamente en el apartado de observaciones. [TAA]
+  \UCpaso Añade el documento al servidor.
+  \UCpaso Registra el nuevo documento al repositorio de datos. 
+  \UCpaso muestra la alerta {\bf DocumentoAgregado}
+
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Extensión invalida} 
+\UCpaso Muestra el mensaje {\bf DocumentoNoAgregado}.
+  \UCpaso No agrega el documento a la lista de documentos.
+\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

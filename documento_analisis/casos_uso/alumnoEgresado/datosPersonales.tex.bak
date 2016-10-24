@@ -1,8 +1,15 @@
 \pagebreak
-\begin{UseCase}{CUEE03}{ Consultar información}{El estudiante o egresado podrá visualizar sus datos generales}
+ \begin{UseCase}{CUEE03}{ Consultar información}{El estudiante o egresado podrá ver sus datos generales que contiene el sistema}
     \UCitem{Version}{1.0}
   \UCitem{Actor}{Estudiante/Egresado}
   \UCitem{Propósito}{El alumno podrá verificar los datos que contiene el sistema, para poder corroborar la existencia de datos incorrectos.}
+
+
+  \UCitem{Salidas}{
+    \begin{itemize}
+        \item Despliegue de los datos personales del usuario.
+    \end{itemize}
+  }
 
   \UCitem{Precondiciones}{
    \begin{itemize}
@@ -14,7 +21,7 @@
 
   \UCitem{Observaciones}{
         \begin{itemize}
-            \item En caso de un dato incorrecto se deberá notificar a gestión escolar de manera presencial.
+            \item En caso de un dato incorrecto se le notificará a gestión escolar de manera presencial.
         \end{itemize}
   }
   \UCitem{Errores}{
@@ -22,20 +29,19 @@
       \item Ninguno.
       \end{itemize}
     }
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG01 Iniciar Sesión Estudiante/Egresado}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU1 Iniciar Sesión}
     \UCitem{Volatilidad}{Baja}
     \UCitem{Madurez}{Alta}
     \UCitem{Prioridad}{Alta}
   \UCitem{Estado}{Autorizado}
     \UCitem{Autor}{Alberto Maldonado Romo}
-    \UCitem{Revisor}{Juan Antonio Guzman Chá vez }
+    \UCitem{Revisor}{Juan Antonio Guzman Chavez }
 \end{UseCase}
 
 \begin{UCtrayectoria}{Principal}
-  \UCpaso[\UCactor] Se ingresa a los datos personale en cualquier momento dando  click en "perfil".
+  \UCpaso[\UCactor] Se muestran los datos personales en cualquier momento dando  click en "perfil".
   \UCpaso Muestra la pantalla  {\bf UIDatosPersonales}
-  \UCpaso[\UCactor] Se verifican los datos personales sean correctos [TAA]
-  \UCpaso[\UCactor] Da click en el botón en otro botón del menú para salir de la pantalla
+  \UCpaso[\UCactor] Se verifican que los datos personales sean correctos [TAA]
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Datos incorrectos}
