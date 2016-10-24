@@ -10,7 +10,7 @@
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Repositorio de datos.
+    \item Ninguno.
       \end{itemize}
   }
   \UCitem{Salidas}{
@@ -50,35 +50,20 @@
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Solicita visualizar reportes estadísticos haciendo click en la opción del menú ''Reportes estadísticos".
   \UCpaso Se expande el menú y muestra las gráficas disponibles. 
-  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Solicitudes por día}. [TAA] [TAB]
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Solicitudes por día}. 
+    \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Estado de la solicitud}
+    \UCpaso [\UCactor] Elije y da click en el botón \IUbutton{ Tipo de documento}
   \UCpaso Se muestra en pantalla la gráfica.
-  \UCpaso [\UCactor] Da click en el botón de la derecha \IUbutton{Opciones}. [TAC]
-  \UCpaso [\UCactor] selecciona como quiere guardar la gráfica. [TAD][TAC]
+  \UCpaso [\UCactor] Da click en el botón de la derecha \IUbutton{Opciones}. 
+  \UCpaso [\UCactor] selecciona como quiere guardar la gráfica. 
+   \UCpaso [\UCactor] Da click en el botón \IUbutton{Print chart}
+  \UCpaso Muestra pantalla para imprimir.
+  \UCpaso [\UCactor] Da click en el botón \IUbutton{Imprimir}.[TAE]
   \UCpaso [\UCactor] selecciona la ubicación donde se va a guardar la gráfica. 
-  \UCpaso [\UCactor] da click en el boton \IUbutton{Aceptar} [TAF]
+  \UCpaso [\UCactor] da click en el botón \IUbutton{Aceptar} [TAF]
   \UCpaso Guarda como la gráfica con  el formato seleccionado.
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}{A}{Tipo de documento} 
-  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Tipo de documento}
-  \UCpaso Continua transacción en el paso 4.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{B}{Estado de la solicitud} 
-  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Estado de la solicitud}
-  \UCpaso Continua transacción en el paso 4.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{C}{No hace nada} 
-  \UCpaso Finaliza caso de uso
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{D}{Imprimir gráfica} 
-  \UCpaso [\UCactor] Da click en el botón \IUbutton{Print chart}
-  \UCpaso Muestra pantalla para imprimir.
-  \UCpaso [\UCactor] Da click en el botón \IUbutton{Imprimir}.[TAE]
-  \UCpaso Continua transacción en el paso 4.
-\end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{Cancela impresión} 
   \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Cancelar}

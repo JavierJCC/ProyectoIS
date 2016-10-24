@@ -11,7 +11,7 @@ escuela, dependiendo de la situación que se encuentre el usuario al cual se
 le va a realizar el documento.}
   \UCitem{Entradas}{
     \begin{itemize}
-		\item El analista debe oprimir un botón ya sea, aceptar o rechazar.
+		\item Botón de descisión: Arreglo de botones con los siguientes textos: Aceptar, Rechazar. 
     \end{itemize}
   }
   \UCitem{Salidas}{
@@ -60,26 +60,26 @@ solicitado algún trámite.
 \begin{UCtrayectoria}{Principal}
   \UCpaso[\UCactor] Visualiza las solicitudes haciendo clic en la opción del menú ''Gestionar trámite'' {\bf CUA03Gestionarsolicitudes}.
   \UCpaso [\UCactor] Oprime el botón de aceptar solicitud\IUbutton{Aceptar}[TAA].
-	\UCpaso Muestra un modal en la pantalla {\bf AlertaSolicitaFolio}.
+	\UCpaso Muestra la alerta{\bf AlertaSolicitaFolio}.
   \UCpaso [\UCactor] Da click en el botón \IUbutton{Aceptar}.[TAB]
-	\UCpaso Realiza los cambios en la base de datos.[TAC]
-	\UCpaso Muestra una alerta en pantalla {\bf AlertaConfirma}.
+	\UCpaso Realiza los cambios en el repositorio de datos.[TAC]
+	\UCpaso Muestra la alerta en pantalla {\bf AlertaConfirma}.
 	\UCpaso Muestra la pantalla {\bf CUA03Gestionarsolicitudes}.
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{Oprime el boton Rechazar solicitud} 
-	\UCpaso Muestra un modal en la pantalla {\bf AlertaSolicitaMotivo}.
+	\UCpaso Muestra la alerta {\bf AlertaSolicitaMotivo}.
   \UCpaso [\UCactor] Da click en el botón \IUbutton{Aceptar}.[TAB]
 	\UCpaso Continua transacción en el paso 5.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{Oprime boton cancelar} 
+\begin{UCtrayectoriaA}{B}{Oprime botón cancelar} 
   \UCpaso Cierra el modal.
   \UCpaso Continua transacción en el paso 1.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{No se realizan los cambios en la base} 
-  \UCpaso  Muestra una alerta en pantalla {\bf AlertaError}.
+\begin{UCtrayectoriaA}{C}{No se realizan los cambios en el repositorio de datos} 
+  \UCpaso  Muestra la alerta {\bf AlertaError}.
   \UCpaso Continua transacción en el paso 1.
 \end{UCtrayectoriaA}
 

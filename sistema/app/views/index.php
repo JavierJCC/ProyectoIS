@@ -201,6 +201,8 @@
     <script src="<?= $url_path ?>interno/js/angular/angular.min.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/angular-resource.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/angular-file-model.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/ng-file-upload-shim.min.js"></script>
+    <script src="<?= $url_path ?>interno/js/angular/ng-file-upload.min.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/app.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/services/indexFactory.js"></script>
     <script src="<?= $url_path ?>interno/js/angular/controllers/IndexController.js"></script>
