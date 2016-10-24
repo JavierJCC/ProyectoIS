@@ -1,0 +1,94 @@
+\pagebreak
+\begin{UseCase}{CUJGE07}{Visualizar reporte estadístico}{La jefa de Gestión Escolar visualiza los reportes de forma gráfica de las ultimas operaciones que se llevan a cabo.}
+	\UCitem{Versión}{1.0}
+  \UCitem{Actor}{Jefa de Gestión Escolar}
+  \UCitem{Propósito}{La jefa de Gestión Escolar podrá visualizar la información de forma gráfica acerca de las solicitudes de documentos que se han realizado.}
+  \UCitem{Entradas}{
+    \begin{itemize}
+    \item Ninguna.
+    \end{itemize}
+  }
+  \UCitem{Origen}{
+    \begin{itemize}
+    \item Repositorio de datos.
+      \end{itemize}
+  }
+  \UCitem{Salidas}{
+    \begin{itemize}
+		\item Ninguna.
+    \end{itemize}
+  }
+  \UCitem{Destino}{
+    \begin{itemize}
+      \item Pantalla.
+    \end{itemize}
+  }
+  \UCitem{Precondiciones}{
+   \begin{itemize}
+      \item Deben existir solicitudes para que se puedan elaborar los reportes estadísticos.
+    \end{itemize}
+  } 
+  \UCitem{Observaciones}{
+		\begin{itemize}
+			\item Se podrán ver reportes por día, tipo de documento y estatus de la solicitud.
+		\end{itemize}
+  }
+  \UCitem{Errores}{
+  	\begin{itemize}
+  	\item Ninguno.
+  	\end{itemize}
+	}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CUG02 Iniciar Sesión Empleado.}
+	\UCitem{Volatilidad}{Baja}
+	\UCitem{Madurez}{Baja}
+	\UCitem{Prioridad}{Media}
+  \UCitem{Estado}{Autorizado}
+	\UCitem{Autor}{Juan Antonio Guzmán Chávez}
+  \UCitem{Revisor}{Rubén Murga Dionicio}
+\end{UseCase}
+
+\begin{UCtrayectoria}{Principal}
+  \UCpaso[\UCactor] Solicita visualizar reportes estadísticos haciendo click en la opción del menú ''Reportes estadísticos".
+  \UCpaso Se expande el menú y muestra las gráficas disponibles. 
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Solicitudes por día}. [TAA] [TAB]
+  \UCpaso Se muestra en pantalla la gráfica.
+  \UCpaso [\UCactor] Da click en el botón de la derecha \IUbutton{Opciones}. [TAC]
+  \UCpaso [\UCactor] selecciona como quiere guardar la gráfica. [TAD][TAC]
+  \UCpaso [\UCactor] selecciona la ubicación donde se va a guardar la gráfica. 
+  \UCpaso [\UCactor] da click en el boton \IUbutton{Aceptar} [TAF]
+  \UCpaso Guarda como la gráfica con  el formato seleccionado.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}{A}{Tipo de documento} 
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Tipo de documento}
+  \UCpaso Continua transacción en el paso 4.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{Estado de la solicitud} 
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Estado de la solicitud}
+  \UCpaso Continua transacción en el paso 4.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{No hace nada} 
+  \UCpaso Finaliza caso de uso
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{Imprimir gráfica} 
+  \UCpaso [\UCactor] Da click en el botón \IUbutton{Print chart}
+  \UCpaso Muestra pantalla para imprimir.
+  \UCpaso [\UCactor] Da click en el botón \IUbutton{Imprimir}.[TAE]
+  \UCpaso Continua transacción en el paso 4.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{E}{Cancela impresión} 
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Cancelar}
+  \UCpaso Continua transacción en el paso 4.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{F}{Cancela guardar} 
+  \UCpaso [\UCactor] Elije y da click en el boton \IUbutton{ Cancelar}
+  \UCpaso Continua transacción en el paso 4.
+\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.
