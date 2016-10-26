@@ -14,9 +14,9 @@ controller('indexController', function($scope,indexFactory,$window){
       if(resultado.boleta){
         console.log(resultado);
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/check.png' style='position:absolute; top:35%; left:50 %;'>
-      <div style='position:absolute; top:50%; left:30%; color:gray;'> Inicio de sesión exitoso.`).set('basic', true); 
+      <div style='position:absolute; top:50%; left:30%; color:gray; font-size:20px;'> Inicio de sesión exitoso.`); 
         sleep(1700).then(() => {
-              $window.location.href = $scope.url_path+'Estudiante_Egresado/Solicitar_Tramite';
+             $window.location.href = $scope.url_path+'Estudiante_Egresado/Solicitar_Tramite';
         });
       }else{
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>
@@ -44,7 +44,7 @@ controller('indexController', function($scope,indexFactory,$window){
         if(resultado.noEmpleado){
           console.log(resultado);
           alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/check.png' style='position:absolute; top:35%; left:50 %;'>
-        <div style='position:absolute; top:50%; left:30%; color:gray;'> Inicio de sesión exitoso.`).set('basic', true);
+      <div style='position:absolute; top:50%; left:30%; color:gray; font-size:20px;'> Inicio de sesión exitoso.`); 
           if(resultado.area == "A01"){
             $scope.url_term = "Departamento_Escolar/Index";
           }else if(resultado.area == "A02"){

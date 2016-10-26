@@ -4,6 +4,7 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
     documento:0,
     motivo:0
   };
+  var documento_nombre = ["Boleta global","Boleta certificada","Boleta departamental","Constancia de inscripción","Constancia de estudios","Constancia con periodo vacacional","Constancia para trámite de SS","Constancia de prácticas profesionales","Constancia de inscripción y horario"];
   $scope.tipo;
   estudianteFactory.get_tipo(function(response){
     $scope.tipo = response.tipo;
@@ -22,12 +23,17 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
       else if($scope.data.motivo == 4)
         $scope.motivoTex = 'Beca';
       if($scope.contador < 5){
-        if($scope.data.documento == 1)
-          $scope.documentos_aux.push({'nombre': 'Boleta','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo,'motivo':$scope.motivoTex});
-        else
-          $scope.documentos_aux.push({'nombre': 'Constancia','idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo,'motivo':$scope.motivoTex});
+        if($scope.tipo != 1 && $scope.data.documento > 0){
+          $scope.documentos_aux.push({'nombre': documento_nombre[$scope.data.documento-1],'idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo,'motivo':$scope.motivoTex});
+        }else if($scope.tipo == 1 && $scope.data.documento > 1){
+          alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>
+        <div style='position:absolute; top:50%; left:30%; color:gray;'> Sólo puedes solicitar boleta global.`);
+        }else if($scope.tipo == 1 && $scope.data.documento == 1){
+            $scope.documentos_aux.push({'nombre': documento_nombre[$scope.data.documento-1],'idDocumento':$scope.data.documento,'idMotivo':$scope.data.motivo,'motivo':$scope.motivoTex});
+        }
         $scope.contador++;
         $scope.documentos = $scope.documentos_aux;
+        console.log($scope.documentos);
       }else{
         alertify.alert('', ` <img src='/Proyecto_IS/ProyectoSemestreIS/sistema/public/interno/images/alert.png' style='position:absolute; top:35%; left:5 %;'>
         <div style='position:absolute; top:50%; left:30%; color:gray;'> El número máximo de peticiones al mes es 5.`);
@@ -47,6 +53,9 @@ controller('solicitarTramiteController',  function($scope, estudianteFactory){
     if($scope.documentos.length != 0){
       alertify.prompt('¿Estás seguro?', `Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse. <br> ¿Es correcto tu correo? Actualiza en caso de que no sea correcto.`, 'cuerpoCorreo@servidor.dominio'
       ,function(evt, value) {
+          estudianteFactory.update_email({email:value}, function(){
+
+        });
         alertify.success("Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de 'Mis solicitudes en proceso.'");
         estudianteFactory.post_solicitudes($scope.documentos,function(resultado){
           $scope.documentos = [];

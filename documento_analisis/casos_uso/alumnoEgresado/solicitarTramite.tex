@@ -27,6 +27,7 @@
 		\item Mensaje de información {\bf AlertaValidaMotivo} ``Debes introducir un motivo válido para tu petición."
 		
 		\item Mensaje de información {\bf AlertaSolicitudCancelada} ``No se ha enviado tu solicitud, puedes seguir agregando o eliminando documentos de tu lista."
+		\item Mensaje de información {\bf AlertaEgresado} ``Sólo puedes solicitar boleta global."
 		
     \end{itemize}
   }
@@ -36,7 +37,8 @@
       \item AlertaLimitePeticion:Pantalla
       \item AlertaSolicitudEnviada:pantalla
       \item AlertaValidaMotivo :Pantalla
-      ,\item AlertaValidaNumDocumentos : Pantalla.
+      \item AlertaValidaNumDocumentos : Pantalla
+      \item AlertaEgresado: Pantalla
     \end{itemize}
   }
   \UCitem{Precondiciones}{
@@ -54,8 +56,15 @@
 			\item El actor puede pedir un máximo de 5 constancias al mes.
 			\item Las opciones de documentos son: 
 			\begin{itemize}
-				\item Constancia 
-				\item Boleta
+				\item  Boleta global
+				\item Boleta certificada
+				\item Boleta departamental
+				\item Constancia de inscripción
+				\item Constancia de estudios
+				\item Constancia con periodo vacacional
+				\item Constancia para trámite de SS
+				\item Constancia de prácticas profesionales
+				\item Constancia de inscripción y horario
 			\end{itemize}
 			\item Las opciones de razones de petición de trámite son: 
 			\begin{itemize}
@@ -87,6 +96,7 @@
   \UCpaso[\UCactor] Da click en el botón\IUbutton{ Agregar a lista de documentos}. 
   \UCpaso  Valida que el número de peticiones en el mes sea menor a 5 peticiones. [TAA] 
   \UCpaso Valida que el actor haya seleccionado un motivo válido. [TAD]
+  \UCpaso Valida si el actor es alumno y valida los documentos disponibles a solicitar [TAE]
   \UCpaso Agrega el tipo de documento junto con su razón de pedido a la lista de peticiones mostrada en pantalla.
   \UCpaso[\UCactor]  Da click en el botón\IUbutton{Enviar lista de documentos}.
   \UCpaso Muestra la alerta {\bf AlertaConfirmarCorreo} 
@@ -117,4 +127,9 @@
   \UCpaso No agrega el documento a la lista de documentos.
 \end{UCtrayectoriaA}
 
+
+\begin{UCtrayectoriaA}{E}{No alumno} 
+\UCpaso Muestra el mensaje {\bf AlertaEgresado}.
+  \UCpaso No agrega el documento a la lista de documentos.
+\end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.

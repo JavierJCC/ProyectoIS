@@ -18,6 +18,7 @@ class estudianteEgresadoModel
 
   function select_all_documentos(){
     $query = 'SELECT * FROM DOCUMENTO';
+    $this->connection->query("SET NAMES 'utf8'");
     $documentos = $this->connection->query($query);
     return $documentos ? $documentos : array();
   }
@@ -48,7 +49,7 @@ class estudianteEgresadoModel
     return $motivos ? $motivos : array();
   }
   
-     function datos_personales(){
+  function datos_personales(){
     $pao=$_SESSION["usuario"]->idPersona;
     print_r($_SESSION["usuario"]);
     echo $pao;
@@ -60,4 +61,12 @@ class estudianteEgresadoModel
     return $datos ? $datos->fetch_object() : array();
   }
   
+  function update_email($email,$idAlumno){
+    $query = "Update alumno set email='{$email}' where boleta='{$idAlumno}';";
+    if($this->connection->query($query) === TRUE){
+        echo "correo actualizado";
+      }else{
+         echo  $this->connection->error;
+      }
+  }
 } 

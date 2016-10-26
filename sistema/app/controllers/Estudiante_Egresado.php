@@ -32,9 +32,14 @@ class Estudiante_Egresado extends Controller
     die(json_encode(array('tipo' => $_SESSION["usuario"]->egresado)));
   }
   
-    public function Datos_Personales(){
+  public function Datos_Personales(){
     $EE_modelo = $this->model('estudianteEgresadoModel');
     $datos = $EE_modelo->datos_personales();
     $this->view('estudianteEgresado/consulta_datos', ['datos'=> $datos]);
+  }
+  public function update_email(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $this->EE_modelo->update_email($request->email, $_SESSION["usuario"]->idPersona);
   }
 }

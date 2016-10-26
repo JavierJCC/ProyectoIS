@@ -7,7 +7,7 @@ controller('notificacionController',function($scope,jefaGestionFactory){
 controller('getMemorandum', function($scope,jefaGestionFactory){
   $scope.changeButton = function(id){
     jefaGestionFactory.update_memorandum({id:id},function(resultado){
-      location.reload();
+      //location.reload();
     });
   };
 });

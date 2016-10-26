@@ -74,7 +74,7 @@ $(function () {
 					<div class="panel-body">
 						<?php
 
-										require_once("conexion/conexion.php");
+										//require_once("conexion/conexion.php");
 
 						?>
 

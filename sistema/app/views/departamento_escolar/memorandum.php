@@ -15,6 +15,8 @@
         <input type='file' file-model='file' name="archivo">
       </span>
       </form>
+      <br>
+      <div class="alert alert-info"> Los documentos disponibles para cargar son los siguientes: docx,pdf,xslx.</div>
     </div>
     <div class="col-md-6">
       <div class="col-md-6" ng-repeat="file in files track by $index">
