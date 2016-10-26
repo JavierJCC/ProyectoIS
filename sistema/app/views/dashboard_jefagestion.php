@@ -85,10 +85,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-gears"></i> Gestionar cuentas</a>
-                    </li>
-                    <li>
-                        <a href="Estado_peticion"><i class="fa fa-search-plus fa-fw"></i>     Actualización de estatus de documentos</a>
+                        <a href="<?= $url_path ?>Jefa_gestion/gestionar_cuentas"><i class="fa fa-gears"></i> Gestionar cuentas</a>
                     </li>
 					<li>
                         <a href="#"><i class="fa fa-List-alt fa-fw"></i> Reportes estadísticos<span class="fa arrow"></span></a>
@@ -105,7 +102,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="<?= $url_path ?>Jefa_gestion/memorandums"><i class="fa fa-gears"></i> Consultar memorándums <span class="fa arrow"></span>
+                        <a href="<?= $url_path ?>Jefa_gestion/memorandums"><i class="fa fa-search-plus fa-fw"></i> Consultar memorándums <span class="fa arrow"></span>
                         <button type="button" class="btn btn-danger btn-circle" ng-if="memorandums_no_leidos != 0">[[memorandums_no_leidos]]</button>
                          </a>
                     </li>

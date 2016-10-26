@@ -42,7 +42,7 @@
 													print "<td>{$usuario['email']}</td>";
 													print "<td>{$usuario['NombreArea']}</td>";
 													print "<td style='text-align: center;'>";
-														print "<button type='button' class='btn btn-outline btn-primary' style='margin:auto;' data-idempleado={$usuario['idpersona']} id='Actualizar'>Actualizar</button>";
+														print "<button type='button' class='btn btn-outline btn-primary Update' style='margin:auto;' data-toggle='modal' data-target='#ActualizarModal' data-idempleado={$usuario['idpersona']} id='Actualizar'>Actualizar</button>";
 														print "<button type='button' class='btn btn-outline btn-danger Desactivar1' style='margin:auto;' data-idempleado={$usuario['idpersona']}>Desactivar</button>";
 													print "</td>";    
 												print "</tr>";
@@ -137,14 +137,131 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- ACTUALIZAR CUENTA -->
+			<div id="ActualizarModal" class="modal fade" role="dialog">
+			<div class="modal-dialog" style="width:650px;">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title" style="">Actualizar cuenta</h2>
+						<h5>Actualice los datos incorrectos</h5>
+					</div>
+					<div class="modal-body">
+						<div class="col-md-12">
+						<h6>Datos marcados con <span style="color:red;">*</span> son forzosos.</h6>
+						</div>
+						<form class="form-horizontal" id="actualizarForm">
+							<div class="form-group" >
+								<label for="inputEmail3" class="col-sm-3 control-label">No. Empleado </label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control" id="no_empleado1" name="no_empleado1" disabled>
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">Nombre <span style="color:red;">*</span></label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingrese su nombre">
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Paterno <span style="color:red;">*</span></label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control" id="apPaterno1" name="apPaterno1" placeholder="Ingrese su apellido paterno">
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Materno <span style="color:red;">*</span></label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control" id="apMaterno1" name="apMaterno1" placeholder="Ingrese su apellido materno">
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">RFC <span style="color:red;">*</span></label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control" id="rfc1" name="rfc1" placeholder="Ingrese su RFC">
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">Correo <span style="color:red;">*</span></label>
+								<div class="col-sm-8">
+								<input type="email" class="form-control" id="email1" name="email1" placeholder="Ingrese su correo electrónico">
+								<br>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-3 control-label">Área <span style="color:red;">*</span></label>
+								<?php
+									print "<div class='col-sm-6'>";
+										print_r($data['areas1']);
+										print "<select class='form-control' name='area1'>";
+										while($area1 = $data['areas1']->fetch_assoc()){	
+											print "<option value={$area1['idArea']}>{$area1['nombreArea']}</option>";
+										}
+										print "</select>";
+									print "</div>";
+								?>
+							</div>							
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-default" id="actualizacion">Actualizar</button>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+	
+
+
+
+
+
+
 		</div>
 	</section>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
+	<script src="<?= $url_path?>Interno/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
 	$(document).ready(function () {
-		$('#Actualizar').on('click',function(){
-			alert($(this).data('id'));
+		$('.Update').on('click',function(){
+			console.log(String($(this).data('idempleado')));
+			var url = "/Proyecto_IS/ProyectoSemestreIS/sistema/public/Jefa_Gestion/actualizar_cuentas/"+$(this).data('idempleado');
+			$.ajax({
+			type: "GET",
+			url: url,
+			success: function(data){
+				console.log(data);
+				persona = JSON.parse(data);
+				$('#no_empleado1').val(persona.idPersona);
+				$('#nombre1').val(persona.nom);
+				$('#apPaterno1').val(persona.apPat);
+				$('#apMaterno1').val(persona.apMat);
+				$('#rfc1').val(persona.RFC);
+				$('#email1').val(persona.email);
+				$('#area1').val(persona.nombreArea);
+			}
+			});
 		});	
+		$('#actualizarForm').submit(function(e){
+			var url = "/Proyecto_IS/ProyectoSemestreIS/sistema/public/Jefa_Gestion/actualizaCuenta";
+			$.ajax({
+			type:"POST",
+			url: url,
+			data: $("#actualizarForm").serialize(),
+			success: function(){
+				alertify.success("Se ha actualizado la cuenta exitosamente");
+				sleep(1700).then(()=>{
+					//location.reload();
+				});
+			}
+			});
+		});
 		$('#registro').submit(function(e){
 			var url = "/Proyecto_IS/ProyectoSemestreIS/sistema/public/Jefa_Gestion/registrar_cuentas";
 			$.ajax({
@@ -154,6 +271,10 @@
 			success: function(data)
 			{
 				alertify.success("Se ha registrado la cuenta exitosamente");
+				sleep(1700).then(() => {
+					location.reload();
+				});
+				
 			}
 			});
 			e.preventDefault();
@@ -165,7 +286,11 @@
 			type: "GET",
 			url: url,
 			});
-		});	
+		});
+	function sleep (time) {
+		return new Promise((resolve) => setTimeout(resolve, time));
+	}
+
 });
 	
 

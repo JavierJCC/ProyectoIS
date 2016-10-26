@@ -13,15 +13,21 @@ class Jefa_Gestion extends Controller{
     public function gestionar_cuentas(){
         $usuarios = $this->modelo_jefa->gestionar();
         $area = $this->modelo_jefa->get_area();
-        $this->view('jefaGestion/gestionar_cuentas',['usuarios'=>$usuarios,"areas"=>$area]);
+        $this->view('jefaGestion/gestionar_cuentas',['usuarios'=>$usuarios,"areas"=>$area,"areas1"=>$area]);
     }
 
     public function registrar_cuentas(){
         $this->modelo_jefa->registrar($_POST["no_empleado"],$_POST["nombre"],$_POST["apPaterno"],$_POST["apMaterno"],$_POST["rfc"],$_POST["email"],$_POST["area"]);
     }
-
-    public function actualizar_cuentas(){
-        $this->view('jefaGestion/actualizar_cuentas');
+    //ReCIBE INFORMACION DE BD Y DESPLIEGA EN MODAL
+    public function actualizar_cuentas($idPersona){
+        $consulta_actualiza = $this->modelo_jefa->consulta_actualizar($idPersona);
+        $persona = $consulta_actualiza->fetch_object();
+        die(json_encode(array('idPersona'=>$persona->idPersona,'nom'=>$persona->nom,'apPat'=>$persona->apPat,'apMat'=>$persona->apMat,'RFC'=>$persona->RFC,'email'=>$persona->email,'nombreArea'=>$persona->nombreArea)));
+    }
+    //ACTUALIZA INFORMACION1
+    public function actualizaCuenta(){
+        $this->modelo_jefa->update_empleado($_POST["no_empleado1"],$_POST["nombre1"],$_POST["apPaterno1"],$_POST["apMaterno1"],$_POST["rfc1"],$_POST["email1"],$_POST["area1"]);
     }
 
     public function desactivar_cuentas($noEmp){

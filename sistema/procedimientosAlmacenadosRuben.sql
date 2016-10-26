@@ -16,6 +16,14 @@ create procedure altacuenta(in noEmp varchar(10), in nombre varchar(45), in apPa
   end #
 delimiter ;
 
+Delimiter #
+create procedure update_cuenta(in noEmp varchar(10), in nombre varchar(45), in apPaterno varchar(45), in apMaterno varchar(45), in rfcc varchar(15),in correo varchar(50),in idareaa varchar(10))
+  begin 
+    update persona set nom = nombre, apPat = apPaterno, apMat = apMaterno where idPersona = noEmp;
+    update trabajadorArea set rfc = rfcc, email = correo, idArea = idareaa where idTrabajador = noEmp;
+  end #
+delimiter ;
+
 
 ALTER DATABASE ingenieria CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ALTER TABLE tramite MODIFY idTramite int CHARACTER SET utf8;

@@ -64,4 +64,21 @@ class jefagestionModel
                   WHERE idTrabajador = '{$idPersona}'";
         $desactivar = $this->connection->query($query);
     }
+
+    function consulta_actualizar($idPersona){
+        $query = "SELECT p.idPersona,p.nom,p.apPat,p.apMat,t.RFC,t.email,a.nombreArea 
+                  FROM persona p, trabajadorarea t, area a
+                  WHERE p.idPersona = t.idTrabajador
+                  AND t.idArea = a.idArea
+                  AND p.idPersona = '{$idPersona}'";
+        $consulta_actualizar = $this->connection->query($query);
+        return $consulta_actualizar ? $consulta_actualizar : array();      
+    }
+
+    function update_empleado($noEmp,$nombre,$apPaterno,$apMaterno,$rfcc,$correo,$idareaa){
+        $query = "call update_cuenta('{$noEmp}','{$nombre}','{$apPaterno}','{$apMaterno}','{$rfcc}','{$correo}','{$idareaa}')";
+        $update = $this->connection->query($query);
+        echo $this->connection->error;
+    }
+
 } 
