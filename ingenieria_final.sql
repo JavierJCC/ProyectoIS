@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.25, for osx10.8 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ingenieria
 -- ------------------------------------------------------
--- Server version	5.6.25
+-- Server version	5.7.13-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -72,7 +72,7 @@ CREATE TABLE `area` (
 
 LOCK TABLES `area` WRITE;
 /*!40000 ALTER TABLE `area` DISABLE KEYS */;
-INSERT INTO `area` VALUES ('A01','Area de becas','Departamento de Extensión y Apoyos Educativos'),('A02','Control escolar','Departamento de control Escolar');
+INSERT INTO `area` VALUES ('A01','Área de becas','Departamento de Extensión y Apoyos Educativos'),('A02','Control escolar','Departamento de Gestión Escolar'),('A03','Jefa de Gestión Escolar','Departamento de Control Escolar');
 /*!40000 ALTER TABLE `area` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `documento` (
   `idDocumento` int(2) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idDocumento`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,18 +96,18 @@ CREATE TABLE `documento` (
 
 LOCK TABLES `documento` WRITE;
 /*!40000 ALTER TABLE `documento` DISABLE KEYS */;
-INSERT INTO `documento` VALUES (1,'Boleta'),(2,'Constancia');
+INSERT INTO `documento` VALUES (1,'Boleta global'),(2,'Boleta certificada'),(3,'Boleta departamental '),(4,'Constancia de inscripción'),(5,'Constancia de estudios'),(6,'Constancia con periodo vacacional'),(7,'Constancia para trámite de SS'),(8,'Constancia de prácticas profesionales'),(9,'Constancia de inscripción y horario');
 /*!40000 ALTER TABLE `documento` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `estadoTramite`
+-- Table structure for table `estadotramite`
 --
 
-DROP TABLE IF EXISTS `estadoTramite`;
+DROP TABLE IF EXISTS `estadotramite`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `estadoTramite` (
+CREATE TABLE `estadotramite` (
   `idEstado` int(1) NOT NULL AUTO_INCREMENT,
   `Estado` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`idEstado`)
@@ -115,23 +115,23 @@ CREATE TABLE `estadoTramite` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `estadoTramite`
+-- Dumping data for table `estadotramite`
 --
 
-LOCK TABLES `estadoTramite` WRITE;
-/*!40000 ALTER TABLE `estadoTramite` DISABLE KEYS */;
-INSERT INTO `estadoTramite` VALUES (1,'Solicitado'),(2,'Impreso'),(3,'En firma'),(4,'Listo'),(5,'Entregado');
-/*!40000 ALTER TABLE `estadoTramite` ENABLE KEYS */;
+LOCK TABLES `estadotramite` WRITE;
+/*!40000 ALTER TABLE `estadotramite` DISABLE KEYS */;
+INSERT INTO `estadotramite` VALUES (1,'Solicitado'),(2,'Impreso'),(3,'En firma'),(4,'Listo'),(5,'Entregado');
+/*!40000 ALTER TABLE `estadotramite` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `estudianteInscrito`
+-- Table structure for table `estudianteinscrito`
 --
 
-DROP TABLE IF EXISTS `estudianteInscrito`;
+DROP TABLE IF EXISTS `estudianteinscrito`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `estudianteInscrito` (
+CREATE TABLE `estudianteinscrito` (
   `boleta` varchar(10) NOT NULL,
   `semestre` int(1) NOT NULL,
   `MateriasInscritas` int(1) NOT NULL,
@@ -143,12 +143,12 @@ CREATE TABLE `estudianteInscrito` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `estudianteInscrito`
+-- Dumping data for table `estudianteinscrito`
 --
 
-LOCK TABLES `estudianteInscrito` WRITE;
-/*!40000 ALTER TABLE `estudianteInscrito` DISABLE KEYS */;
-/*!40000 ALTER TABLE `estudianteInscrito` ENABLE KEYS */;
+LOCK TABLES `estudianteinscrito` WRITE;
+/*!40000 ALTER TABLE `estudianteinscrito` DISABLE KEYS */;
+/*!40000 ALTER TABLE `estudianteinscrito` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -202,13 +202,13 @@ INSERT INTO `motivo` VALUES (1,'Ninguno'),(2,'Actividad Cultural'),(3,'Actividad
 UNLOCK TABLES;
 
 --
--- Table structure for table `motivoSolicitud`
+-- Table structure for table `motivosolicitud`
 --
 
-DROP TABLE IF EXISTS `motivoSolicitud`;
+DROP TABLE IF EXISTS `motivosolicitud`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `motivoSolicitud` (
+CREATE TABLE `motivosolicitud` (
   `idMotivoSol` int(11) NOT NULL AUTO_INCREMENT,
   `descripcion` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`idMotivoSol`)
@@ -216,13 +216,13 @@ CREATE TABLE `motivoSolicitud` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `motivoSolicitud`
+-- Dumping data for table `motivosolicitud`
 --
 
-LOCK TABLES `motivoSolicitud` WRITE;
-/*!40000 ALTER TABLE `motivoSolicitud` DISABLE KEYS */;
-INSERT INTO `motivoSolicitud` VALUES (1,'Enfermedad'),(2,'Fuera de la ciudad');
-/*!40000 ALTER TABLE `motivoSolicitud` ENABLE KEYS */;
+LOCK TABLES `motivosolicitud` WRITE;
+/*!40000 ALTER TABLE `motivosolicitud` DISABLE KEYS */;
+INSERT INTO `motivosolicitud` VALUES (1,'Enfermedad'),(2,'Fuera de la ciudad');
+/*!40000 ALTER TABLE `motivosolicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -248,7 +248,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES ('12345','José Francisco','Serrano','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2016635489','Jacinto','Gonzalez','Velez','12345678'),('56789','RubÃ©n','Murga','Dionicio',NULL),('567891','RubÃ©n','Murga','Dionicio',NULL),('5678912','RubÃ©n','Murga','Dionicio',NULL),('56789123','RubÃ©n','Murga','Dionicio',NULL),('987','23','dsfs','dfs',NULL);
+INSERT INTO `persona` VALUES ('12345','José Francisco','Pérez','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2015630074','Juan','Gómez ','Castro',NULL),('2016635489','Jacinto','Gonzalez','Velez','12345678'),('24','Marcela','Castro','Flores',NULL),('27','Gabriela','Castro','Flores','12345'),('56789','RubÃ©n','Murga','Dionicio',NULL),('567891','RubÃ©n','Murga','Dionicio',NULL),('5678912','RubÃ©n','Murga','Dionicio',NULL),('56789123','RubÃ©n','Murga','Dionicio',NULL),('90','Pedro','Pérez','Godínez',NULL),('987','23','dsfs','dfs',NULL);
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -264,7 +264,7 @@ CREATE TABLE `solicitanteajeno` (
   `idMotivo` int(11) DEFAULT NULL,
   KEY `idMotivo` (`idMotivo`),
   KEY `idSolicitanteAjeno` (`idSolicitanteAjeno`),
-  CONSTRAINT `solicitanteajeno_ibfk_1` FOREIGN KEY (`idMotivo`) REFERENCES `motivoSolicitud` (`idMotivoSol`),
+  CONSTRAINT `solicitanteajeno_ibfk_1` FOREIGN KEY (`idMotivo`) REFERENCES `motivosolicitud` (`idMotivoSol`),
   CONSTRAINT `solicitanteajeno_ibfk_2` FOREIGN KEY (`idSolicitanteAjeno`) REFERENCES `persona` (`idPersona`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -315,13 +315,13 @@ INSERT INTO `solicitud` VALUES (5,1,1,NULL,'2014630002','2016-10-14',0),(6,1,2,N
 UNLOCK TABLES;
 
 --
--- Table structure for table `trabajadorArea`
+-- Table structure for table `trabajadorarea`
 --
 
-DROP TABLE IF EXISTS `trabajadorArea`;
+DROP TABLE IF EXISTS `trabajadorarea`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `trabajadorArea` (
+CREATE TABLE `trabajadorarea` (
   `idTrabajador` varchar(10) NOT NULL,
   `idArea` varchar(10) DEFAULT 'A01',
   `RFC` varchar(18) DEFAULT NULL,
@@ -335,13 +335,13 @@ CREATE TABLE `trabajadorArea` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `trabajadorArea`
+-- Dumping data for table `trabajadorarea`
 --
 
-LOCK TABLES `trabajadorArea` WRITE;
-/*!40000 ALTER TABLE `trabajadorArea` DISABLE KEYS */;
-INSERT INTO `trabajadorArea` VALUES ('12345','A01',NULL,NULL,1),('56789123','A01','dfsdf','ruben.murga.d@gmail.com',0),('987','A01','dfsd','dfsdfs@gmail',1);
-/*!40000 ALTER TABLE `trabajadorArea` ENABLE KEYS */;
+LOCK TABLES `trabajadorarea` WRITE;
+/*!40000 ALTER TABLE `trabajadorarea` DISABLE KEYS */;
+INSERT INTO `trabajadorarea` VALUES ('12345','A02','JFPG','pepe@gmail.com',0),('56789123','A01','dfsdf','ruben.murga.d@gmail.com',0),('987','A01','dfsd','dfsdfs@gmail',1),('24','A02','MCF961104','march.castrof@gmail.com',1),('27','A03','GAB270990','gabz.cf@gmail.com',1),('90','A02','PER243','pedro@hotmail.com',1),('2015630074','A01','JUAN2345','juanito@gmail.com',1);
+/*!40000 ALTER TABLE `trabajadorarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -359,7 +359,7 @@ CREATE TABLE `tramite` (
   KEY `idAnalista` (`idAnalista`),
   KEY `idEstado` (`idEstado`),
   CONSTRAINT `tramite_ibfk_1` FOREIGN KEY (`idAnalista`) REFERENCES `persona` (`idPersona`),
-  CONSTRAINT `tramite_ibfk_2` FOREIGN KEY (`idEstado`) REFERENCES `estadoTramite` (`idEstado`)
+  CONSTRAINT `tramite_ibfk_2` FOREIGN KEY (`idEstado`) REFERENCES `estadotramite` (`idEstado`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -372,71 +372,6 @@ LOCK TABLES `tramite` WRITE;
 INSERT INTO `tramite` VALUES (2,1,'12345'),(3,1,'12345'),(4,1,'12345'),(5,4,'12345'),(6,4,'12345'),(7,3,'12345'),(8,1,'12345'),(9,4,'12345'),(10,1,'12345'),(11,1,'12345'),(12,1,'12345'),(13,1,'12345');
 /*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'ingenieria'
---
-/*!50003 DROP PROCEDURE IF EXISTS `altacuenta` */;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8 */ ;
-/*!50003 SET character_set_results = utf8 */ ;
-/*!50003 SET collation_connection  = utf8_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `altacuenta`(in noEmp varchar(10), in nombre varchar(45), in apPaterno varchar(45), in apMaterno varchar(45), in rfcc varchar(15),in correo varchar(50),in idareaa varchar(10))
-begin 
-    insert into persona(idPersona,nom,apPat,apMat) values(noEmp,nombre,apPaterno,apMaterno);
-    insert into trabajadorarea(idTrabajador,idArea,RFC,email) values(noEmp,idareaa,rfcc,correo);
-  end ;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
-/*!50003 DROP PROCEDURE IF EXISTS `altaTramite` */;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8 */ ;
-/*!50003 SET character_set_results = utf8 */ ;
-/*!50003 SET collation_connection  = utf8_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `altaTramite`(in p_idDocumento int ,in p_idMotivo int ,in p_idAlumno varchar(10))
-begin 
-    DECLARE p_idEstado int;
-    insert into tramite(idEstado,idAnalista) values(1,"12345");
-    select idTramite into p_idEstado from tramite ORDER BY idTramite DESC LIMIT 1;
-    insert into solicitud(idSolicitud,Documento_idDocumento,Motivo_idMotivo,idAlumno,Fecha,Aceptacion) values(p_idEstado,p_idDocumento,p_idMotivo,p_idAlumno,now(),0);
-  end ;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
-/*!50003 DROP PROCEDURE IF EXISTS `insert_memorandum` */;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8 */ ;
-/*!50003 SET character_set_results = utf8 */ ;
-/*!50003 SET collation_connection  = utf8_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_memorandum`(in nombreArchivo_in varchar(50))
-begin
-  insert into memorandum(nombreArchivo,fechaSubido,descargado) values(nombreArchivo_in,now(),0);
-end ;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -447,4 +382,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-23 15:22:57
+-- Dump completed on 2016-10-26 18:53:06
