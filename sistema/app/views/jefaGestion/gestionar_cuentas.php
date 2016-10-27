@@ -165,7 +165,8 @@
 							<div class="form-group" >
 								<label for="inputEmail3" class="col-sm-3 control-label">No. Empleado </label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="no_empleado1" name="no_empleado1" ng-keypress="validno_empleado()" ng-model="no_empleado" disabled>
+								<input type="text" class="form-control" id="actualizaEmpleado" name="actualizaEmpleado" ng-keypress="validno_empleado()" ng-model="no_empleado" disabled>
+								<input type="hidden" name="no_empleado1" id="hiddenEmpleado">
 								<span ng-show="checkNoEmpleado" style="color: red;"> Ingrese únicamente números
 								<br>
 								</div>
@@ -252,7 +253,8 @@
 			success: function(data){
 				console.log(data);
 				persona = JSON.parse(data);
-				$('#no_empleado1').val(persona.idPersona);
+				$('#actualizaEmpleado').val(persona.idPersona);
+				$('#hiddenEmpleado').val(persona.idPersona);
 				$('#nombre1').val(persona.nom);
 				$('#apPaterno1').val(persona.apPat);
 				$('#apMaterno1').val(persona.apMat);
