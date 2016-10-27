@@ -199,16 +199,16 @@
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Área <span style="color:red;">*</span></label>
 								<?php
+								mysqli_data_seek($data['areas'],0); 
 									print "<div class='col-sm-6'>";
-										print_r($data['areas1']);
-										print "<select class='form-control' name='area1'>";
-										while($area1 = $data['areas1']->fetch_assoc()){	
-											print "<option value={$area1['idArea']}>{$area1['nombreArea']}</option>";
+										print "<select class='form-control' name='area'>";
+										while($area = $data['areas']->fetch_assoc()){	
+											print "<option value={$area['idArea']}>{$area['nombreArea']}</option>";
 										}
 										print "</select>";
 									print "</div>";
 								?>
-							</div>							
+							</div>						
 						</div>
 						<div class="modal-footer">
 							<button type="submit" class="btn btn-default" id="actualizacion">Actualizar</button>
