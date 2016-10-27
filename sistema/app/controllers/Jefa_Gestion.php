@@ -27,7 +27,7 @@ class Jefa_Gestion extends Controller{
     }
     //ACTUALIZA INFORMACION1
     public function actualizaCuenta(){
-        $this->modelo_jefa->update_empleado($_POST["actualizaEmpleado"],$_POST["nombre1"],$_POST["apPaterno1"],$_POST["apMaterno1"],$_POST["rfc1"],$_POST["email1"],$_POST["area1"]);
+        $this->modelo_jefa->update_empleado($_POST["no_empleado1"],$_POST["nombre1"],$_POST["apPaterno1"],$_POST["apMaterno1"],$_POST["rfc1"],$_POST["email1"],$_POST["area1"]);
     }
 
     public function desactivar_cuentas($noEmp){

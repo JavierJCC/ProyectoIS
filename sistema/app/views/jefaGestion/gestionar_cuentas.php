@@ -216,7 +216,7 @@
 								<?php
 								mysqli_data_seek($data['areas'],0); 
 									print "<div class='col-sm-6'>";
-										print "<select class='form-control' name='area'>";
+										print "<select class='form-control' name='area1'>";
 										while($area = $data['areas']->fetch_assoc()){	
 											print "<option value={$area['idArea']}>{$area['nombreArea']}</option>";
 										}
@@ -273,7 +273,7 @@
 			success: function(){
 				alertify.success("Se ha actualizado la cuenta exitosamente");
 				sleep(1700).then(()=>{
-					//location.reload();
+					location.reload();
 				});
 			}
 			});
