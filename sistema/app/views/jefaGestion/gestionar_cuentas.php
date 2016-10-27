@@ -74,46 +74,54 @@
 						<div class="col-md-12">
 						<h6>Datos marcados con <span style="color:red;">*</span> son forzosos.</h6>
 						</div>
-						<form class="form-horizontal" id="registro">
+						<form class="form-horizontal" id="registro" ng-app="Registrar" ng-controller="validateCtrl" name="registro" novalidate>
 							<div class="form-group" >
 								<label for="inputEmail3" class="col-sm-3 control-label">No. Empleado <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="no_empleado" name="no_empleado" placeholder="Ingrese su número de empleado">
+								<input type="text" class="form-control"  id="no_empleado" name="no_empleado" placeholder="Ingrese su número de empleado" ng-keypress="validno_empleado()" ng-model="no_empleado">
+								<!--<span style="color: red" ng-show="registro.no_empleado.$pristine">
+								<span ng-show="registro.no_empleado.$error.required"> Este campo es obligatorio-->
+								<span ng-show="checkNoEmpleado" style="color: red;"> Ingrese únicamente números
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Nombre <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+								<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" ng-keypress="valida_nombre()" ng-model="nombre">
+								<span ng-show="checkNombre" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Paterno <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="apPaterno" name="apPaterno" placeholder="Ingrese su apellido paterno">
+								<input type="text" class="form-control" id="apPaterno" name="apPaterno" placeholder="Ingrese su apellido paterno" ng-keypress="valida_apPat()" ng-model="apPaterno">
+								<span ng-show="checkApPaterno" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Materno <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="apMaterno" name="apMaterno" placeholder="Ingrese su apellido materno">
+								<input type="text" class="form-control" id="apMaterno" name="apMaterno" placeholder="Ingrese su apellido materno" ng-keypress="valida_apMat()" ng-model="apMaterno">
+								<span ng-show="checkApMaterno" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">RFC <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="rfc" name="rfc" placeholder="Ingrese su RFC">
+								<input type="text" class="form-control" id="rfc" name="rfc" placeholder="Ingrese su RFC" ng-keypress="valida_RFC()" ng-model="rfc">
+								<span ng-show="checkRFC" style="color: red;"> Ingrese el RFC con el formato adecuado
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Correo <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico">
+								<input type="text" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" ng-keypress="valida_email()" ng-model="email">
+								<span ng-show="checkCorreo" style="color: red;"> Ingrese el correo con el formato adecuado
 								<br>
 								</div>
 							</div>
@@ -131,7 +139,7 @@
 							</div>							
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-default" id="nuevoRegistro">Registrar</button>
+							<button type="submit" class="btn btn-default" id="nuevoRegistro" ng-disabled="registro.no_empleado.$dirty && registro.no_empleado.$invalid">Registrar</button>
 						</div>
 					</form>
 					</div>
@@ -153,46 +161,52 @@
 						<div class="col-md-12">
 						<h6>Datos marcados con <span style="color:red;">*</span> son forzosos.</h6>
 						</div>
-						<form class="form-horizontal" id="actualizarForm">
+						<form class="form-horizontal" id="actualizarForm" ng-controller="validateCtrl">
 							<div class="form-group" >
 								<label for="inputEmail3" class="col-sm-3 control-label">No. Empleado </label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="no_empleado1" name="no_empleado1" disabled>
+								<input type="text" class="form-control" id="no_empleado1" name="no_empleado1" ng-keypress="validno_empleado()" ng-model="no_empleado" disabled>
+								<span ng-show="checkNoEmpleado" style="color: red;"> Ingrese únicamente números
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Nombre <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingrese su nombre">
+								<input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingrese su nombre" ng-keypress="valida_nombre()" ng-model="nombre">
+								<span ng-show="checkNombre" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Paterno <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="apPaterno1" name="apPaterno1" placeholder="Ingrese su apellido paterno">
+								<input type="text" class="form-control" id="apPaterno1" name="apPaterno1" placeholder="Ingrese su apellido paterno" ng-keypress="valida_apPat()" ng-model="apPaterno">
+								<span ng-show="checkApPaterno" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Apellido Materno <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="apMaterno1" name="apMaterno1" placeholder="Ingrese su apellido materno">
+								<input type="text" class="form-control" id="apMaterno1" name="apMaterno1" placeholder="Ingrese su apellido materno" ng-keypress="valida_apMat()" ng-model="apMaterno">
+								<span ng-show="checkApMaterno" style="color: red;"> Ingrese únicamente letras
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">RFC <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="text" class="form-control" id="rfc1" name="rfc1" placeholder="Ingrese su RFC">
+								<input type="text" class="form-control" id="rfc1" name="rfc1" placeholder="Ingrese su RFC" ng-keypress="valida_RFC()" ng-model="rfc">
+								<span ng-show="checkRFC" style="color: red;"> Ingrese el RFC con el formato adecuado
 								<br>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-3 control-label">Correo <span style="color:red;">*</span></label>
 								<div class="col-sm-8">
-								<input type="email" class="form-control" id="email1" name="email1" placeholder="Ingrese su correo electrónico">
+								<input type="email" class="form-control" id="email1" name="email1" placeholder="Ingrese su correo electrónico" ng-keypress="valida_email()" ng-model="email">
+								<span ng-show="checkCorreo" style="color: red;"> Ingrese el correo con el formato adecuado
 								<br>
 								</div>
 							</div>
@@ -292,13 +306,64 @@
 	}
 
 });
-	
 
-</script>	
+
+
+
+</script>
 <?php endblock() ?>
 
 
 <?php startblock('scripts') ?>
-
+<script>
+	app.controller('validateCtrl', function($scope) {
+		var numeros =  new RegExp("[1-9]");
+		var letras =  new RegExp("[a-zA-Z]");
+		var correo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		var RFC = /^([A-Z,Ñ,&]{3,4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[A-Z|\d]{3})$/;
+		$scope.validno_empleado = function(){
+			if(!numeros.test($scope.no_empleado)){
+				$scope.checkNoEmpleado = true;
+			}else{
+				$scope.checkNoEmpleado = false;
+			}
+		};		
+		$scope.valida_nombre = function(){
+			if(!letras.test($scope.nombre)){
+				$scope.checkNombre = true;
+			}else{
+				$scope.checkNombre = false;
+			}
+		};
+		$scope.valida_apPat = function(){
+			if(!letras.test($scope.apPaterno)){
+				$scope.checkApPaterno = true;
+			}else{
+				$scope.checkApPaterno = false;
+			}
+		};
+		$scope.valida_apMat = function(){
+			if(!letras.test($scope.apMaterno)){
+				$scope.checkApMaterno = true;
+			}else{
+				$scope.checkApMaterno = false;
+			}
+		};
+		$scope.valida_RFC = function(){
+			if(!RFC.test($scope.rfc)){
+				$scope.checkRFC = true;
+			}else{
+				$scope.checkRFC = false;
+			}
+		};
+		$scope.valida_email = function(){
+			if(!correo.test($scope.email)){
+				$scope.checkCorreo = true;
+			}else{
+				$scope.checkCorreo = false;
+			}
+		};
+	});	
+</script>
 
 <?php endblock() ?>
