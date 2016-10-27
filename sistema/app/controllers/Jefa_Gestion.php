@@ -13,7 +13,7 @@ class Jefa_Gestion extends Controller{
     public function gestionar_cuentas(){
         $usuarios = $this->modelo_jefa->gestionar();
         $area = $this->modelo_jefa->get_area();
-        $this->view('jefaGestion/gestionar_cuentas',['usuarios'=>$usuarios,"areas"=>$area,"areas1"=>$area]);
+        $this->view('jefaGestion/gestionar_cuentas',['usuarios'=>$usuarios,"areas"=>$area]);
     }
 
     public function registrar_cuentas(){
