@@ -47,4 +47,28 @@ class Analista_solicitudes extends Controller
     $resultado = $EE_modelo->update_estado($_POST["id"],$_POST["estado"]);
     echo $resultado;
   }
+
+  // solicitar documento
+  public function solicitar_documento(){
+    $documentos = $this->model('estudianteEgresadoModel')->select_all_documentos();
+    $motivos = $this->model('estudianteEgresadoModel')->select_all_motivos();
+    $this->view('analista/peticion_documento',['documentos'=> $documentos, 'motivos'=> $motivos ]);
+
+  }
+  public function get_boleta(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $tipo = $this->model('estudianteEgresadoModel')->get_tipo($request->boleta);
+    die(json_encode(array('tipo'=>$tipo->egresado)));
+  }
+  public function update_alumno_email(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $this->model('estudianteEgresadoModel')->update_email($request->email, $request->boleta);
+  }
+  public function Enviar_Peticion_documento(){
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $this->model('estudianteEgresadoModel')->insert_peticiones($request->documentos, $request->boleta);
+  }
 }

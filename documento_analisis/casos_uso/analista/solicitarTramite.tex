@@ -1,46 +1,49 @@
 \pagebreak
-\begin{UseCase}{CUG04}{Solicitar documento}{Un alumno o egresado requiere hacer una petición de trámite a control escolar}
+\begin{UseCase}{CUEE02}{Solicitar documento}{Un alumno o egresado requiere hacer una petición de trámite a control escolar}
 	\UCitem{Version}{1.0}
-  \UCitem{Actor}{Analista}
-  \UCitem{Propósito}{El actor registra una petición de documento.}
+  \UCitem{Actor}{Alumno/Egresado}
+  \UCitem{Propósito}{El actor evita ir físicamente a las oficinas de control escolar y tiene la posibilidad de pedir el tipo de documento deseado via internet.}
   \UCitem{Entradas}{
     \begin{itemize}
     \item Documento: Cadena de carácteres  predeterminada que significará el tipo de documento  que el alumno solicita.
     \item Motivo de petición del documento: Cadena de carácteres predeterminada que sirve para dar una explicación de por qué se está pidiendo el documento.
     \end{itemize}
-    \item Boleta: Cadena de carácteres de longitud 10 que contiene el año en el que entró el alumno, un código de escuela y números 4 números que se asignan al alumno
   }
   \UCitem{Origen}{
     \begin{itemize}
-    \item Seleccionable: Documento, Motivo de petición del documento
-    \item Campo de texto: Boleta
+    \item Seleccionable: Documento. Motivo de petición del documento
       \end{itemize}
   }
   \UCitem{Salidas}{
     \begin{itemize}
-		\item Mensaje de confirmación {\bf AlertaConfirmarCorreo-}`` Le enviaremos un correo al alumno/egresado cuando haya sido aceptada y cuando esté lista para recogerse.  
+		\item Mensaje de confirmación {\bf AlertaConfirmarCorreo-}`` Tu solicitud se enviará a control escolar y te enviaremos un correo cuando haya sido aceptada y cuando esté lista para recogerse.  
 	[cuerpoCorreo@servidor.dominio]
-	¿Es correcto el correo del alumno? Actualiza en caso de que no sea correcto	".
+	¿Es correcto tu correo? Actualiza en caso de que no sea correcto	".
 		\item Mensaje de información {\bf AlertaLimitePeticion}``El número máximo de peticiones es 5."
-		\item Mensaje de información {\bf AlertasolicitudEnviada} ``Se ha mandado la solicitud, El alumno puede verificar en qué estapa se encuentra en el apartado de "Mis solicitudes en proceso." que se le mostrará cuando acceda a su cuenta."
+		\item Mensaje de información {\bf AlertasolicitudEnviada} ``Se ha mandado tu solicitud, puedes verificar en qué estapa se encuentra en el apartado de "Mis solicitudes en proceso.""
 		
-		\item Mensaje de información {\bf AlertaValidaNumDocumentos} ``Debe haber al menos un documento en tu petición."
+		\item Mensaje de información {\bf AlertaValidaNumDocumentos} ``Debes tener al menos un documento en tu petición."
 		
-		\item Mensaje de información {\bf AlertaValidaMotivo} ``Debe introducir un motivo válido para la petición."
+		\item Mensaje de información {\bf AlertaValidaMotivo} ``Debes introducir un motivo válido para tu petición."
 		
-		\item Mensaje de información {\bf AlertaSolicitudCancelada} ``No se ha enviado la solicitud, puede seguir agregando o eliminando documentos de la lista de peticiones."
+		\item Mensaje de información {\bf AlertaSolicitudCancelada} ``No se ha enviado tu solicitud, puedes seguir agregando o eliminando documentos de tu lista."
+		\item Mensaje de información {\bf AlertaEgresado} ``Sólo puedes solicitar boleta global."
 		
     \end{itemize}
   }
   \UCitem{Destino}{
     \begin{itemize}
-      \item AlertaConfirmarCorreo,AlertaLimitePeticion,AlertasolicitudEnviada,AlertaValidaMotivo,AlertaValidaNumDocumentos : Pantalla.
+      \item AlertaConfirmarCorreo : Pantalla
+      \item AlertaLimitePeticion:Pantalla
+      \item AlertaSolicitudEnviada:pantalla
+      \item AlertaValidaMotivo :Pantalla
+      \item AlertaValidaNumDocumentos : Pantalla
+      \item AlertaEgresado: Pantalla
     \end{itemize}
   }
   \UCitem{Precondiciones}{
    \begin{itemize}
       \item El actor debió haber sido identificado por el sistema.
-      \item El alumno debe estar inscrito.
     \end{itemize}
   }
   \UCitem{Postcondiciones}{
@@ -50,7 +53,7 @@
   }
   \UCitem{Observaciones}{
 		\begin{itemize}
-			\item El alumno/egresado puede pedir un máximo de 5 constancias al mes.
+			\item El actor puede pedir un máximo de 5 constancias al mes.
 			\item Las opciones de documentos son: 
 			\begin{itemize}
 				\item  Boleta global
@@ -76,7 +79,7 @@
   	\item Ninguno.
   	\end{itemize}
 	}
-  \UCitem{Tipo de ejecución}{Secundaria, viene de CU01 Iniciar Sesión}
+  \UCitem{Tipo de ejecución}{Secundaria, viene de CU01 Iniciar Sesión Estudiante/Empleado}
 	\UCitem{Volatilidad}{Baja}
 	\UCitem{Madurez}{Alta}
 	\UCitem{Prioridad}{Alta}
@@ -93,6 +96,7 @@
   \UCpaso[\UCactor] Da click en el botón\IUbutton{ Agregar a lista de documentos}. 
   \UCpaso  Valida que el número de peticiones en el mes sea menor a 5 peticiones. [TAA] 
   \UCpaso Valida que el actor haya seleccionado un motivo válido. [TAD]
+  \UCpaso Valida si el actor es alumno y valida los documentos disponibles a solicitar [TAE]
   \UCpaso Agrega el tipo de documento junto con su razón de pedido a la lista de peticiones mostrada en pantalla.
   \UCpaso[\UCactor]  Da click en el botón\IUbutton{Enviar lista de documentos}.
   \UCpaso Muestra la alerta {\bf AlertaConfirmarCorreo} 
@@ -123,4 +127,9 @@
   \UCpaso No agrega el documento a la lista de documentos.
 \end{UCtrayectoriaA}
 
+
+\begin{UCtrayectoriaA}{E}{No alumno} 
+\UCpaso Muestra el mensaje {\bf AlertaEgresado}.
+  \UCpaso No agrega el documento a la lista de documentos.
+\end{UCtrayectoriaA}
 %-------------------------------------- TERMINA descripción del caso de uso.
