@@ -69,6 +69,12 @@ class Jefa_Gestion extends Controller{
         $this->modelo_jefa->update_memorandum($request->id);    
 
     }
+
+    // grafica parte analista 
+    public function grafica_analista(){
+        
+        $this->view('JefaGestion/GraficasAnalista');
+    }
     
 }
 

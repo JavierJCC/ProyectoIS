@@ -69,4 +69,9 @@ class estudianteEgresadoModel
          echo  $this->connection->error;
       }
   }
+  function get_tipo($boleta){
+    $query = "select egresado from alumno where boleta = '{$boleta}';";
+    $tipo = $this->connection->query($query);
+    return $tipo->num_rows ? $tipo->fetch_object() : "not";
+  }
 } 
