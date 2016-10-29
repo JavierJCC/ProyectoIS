@@ -72,8 +72,10 @@ class Jefa_Gestion extends Controller{
 
     // grafica parte analista 
     public function grafica_analista(){
-        
-        $this->view('JefaGestion/GraficasAnalista');
+        $documentos = $this->modelo_jefa->consultar_documento();
+        $tramites = $this->modelo_jefa->consultar_tramite();
+        $motivos = $this->modelo_jefa->consultar_motivo();
+        $this->view('JefaGestion/GraficasAnalista',['documentos'=> $documentos, 'tramites'=>$tramites,'motivos'=>$motivos]);
     }
     
 }
