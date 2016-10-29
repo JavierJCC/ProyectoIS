@@ -82,6 +82,7 @@
 								<!--<span style="color: red" ng-show="registro.no_empleado.$pristine">
 								<span ng-show="registro.no_empleado.$error.required"> Este campo es obligatorio-->
 								<span ng-show="checkNoEmpleado" style="color: red;"> Ingrese únicamente números
+
 								<br>
 								</div>
 							</div>

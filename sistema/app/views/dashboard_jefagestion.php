@@ -88,7 +88,7 @@
                         <a href="<?= $url_path ?>Jefa_gestion/gestionar_cuentas"><i class="fa fa-gears"></i> Gestionar cuentas</a>
                     </li>
 					<li>
-                        <a href="#"><i class="fa fa-List-alt fa-fw"></i> Reportes estadísticos<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart fa-fw"></i> Reportes estadísticos <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="reportes_estadisticos">Solicitudes por día</a>
@@ -102,9 +102,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="<?= $url_path ?>Jefa_gestion/memorandums"><i class="fa fa-search-plus fa-fw"></i> Consultar memorándums <span class="fa arrow"></span>
+                        <a href="<?= $url_path ?>Jefa_gestion/memorandums"><i class="fa fa-search-plus fa-fw"></i> Consultar memorándums </a>
                         <button type="button" class="btn btn-danger btn-circle" ng-if="memorandums_no_leidos != 0">[[memorandums_no_leidos]]</button>
-                         </a>
                     </li>
                 </ul>
 
@@ -131,7 +130,7 @@
 </div>
 
 <!-- jQuery -->
-<script src="<?= $url_path ?>interno/js/jquery.min.js"></script>
+<script src="<?= $url_path ?>interno/js/jquery-3.1.1.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="<?= $url_path ?>interno/js/bootstrap.min.js"></script>

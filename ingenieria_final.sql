@@ -72,7 +72,7 @@ CREATE TABLE `area` (
 
 LOCK TABLES `area` WRITE;
 /*!40000 ALTER TABLE `area` DISABLE KEYS */;
-INSERT INTO `area` VALUES ('A01','Área de becas','Departamento de Extensión y Apoyos Educativos'),('A02','Control escolar','Departamento de Gestión Escolar'),('A03','Jefa de Gestión Escolar','Departamento de Control Escolar');
+INSERT INTO `area` VALUES ('A01','Área de becas','Departamento de Extensión y Apoyos Educativos'),('A02','Gestión Escolar','Departamento de Gestión Escolar'),('A03','Jefa de Gestión Escolar','Departamento de Control Escolar');
 /*!40000 ALTER TABLE `area` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,7 +188,7 @@ CREATE TABLE `motivo` (
   `idmotivo` int(2) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idmotivo`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,7 +197,7 @@ CREATE TABLE `motivo` (
 
 LOCK TABLES `motivo` WRITE;
 /*!40000 ALTER TABLE `motivo` DISABLE KEYS */;
-INSERT INTO `motivo` VALUES (1,'Ninguno'),(2,'Actividad Cultural'),(3,'Actividad Deportiva'),(4,'Beca');
+INSERT INTO `motivo` VALUES (1,'Ninguno'),(2,'Actividad Cultural'),(3,'Actividad Deportiva'),(4,'Beca'),(5,'Idioma'),(6,'Curso externo');
 /*!40000 ALTER TABLE `motivo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -248,7 +248,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES ('12345','José Francisco','Pérez','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2015630074','Juan','Gómez ','Castro',NULL),('2016635489','Jacinto','Gonzalez','Velez','12345678'),('24','Marcela','Castro','Flores',NULL),('27','Gabriela','Castro','Flores','12345'),('56789','RubÃ©n','Murga','Dionicio',NULL),('567891','RubÃ©n','Murga','Dionicio',NULL),('5678912','RubÃ©n','Murga','Dionicio',NULL),('56789123','RubÃ©n','Murga','Dionicio',NULL),('90','Pedro','Pérez','Godínez',NULL),('987','23','dsfs','dfs',NULL);
+INSERT INTO `persona` VALUES (' bc c','','','',NULL),('12345','José Francisco','Pérez','García','12345678'),('2014630002','Javier','Chávez','Chávez','12345678'),('2014630206','Juan Antonio','Guzmán ','Chávez','12345678'),('2014630645','Alberto','Maldonado','Romo','12345678'),('2015630074','Juan','Gómez ','Castro',NULL),('2016635489','Jacinto','Gonzalez','Velez','12345678'),('24','Marcela','Castro','Flores',NULL),('27','Gabriela','Castro','Flores','12345'),('56789','RubÃ©n','Murga','Dionicio',NULL),('567891','RubÃ©n','Murga','Dionicio',NULL),('5678912','RubÃ©n','Murga','Dionicio',NULL),('56789123','Rubén','Murga','Dionicio',NULL),('90','Pedro','Pérez','Godínez',NULL),('987','Jorge','López','Gutierrez',NULL),('gfgg','','','',NULL),('hhh','','','',NULL);
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -340,7 +340,7 @@ CREATE TABLE `trabajadorarea` (
 
 LOCK TABLES `trabajadorarea` WRITE;
 /*!40000 ALTER TABLE `trabajadorarea` DISABLE KEYS */;
-INSERT INTO `trabajadorarea` VALUES ('12345','A02','JFPG','pepe@gmail.com',0),('56789123','A01','dfsdf','ruben.murga.d@gmail.com',0),('987','A01','dfsd','dfsdfs@gmail',1),('24','A02','MCF961104','march.castrof@gmail.com',1),('27','A03','GAB270990','gabz.cf@gmail.com',1),('90','A02','PER243','pedro@hotmail.com',1),('2015630074','A01','JUAN2345','juanito@gmail.com',1);
+INSERT INTO `trabajadorarea` VALUES ('12345','A01','JFPG','pepito@gmail.com',0),('56789123','A01','dfsdf','ruben.murga.d@gmail.com',0),('987','A02','LOPEZ1234','dfsdfs@gmail',1),('24','A02','MCF961104','march.castrof@gmail.com',1),('27','A03','GAB270990','gabz.cf@gmail.com',1),('90','A01','PEREZ243','pedro@hotmail.com',1),('2015630074','A01','JUAN2345','juanito@gmail.com',1);
 /*!40000 ALTER TABLE `trabajadorarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -382,4 +382,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-26 18:53:06
+-- Dump completed on 2016-10-28 20:38:07

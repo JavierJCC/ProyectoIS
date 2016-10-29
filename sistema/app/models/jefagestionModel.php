@@ -81,4 +81,29 @@ class jefagestionModel
         echo $this->connection->error;
     }
 
+    function consultar_documento(){
+        $query = 'SELECT idDocumento, nombre from documento';
+        $consultar_documento = $this->connection->query($query);
+        return $consultar_documento ? $consultar_documento : array();
+    }
+
+    function consultar_tramite(){
+        $query = 'SELECT idEstado, estado from estadoTramite';
+        $consultar_tramite = $this->connection->query($query);
+        return $consultar_tramite ? $consultar_tramite : array();
+    }
+
+    function consultar_motivo(){
+        $query = 'SELECT idMotivo, nombre from motivo';
+        $consultar_motivo = $this->connection->query($query);
+        return $consultar_motivo ? $consultar_motivo : array();
+    }
+
+    function consultar_alumno($idPersona){
+        $query = "SELECT nom, apPat, apMat from persona,alumno where persona.idPersona = alumno.boleta and persona.idPersona = '{$idPersona}'";
+        $consultar_alumno = $this->connection->query($query);
+        return $consultar_alumno ? $consultar_alumno : array();
+
+    }
+
 } 
